@@ -2,6 +2,20 @@
 
 All notable changes to Dutch OS are documented here.
 
+## [Unreleased]
+
+### Added
+
+- Added a connector-friendly `MANIFEST.md`, AI entrypoint metadata, and ChatGPT tutor entrypoint prompt.
+- Added catalog `source_path` indexes and validation for discovery counts and file paths.
+
+### Resolved
+
+- Reviewed and resolved all nine `week_01` handwriting uncertainties.
+- Added eight missing canonical words and enriched `zijn`, `hebben`, and `de ochtend`.
+- Confirmed the existing plural and clock-time grammar records, plus `druk`, `lekker`, and `Zal ik doen`.
+- Added deterministic metadata rebuilding with `scripts/rebuild_metadata.py`.
+
 ## [0.1.0] - 2026-06-12
 
 ### Added

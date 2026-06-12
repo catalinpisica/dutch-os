@@ -5,7 +5,13 @@
     "dutch": "zijn",
     "english": "to be",
     "category": "core_verbs",
-    "examples": [],
+    "examples": [
+      {
+        "dutch": "Ik ben thuis.",
+        "english": "I am at home.",
+        "source_type": "ai_generated"
+      }
+    ],
     "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-01-page-01.jpg"
@@ -15,7 +21,7 @@
       "A1",
       "irregular"
     ],
-    "notes": "",
+    "notes": "Present tense: ik ben; jij/je/u bent; hij/zij is; wij/jullie/zij zijn.",
     "part_of_speech": "verb",
     "article": null,
     "plural": null
@@ -26,7 +32,13 @@
     "dutch": "hebben",
     "english": "to have",
     "category": "core_verbs",
-    "examples": [],
+    "examples": [
+      {
+        "dutch": "Ik heb honger.",
+        "english": "I am hungry.",
+        "source_type": "class_note"
+      }
+    ],
     "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-01-page-01.jpg"
@@ -36,7 +48,7 @@
       "A1",
       "irregular"
     ],
-    "notes": "",
+    "notes": "Present tense: ik heb; jij/je hebt; u heeft/hebt; hij/zij heeft; wij/jullie/zij hebben.",
     "part_of_speech": "verb",
     "article": null,
     "plural": null
@@ -2203,11 +2215,13 @@
     "examples": [],
     "week": "week_01",
     "source_images": [
-      "sources/archive/2026/week_01/images/lesson-07-page-01.jpg"
+      "sources/archive/2026/week_01/images/lesson-07-page-01.jpg",
+      "sources/archive/2026/week_01/images/lesson-07-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "time"
     ],
     "notes": "",
     "part_of_speech": "noun",
@@ -2400,14 +2414,22 @@
     "dutch": "de ochtend",
     "english": "morning",
     "category": "time",
-    "examples": [],
+    "examples": [
+      {
+        "dutch": "Ik werk in de ochtend.",
+        "english": "I work in the morning.",
+        "source_type": "ai_generated"
+      }
+    ],
     "week": "week_01",
     "source_images": [
-      "sources/archive/2026/week_01/images/lesson-07-page-01.jpg"
+      "sources/archive/2026/week_01/images/lesson-07-page-01.jpg",
+      "sources/archive/2026/week_01/images/lesson-07-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "time"
     ],
     "notes": "",
     "part_of_speech": "noun",
@@ -3656,6 +3678,198 @@
       "A1"
     ],
     "notes": "",
+    "part_of_speech": "adjective",
+    "article": null,
+    "plural": null
+  },
+  {
+    "id": "word-gaan",
+    "type": "word",
+    "dutch": "gaan",
+    "english": "to go",
+    "category": "movement",
+    "examples": [
+      {
+        "dutch": "Ik ga naar school.",
+        "english": "I go to school.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-01-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": ["A1", "irregular"],
+    "notes": "",
+    "part_of_speech": "verb",
+    "article": null,
+    "plural": null
+  },
+  {
+    "id": "word-u",
+    "type": "word",
+    "dutch": "u",
+    "english": "you (formal)",
+    "category": "pronouns",
+    "examples": [
+      {
+        "dutch": "Kan ik u helpen?",
+        "english": "Can I help you?",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-03-page-01.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": ["A1", "formal"],
+    "notes": "",
+    "part_of_speech": "pronoun",
+    "article": null,
+    "plural": null
+  },
+  {
+    "id": "word-uw",
+    "type": "word",
+    "dutch": "uw",
+    "english": "your (formal)",
+    "category": "pronouns",
+    "examples": [
+      {
+        "dutch": "Wat is uw postcode?",
+        "english": "What is your postcode?",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-03-page-01.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": ["A1", "formal"],
+    "notes": "",
+    "part_of_speech": "possessive_pronoun",
+    "article": null,
+    "plural": null
+  },
+  {
+    "id": "word-praten",
+    "type": "word",
+    "dutch": "praten",
+    "english": "to talk",
+    "category": "communication",
+    "examples": [
+      {
+        "dutch": "Wij praten Nederlands.",
+        "english": "We speak Dutch.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-05-page-01.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": ["A1"],
+    "notes": "",
+    "part_of_speech": "verb",
+    "article": null,
+    "plural": null
+  },
+  {
+    "id": "word-zaterdagochtend",
+    "type": "word",
+    "dutch": "zaterdagochtend",
+    "english": "Saturday morning",
+    "category": "time",
+    "examples": [
+      {
+        "dutch": "Ik werk zaterdagochtend.",
+        "english": "I work Saturday morning.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-07-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": ["A1", "time"],
+    "notes": "",
+    "part_of_speech": "noun",
+    "article": null,
+    "plural": null
+  },
+  {
+    "id": "word-de-zoon",
+    "type": "word",
+    "dutch": "de zoon",
+    "english": "son",
+    "category": "family",
+    "examples": [
+      {
+        "dutch": "Mijn zoon komt zaterdag.",
+        "english": "My son is coming on Saturday.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-07-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": ["A1", "family"],
+    "notes": "",
+    "part_of_speech": "noun",
+    "article": "de",
+    "plural": "zonen"
+  },
+  {
+    "id": "word-kijken",
+    "type": "word",
+    "dutch": "kijken",
+    "english": "to look; to watch",
+    "category": "perception",
+    "examples": [
+      {
+        "dutch": "Wij kijken televisie.",
+        "english": "We watch television.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-07-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": ["A1"],
+    "notes": "",
+    "part_of_speech": "verb",
+    "article": null,
+    "plural": null
+  },
+  {
+    "id": "word-ander",
+    "type": "word",
+    "dutch": "ander",
+    "english": "other; another; different",
+    "category": "descriptions",
+    "examples": [
+      {
+        "dutch": "Ik wil een andere dag.",
+        "english": "I want a different day.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-07-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": ["A1"],
+    "notes": "Usually takes an ending before a noun: een andere dag.",
     "part_of_speech": "adjective",
     "article": null,
     "plural": null

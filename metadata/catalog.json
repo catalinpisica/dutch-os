@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-06-12",
-  "item_count": 248,
+  "item_count": 256,
   "items": [
     {
       "id": "word-zijn",
@@ -12,7 +12,8 @@
       "tags": [
         "A1",
         "irregular"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-hebben",
@@ -24,7 +25,8 @@
       "tags": [
         "A1",
         "irregular"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-dorst",
@@ -35,7 +37,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-honger",
@@ -46,7 +49,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-het-dorp",
@@ -57,7 +61,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-leren",
@@ -68,7 +73,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-nederland",
@@ -79,7 +85,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-niet",
@@ -90,7 +97,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-nu",
@@ -101,7 +109,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-school",
@@ -112,7 +121,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-stad",
@@ -123,7 +133,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-uit",
@@ -134,7 +145,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-werken",
@@ -145,7 +157,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-winkel",
@@ -156,7 +169,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-wonen",
@@ -167,7 +181,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-het-jaar",
@@ -178,7 +193,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-maand",
@@ -189,7 +205,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-sporten",
@@ -200,7 +217,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-koken",
@@ -211,7 +229,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-achternaam",
@@ -222,7 +241,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-heten",
@@ -233,7 +253,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-hoelang",
@@ -244,7 +265,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-kloppen",
@@ -255,7 +277,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-les",
@@ -266,7 +289,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-leuk",
@@ -277,7 +301,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-mijn",
@@ -288,7 +313,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-ook",
@@ -299,7 +325,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-het-telefoonnummer",
@@ -310,7 +337,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-vandaan",
@@ -321,7 +349,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-voornaam",
@@ -332,7 +361,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-wat",
@@ -343,7 +373,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-het-adres",
@@ -354,7 +385,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-het-e-mailadres",
@@ -365,7 +397,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-het-formulier",
@@ -376,7 +409,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-geboortedatum",
@@ -387,7 +421,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-gemeente",
@@ -398,7 +433,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-het-gemeentehuis",
@@ -409,7 +445,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-helpen",
@@ -420,7 +457,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-invullen",
@@ -432,7 +470,8 @@
       "tags": [
         "A1",
         "separable"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-man",
@@ -443,7 +482,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-meneer",
@@ -455,7 +495,8 @@
       "tags": [
         "A1",
         "formal"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-mobiel",
@@ -466,7 +507,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-nationaliteit",
@@ -477,7 +519,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-nieuw",
@@ -488,7 +531,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-postcode",
@@ -499,7 +543,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-vrouw",
@@ -510,7 +555,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-woonplaats",
@@ -521,7 +567,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-alleen",
@@ -532,7 +579,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-appen",
@@ -544,7 +592,8 @@
       "tags": [
         "A1",
         "informal"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-buren",
@@ -556,7 +605,8 @@
       "tags": [
         "A1",
         "plural"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-buurvrouw",
@@ -567,7 +617,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-getrouwd",
@@ -578,7 +629,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-graag",
@@ -589,7 +641,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-hobby",
@@ -600,7 +653,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-het-huis",
@@ -611,7 +665,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-het-kind",
@@ -623,7 +678,8 @@
       "tags": [
         "A1",
         "irregular_plural"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-met",
@@ -634,7 +690,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-ontmoeten",
@@ -645,7 +702,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-poes",
@@ -656,7 +714,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-het-restaurant",
@@ -667,7 +726,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-week",
@@ -678,7 +738,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-het-weekend",
@@ -689,7 +750,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-welkom",
@@ -700,7 +762,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-wie",
@@ -711,7 +774,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-gezond",
@@ -722,7 +786,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-vriendelijk",
@@ -733,7 +798,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-belangrijk",
@@ -744,7 +810,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-gelukkig",
@@ -755,7 +822,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-kater",
@@ -766,7 +834,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-het-kitten",
@@ -777,7 +846,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-appel",
@@ -788,7 +858,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-banaan",
@@ -799,7 +870,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-bijna",
@@ -810,7 +882,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-boodschappen",
@@ -822,7 +895,8 @@
       "tags": [
         "A1",
         "plural"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-het-eten",
@@ -833,7 +907,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-het-fruit",
@@ -844,7 +919,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-groente",
@@ -855,7 +931,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-kip",
@@ -866,7 +943,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-kopen",
@@ -877,7 +955,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-lijst",
@@ -888,7 +967,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-markt",
@@ -899,7 +979,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-rijst",
@@ -910,7 +991,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-supermarkt",
@@ -921,7 +1003,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-thuis",
@@ -932,7 +1015,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-tomaat",
@@ -943,7 +1027,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-vis",
@@ -954,7 +1039,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-het-vlees",
@@ -965,7 +1051,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-wortel",
@@ -976,7 +1063,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-aardappel",
@@ -987,7 +1075,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-alsjeblieft",
@@ -999,7 +1088,8 @@
       "tags": [
         "A1",
         "informal"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-alstublieft",
@@ -1011,7 +1101,8 @@
       "tags": [
         "A1",
         "formal"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-anders",
@@ -1022,7 +1113,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-het-ei",
@@ -1034,7 +1126,8 @@
       "tags": [
         "A1",
         "irregular_plural"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-fijn",
@@ -1045,7 +1138,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-hoeveel",
@@ -1056,7 +1150,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-iets",
@@ -1067,7 +1162,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-jammer",
@@ -1078,7 +1174,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-kaas",
@@ -1089,7 +1186,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-kilo",
@@ -1100,7 +1198,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-mevrouw",
@@ -1112,7 +1211,8 @@
       "tags": [
         "A1",
         "formal"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-nemen",
@@ -1124,7 +1224,8 @@
       "tags": [
         "A1",
         "irregular"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-pinnen",
@@ -1135,7 +1236,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-verkoper",
@@ -1146,7 +1248,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-vers",
@@ -1157,7 +1260,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-altijd",
@@ -1168,7 +1272,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-dicht",
@@ -1179,7 +1284,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-halen",
@@ -1190,7 +1296,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-liggen",
@@ -1201,7 +1308,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-weten",
@@ -1213,7 +1321,8 @@
       "tags": [
         "A1",
         "irregular"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-bakker",
@@ -1223,8 +1332,10 @@
       "category": "shopping",
       "week": "week_01",
       "tags": [
-        "A1"
-      ]
+        "A1",
+        "time"
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-het-brood",
@@ -1235,7 +1346,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-buurt",
@@ -1246,7 +1358,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-duur",
@@ -1257,7 +1370,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-goedkoop",
@@ -1268,7 +1382,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-hier",
@@ -1279,7 +1394,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-kennen",
@@ -1290,7 +1406,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-meestal",
@@ -1301,7 +1418,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-middag",
@@ -1312,7 +1430,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-natuurlijk",
@@ -1323,7 +1442,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-ochtend",
@@ -1333,8 +1453,10 @@
       "category": "time",
       "week": "week_01",
       "tags": [
-        "A1"
-      ]
+        "A1",
+        "time"
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-soms",
@@ -1345,7 +1467,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-straat",
@@ -1356,7 +1479,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-vragen",
@@ -1367,7 +1491,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-wanneer",
@@ -1378,7 +1503,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-chips",
@@ -1390,7 +1516,8 @@
       "tags": [
         "A1",
         "plural"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-denken",
@@ -1401,7 +1528,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-het-internet",
@@ -1412,7 +1540,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-keuken",
@@ -1423,7 +1552,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-laat",
@@ -1434,7 +1564,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-leeg",
@@ -1445,7 +1576,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-open",
@@ -1456,7 +1588,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-openingstijden",
@@ -1468,7 +1601,8 @@
       "tags": [
         "A1",
         "plural"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-snel",
@@ -1479,7 +1613,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-zak",
@@ -1490,7 +1625,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-moe",
@@ -1501,7 +1637,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-vaak",
@@ -1512,7 +1649,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-weleens",
@@ -1523,7 +1661,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-nooit",
@@ -1534,7 +1673,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-alles",
@@ -1545,7 +1685,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-beterschap",
@@ -1556,7 +1697,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-bezig",
@@ -1567,7 +1709,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-broer",
@@ -1578,7 +1721,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-daar",
@@ -1589,7 +1733,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-druk",
@@ -1600,7 +1745,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-eindelijk",
@@ -1611,7 +1757,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-groet",
@@ -1622,7 +1769,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-lekker",
@@ -1633,7 +1781,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-lopen",
@@ -1644,7 +1793,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-moeder",
@@ -1655,7 +1805,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-paracetamol",
@@ -1666,7 +1817,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-prima",
@@ -1677,7 +1829,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-vervelend",
@@ -1688,7 +1841,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-vriend",
@@ -1699,7 +1853,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-vriendin",
@@ -1710,7 +1865,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-waarom",
@@ -1721,7 +1877,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-warm",
@@ -1732,7 +1889,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-het-weer",
@@ -1743,7 +1901,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-worden",
@@ -1755,7 +1914,8 @@
       "tags": [
         "A1",
         "irregular"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-ziek",
@@ -1766,7 +1926,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-zon",
@@ -1777,7 +1938,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-zus",
@@ -1788,7 +1950,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-het-bezoek",
@@ -1799,7 +1962,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-binnenkomen",
@@ -1811,7 +1975,8 @@
       "tags": [
         "A1",
         "separable"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-drinken",
@@ -1822,7 +1987,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-eruitzien",
@@ -1834,7 +2000,8 @@
       "tags": [
         "A1",
         "separable"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-geven",
@@ -1846,7 +2013,8 @@
       "tags": [
         "A1",
         "irregular"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-horen",
@@ -1857,7 +2025,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-huilen",
@@ -1868,7 +2037,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-jas",
@@ -1879,7 +2049,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-jongen",
@@ -1890,7 +2061,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-klein",
@@ -1901,7 +2073,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-koffie",
@@ -1912,7 +2085,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-lachen",
@@ -1923,7 +2097,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-lief",
@@ -1934,7 +2109,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-melk",
@@ -1945,7 +2121,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-slapen",
@@ -1956,7 +2133,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-suiker",
@@ -1967,7 +2145,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-de-thee",
@@ -1978,7 +2157,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-zelf",
@@ -1989,7 +2169,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-zitten",
@@ -2000,7 +2181,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-zonder",
@@ -2011,7 +2193,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "word-zwart",
@@ -2022,7 +2205,109 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/words/items.json"
+    },
+    {
+      "id": "word-gaan",
+      "type": "word",
+      "dutch": "gaan",
+      "english": "to go",
+      "category": "movement",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "irregular"
+      ],
+      "source_path": "knowledge/words/items.json"
+    },
+    {
+      "id": "word-u",
+      "type": "word",
+      "dutch": "u",
+      "english": "you (formal)",
+      "category": "pronouns",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "formal"
+      ],
+      "source_path": "knowledge/words/items.json"
+    },
+    {
+      "id": "word-uw",
+      "type": "word",
+      "dutch": "uw",
+      "english": "your (formal)",
+      "category": "pronouns",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "formal"
+      ],
+      "source_path": "knowledge/words/items.json"
+    },
+    {
+      "id": "word-praten",
+      "type": "word",
+      "dutch": "praten",
+      "english": "to talk",
+      "category": "communication",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ],
+      "source_path": "knowledge/words/items.json"
+    },
+    {
+      "id": "word-zaterdagochtend",
+      "type": "word",
+      "dutch": "zaterdagochtend",
+      "english": "Saturday morning",
+      "category": "time",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "time"
+      ],
+      "source_path": "knowledge/words/items.json"
+    },
+    {
+      "id": "word-de-zoon",
+      "type": "word",
+      "dutch": "de zoon",
+      "english": "son",
+      "category": "family",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "family"
+      ],
+      "source_path": "knowledge/words/items.json"
+    },
+    {
+      "id": "word-kijken",
+      "type": "word",
+      "dutch": "kijken",
+      "english": "to look; to watch",
+      "category": "perception",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ],
+      "source_path": "knowledge/words/items.json"
+    },
+    {
+      "id": "word-ander",
+      "type": "word",
+      "dutch": "ander",
+      "english": "other; another; different",
+      "category": "descriptions",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ],
+      "source_path": "knowledge/words/items.json"
     },
     {
       "id": "expression-ik-heb-dorst",
@@ -2034,7 +2319,8 @@
       "tags": [
         "A1",
         "health"
-      ]
+      ],
+      "source_path": "knowledge/expressions/items.json"
     },
     {
       "id": "expression-ik-heb-honger",
@@ -2046,7 +2332,8 @@
       "tags": [
         "A1",
         "food"
-      ]
+      ],
+      "source_path": "knowledge/expressions/items.json"
     },
     {
       "id": "expression-waar-kom-je-vandaan",
@@ -2058,7 +2345,8 @@
       "tags": [
         "A1",
         "question"
-      ]
+      ],
+      "source_path": "knowledge/expressions/items.json"
     },
     {
       "id": "expression-hoe-lang-woon-je-al-in-nederland",
@@ -2070,7 +2358,8 @@
       "tags": [
         "A1",
         "time"
-      ]
+      ],
+      "source_path": "knowledge/expressions/items.json"
     },
     {
       "id": "expression-dat-klopt",
@@ -2082,7 +2371,8 @@
       "tags": [
         "A1",
         "conversation"
-      ]
+      ],
+      "source_path": "knowledge/expressions/items.json"
     },
     {
       "id": "expression-hoe-spel-ik-dat",
@@ -2094,7 +2384,8 @@
       "tags": [
         "A1",
         "spelling"
-      ]
+      ],
+      "source_path": "knowledge/expressions/items.json"
     },
     {
       "id": "expression-kan-ik-u-helpen",
@@ -2107,7 +2398,8 @@
         "A1",
         "formal",
         "modal"
-      ]
+      ],
+      "source_path": "knowledge/expressions/items.json"
     },
     {
       "id": "expression-mag-ik-wat-vragen",
@@ -2119,7 +2411,8 @@
       "tags": [
         "A1",
         "modal"
-      ]
+      ],
+      "source_path": "knowledge/expressions/items.json"
     },
     {
       "id": "expression-graag-gedaan",
@@ -2130,7 +2423,8 @@
       "week": "week_01",
       "tags": [
         "A1"
-      ]
+      ],
+      "source_path": "knowledge/expressions/items.json"
     },
     {
       "id": "expression-leuk-je-te-ontmoeten",
@@ -2142,7 +2436,8 @@
       "tags": [
         "A1",
         "social"
-      ]
+      ],
+      "source_path": "knowledge/expressions/items.json"
     },
     {
       "id": "expression-zullen-we-elkaar-om-acht-uur-ontmoeten",
@@ -2155,7 +2450,8 @@
         "A1",
         "modal",
         "time"
-      ]
+      ],
+      "source_path": "knowledge/expressions/items.json"
     },
     {
       "id": "expression-de-rijst-is-op",
@@ -2167,7 +2463,8 @@
       "tags": [
         "A1",
         "food"
-      ]
+      ],
+      "source_path": "knowledge/expressions/items.json"
     },
     {
       "id": "expression-tot-later",
@@ -2179,7 +2476,8 @@
       "tags": [
         "A1",
         "conversation"
-      ]
+      ],
+      "source_path": "knowledge/expressions/items.json"
     },
     {
       "id": "expression-zeg-het-maar",
@@ -2192,7 +2490,8 @@
         "A1",
         "shopping",
         "particle"
-      ]
+      ],
+      "source_path": "knowledge/expressions/items.json"
     },
     {
       "id": "expression-kijk-eens",
@@ -2204,7 +2503,8 @@
       "tags": [
         "A1",
         "particle"
-      ]
+      ],
+      "source_path": "knowledge/expressions/items.json"
     },
     {
       "id": "expression-anders-nog-iets",
@@ -2216,7 +2516,8 @@
       "tags": [
         "A1",
         "shopping"
-      ]
+      ],
+      "source_path": "knowledge/expressions/items.json"
     },
     {
       "id": "expression-fijne-dag",
@@ -2228,7 +2529,8 @@
       "tags": [
         "A1",
         "politeness"
-      ]
+      ],
+      "source_path": "knowledge/expressions/items.json"
     },
     {
       "id": "expression-ik-heb-zin-in",
@@ -2240,7 +2542,8 @@
       "tags": [
         "A1",
         "fixed_expression"
-      ]
+      ],
+      "source_path": "knowledge/expressions/items.json"
     },
     {
       "id": "expression-tot-zo",
@@ -2252,7 +2555,8 @@
       "tags": [
         "A1",
         "conversation"
-      ]
+      ],
+      "source_path": "knowledge/expressions/items.json"
     },
     {
       "id": "expression-het-maakt-me-niet-uit",
@@ -2264,7 +2568,8 @@
       "tags": [
         "A1",
         "fixed_expression"
-      ]
+      ],
+      "source_path": "knowledge/expressions/items.json"
     },
     {
       "id": "expression-je-ziet-er-goed-uit",
@@ -2276,7 +2581,8 @@
       "tags": [
         "A1",
         "separable_verb"
-      ]
+      ],
+      "source_path": "knowledge/expressions/items.json"
     },
     {
       "id": "expression-doe-maar",
@@ -2288,7 +2594,8 @@
       "tags": [
         "A1",
         "particle"
-      ]
+      ],
+      "source_path": "knowledge/expressions/items.json"
     },
     {
       "id": "expression-doe-maar-niet",
@@ -2301,7 +2608,8 @@
         "A1",
         "particle",
         "negation"
-      ]
+      ],
+      "source_path": "knowledge/expressions/items.json"
     },
     {
       "id": "expression-dat-is-lang-geleden",
@@ -2313,7 +2621,8 @@
       "tags": [
         "A1",
         "time"
-      ]
+      ],
+      "source_path": "knowledge/expressions/items.json"
     },
     {
       "id": "expression-ik-ben-goed-bezig",
@@ -2325,7 +2634,8 @@
       "tags": [
         "A1",
         "fixed_expression"
-      ]
+      ],
+      "source_path": "knowledge/expressions/items.json"
     },
     {
       "id": "expression-kom-binnen",
@@ -2337,7 +2647,8 @@
       "tags": [
         "A1",
         "imperative"
-      ]
+      ],
+      "source_path": "knowledge/expressions/items.json"
     },
     {
       "id": "expression-geef-je-jas-maar-hier",
@@ -2350,7 +2661,8 @@
         "A1",
         "imperative",
         "particle"
-      ]
+      ],
+      "source_path": "knowledge/expressions/items.json"
     },
     {
       "id": "expression-zal-ik-doen",
@@ -2363,7 +2675,8 @@
         "A1",
         "modal",
         "response"
-      ]
+      ],
+      "source_path": "knowledge/expressions/items.json"
     },
     {
       "id": "particle-al",
@@ -2375,7 +2688,8 @@
       "tags": [
         "A1",
         "time"
-      ]
+      ],
+      "source_path": "knowledge/particles/items.json"
     },
     {
       "id": "particle-nog",
@@ -2387,7 +2701,8 @@
       "tags": [
         "A1",
         "time"
-      ]
+      ],
+      "source_path": "knowledge/particles/items.json"
     },
     {
       "id": "particle-maar",
@@ -2399,7 +2714,8 @@
       "tags": [
         "A1",
         "modal_particle"
-      ]
+      ],
+      "source_path": "knowledge/particles/items.json"
     },
     {
       "id": "particle-wel",
@@ -2411,7 +2727,8 @@
       "tags": [
         "A1",
         "modal_particle"
-      ]
+      ],
+      "source_path": "knowledge/particles/items.json"
     },
     {
       "id": "particle-even",
@@ -2423,7 +2740,8 @@
       "tags": [
         "A1",
         "modal_particle"
-      ]
+      ],
+      "source_path": "knowledge/particles/items.json"
     },
     {
       "id": "particle-hoor",
@@ -2435,7 +2753,8 @@
       "tags": [
         "A1",
         "modal_particle"
-      ]
+      ],
+      "source_path": "knowledge/particles/items.json"
     },
     {
       "id": "particle-toch",
@@ -2447,7 +2766,8 @@
       "tags": [
         "A1",
         "modal_particle"
-      ]
+      ],
+      "source_path": "knowledge/particles/items.json"
     },
     {
       "id": "particle-joh",
@@ -2459,7 +2779,8 @@
       "tags": [
         "A1",
         "informal"
-      ]
+      ],
+      "source_path": "knowledge/particles/items.json"
     },
     {
       "id": "particle-alweer",
@@ -2471,7 +2792,8 @@
       "tags": [
         "A1",
         "time"
-      ]
+      ],
+      "source_path": "knowledge/particles/items.json"
     },
     {
       "id": "particle-nog-steeds",
@@ -2483,7 +2805,8 @@
       "tags": [
         "A1",
         "time"
-      ]
+      ],
+      "source_path": "knowledge/particles/items.json"
     },
     {
       "id": "grammar_pattern-persoonsvorm-op-de-tweede-plaats",
@@ -2495,7 +2818,8 @@
       "tags": [
         "A1",
         "word_order"
-      ]
+      ],
+      "source_path": "knowledge/grammar-patterns/items.json"
     },
     {
       "id": "grammar_pattern-regelmatige-werkwoorden-in-de-tegenwoordige-tijd",
@@ -2507,7 +2831,8 @@
       "tags": [
         "A1",
         "present_tense"
-      ]
+      ],
+      "source_path": "knowledge/grammar-patterns/items.json"
     },
     {
       "id": "grammar_pattern-vragen-met-inversie",
@@ -2519,7 +2844,8 @@
       "tags": [
         "A1",
         "questions"
-      ]
+      ],
+      "source_path": "knowledge/grammar-patterns/items.json"
     },
     {
       "id": "grammar_pattern-meervoud-met-en",
@@ -2531,7 +2857,8 @@
       "tags": [
         "A1",
         "plurals"
-      ]
+      ],
+      "source_path": "knowledge/grammar-patterns/items.json"
     },
     {
       "id": "grammar_pattern-meervoud-met-s",
@@ -2543,7 +2870,8 @@
       "tags": [
         "A1",
         "plurals"
-      ]
+      ],
+      "source_path": "knowledge/grammar-patterns/items.json"
     },
     {
       "id": "grammar_pattern-meervoud-gebruikt-altijd-de",
@@ -2556,7 +2884,8 @@
         "A1",
         "articles",
         "plurals"
-      ]
+      ],
+      "source_path": "knowledge/grammar-patterns/items.json"
     },
     {
       "id": "grammar_pattern-modaal-werkwoord-met-infinitief",
@@ -2569,7 +2898,8 @@
         "A1",
         "modal_verbs",
         "word_order"
-      ]
+      ],
+      "source_path": "knowledge/grammar-patterns/items.json"
     },
     {
       "id": "grammar_pattern-welk-en-welke",
@@ -2582,7 +2912,8 @@
         "A1",
         "question_words",
         "articles"
-      ]
+      ],
+      "source_path": "knowledge/grammar-patterns/items.json"
     },
     {
       "id": "grammar_pattern-dit-dat-en-deze-die",
@@ -2595,7 +2926,8 @@
         "A1",
         "demonstratives",
         "articles"
-      ]
+      ],
+      "source_path": "knowledge/grammar-patterns/items.json"
     },
     {
       "id": "grammar_pattern-tot-en-tot-en-met",
@@ -2607,7 +2939,8 @@
       "tags": [
         "A1",
         "time"
-      ]
+      ],
+      "source_path": "knowledge/grammar-patterns/items.json"
     },
     {
       "id": "grammar_pattern-plaats-aangeven",
@@ -2620,7 +2953,8 @@
         "A1",
         "location",
         "prepositions"
-      ]
+      ],
+      "source_path": "knowledge/grammar-patterns/items.json"
     },
     {
       "id": "grammar_pattern-klokkijken-met-half-kwart-voor-en-over",
@@ -2632,7 +2966,8 @@
       "tags": [
         "A1",
         "time"
-      ]
+      ],
+      "source_path": "knowledge/grammar-patterns/items.json"
     },
     {
       "id": "grammar_pattern-eruitzien-als-scheidbaar-werkwoord",
@@ -2645,7 +2980,8 @@
         "A1",
         "separable_verbs",
         "word_order"
-      ]
+      ],
+      "source_path": "knowledge/grammar-patterns/items.json"
     },
     {
       "id": "verb_construction-houden-van",
@@ -2657,7 +2993,8 @@
       "tags": [
         "A1",
         "fixed_preposition"
-      ]
+      ],
+      "source_path": "knowledge/verb-constructions/items.json"
     },
     {
       "id": "verb_construction-boodschappen-doen",
@@ -2669,7 +3006,8 @@
       "tags": [
         "A1",
         "shopping"
-      ]
+      ],
+      "source_path": "knowledge/verb-constructions/items.json"
     },
     {
       "id": "verb_construction-kunnen-infinitief",
@@ -2681,7 +3019,8 @@
       "tags": [
         "A1",
         "modal"
-      ]
+      ],
+      "source_path": "knowledge/verb-constructions/items.json"
     },
     {
       "id": "verb_construction-mogen-infinitief",
@@ -2693,7 +3032,8 @@
       "tags": [
         "A1",
         "modal"
-      ]
+      ],
+      "source_path": "knowledge/verb-constructions/items.json"
     },
     {
       "id": "verb_construction-moeten-infinitief",
@@ -2705,7 +3045,8 @@
       "tags": [
         "A1",
         "modal"
-      ]
+      ],
+      "source_path": "knowledge/verb-constructions/items.json"
     },
     {
       "id": "verb_construction-willen-infinitief",
@@ -2717,7 +3058,8 @@
       "tags": [
         "A1",
         "modal"
-      ]
+      ],
+      "source_path": "knowledge/verb-constructions/items.json"
     },
     {
       "id": "verb_construction-zullen-infinitief",
@@ -2729,7 +3071,8 @@
       "tags": [
         "A1",
         "modal"
-      ]
+      ],
+      "source_path": "knowledge/verb-constructions/items.json"
     },
     {
       "id": "verb_construction-zin-hebben-in-om-te",
@@ -2741,7 +3084,8 @@
       "tags": [
         "A1",
         "fixed_expression"
-      ]
+      ],
+      "source_path": "knowledge/verb-constructions/items.json"
     },
     {
       "id": "verb_construction-eruitzien",
@@ -2753,7 +3097,8 @@
       "tags": [
         "A1",
         "separable"
-      ]
+      ],
+      "source_path": "knowledge/verb-constructions/items.json"
     },
     {
       "id": "dialogue-introduction-and-phone-number",
@@ -2766,7 +3111,8 @@
         "A1",
         "introduction",
         "personal_details"
-      ]
+      ],
+      "source_path": "knowledge/dialogues/items.json"
     },
     {
       "id": "dialogue-new-neighbor",
@@ -2779,7 +3125,8 @@
         "A1",
         "neighbors",
         "introduction"
-      ]
+      ],
+      "source_path": "knowledge/dialogues/items.json"
     },
     {
       "id": "dialogue-at-the-market",
@@ -2792,7 +3139,8 @@
         "A1",
         "shopping",
         "service"
-      ]
+      ],
+      "source_path": "knowledge/dialogues/items.json"
     },
     {
       "id": "dialogue-receiving-a-visitor",
@@ -2805,7 +3153,8 @@
         "A1",
         "visiting",
         "hospitality"
-      ]
+      ],
+      "source_path": "knowledge/dialogues/items.json"
     },
     {
       "id": "mistake-woond-woont",
@@ -2818,7 +3167,8 @@
         "A1",
         "verbs",
         "spelling"
-      ]
+      ],
+      "source_path": "knowledge/mistakes/items.json"
     },
     {
       "id": "mistake-sportt-sport",
@@ -2831,7 +3181,8 @@
         "A1",
         "verbs",
         "spelling"
-      ]
+      ],
+      "source_path": "knowledge/mistakes/items.json"
     }
   ]
 }

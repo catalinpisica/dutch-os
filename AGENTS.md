@@ -29,6 +29,19 @@ Dutch OS is the user’s AI-maintained Dutch learning memory. The repository, no
 
 Read the relevant schema and prompt before changing data in an area.
 
+## AI Discovery
+
+The repository must remain usable through GitHub connectors even when code search is unavailable.
+
+- `metadata/ai-entrypoint.json` is the first machine-readable file an AI tutor should fetch.
+- `metadata/catalog.json` is the second fetch and must index every canonical item.
+- Every catalog row must include `source_path`, pointing to the category file containing the full record.
+- `MANIFEST.md` is the human-readable repository map.
+- `prompts/chatgpt-tutor-entrypoint.md` defines the connector fetch workflow.
+- AI tutors must check the catalog before claiming that the learner has studied an item.
+- Fetch complete category files only when full examples, notes, provenance, dialogue turns, corrections, or grammar explanations are needed.
+- Rebuild discovery metadata with `python3 scripts/rebuild_metadata.py` after canonical data changes.
+
 ## Evidence Rules
 
 - Never rewrite, replace, or delete files under `sources/archive/`.
@@ -161,7 +174,7 @@ After changing JSON, schemas, reviews, or metadata, run:
 python3 scripts/validate_json.py
 ```
 
-Do not finish with validation failures. Validation must continue to cover JSON syntax, required fields, stable IDs, source paths, batch labels, English-only canonical data, cross-references, and derived catalog consistency.
+Do not finish with validation failures. Validation must continue to cover JSON syntax, required fields, stable IDs, source paths, batch labels, English-only canonical data, cross-references, catalog source paths, AI entrypoint paths and counts, and derived metadata consistency.
 
 ## Commits
 

@@ -13,7 +13,9 @@
       "particle-nog-steeds",
       "expression-zal-ik-doen"
     ],
-    "needs_review_count": 9,
+    "needs_review_count": 0,
+    "resolved_needs_review_count": 9,
+    "review_resolution_date": "2026-06-12",
     "status": "complete"
   }
 ]

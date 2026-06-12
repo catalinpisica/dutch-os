@@ -169,53 +169,7 @@
       "mistake-woond-woont",
       "mistake-sportt-sport"
     ],
-    "needs_review": [
-      {
-        "source_image": "sources/archive/2026/week_01/images/lesson-01-page-01.jpg",
-        "text": "One low-confidence conjugation line under 'zijn' and 'hebben'",
-        "reason": "Several pronouns overlap in the handwriting; only clearly legible conjugations were extracted."
-      },
-      {
-        "source_image": "sources/archive/2026/week_01/images/lesson-01-page-02.jpg",
-        "text": "One vocabulary item between 'het dorp' and 'leren'",
-        "reason": "OCR and visual inspection do not agree on the Dutch word."
-      },
-      {
-        "source_image": "sources/archive/2026/week_01/images/lesson-03-page-01.jpg",
-        "text": "One item near 'meneer' and one after 'u'",
-        "reason": "The handwriting is too faint to distinguish the intended words reliably."
-      },
-      {
-        "source_image": "sources/archive/2026/week_01/images/lesson-05-page-01.jpg",
-        "text": "One verb after 'de markt'",
-        "reason": "It may be 'praten', but the initial letters are not reliable enough to store canonically."
-      },
-      {
-        "source_image": "sources/archive/2026/week_01/images/lesson-05-page-03.jpg",
-        "text": "The exact plural-rule list for endings -el/-en/-er/-je",
-        "reason": "The rule is identifiable, but parts of the handwritten ending list are cramped; the canonical explanation was normalized from only the clear portion."
-      },
-      {
-        "source_image": "sources/archive/2026/week_01/images/lesson-07-page-02.jpg",
-        "text": "Short vocabulary fragment containing 'zoon' and possibly 'ander/anders'",
-        "reason": "The page is sparse and several entries are clipped or abbreviated."
-      },
-      {
-        "source_image": "sources/archive/2026/week_01/images/lesson-07-page-07.jpg",
-        "text": "Two handwritten digital-time examples around quarter to four and quarter past nine",
-        "reason": "The hour labels are partly overwritten; the general grammar pattern is clear but the exact examples are not all retained."
-      },
-      {
-        "source_image": "sources/archive/2026/week_01/images/lesson-08-page-01.jpg",
-        "text": "One word after 'daar' and one word before 'lopen'",
-        "reason": "Likely 'druk' and 'lekker', but the source order and pairing with English glosses are not completely clear."
-      },
-      {
-        "source_image": "sources/archive/2026/week_01/images/lesson-08-page-02.jpg",
-        "text": "Compact phrase before '= will do'",
-        "reason": "Read as 'zal ik doen' using the existing seed entry as supporting context; retain for human confirmation."
-      }
-    ],
+    "needs_review": [],
     "notes": "First real ingestion run. The batch contains eight dated lesson groups but is labeled week_01 as requested."
   }
 ]

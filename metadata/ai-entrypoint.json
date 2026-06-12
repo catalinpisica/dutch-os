@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "repo_purpose": "Dutch OS is the learner's AI-maintained, long-term Dutch language memory and tutoring dataset.",
+  "source_of_truth": "Canonical learning data lives in knowledge/**/items.json and reviews/items.json. Metadata is derived; sources/archive is immutable evidence.",
+  "recommended_fetch_order": [
+    "metadata/ai-entrypoint.json",
+    "metadata/catalog.json",
+    "reviews/items.json",
+    "prompts/chatgpt-tutor-entrypoint.md",
+    "prompts/tutor.md"
+  ],
+  "total_items": 256,
+  "counts_by_type": {
+    "dialogue": 4,
+    "expression": 28,
+    "grammar_pattern": 13,
+    "mistake": 2,
+    "particle": 10,
+    "verb_construction": 9,
+    "word": 190
+  },
+  "latest_week": "week_01",
+  "latest_batch": "week_01",
+  "paths": {
+    "manifest": "MANIFEST.md",
+    "catalog": "metadata/catalog.json",
+    "statistics": "metadata/statistics.json",
+    "tags": "metadata/tags.json",
+    "needs_review": "metadata/needs_review.json",
+    "reviews": "reviews/items.json",
+    "tutoring_entrypoint": "prompts/chatgpt-tutor-entrypoint.md",
+    "tutoring_prompt": "prompts/tutor.md",
+    "ingestion_prompt": "prompts/ingest-weekly-notes.md",
+    "schemas": {
+      "common": "schemas/common.schema.json",
+      "words": "schemas/words.schema.json",
+      "expressions": "schemas/expressions.schema.json",
+      "particles": "schemas/particles.schema.json",
+      "grammar_patterns": "schemas/grammar-patterns.schema.json",
+      "verb_constructions": "schemas/verb-constructions.schema.json",
+      "dialogues": "schemas/dialogues.schema.json",
+      "mistakes": "schemas/mistakes.schema.json",
+      "reviews": "schemas/reviews.schema.json",
+      "needs_review": "schemas/needs-review.schema.json"
+    },
+    "canonical": {
+      "words": "knowledge/words/items.json",
+      "expressions": "knowledge/expressions/items.json",
+      "particles": "knowledge/particles/items.json",
+      "grammar-patterns": "knowledge/grammar-patterns/items.json",
+      "verb-constructions": "knowledge/verb-constructions/items.json",
+      "dialogues": "knowledge/dialogues/items.json",
+      "mistakes": "knowledge/mistakes/items.json"
+    }
+  }
+}

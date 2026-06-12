@@ -1,8 +1,8 @@
 {
   "generated_at": "2026-06-12",
   "totals": {
-    "knowledge_items": 248,
-    "words": 182,
+    "knowledge_items": 256,
+    "words": 190,
     "expressions": 28,
     "particles": 10,
     "grammar-patterns": 13,
@@ -11,6 +11,6 @@
     "mistakes": 2
   },
   "by_week": {
-    "week_01": 248
+    "week_01": 256
   }
 }

@@ -3,7 +3,7 @@
   "tags": [
     {
       "tag": "A1",
-      "count": 248
+      "count": 256
     },
     {
       "tag": "articles",
@@ -15,6 +15,10 @@
     },
     {
       "tag": "demonstratives",
+      "count": 1
+    },
+    {
+      "tag": "family",
       "count": 1
     },
     {
@@ -31,7 +35,7 @@
     },
     {
       "tag": "formal",
-      "count": 4
+      "count": 6
     },
     {
       "tag": "health",
@@ -55,7 +59,7 @@
     },
     {
       "tag": "irregular",
-      "count": 6
+      "count": 7
     },
     {
       "tag": "irregular_plural",
@@ -159,7 +163,7 @@
     },
     {
       "tag": "time",
-      "count": 9
+      "count": 12
     },
     {
       "tag": "verbs",
