@@ -1,0 +1,13 @@
+{
+  "batch_week_format": "week_NN",
+  "preserve_original_images": true,
+  "mark_uncertain_transcription": true,
+  "required_translation_languages": ["english"],
+  "duplicate_checks": [
+    "exact",
+    "normalized",
+    "morphological",
+    "semantic"
+  ],
+  "generate_weekly_review": true
+}

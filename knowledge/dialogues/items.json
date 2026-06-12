@@ -1,0 +1,239 @@
+[
+  {
+    "id": "dialogue-introduction-and-phone-number",
+    "type": "dialogue",
+    "title": "Introductions and telephone numbers",
+    "setting": "Two new acquaintances introduce themselves and exchange contact details.",
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-02-page-02.jpg",
+      "sources/archive/2026/week_01/images/lesson-02-page-03.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "introduction",
+      "personal_details"
+    ],
+    "target_ids": [
+      "expression-waar-kom-je-vandaan",
+      "expression-hoe-lang-woon-je-al-in-nederland",
+      "expression-dat-klopt"
+    ],
+    "turns": [
+      {
+        "speaker": "A",
+        "dutch": "Hallo, ik ben Teo. Hoe heet jij?",
+        "english": "Hello, I am Teo. What is your name?"
+      },
+      {
+        "speaker": "B",
+        "dutch": "Ik ben Julia.",
+        "english": "I am Julia."
+      },
+      {
+        "speaker": "A",
+        "dutch": "Waar kom je vandaan, Julia?",
+        "english": "Where are you from, Julia?"
+      },
+      {
+        "speaker": "B",
+        "dutch": "Ik kom uit Argentinië. En jij?",
+        "english": "I come from Argentina. And you?"
+      },
+      {
+        "speaker": "A",
+        "dutch": "Ik kom uit Rusland. Hoe lang woon je al in Nederland?",
+        "english": "I come from Russia. How long have you been living in the Netherlands?"
+      },
+      {
+        "speaker": "B",
+        "dutch": "Eén maand. Ik woon in Almere.",
+        "english": "One month. I live in Almere."
+      },
+      {
+        "speaker": "A",
+        "dutch": "Heb je een Nederlands telefoonnummer?",
+        "english": "Do you have a Dutch telephone number?"
+      },
+      {
+        "speaker": "B",
+        "dutch": "Ja, dat heb ik.",
+        "english": "Yes, I do."
+      },
+      {
+        "speaker": "A",
+        "dutch": "Wat is je achternaam?",
+        "english": "What is your last name?"
+      },
+      {
+        "speaker": "B",
+        "dutch": "Fuentes.",
+        "english": "Fuentes."
+      },
+      {
+        "speaker": "A",
+        "dutch": "Hoe spel ik dat?",
+        "english": "How do I spell that?"
+      }
+    ],
+    "notes": "Normalized from handwritten class dialogue; obvious spelling noise was corrected without changing meaning."
+  },
+  {
+    "id": "dialogue-new-neighbor",
+    "type": "dialogue",
+    "title": "A new neighbor",
+    "setting": "A new resident introduces herself to her neighbors.",
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-04-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "neighbors",
+      "introduction"
+    ],
+    "target_ids": [
+      "expression-leuk-je-te-ontmoeten"
+    ],
+    "turns": [
+      {
+        "speaker": "Saida",
+        "dutch": "Hallo, ik ben Saida. Ik ben de nieuwe buurvrouw.",
+        "english": "Hello, I am Saida. I am the new female neighbor."
+      },
+      {
+        "speaker": "Saida",
+        "dutch": "Ik woon sinds twee weken in mijn nieuwe huis.",
+        "english": "I have lived in my new house for two weeks."
+      },
+      {
+        "speaker": "Saida",
+        "dutch": "Ik werk in het weekend in een restaurant.",
+        "english": "I work in a restaurant at the weekend."
+      },
+      {
+        "speaker": "Saida",
+        "dutch": "Ik ben niet getrouwd en ik heb geen kinderen.",
+        "english": "I am not married and I have no children."
+      },
+      {
+        "speaker": "Saida",
+        "dutch": "Ik woon met mijn poes. Ik houd van koken en sporten.",
+        "english": "I live with my cat. I love cooking and exercising."
+      },
+      {
+        "speaker": "Saida",
+        "dutch": "Ik wil mijn nieuwe buren graag ontmoeten.",
+        "english": "I would like to meet my new neighbors."
+      }
+    ],
+    "notes": "Normalized from handwritten class dialogue; obvious spelling noise was corrected without changing meaning."
+  },
+  {
+    "id": "dialogue-at-the-market",
+    "type": "dialogue",
+    "title": "At the market",
+    "setting": "A customer buys groceries from a seller.",
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-06-page-01.jpg",
+      "sources/archive/2026/week_01/images/lesson-06-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "shopping",
+      "service"
+    ],
+    "target_ids": [
+      "expression-zeg-het-maar",
+      "expression-anders-nog-iets",
+      "expression-fijne-dag"
+    ],
+    "turns": [
+      {
+        "speaker": "Verkoper",
+        "dutch": "Goedemiddag, zeg het maar.",
+        "english": "Good afternoon, what can I get you?"
+      },
+      {
+        "speaker": "Klant",
+        "dutch": "Een kilo aardappels en zes eieren, alstublieft.",
+        "english": "A kilo of potatoes and six eggs, please."
+      },
+      {
+        "speaker": "Verkoper",
+        "dutch": "Anders nog iets?",
+        "english": "Anything else?"
+      },
+      {
+        "speaker": "Klant",
+        "dutch": "Nee, dat is alles. Kan ik pinnen?",
+        "english": "No, that is everything. Can I pay by card?"
+      },
+      {
+        "speaker": "Verkoper",
+        "dutch": "Natuurlijk. Fijne dag!",
+        "english": "Of course. Have a nice day!"
+      }
+    ],
+    "notes": "Normalized from handwritten class dialogue; obvious spelling noise was corrected without changing meaning."
+  },
+  {
+    "id": "dialogue-receiving-a-visitor",
+    "type": "dialogue",
+    "title": "Receiving a visitor",
+    "setting": "Someone welcomes a visitor into their home.",
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-08-page-03.jpg",
+      "sources/archive/2026/week_01/images/lesson-08-page-04.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "visiting",
+      "hospitality"
+    ],
+    "target_ids": [
+      "expression-kom-binnen",
+      "expression-geef-je-jas-maar-hier",
+      "expression-het-maakt-me-niet-uit"
+    ],
+    "turns": [
+      {
+        "speaker": "Host",
+        "dutch": "Kom binnen. Geef je jas maar hier.",
+        "english": "Come in. Just give me your coat."
+      },
+      {
+        "speaker": "Visitor",
+        "dutch": "Dank je wel.",
+        "english": "Thank you."
+      },
+      {
+        "speaker": "Host",
+        "dutch": "Wil je koffie of thee?",
+        "english": "Would you like coffee or tea?"
+      },
+      {
+        "speaker": "Visitor",
+        "dutch": "Het maakt me niet uit. Doe maar thee.",
+        "english": "I don't mind. Tea is fine."
+      },
+      {
+        "speaker": "Host",
+        "dutch": "Met melk en suiker?",
+        "english": "With milk and sugar?"
+      },
+      {
+        "speaker": "Visitor",
+        "dutch": "Melk graag, maar doe maar geen suiker.",
+        "english": "Milk please, but no sugar."
+      }
+    ],
+    "notes": "Normalized from handwritten class dialogue; obvious spelling noise was corrected without changing meaning."
+  }
+]

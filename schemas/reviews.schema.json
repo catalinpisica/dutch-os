@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "reviews.schema.json",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "id",
+      "type",
+      "week",
+      "ingestion_date",
+      "source_images",
+      "focus_ids",
+      "recall",
+      "translation",
+      "cloze",
+      "grammar",
+      "roleplay",
+      "mistake_ids",
+      "needs_review",
+      "notes"
+    ],
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "type": {
+        "const": "review"
+      },
+      "week": {
+        "$ref": "common.schema.json#/$defs/week"
+      },
+      "ingestion_date": {
+        "type": "string",
+        "format": "date"
+      },
+      "source_images": {
+        "type": "array",
+        "minItems": 1,
+        "uniqueItems": true,
+        "items": {
+          "$ref": "common.schema.json#/$defs/sourceImage"
+        }
+      },
+      "focus_ids": {
+        "type": "array",
+        "uniqueItems": true,
+        "items": {
+          "type": "string"
+        }
+      },
+      "recall": {
+        "type": "array",
+        "items": {
+          "$ref": "#/$defs/exercise"
+        }
+      },
+      "translation": {
+        "type": "array",
+        "items": {
+          "$ref": "#/$defs/exercise"
+        }
+      },
+      "cloze": {
+        "type": "array",
+        "items": {
+          "$ref": "#/$defs/exercise"
+        }
+      },
+      "grammar": {
+        "type": "array",
+        "items": {
+          "$ref": "#/$defs/exercise"
+        }
+      },
+      "roleplay": {
+        "type": "array",
+        "items": {
+          "$ref": "#/$defs/exercise"
+        }
+      },
+      "mistake_ids": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "needs_review": {
+        "type": "array",
+        "items": {
+          "$ref": "needs-review.schema.json#/$defs/reviewItem"
+        }
+      },
+      "notes": {
+        "type": "string"
+      }
+    }
+  },
+  "$defs": {
+    "exercise": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "prompt",
+        "answer",
+        "target_ids"
+      ],
+      "properties": {
+        "prompt": {
+          "type": "string"
+        },
+        "answer": {
+          "type": "string"
+        },
+        "target_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

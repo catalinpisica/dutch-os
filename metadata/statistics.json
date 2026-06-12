@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-06-12",
+  "totals": {
+    "knowledge_items": 248,
+    "words": 182,
+    "expressions": 28,
+    "particles": 10,
+    "grammar-patterns": 13,
+    "verb-constructions": 9,
+    "dialogues": 4,
+    "mistakes": 2
+  },
+  "by_week": {
+    "week_01": 248
+  }
+}

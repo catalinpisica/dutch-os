@@ -1,0 +1,288 @@
+[
+  {
+    "id": "verb_construction-houden-van",
+    "type": "verb_construction",
+    "dutch": "houden van",
+    "english": "to love; to like",
+    "category": "verb_construction",
+    "examples": [
+      {
+        "dutch": "Ik houd van koken.",
+        "english": "I love cooking.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-04-page-01.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "fixed_preposition"
+    ],
+    "notes": "",
+    "infinitive": "houden",
+    "construction": "houden van + noun/person",
+    "word_order_notes": "The finite form of 'houden' is conjugated; 'van' remains with its object.",
+    "fixed_preposition": "van",
+    "separable": false
+  },
+  {
+    "id": "verb_construction-boodschappen-doen",
+    "type": "verb_construction",
+    "dutch": "boodschappen doen",
+    "english": "to do the grocery shopping",
+    "category": "verb_construction",
+    "examples": [
+      {
+        "dutch": "Ik doe zaterdag boodschappen.",
+        "english": "I do the grocery shopping on Saturday.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-05-page-01.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "shopping"
+    ],
+    "notes": "",
+    "infinitive": "doen",
+    "construction": "boodschappen doen",
+    "word_order_notes": "Conjugate 'doen'; 'boodschappen' remains the object.",
+    "fixed_preposition": null,
+    "separable": false
+  },
+  {
+    "id": "verb_construction-kunnen-infinitief",
+    "type": "verb_construction",
+    "dutch": "kunnen + infinitief",
+    "english": "can; to be able to",
+    "category": "verb_construction",
+    "examples": [
+      {
+        "dutch": "Ik kan morgen komen.",
+        "english": "I can come tomorrow.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-06-page-03.jpg",
+      "sources/archive/2026/week_01/images/lesson-06-page-04.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "modal"
+    ],
+    "notes": "",
+    "infinitive": "kunnen",
+    "construction": "conjugated kunnen + infinitive",
+    "word_order_notes": "The infinitive normally goes at the end of the main clause.",
+    "fixed_preposition": null,
+    "separable": false
+  },
+  {
+    "id": "verb_construction-mogen-infinitief",
+    "type": "verb_construction",
+    "dutch": "mogen + infinitief",
+    "english": "may; to be allowed to",
+    "category": "verb_construction",
+    "examples": [
+      {
+        "dutch": "Je mag binnenkomen.",
+        "english": "You may come in.",
+        "source_type": "ai_generated"
+      },
+      {
+        "dutch": "We mogen in de les niet appen.",
+        "english": "We are not allowed to text in class.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-06-page-02.jpg",
+      "sources/archive/2026/week_01/images/lesson-06-page-04.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "modal"
+    ],
+    "notes": "",
+    "infinitive": "mogen",
+    "construction": "conjugated mogen + infinitive",
+    "word_order_notes": "The infinitive normally goes at the end of the main clause.",
+    "fixed_preposition": null,
+    "separable": false
+  },
+  {
+    "id": "verb_construction-moeten-infinitief",
+    "type": "verb_construction",
+    "dutch": "moeten + infinitief",
+    "english": "must; to have to",
+    "category": "verb_construction",
+    "examples": [
+      {
+        "dutch": "Ik moet huiswerk maken.",
+        "english": "I have to do homework.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-06-page-03.jpg",
+      "sources/archive/2026/week_01/images/lesson-06-page-05.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "modal"
+    ],
+    "notes": "",
+    "infinitive": "moeten",
+    "construction": "conjugated moeten + infinitive",
+    "word_order_notes": "The infinitive normally goes at the end of the main clause.",
+    "fixed_preposition": null,
+    "separable": false
+  },
+  {
+    "id": "verb_construction-willen-infinitief",
+    "type": "verb_construction",
+    "dutch": "willen + infinitief",
+    "english": "to want to",
+    "category": "verb_construction",
+    "examples": [
+      {
+        "dutch": "Ik wil een ijsje eten.",
+        "english": "I want to eat an ice cream.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-04-page-02.jpg",
+      "sources/archive/2026/week_01/images/lesson-06-page-03.jpg",
+      "sources/archive/2026/week_01/images/lesson-06-page-05.jpg",
+      "sources/archive/2026/week_01/images/lesson-07-page-05.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "modal"
+    ],
+    "notes": "",
+    "infinitive": "willen",
+    "construction": "conjugated willen + infinitive",
+    "word_order_notes": "The infinitive normally goes at the end of the main clause.",
+    "fixed_preposition": null,
+    "separable": false
+  },
+  {
+    "id": "verb_construction-zullen-infinitief",
+    "type": "verb_construction",
+    "dutch": "zullen + infinitief",
+    "english": "shall; will",
+    "category": "verb_construction",
+    "examples": [
+      {
+        "dutch": "Zullen we samen huiswerk maken?",
+        "english": "Shall we do homework together?",
+        "source_type": "ai_generated"
+      },
+      {
+        "dutch": "Ik zal dit weekend koken.",
+        "english": "I will cook this weekend.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-06-page-03.jpg",
+      "sources/archive/2026/week_01/images/lesson-06-page-05.jpg",
+      "sources/archive/2026/week_01/images/lesson-08-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "modal"
+    ],
+    "notes": "",
+    "infinitive": "zullen",
+    "construction": "conjugated zullen + infinitive",
+    "word_order_notes": "Use it for proposals, promises, or future intent; the infinitive normally goes at the end.",
+    "fixed_preposition": null,
+    "separable": false
+  },
+  {
+    "id": "verb_construction-zin-hebben-in-om-te",
+    "type": "verb_construction",
+    "dutch": "zin hebben in / om te",
+    "english": "to feel like; to be in the mood for",
+    "category": "verb_construction",
+    "examples": [
+      {
+        "dutch": "Ik heb zin in thee.",
+        "english": "I feel like having tea.",
+        "source_type": "ai_generated"
+      },
+      {
+        "dutch": "Ik heb zin om te dansen.",
+        "english": "I feel like dancing.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-06-page-06.jpg",
+      "sources/archive/2026/week_01/images/lesson-07-page-03.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "fixed_expression"
+    ],
+    "notes": "",
+    "infinitive": "hebben",
+    "construction": "zin hebben in + noun OR zin hebben om te + infinitive",
+    "word_order_notes": "Use 'in' before a noun and 'om te' before an infinitive phrase.",
+    "fixed_preposition": null,
+    "separable": false
+  },
+  {
+    "id": "verb_construction-eruitzien",
+    "type": "verb_construction",
+    "dutch": "eruitzien",
+    "english": "to look; to appear",
+    "category": "verb_construction",
+    "examples": [
+      {
+        "dutch": "Hij ziet er moe uit.",
+        "english": "He looks tired.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-08-page-03.jpg",
+      "sources/archive/2026/week_01/images/lesson-08-page-04.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "separable"
+    ],
+    "notes": "",
+    "infinitive": "eruitzien",
+    "construction": "er + complement + uitzien",
+    "word_order_notes": "In a main clause the verb separates: 'Je ziet er goed uit.'",
+    "fixed_preposition": null,
+    "separable": true
+  }
+]

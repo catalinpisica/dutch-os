@@ -1,0 +1,19 @@
+[
+  {
+    "id": "ingestion-week-01",
+    "week": "week_01",
+    "ingestion_date": "2026-06-12",
+    "image_count": 35,
+    "created_count": 243,
+    "enriched_count": 5,
+    "duplicate_ids": [
+      "expression-geef-je-jas-maar-hier",
+      "expression-het-maakt-me-niet-uit",
+      "particle-alweer",
+      "particle-nog-steeds",
+      "expression-zal-ik-doen"
+    ],
+    "needs_review_count": 9,
+    "status": "complete"
+  }
+]

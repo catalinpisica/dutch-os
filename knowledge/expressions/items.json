@@ -1,0 +1,719 @@
+[
+  {
+    "id": "expression-ik-heb-dorst",
+    "type": "expression",
+    "dutch": "Ik heb dorst.",
+    "english": "I am thirsty.",
+    "category": "physical_state",
+    "examples": [
+      {
+        "dutch": "Ik heb dorst. Mag ik water?",
+        "english": "I am thirsty. May I have water?",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-01-page-01.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "health"
+    ],
+    "notes": "",
+    "register": "neutral"
+  },
+  {
+    "id": "expression-ik-heb-honger",
+    "type": "expression",
+    "dutch": "Ik heb honger.",
+    "english": "I am hungry.",
+    "category": "physical_state",
+    "examples": [
+      {
+        "dutch": "Ik heb honger, dus ik ga koken.",
+        "english": "I am hungry, so I am going to cook.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-01-page-01.jpg",
+      "sources/archive/2026/week_01/images/lesson-03-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "food"
+    ],
+    "notes": "",
+    "register": "neutral"
+  },
+  {
+    "id": "expression-waar-kom-je-vandaan",
+    "type": "expression",
+    "dutch": "Waar kom je vandaan?",
+    "english": "Where are you from?",
+    "category": "introduction",
+    "examples": [
+      {
+        "dutch": "Waar kom je vandaan? Ik kom uit Roemenië.",
+        "english": "Where are you from? I come from Romania.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-02-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "question"
+    ],
+    "notes": "Use 'u' instead of 'je' in formal contexts.",
+    "register": "neutral"
+  },
+  {
+    "id": "expression-hoe-lang-woon-je-al-in-nederland",
+    "type": "expression",
+    "dutch": "Hoe lang woon je al in Nederland?",
+    "english": "How long have you been living in the Netherlands?",
+    "category": "introduction",
+    "examples": [
+      {
+        "dutch": "Hoe lang woon je al in Nederland? Al twee jaar.",
+        "english": "How long have you been living in the Netherlands? For two years already.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-02-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "time"
+    ],
+    "notes": "",
+    "register": "neutral"
+  },
+  {
+    "id": "expression-dat-klopt",
+    "type": "expression",
+    "dutch": "Dat klopt.",
+    "english": "That is correct.",
+    "category": "confirmation",
+    "examples": [
+      {
+        "dutch": "Is dit je telefoonnummer? Ja, dat klopt.",
+        "english": "Is this your telephone number? Yes, that is correct.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-02-page-03.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "conversation"
+    ],
+    "notes": "",
+    "register": "neutral"
+  },
+  {
+    "id": "expression-hoe-spel-ik-dat",
+    "type": "expression",
+    "dutch": "Hoe spel ik dat?",
+    "english": "How do I spell that?",
+    "category": "communication",
+    "examples": [
+      {
+        "dutch": "Hoe spel ik uw achternaam?",
+        "english": "How do I spell your last name?",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-02-page-03.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "spelling"
+    ],
+    "notes": "",
+    "register": "neutral"
+  },
+  {
+    "id": "expression-kan-ik-u-helpen",
+    "type": "expression",
+    "dutch": "Kan ik u helpen?",
+    "english": "Can I help you?",
+    "category": "service",
+    "examples": [
+      {
+        "dutch": "Goedemorgen, kan ik u helpen?",
+        "english": "Good morning, can I help you?",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-03-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "formal",
+      "modal"
+    ],
+    "notes": "The handwriting is slightly unclear, but the full phrase and translation are legible.",
+    "register": "formal"
+  },
+  {
+    "id": "expression-mag-ik-wat-vragen",
+    "type": "expression",
+    "dutch": "Mag ik wat vragen?",
+    "english": "May I ask something?",
+    "category": "politeness",
+    "examples": [
+      {
+        "dutch": "Mag ik wat vragen? Waar is het gemeentehuis?",
+        "english": "May I ask something? Where is the town hall?",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-03-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "modal"
+    ],
+    "notes": "",
+    "register": "neutral"
+  },
+  {
+    "id": "expression-graag-gedaan",
+    "type": "expression",
+    "dutch": "Graag gedaan.",
+    "english": "You're welcome.",
+    "category": "politeness",
+    "examples": [
+      {
+        "dutch": "Dank u wel. Graag gedaan.",
+        "english": "Thank you. You're welcome.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-03-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1"
+    ],
+    "notes": "",
+    "register": "neutral"
+  },
+  {
+    "id": "expression-leuk-je-te-ontmoeten",
+    "type": "expression",
+    "dutch": "Leuk je te ontmoeten.",
+    "english": "Nice to meet you.",
+    "category": "introduction",
+    "examples": [
+      {
+        "dutch": "Hallo, ik ben Ana. Leuk je te ontmoeten.",
+        "english": "Hello, I am Ana. Nice to meet you.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-04-page-03.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "social"
+    ],
+    "notes": "Informal; use 'u' for a formal version.",
+    "register": "informal"
+  },
+  {
+    "id": "expression-zullen-we-elkaar-om-acht-uur-ontmoeten",
+    "type": "expression",
+    "dutch": "Zullen we elkaar om acht uur ontmoeten?",
+    "english": "Shall we meet each other at eight o'clock?",
+    "category": "arrangements",
+    "examples": [
+      {
+        "dutch": "Zullen we elkaar morgen ontmoeten?",
+        "english": "Shall we meet each other tomorrow?",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-04-page-03.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "modal",
+      "time"
+    ],
+    "notes": "",
+    "register": "neutral"
+  },
+  {
+    "id": "expression-de-rijst-is-op",
+    "type": "expression",
+    "dutch": "De rijst is op.",
+    "english": "The rice is finished; we are out of rice.",
+    "category": "shopping",
+    "examples": [
+      {
+        "dutch": "De melk is op. Ik ga naar de supermarkt.",
+        "english": "The milk is finished. I am going to the supermarket.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-05-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "food"
+    ],
+    "notes": "",
+    "register": "neutral"
+  },
+  {
+    "id": "expression-tot-later",
+    "type": "expression",
+    "dutch": "Tot later.",
+    "english": "See you later.",
+    "category": "farewell",
+    "examples": [
+      {
+        "dutch": "Ik ga nu naar huis. Tot later!",
+        "english": "I am going home now. See you later!",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-05-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "conversation"
+    ],
+    "notes": "",
+    "register": "neutral"
+  },
+  {
+    "id": "expression-zeg-het-maar",
+    "type": "expression",
+    "dutch": "Zeg het maar.",
+    "english": "Go ahead; tell me what you would like.",
+    "category": "service",
+    "examples": [
+      {
+        "dutch": "Goedemiddag, zeg het maar.",
+        "english": "Good afternoon, what can I get you?",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-06-page-01.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "shopping",
+      "particle"
+    ],
+    "notes": "Common service phrase; 'maar' softens the imperative.",
+    "register": "neutral"
+  },
+  {
+    "id": "expression-kijk-eens",
+    "type": "expression",
+    "dutch": "Kijk eens.",
+    "english": "Take a look.",
+    "category": "conversation",
+    "examples": [
+      {
+        "dutch": "Kijk eens, deze appels zijn vers.",
+        "english": "Take a look, these apples are fresh.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-06-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "particle"
+    ],
+    "notes": "",
+    "register": "neutral"
+  },
+  {
+    "id": "expression-anders-nog-iets",
+    "type": "expression",
+    "dutch": "Anders nog iets?",
+    "english": "Anything else?",
+    "category": "service",
+    "examples": [
+      {
+        "dutch": "Een kilo appels, alstublieft. Anders nog iets?",
+        "english": "A kilo of apples, please. Anything else?",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-06-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "shopping"
+    ],
+    "notes": "",
+    "register": "neutral"
+  },
+  {
+    "id": "expression-fijne-dag",
+    "type": "expression",
+    "dutch": "Fijne dag!",
+    "english": "Have a nice day!",
+    "category": "farewell",
+    "examples": [
+      {
+        "dutch": "Bedankt en een fijne dag!",
+        "english": "Thank you and have a nice day!",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-06-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "politeness"
+    ],
+    "notes": "",
+    "register": "neutral"
+  },
+  {
+    "id": "expression-ik-heb-zin-in",
+    "type": "expression",
+    "dutch": "Ik heb zin in ...",
+    "english": "I feel like ...; I am in the mood for ...",
+    "category": "preference",
+    "examples": [
+      {
+        "dutch": "Ik heb zin in koffie.",
+        "english": "I feel like having coffee.",
+        "source_type": "ai_generated"
+      },
+      {
+        "dutch": "Ik heb zin om te dansen.",
+        "english": "I feel like dancing.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-06-page-06.jpg",
+      "sources/archive/2026/week_01/images/lesson-07-page-03.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "fixed_expression"
+    ],
+    "notes": "Use 'zin in' with a noun and 'zin om te' with an infinitive.",
+    "register": "neutral"
+  },
+  {
+    "id": "expression-tot-zo",
+    "type": "expression",
+    "dutch": "Tot zo.",
+    "english": "See you soon.",
+    "category": "farewell",
+    "examples": [
+      {
+        "dutch": "Ik kom over tien minuten. Tot zo!",
+        "english": "I will come in ten minutes. See you soon!",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-07-page-04.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "conversation"
+    ],
+    "notes": "",
+    "register": "neutral"
+  },
+  {
+    "id": "expression-het-maakt-me-niet-uit",
+    "type": "expression",
+    "dutch": "Het maakt me niet uit.",
+    "english": "I don't mind; it doesn't matter to me.",
+    "category": "preference",
+    "examples": [
+      {
+        "dutch": "Koffie of thee? Het maakt me niet uit.",
+        "english": "Coffee or tea? I don't mind.",
+        "source_type": "ai_generated"
+      },
+      {
+        "dutch": "Zullen we binnen of buiten zitten? Het maakt me niet uit.",
+        "english": "Shall we sit inside or outside? I don't mind.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-08-page-04.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "fixed_expression"
+    ],
+    "notes": "Merged with the existing seed entry and linked to the handwritten source.",
+    "register": "neutral"
+  },
+  {
+    "id": "expression-je-ziet-er-goed-uit",
+    "type": "expression",
+    "dutch": "Je ziet er goed uit.",
+    "english": "You look well; you look good.",
+    "category": "health",
+    "examples": [
+      {
+        "dutch": "Je ziet er vandaag goed uit.",
+        "english": "You look good today.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-08-page-04.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "separable_verb"
+    ],
+    "notes": "",
+    "register": "neutral"
+  },
+  {
+    "id": "expression-doe-maar",
+    "type": "expression",
+    "dutch": "Doe maar.",
+    "english": "Go ahead; that's fine.",
+    "category": "response",
+    "examples": [
+      {
+        "dutch": "Zal ik koffie maken? Doe maar.",
+        "english": "Shall I make coffee? Go ahead.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-08-page-04.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "particle"
+    ],
+    "notes": "Meaning depends on context; it often accepts an offer.",
+    "register": "neutral"
+  },
+  {
+    "id": "expression-doe-maar-niet",
+    "type": "expression",
+    "dutch": "Doe maar niet.",
+    "english": "Better not; no thanks.",
+    "category": "response",
+    "examples": [
+      {
+        "dutch": "Zal ik suiker toevoegen? Doe maar niet.",
+        "english": "Shall I add sugar? Better not.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-08-page-04.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "particle",
+      "negation"
+    ],
+    "notes": "",
+    "register": "neutral"
+  },
+  {
+    "id": "expression-dat-is-lang-geleden",
+    "type": "expression",
+    "dutch": "Dat is lang geleden.",
+    "english": "That was a long time ago; long time no see.",
+    "category": "social",
+    "examples": [
+      {
+        "dutch": "Wat leuk je weer te zien. Dat is lang geleden!",
+        "english": "How nice to see you again. It has been a long time!",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-08-page-04.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "time"
+    ],
+    "notes": "",
+    "register": "neutral"
+  },
+  {
+    "id": "expression-ik-ben-goed-bezig",
+    "type": "expression",
+    "dutch": "Ik ben goed bezig.",
+    "english": "I am doing well; I am making good progress.",
+    "category": "encouragement",
+    "examples": [
+      {
+        "dutch": "Ik leer elke dag Nederlands. Ik ben goed bezig.",
+        "english": "I study Dutch every day. I am making good progress.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-08-page-04.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "fixed_expression"
+    ],
+    "notes": "",
+    "register": "neutral"
+  },
+  {
+    "id": "expression-kom-binnen",
+    "type": "expression",
+    "dutch": "Kom binnen.",
+    "english": "Come in.",
+    "category": "visiting",
+    "examples": [
+      {
+        "dutch": "De deur is open. Kom binnen!",
+        "english": "The door is open. Come in!",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-08-page-04.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "imperative"
+    ],
+    "notes": "informal",
+    "register": "informal"
+  },
+  {
+    "id": "expression-geef-je-jas-maar-hier",
+    "type": "expression",
+    "dutch": "Geef je jas maar hier.",
+    "english": "Just give me your coat.",
+    "category": "visiting",
+    "examples": [
+      {
+        "dutch": "Geef je jas maar hier, dan hang ik hem op.",
+        "english": "Just give me your coat and I will hang it up.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-08-page-04.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "imperative",
+      "particle"
+    ],
+    "notes": "Merged with the existing seed entry. 'Maar' makes the imperative sound welcoming rather than abrupt.",
+    "register": "informal"
+  },
+  {
+    "id": "expression-zal-ik-doen",
+    "type": "expression",
+    "dutch": "Zal ik doen.",
+    "english": "Will do; I'll do that.",
+    "category": "commitment",
+    "examples": [
+      {
+        "dutch": "Bel je me morgen? Zal ik doen.",
+        "english": "Will you call me tomorrow? Will do.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-08-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "modal",
+      "response"
+    ],
+    "notes": "Merged with the existing seed entry. The handwriting is compact, but the phrase is supported by the supplied seed example.",
+    "register": "neutral"
+  }
+]

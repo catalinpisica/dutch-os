@@ -1,0 +1,12 @@
+{
+  "learner_id": "catalin",
+  "native_language": "Romanian",
+  "support_language": "English",
+  "target_language": "Dutch",
+  "timezone": "Europe/Amsterdam",
+  "class_frequency_per_week": 2,
+  "default_difficulty_scale": {
+    "minimum": 1,
+    "maximum": 5
+  }
+}

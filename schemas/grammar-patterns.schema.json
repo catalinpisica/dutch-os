@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "grammar-patterns.schema.json",
+  "type": "array",
+  "items": {
+    "allOf": [
+      {
+        "$ref": "common.schema.json#/$defs/baseItem"
+      },
+      {
+        "type": "object",
+        "required": [
+          "pattern",
+          "explanation",
+          "constraints"
+        ],
+        "properties": {
+          "type": {
+            "const": "grammar_pattern"
+          },
+          "pattern": {
+            "type": "string",
+            "minLength": 1
+          },
+          "explanation": {
+            "type": "string",
+            "minLength": 1
+          },
+          "constraints": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    ],
+    "unevaluatedProperties": false
+  }
+}

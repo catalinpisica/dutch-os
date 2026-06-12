@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "verb-constructions.schema.json",
+  "type": "array",
+  "items": {
+    "allOf": [
+      {
+        "$ref": "common.schema.json#/$defs/baseItem"
+      },
+      {
+        "type": "object",
+        "required": [
+          "infinitive",
+          "construction",
+          "word_order_notes",
+          "fixed_preposition",
+          "separable"
+        ],
+        "properties": {
+          "type": {
+            "const": "verb_construction"
+          },
+          "infinitive": {
+            "type": "string",
+            "minLength": 1
+          },
+          "construction": {
+            "type": "string",
+            "minLength": 1
+          },
+          "word_order_notes": {
+            "type": "string"
+          },
+          "fixed_preposition": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "separable": {
+            "type": "boolean"
+          }
+        }
+      }
+    ],
+    "unevaluatedProperties": false
+  }
+}

@@ -1,0 +1,322 @@
+[
+  {
+    "id": "particle-al",
+    "type": "particle",
+    "dutch": "al",
+    "english": "already",
+    "category": "discourse_particle",
+    "examples": [
+      {
+        "dutch": "Ik woon al twee jaar in Nederland.",
+        "english": "I have already been living in the Netherlands for two years.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-02-page-01.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "time"
+    ],
+    "notes": "",
+    "functions": [
+      "marks that something has happened or continued before now"
+    ],
+    "tone_effect": "Adds an 'already' perspective."
+  },
+  {
+    "id": "particle-nog",
+    "type": "particle",
+    "dutch": "nog",
+    "english": "still; yet; another",
+    "category": "discourse_particle",
+    "examples": [
+      {
+        "dutch": "Ik wacht nog.",
+        "english": "I am still waiting.",
+        "source_type": "ai_generated"
+      },
+      {
+        "dutch": "Nog iets?",
+        "english": "Anything else?",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-04-page-01.jpg",
+      "sources/archive/2026/week_01/images/lesson-06-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "time"
+    ],
+    "notes": "",
+    "functions": [
+      "marks continuation",
+      "asks for an additional item"
+    ],
+    "tone_effect": "Meaning changes with context."
+  },
+  {
+    "id": "particle-maar",
+    "type": "particle",
+    "dutch": "maar",
+    "english": "just; go ahead",
+    "category": "discourse_particle",
+    "examples": [
+      {
+        "dutch": "Kom maar binnen.",
+        "english": "Just come in.",
+        "source_type": "ai_generated"
+      },
+      {
+        "dutch": "Zeg het maar.",
+        "english": "Go ahead, tell me.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-05-page-02.jpg",
+      "sources/archive/2026/week_01/images/lesson-06-page-01.jpg",
+      "sources/archive/2026/week_01/images/lesson-08-page-04.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "modal_particle"
+    ],
+    "notes": "This use is different from the conjunction 'maar' meaning 'but'.",
+    "functions": [
+      "softens an imperative",
+      "encourages an action"
+    ],
+    "tone_effect": "Makes commands and suggestions less abrupt."
+  },
+  {
+    "id": "particle-wel",
+    "type": "particle",
+    "dutch": "wel",
+    "english": "indeed; actually; on the other hand",
+    "category": "discourse_particle",
+    "examples": [
+      {
+        "dutch": "Ik ga wel.",
+        "english": "I will go, actually.",
+        "source_type": "ai_generated"
+      },
+      {
+        "dutch": "Dat is wel duur.",
+        "english": "That is rather expensive.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-05-page-02.jpg",
+      "sources/archive/2026/week_01/images/lesson-07-page-01.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "modal_particle"
+    ],
+    "notes": "",
+    "functions": [
+      "adds contrast",
+      "reassures or contradicts"
+    ],
+    "tone_effect": "Often carries contrast that English expresses through stress or context."
+  },
+  {
+    "id": "particle-even",
+    "type": "particle",
+    "dutch": "even",
+    "english": "for a moment; just; briefly",
+    "category": "discourse_particle",
+    "examples": [
+      {
+        "dutch": "Wacht even.",
+        "english": "Wait a moment.",
+        "source_type": "ai_generated"
+      },
+      {
+        "dutch": "Kun je even helpen?",
+        "english": "Can you help for a moment?",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-07-page-04.jpg",
+      "sources/archive/2026/week_01/images/lesson-08-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "modal_particle"
+    ],
+    "notes": "",
+    "functions": [
+      "presents an action as brief or low-effort",
+      "softens a request"
+    ],
+    "tone_effect": "Makes a request sound casual and manageable."
+  },
+  {
+    "id": "particle-hoor",
+    "type": "particle",
+    "dutch": "hoor",
+    "english": "you know; really; no problem",
+    "category": "discourse_particle",
+    "examples": [
+      {
+        "dutch": "Dat is prima, hoor.",
+        "english": "That is absolutely fine.",
+        "source_type": "ai_generated"
+      },
+      {
+        "dutch": "Ik help je wel, hoor.",
+        "english": "I'll help you, don't worry.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-07-page-01.jpg",
+      "sources/archive/2026/week_01/images/lesson-08-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "modal_particle"
+    ],
+    "notes": "",
+    "functions": [
+      "reassures",
+      "emphasizes a friendly correction or statement"
+    ],
+    "tone_effect": "Usually makes a sentence warmer or more emphatic; intonation matters."
+  },
+  {
+    "id": "particle-toch",
+    "type": "particle",
+    "dutch": "toch",
+    "english": "still; anyway; surely",
+    "category": "discourse_particle",
+    "examples": [
+      {
+        "dutch": "Je komt toch morgen?",
+        "english": "You are coming tomorrow, right?",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-08-page-04.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "modal_particle"
+    ],
+    "notes": "",
+    "functions": [
+      "seeks confirmation",
+      "marks contrast or persistence"
+    ],
+    "tone_effect": "Can sound persuasive, surprised, or corrective."
+  },
+  {
+    "id": "particle-joh",
+    "type": "particle",
+    "dutch": "joh",
+    "english": "come on; really; hey",
+    "category": "discourse_particle",
+    "examples": [
+      {
+        "dutch": "Kom op, joh!",
+        "english": "Come on!",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-08-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "informal"
+    ],
+    "notes": "",
+    "functions": [
+      "informal exclamation",
+      "expresses surprise or softens directness"
+    ],
+    "tone_effect": "Very informal and strongly dependent on intonation."
+  },
+  {
+    "id": "particle-alweer",
+    "type": "particle",
+    "dutch": "alweer",
+    "english": "again already",
+    "category": "discourse_particle",
+    "examples": [
+      {
+        "dutch": "Ben je alweer thuis?",
+        "english": "Are you home again already?",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-08-page-03.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "time"
+    ],
+    "notes": "Merged with the existing seed entry.",
+    "functions": [
+      "marks repetition",
+      "suggests something happened sooner or more often than expected"
+    ],
+    "tone_effect": "Often conveys surprise or mild annoyance."
+  },
+  {
+    "id": "particle-nog-steeds",
+    "type": "particle",
+    "dutch": "nog steeds",
+    "english": "still",
+    "category": "discourse_particle",
+    "examples": [
+      {
+        "dutch": "Ze is nog steeds ziek.",
+        "english": "She is still ill.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-08-page-01.jpg",
+      "sources/archive/2026/week_01/images/lesson-08-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "time"
+    ],
+    "notes": "Merged with the existing seed entry.",
+    "functions": [
+      "marks that a state or action continues"
+    ],
+    "tone_effect": "Can imply persistence beyond an expected point."
+  }
+]

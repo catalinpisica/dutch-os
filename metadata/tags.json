@@ -1,0 +1,177 @@
+{
+  "generated_at": "2026-06-12",
+  "tags": [
+    {
+      "tag": "A1",
+      "count": 248
+    },
+    {
+      "tag": "articles",
+      "count": 3
+    },
+    {
+      "tag": "conversation",
+      "count": 3
+    },
+    {
+      "tag": "demonstratives",
+      "count": 1
+    },
+    {
+      "tag": "fixed_expression",
+      "count": 4
+    },
+    {
+      "tag": "fixed_preposition",
+      "count": 1
+    },
+    {
+      "tag": "food",
+      "count": 2
+    },
+    {
+      "tag": "formal",
+      "count": 4
+    },
+    {
+      "tag": "health",
+      "count": 1
+    },
+    {
+      "tag": "hospitality",
+      "count": 1
+    },
+    {
+      "tag": "imperative",
+      "count": 2
+    },
+    {
+      "tag": "informal",
+      "count": 3
+    },
+    {
+      "tag": "introduction",
+      "count": 2
+    },
+    {
+      "tag": "irregular",
+      "count": 6
+    },
+    {
+      "tag": "irregular_plural",
+      "count": 2
+    },
+    {
+      "tag": "location",
+      "count": 1
+    },
+    {
+      "tag": "modal",
+      "count": 9
+    },
+    {
+      "tag": "modal_particle",
+      "count": 5
+    },
+    {
+      "tag": "modal_verbs",
+      "count": 1
+    },
+    {
+      "tag": "negation",
+      "count": 1
+    },
+    {
+      "tag": "neighbors",
+      "count": 1
+    },
+    {
+      "tag": "particle",
+      "count": 5
+    },
+    {
+      "tag": "personal_details",
+      "count": 1
+    },
+    {
+      "tag": "plural",
+      "count": 4
+    },
+    {
+      "tag": "plurals",
+      "count": 3
+    },
+    {
+      "tag": "politeness",
+      "count": 1
+    },
+    {
+      "tag": "prepositions",
+      "count": 1
+    },
+    {
+      "tag": "present_tense",
+      "count": 1
+    },
+    {
+      "tag": "question",
+      "count": 1
+    },
+    {
+      "tag": "question_words",
+      "count": 1
+    },
+    {
+      "tag": "questions",
+      "count": 1
+    },
+    {
+      "tag": "response",
+      "count": 1
+    },
+    {
+      "tag": "separable",
+      "count": 4
+    },
+    {
+      "tag": "separable_verb",
+      "count": 1
+    },
+    {
+      "tag": "separable_verbs",
+      "count": 1
+    },
+    {
+      "tag": "service",
+      "count": 1
+    },
+    {
+      "tag": "shopping",
+      "count": 4
+    },
+    {
+      "tag": "social",
+      "count": 1
+    },
+    {
+      "tag": "spelling",
+      "count": 3
+    },
+    {
+      "tag": "time",
+      "count": 9
+    },
+    {
+      "tag": "verbs",
+      "count": 2
+    },
+    {
+      "tag": "visiting",
+      "count": 1
+    },
+    {
+      "tag": "word_order",
+      "count": 3
+    }
+  ]
+}

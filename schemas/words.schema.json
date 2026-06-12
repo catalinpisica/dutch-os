@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "words.schema.json",
+  "type": "array",
+  "items": {
+    "allOf": [
+      {
+        "$ref": "common.schema.json#/$defs/baseItem"
+      },
+      {
+        "type": "object",
+        "required": [
+          "part_of_speech",
+          "article",
+          "plural"
+        ],
+        "properties": {
+          "type": {
+            "const": "word"
+          },
+          "part_of_speech": {
+            "type": "string",
+            "minLength": 1
+          },
+          "article": {
+            "enum": [
+              "de",
+              "het",
+              null
+            ]
+          },
+          "plural": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    ],
+    "unevaluatedProperties": false
+  }
+}

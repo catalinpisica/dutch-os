@@ -1,0 +1,437 @@
+[
+  {
+    "id": "grammar_pattern-persoonsvorm-op-de-tweede-plaats",
+    "type": "grammar_pattern",
+    "dutch": "Persoonsvorm op de tweede plaats",
+    "english": "The finite verb is in second position",
+    "category": "grammar",
+    "examples": [
+      {
+        "dutch": "Ik kook pasta.",
+        "english": "I cook pasta.",
+        "source_type": "ai_generated"
+      },
+      {
+        "dutch": "In het weekend kook ik pasta.",
+        "english": "At the weekend I cook pasta.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-01-page-04.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "word_order"
+    ],
+    "notes": "",
+    "pattern": "[position 1] + finite verb + subject/rest",
+    "explanation": "In a Dutch main clause, the conjugated verb normally occupies the second grammatical position.",
+    "constraints": []
+  },
+  {
+    "id": "grammar_pattern-regelmatige-werkwoorden-in-de-tegenwoordige-tijd",
+    "type": "grammar_pattern",
+    "dutch": "Regelmatige werkwoorden in de tegenwoordige tijd",
+    "english": "Regular verbs in the present tense",
+    "category": "grammar",
+    "examples": [
+      {
+        "dutch": "Ik werk. Zij werkt. Wij werken.",
+        "english": "I work. She works. We work.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-01-page-04.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "present_tense"
+    ],
+    "notes": "",
+    "pattern": "ik: stem; jij/hij/zij: stem + t; wij/jullie/zij: infinitive",
+    "explanation": "Use the stem with 'ik', add -t for most singular subjects, and use the infinitive for plural subjects.",
+    "constraints": [
+      "With inversion after jij/je, the -t is usually dropped: Werk jij?"
+    ]
+  },
+  {
+    "id": "grammar_pattern-vragen-met-inversie",
+    "type": "grammar_pattern",
+    "dutch": "Vragen met inversie",
+    "english": "Questions using inversion",
+    "category": "grammar",
+    "examples": [
+      {
+        "dutch": "Waar werk je?",
+        "english": "Where do you work?",
+        "source_type": "ai_generated"
+      },
+      {
+        "dutch": "Kun je morgen komen?",
+        "english": "Can you come tomorrow?",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-02-page-04.jpg",
+      "sources/archive/2026/week_01/images/lesson-06-page-04.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "questions"
+    ],
+    "notes": "",
+    "pattern": "question word + finite verb + subject + rest OR finite verb + subject + rest",
+    "explanation": "In a direct question, the finite verb comes before the subject.",
+    "constraints": []
+  },
+  {
+    "id": "grammar_pattern-meervoud-met-en",
+    "type": "grammar_pattern",
+    "dutch": "Meervoud met -en",
+    "english": "Plural with -en",
+    "category": "grammar",
+    "examples": [
+      {
+        "dutch": "de plant - de planten",
+        "english": "the plant - the plants",
+        "source_type": "ai_generated"
+      },
+      {
+        "dutch": "de boom - de bomen",
+        "english": "the tree - the trees",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-05-page-02.jpg",
+      "sources/archive/2026/week_01/images/lesson-05-page-03.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "plurals"
+    ],
+    "notes": "",
+    "pattern": "noun stem + en",
+    "explanation": "Many nouns form the plural with -en. Spelling may change to preserve the vowel sound.",
+    "constraints": [
+      "A doubled vowel in a closed syllable is often written as one vowel in an open plural syllable: boom - bomen.",
+      "A consonant may double after a short vowel: bos - bossen."
+    ]
+  },
+  {
+    "id": "grammar_pattern-meervoud-met-s",
+    "type": "grammar_pattern",
+    "dutch": "Meervoud met -s",
+    "english": "Plural with -s",
+    "category": "grammar",
+    "examples": [
+      {
+        "dutch": "de hobby - de hobby's",
+        "english": "the hobby - the hobbies",
+        "source_type": "ai_generated"
+      },
+      {
+        "dutch": "de tafel - de tafels",
+        "english": "the table - the tables",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-05-page-03.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "plurals"
+    ],
+    "notes": "",
+    "pattern": "noun + s or 's",
+    "explanation": "Many nouns ending in an unstressed vowel or sounds such as -el, -en, -er, -je take -s. An apostrophe preserves a long vowel sound after a, i, o, u, or y.",
+    "constraints": []
+  },
+  {
+    "id": "grammar_pattern-meervoud-gebruikt-altijd-de",
+    "type": "grammar_pattern",
+    "dutch": "Meervoud gebruikt altijd 'de'",
+    "english": "Plural nouns always use 'de'",
+    "category": "grammar",
+    "examples": [
+      {
+        "dutch": "het kind - de kinderen",
+        "english": "the child - the children",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-03-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "articles",
+      "plurals"
+    ],
+    "notes": "",
+    "pattern": "de + plural noun",
+    "explanation": "All plural nouns take the definite article 'de', even when the singular uses 'het'.",
+    "constraints": []
+  },
+  {
+    "id": "grammar_pattern-modaal-werkwoord-met-infinitief",
+    "type": "grammar_pattern",
+    "dutch": "Modaal werkwoord met infinitief",
+    "english": "Modal verb with an infinitive",
+    "category": "grammar",
+    "examples": [
+      {
+        "dutch": "Ik kan goed tekenen.",
+        "english": "I can draw well.",
+        "source_type": "ai_generated"
+      },
+      {
+        "dutch": "Wij moeten deze week huiswerk maken.",
+        "english": "We must do homework this week.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-06-page-02.jpg",
+      "sources/archive/2026/week_01/images/lesson-06-page-03.jpg",
+      "sources/archive/2026/week_01/images/lesson-06-page-04.jpg",
+      "sources/archive/2026/week_01/images/lesson-06-page-05.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "modal_verbs",
+      "word_order"
+    ],
+    "notes": "",
+    "pattern": "subject + conjugated modal + rest + infinitive",
+    "explanation": "The modal verb is conjugated and the second verb remains an infinitive at the end of the clause.",
+    "constraints": []
+  },
+  {
+    "id": "grammar_pattern-welk-en-welke",
+    "type": "grammar_pattern",
+    "dutch": "Welk en welke",
+    "english": "Welk and welke",
+    "category": "grammar",
+    "examples": [
+      {
+        "dutch": "Welk huis?",
+        "english": "Which house?",
+        "source_type": "ai_generated"
+      },
+      {
+        "dutch": "Welke straat?",
+        "english": "Which street?",
+        "source_type": "ai_generated"
+      },
+      {
+        "dutch": "Welke winkels?",
+        "english": "Which shops?",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-06-page-06.jpg",
+      "sources/archive/2026/week_01/images/lesson-07-page-05.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "question_words",
+      "articles"
+    ],
+    "notes": "",
+    "pattern": "welk + het-word; welke + de-word/plural",
+    "explanation": "Use 'welk' with singular het-nouns and 'welke' with singular de-nouns and all plurals.",
+    "constraints": []
+  },
+  {
+    "id": "grammar_pattern-dit-dat-en-deze-die",
+    "type": "grammar_pattern",
+    "dutch": "Dit/dat en deze/die",
+    "english": "This/that with de- and het-words",
+    "category": "grammar",
+    "examples": [
+      {
+        "dutch": "dit huis, dat huis",
+        "english": "this house, that house",
+        "source_type": "ai_generated"
+      },
+      {
+        "dutch": "deze straat, die straat",
+        "english": "this street, that street",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-07-page-06.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "demonstratives",
+      "articles"
+    ],
+    "notes": "",
+    "pattern": "dit/dat + het-word; deze/die + de-word",
+    "explanation": "Use 'dit' and 'dat' with singular het-nouns, and 'deze' and 'die' with de-nouns and plurals.",
+    "constraints": []
+  },
+  {
+    "id": "grammar_pattern-tot-en-tot-en-met",
+    "type": "grammar_pattern",
+    "dutch": "Tot en tot en met",
+    "english": "Until versus up to and including",
+    "category": "grammar",
+    "examples": [
+      {
+        "dutch": "Open tot vrijdag.",
+        "english": "Open until Friday.",
+        "source_type": "ai_generated"
+      },
+      {
+        "dutch": "Open tot en met vrijdag.",
+        "english": "Open through Friday, including Friday.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-07-page-06.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "time"
+    ],
+    "notes": "",
+    "pattern": "tot + endpoint; tot en met + included endpoint",
+    "explanation": "'Tot' normally excludes the endpoint, while 'tot en met' explicitly includes it.",
+    "constraints": []
+  },
+  {
+    "id": "grammar_pattern-plaats-aangeven",
+    "type": "grammar_pattern",
+    "dutch": "Plaats aangeven",
+    "english": "Expressing location",
+    "category": "grammar",
+    "examples": [
+      {
+        "dutch": "De tas staat naast de doos.",
+        "english": "The bag is next to the box.",
+        "source_type": "ai_generated"
+      },
+      {
+        "dutch": "De fiets staat tegen de muur.",
+        "english": "The bicycle is leaning against the wall.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-07-page-06.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "location",
+      "prepositions"
+    ],
+    "notes": "",
+    "pattern": "preposition + noun phrase",
+    "explanation": "Common location expressions include in, voor, achter, boven, naast, onder, tussen, tegen, aan, links van, rechts van, dicht bij, and ver van.",
+    "constraints": []
+  },
+  {
+    "id": "grammar_pattern-klokkijken-met-half-kwart-voor-en-over",
+    "type": "grammar_pattern",
+    "dutch": "Klokkijken met half, kwart, voor en over",
+    "english": "Telling time with half, quarter, to, and past",
+    "category": "grammar",
+    "examples": [
+      {
+        "dutch": "Het is half zeven.",
+        "english": "It is half past six.",
+        "source_type": "ai_generated"
+      },
+      {
+        "dutch": "Het is kwart over negen.",
+        "english": "It is quarter past nine.",
+        "source_type": "ai_generated"
+      },
+      {
+        "dutch": "Het is kwart voor vier.",
+        "english": "It is quarter to four.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-07-page-04.jpg",
+      "sources/archive/2026/week_01/images/lesson-07-page-07.jpg",
+      "sources/archive/2026/week_01/images/lesson-07-page-08.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "time"
+    ],
+    "notes": "",
+    "pattern": "[minutes] over/voor [hour]; half + next hour",
+    "explanation": "Dutch 'half zeven' means half an hour before seven, or 6:30. Use 'over' for minutes past and 'voor' for minutes to.",
+    "constraints": []
+  },
+  {
+    "id": "grammar_pattern-eruitzien-als-scheidbaar-werkwoord",
+    "type": "grammar_pattern",
+    "dutch": "Eruitzien als scheidbaar werkwoord",
+    "english": "Using the separable verb eruitzien",
+    "category": "grammar",
+    "examples": [
+      {
+        "dutch": "Je ziet er goed uit.",
+        "english": "You look well.",
+        "source_type": "ai_generated"
+      },
+      {
+        "dutch": "Ze ziet er nog moe uit.",
+        "english": "She still looks tired.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "week": "week_01",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-08-page-04.jpg"
+    ],
+    "ingestion_date": "2026-06-12",
+    "tags": [
+      "A1",
+      "separable_verbs",
+      "word_order"
+    ],
+    "notes": "",
+    "pattern": "subject + ziet/zien + er + complement + uit",
+    "explanation": "In a main clause, 'eruitzien' separates around the complement.",
+    "constraints": []
+  }
+]

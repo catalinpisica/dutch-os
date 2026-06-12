@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "needs-review.schema.json",
+  "$defs": {
+    "reviewItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_image",
+        "text",
+        "reason"
+      ],
+      "properties": {
+        "source_image": {
+          "$ref": "common.schema.json#/$defs/sourceImage"
+        },
+        "text": {
+          "type": "string"
+        },
+        "reason": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "type": "array",
+  "items": {
+    "$ref": "#/$defs/reviewItem"
+  }
+}

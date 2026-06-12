@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mistakes.schema.json",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "id",
+      "type",
+      "incorrect",
+      "correct",
+      "english",
+      "category",
+      "week",
+      "source_images",
+      "ingestion_date",
+      "tags",
+      "status",
+      "notes"
+    ],
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "type": {
+        "const": "mistake"
+      },
+      "incorrect": {
+        "type": "string"
+      },
+      "correct": {
+        "type": "string"
+      },
+      "english": {
+        "type": "string"
+      },
+      "category": {
+        "type": "string"
+      },
+      "week": {
+        "$ref": "common.schema.json#/$defs/week"
+      },
+      "source_images": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "$ref": "common.schema.json#/$defs/sourceImage"
+        }
+      },
+      "ingestion_date": {
+        "type": "string",
+        "format": "date"
+      },
+      "tags": {
+        "$ref": "common.schema.json#/$defs/tags"
+      },
+      "status": {
+        "enum": [
+          "active",
+          "improving",
+          "resolved"
+        ]
+      },
+      "notes": {
+        "type": "string"
+      }
+    }
+  }
+}

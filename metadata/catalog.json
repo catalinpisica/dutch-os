@@ -1,0 +1,2837 @@
+{
+  "generated_at": "2026-06-12",
+  "item_count": 248,
+  "items": [
+    {
+      "id": "word-zijn",
+      "type": "word",
+      "dutch": "zijn",
+      "english": "to be",
+      "category": "core_verbs",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "irregular"
+      ]
+    },
+    {
+      "id": "word-hebben",
+      "type": "word",
+      "dutch": "hebben",
+      "english": "to have",
+      "category": "core_verbs",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "irregular"
+      ]
+    },
+    {
+      "id": "word-de-dorst",
+      "type": "word",
+      "dutch": "de dorst",
+      "english": "thirst",
+      "category": "states",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-honger",
+      "type": "word",
+      "dutch": "de honger",
+      "english": "hunger",
+      "category": "states",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-het-dorp",
+      "type": "word",
+      "dutch": "het dorp",
+      "english": "village",
+      "category": "places",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-leren",
+      "type": "word",
+      "dutch": "leren",
+      "english": "to learn",
+      "category": "learning",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-nederland",
+      "type": "word",
+      "dutch": "Nederland",
+      "english": "the Netherlands",
+      "category": "countries",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-niet",
+      "type": "word",
+      "dutch": "niet",
+      "english": "not",
+      "category": "negation",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-nu",
+      "type": "word",
+      "dutch": "nu",
+      "english": "now",
+      "category": "time",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-school",
+      "type": "word",
+      "dutch": "de school",
+      "english": "school",
+      "category": "places",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-stad",
+      "type": "word",
+      "dutch": "de stad",
+      "english": "city",
+      "category": "places",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-uit",
+      "type": "word",
+      "dutch": "uit",
+      "english": "from; out of",
+      "category": "prepositions",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-werken",
+      "type": "word",
+      "dutch": "werken",
+      "english": "to work",
+      "category": "daily_life",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-winkel",
+      "type": "word",
+      "dutch": "de winkel",
+      "english": "shop",
+      "category": "places",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-wonen",
+      "type": "word",
+      "dutch": "wonen",
+      "english": "to live; to reside",
+      "category": "daily_life",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-het-jaar",
+      "type": "word",
+      "dutch": "het jaar",
+      "english": "year",
+      "category": "time",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-maand",
+      "type": "word",
+      "dutch": "de maand",
+      "english": "month",
+      "category": "time",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-sporten",
+      "type": "word",
+      "dutch": "sporten",
+      "english": "to exercise; to do sports",
+      "category": "activities",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-koken",
+      "type": "word",
+      "dutch": "koken",
+      "english": "to cook",
+      "category": "activities",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-achternaam",
+      "type": "word",
+      "dutch": "de achternaam",
+      "english": "last name",
+      "category": "personal_details",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-heten",
+      "type": "word",
+      "dutch": "heten",
+      "english": "to be called",
+      "category": "personal_details",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-hoelang",
+      "type": "word",
+      "dutch": "hoelang",
+      "english": "how long",
+      "category": "question_words",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-kloppen",
+      "type": "word",
+      "dutch": "kloppen",
+      "english": "to be correct",
+      "category": "communication",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-les",
+      "type": "word",
+      "dutch": "de les",
+      "english": "lesson",
+      "category": "learning",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-leuk",
+      "type": "word",
+      "dutch": "leuk",
+      "english": "nice; fun",
+      "category": "descriptions",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-mijn",
+      "type": "word",
+      "dutch": "mijn",
+      "english": "my",
+      "category": "pronouns",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-ook",
+      "type": "word",
+      "dutch": "ook",
+      "english": "also",
+      "category": "linking",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-het-telefoonnummer",
+      "type": "word",
+      "dutch": "het telefoonnummer",
+      "english": "telephone number",
+      "category": "personal_details",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-vandaan",
+      "type": "word",
+      "dutch": "vandaan",
+      "english": "from",
+      "category": "question_words",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-voornaam",
+      "type": "word",
+      "dutch": "de voornaam",
+      "english": "first name",
+      "category": "personal_details",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-wat",
+      "type": "word",
+      "dutch": "wat",
+      "english": "what",
+      "category": "question_words",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-het-adres",
+      "type": "word",
+      "dutch": "het adres",
+      "english": "address",
+      "category": "personal_details",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-het-e-mailadres",
+      "type": "word",
+      "dutch": "het e-mailadres",
+      "english": "email address",
+      "category": "personal_details",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-het-formulier",
+      "type": "word",
+      "dutch": "het formulier",
+      "english": "form",
+      "category": "administration",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-geboortedatum",
+      "type": "word",
+      "dutch": "de geboortedatum",
+      "english": "date of birth",
+      "category": "personal_details",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-gemeente",
+      "type": "word",
+      "dutch": "de gemeente",
+      "english": "municipality",
+      "category": "administration",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-het-gemeentehuis",
+      "type": "word",
+      "dutch": "het gemeentehuis",
+      "english": "town hall",
+      "category": "administration",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-helpen",
+      "type": "word",
+      "dutch": "helpen",
+      "english": "to help",
+      "category": "communication",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-invullen",
+      "type": "word",
+      "dutch": "invullen",
+      "english": "to fill in",
+      "category": "administration",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "separable"
+      ]
+    },
+    {
+      "id": "word-de-man",
+      "type": "word",
+      "dutch": "de man",
+      "english": "man",
+      "category": "people",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-meneer",
+      "type": "word",
+      "dutch": "meneer",
+      "english": "sir; Mr",
+      "category": "people",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "formal"
+      ]
+    },
+    {
+      "id": "word-mobiel",
+      "type": "word",
+      "dutch": "mobiel",
+      "english": "mobile",
+      "category": "personal_details",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-nationaliteit",
+      "type": "word",
+      "dutch": "de nationaliteit",
+      "english": "nationality",
+      "category": "personal_details",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-nieuw",
+      "type": "word",
+      "dutch": "nieuw",
+      "english": "new",
+      "category": "descriptions",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-postcode",
+      "type": "word",
+      "dutch": "de postcode",
+      "english": "postal code",
+      "category": "personal_details",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-vrouw",
+      "type": "word",
+      "dutch": "de vrouw",
+      "english": "woman",
+      "category": "people",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-woonplaats",
+      "type": "word",
+      "dutch": "de woonplaats",
+      "english": "place of residence",
+      "category": "personal_details",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-alleen",
+      "type": "word",
+      "dutch": "alleen",
+      "english": "alone",
+      "category": "home_and_family",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-appen",
+      "type": "word",
+      "dutch": "appen",
+      "english": "to send a message",
+      "category": "communication",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "informal"
+      ]
+    },
+    {
+      "id": "word-de-buren",
+      "type": "word",
+      "dutch": "de buren",
+      "english": "neighbors",
+      "category": "home_and_family",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "plural"
+      ]
+    },
+    {
+      "id": "word-de-buurvrouw",
+      "type": "word",
+      "dutch": "de buurvrouw",
+      "english": "female neighbor",
+      "category": "home_and_family",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-getrouwd",
+      "type": "word",
+      "dutch": "getrouwd",
+      "english": "married",
+      "category": "relationships",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-graag",
+      "type": "word",
+      "dutch": "graag",
+      "english": "gladly; with pleasure",
+      "category": "preferences",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-hobby",
+      "type": "word",
+      "dutch": "de hobby",
+      "english": "hobby",
+      "category": "activities",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-het-huis",
+      "type": "word",
+      "dutch": "het huis",
+      "english": "house",
+      "category": "home_and_family",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-het-kind",
+      "type": "word",
+      "dutch": "het kind",
+      "english": "child",
+      "category": "home_and_family",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "irregular_plural"
+      ]
+    },
+    {
+      "id": "word-met",
+      "type": "word",
+      "dutch": "met",
+      "english": "with",
+      "category": "prepositions",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-ontmoeten",
+      "type": "word",
+      "dutch": "ontmoeten",
+      "english": "to meet",
+      "category": "relationships",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-poes",
+      "type": "word",
+      "dutch": "de poes",
+      "english": "female cat",
+      "category": "animals",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-het-restaurant",
+      "type": "word",
+      "dutch": "het restaurant",
+      "english": "restaurant",
+      "category": "places",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-week",
+      "type": "word",
+      "dutch": "de week",
+      "english": "week",
+      "category": "time",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-het-weekend",
+      "type": "word",
+      "dutch": "het weekend",
+      "english": "weekend",
+      "category": "time",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-welkom",
+      "type": "word",
+      "dutch": "welkom",
+      "english": "welcome",
+      "category": "communication",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-wie",
+      "type": "word",
+      "dutch": "wie",
+      "english": "who",
+      "category": "question_words",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-gezond",
+      "type": "word",
+      "dutch": "gezond",
+      "english": "healthy",
+      "category": "health",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-vriendelijk",
+      "type": "word",
+      "dutch": "vriendelijk",
+      "english": "friendly",
+      "category": "descriptions",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-belangrijk",
+      "type": "word",
+      "dutch": "belangrijk",
+      "english": "important",
+      "category": "descriptions",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-gelukkig",
+      "type": "word",
+      "dutch": "gelukkig",
+      "english": "happy; fortunate",
+      "category": "feelings",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-kater",
+      "type": "word",
+      "dutch": "de kater",
+      "english": "male cat",
+      "category": "animals",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-het-kitten",
+      "type": "word",
+      "dutch": "het kitten",
+      "english": "kitten",
+      "category": "animals",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-appel",
+      "type": "word",
+      "dutch": "de appel",
+      "english": "apple",
+      "category": "food",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-banaan",
+      "type": "word",
+      "dutch": "de banaan",
+      "english": "banana",
+      "category": "food",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-bijna",
+      "type": "word",
+      "dutch": "bijna",
+      "english": "almost",
+      "category": "time_and_degree",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-boodschappen",
+      "type": "word",
+      "dutch": "de boodschappen",
+      "english": "groceries",
+      "category": "shopping",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "plural"
+      ]
+    },
+    {
+      "id": "word-het-eten",
+      "type": "word",
+      "dutch": "het eten",
+      "english": "food; meal",
+      "category": "food",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-het-fruit",
+      "type": "word",
+      "dutch": "het fruit",
+      "english": "fruit",
+      "category": "food",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-groente",
+      "type": "word",
+      "dutch": "de groente",
+      "english": "vegetable",
+      "category": "food",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-kip",
+      "type": "word",
+      "dutch": "de kip",
+      "english": "chicken",
+      "category": "food",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-kopen",
+      "type": "word",
+      "dutch": "kopen",
+      "english": "to buy",
+      "category": "shopping",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-lijst",
+      "type": "word",
+      "dutch": "de lijst",
+      "english": "list",
+      "category": "shopping",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-markt",
+      "type": "word",
+      "dutch": "de markt",
+      "english": "market",
+      "category": "shopping",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-rijst",
+      "type": "word",
+      "dutch": "de rijst",
+      "english": "rice",
+      "category": "food",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-supermarkt",
+      "type": "word",
+      "dutch": "de supermarkt",
+      "english": "supermarket",
+      "category": "shopping",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-thuis",
+      "type": "word",
+      "dutch": "thuis",
+      "english": "at home",
+      "category": "home_and_family",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-tomaat",
+      "type": "word",
+      "dutch": "de tomaat",
+      "english": "tomato",
+      "category": "food",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-vis",
+      "type": "word",
+      "dutch": "de vis",
+      "english": "fish",
+      "category": "food",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-het-vlees",
+      "type": "word",
+      "dutch": "het vlees",
+      "english": "meat",
+      "category": "food",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-wortel",
+      "type": "word",
+      "dutch": "de wortel",
+      "english": "carrot",
+      "category": "food",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-aardappel",
+      "type": "word",
+      "dutch": "de aardappel",
+      "english": "potato",
+      "category": "food",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-alsjeblieft",
+      "type": "word",
+      "dutch": "alsjeblieft",
+      "english": "please; here you go",
+      "category": "politeness",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "informal"
+      ]
+    },
+    {
+      "id": "word-alstublieft",
+      "type": "word",
+      "dutch": "alstublieft",
+      "english": "please; here you go",
+      "category": "politeness",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "formal"
+      ]
+    },
+    {
+      "id": "word-anders",
+      "type": "word",
+      "dutch": "anders",
+      "english": "otherwise; else",
+      "category": "linking",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-het-ei",
+      "type": "word",
+      "dutch": "het ei",
+      "english": "egg",
+      "category": "food",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "irregular_plural"
+      ]
+    },
+    {
+      "id": "word-fijn",
+      "type": "word",
+      "dutch": "fijn",
+      "english": "nice; pleasant",
+      "category": "descriptions",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-hoeveel",
+      "type": "word",
+      "dutch": "hoeveel",
+      "english": "how much; how many",
+      "category": "question_words",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-iets",
+      "type": "word",
+      "dutch": "iets",
+      "english": "something",
+      "category": "pronouns",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-jammer",
+      "type": "word",
+      "dutch": "jammer",
+      "english": "a pity; too bad",
+      "category": "reactions",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-kaas",
+      "type": "word",
+      "dutch": "de kaas",
+      "english": "cheese",
+      "category": "food",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-kilo",
+      "type": "word",
+      "dutch": "de kilo",
+      "english": "kilogram",
+      "category": "quantities",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-mevrouw",
+      "type": "word",
+      "dutch": "mevrouw",
+      "english": "madam; Ms",
+      "category": "people",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "formal"
+      ]
+    },
+    {
+      "id": "word-nemen",
+      "type": "word",
+      "dutch": "nemen",
+      "english": "to take",
+      "category": "core_verbs",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "irregular"
+      ]
+    },
+    {
+      "id": "word-pinnen",
+      "type": "word",
+      "dutch": "pinnen",
+      "english": "to pay by debit card",
+      "category": "shopping",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-verkoper",
+      "type": "word",
+      "dutch": "de verkoper",
+      "english": "salesperson; seller",
+      "category": "shopping",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-vers",
+      "type": "word",
+      "dutch": "vers",
+      "english": "fresh",
+      "category": "food",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-altijd",
+      "type": "word",
+      "dutch": "altijd",
+      "english": "always",
+      "category": "frequency",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-dicht",
+      "type": "word",
+      "dutch": "dicht",
+      "english": "closed",
+      "category": "opening_hours",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-halen",
+      "type": "word",
+      "dutch": "halen",
+      "english": "to get; to fetch",
+      "category": "shopping",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-liggen",
+      "type": "word",
+      "dutch": "liggen",
+      "english": "to lie; to be located",
+      "category": "location",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-weten",
+      "type": "word",
+      "dutch": "weten",
+      "english": "to know a fact",
+      "category": "communication",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "irregular"
+      ]
+    },
+    {
+      "id": "word-de-bakker",
+      "type": "word",
+      "dutch": "de bakker",
+      "english": "baker; bakery",
+      "category": "shopping",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-het-brood",
+      "type": "word",
+      "dutch": "het brood",
+      "english": "bread",
+      "category": "food",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-buurt",
+      "type": "word",
+      "dutch": "de buurt",
+      "english": "neighborhood",
+      "category": "places",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-duur",
+      "type": "word",
+      "dutch": "duur",
+      "english": "expensive",
+      "category": "shopping",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-goedkoop",
+      "type": "word",
+      "dutch": "goedkoop",
+      "english": "cheap",
+      "category": "shopping",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-hier",
+      "type": "word",
+      "dutch": "hier",
+      "english": "here",
+      "category": "location",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-kennen",
+      "type": "word",
+      "dutch": "kennen",
+      "english": "to know; to be familiar with",
+      "category": "communication",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-meestal",
+      "type": "word",
+      "dutch": "meestal",
+      "english": "usually",
+      "category": "frequency",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-middag",
+      "type": "word",
+      "dutch": "de middag",
+      "english": "afternoon",
+      "category": "time",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-natuurlijk",
+      "type": "word",
+      "dutch": "natuurlijk",
+      "english": "of course",
+      "category": "reactions",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-ochtend",
+      "type": "word",
+      "dutch": "de ochtend",
+      "english": "morning",
+      "category": "time",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-soms",
+      "type": "word",
+      "dutch": "soms",
+      "english": "sometimes",
+      "category": "frequency",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-straat",
+      "type": "word",
+      "dutch": "de straat",
+      "english": "street",
+      "category": "places",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-vragen",
+      "type": "word",
+      "dutch": "vragen",
+      "english": "to ask",
+      "category": "communication",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-wanneer",
+      "type": "word",
+      "dutch": "wanneer",
+      "english": "when",
+      "category": "question_words",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-chips",
+      "type": "word",
+      "dutch": "de chips",
+      "english": "crisps; potato chips",
+      "category": "food",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "plural"
+      ]
+    },
+    {
+      "id": "word-denken",
+      "type": "word",
+      "dutch": "denken",
+      "english": "to think",
+      "category": "communication",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-het-internet",
+      "type": "word",
+      "dutch": "het internet",
+      "english": "internet",
+      "category": "technology",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-keuken",
+      "type": "word",
+      "dutch": "de keuken",
+      "english": "kitchen",
+      "category": "home_and_family",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-laat",
+      "type": "word",
+      "dutch": "laat",
+      "english": "late",
+      "category": "time",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-leeg",
+      "type": "word",
+      "dutch": "leeg",
+      "english": "empty",
+      "category": "descriptions",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-open",
+      "type": "word",
+      "dutch": "open",
+      "english": "open",
+      "category": "opening_hours",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-openingstijden",
+      "type": "word",
+      "dutch": "de openingstijden",
+      "english": "opening hours",
+      "category": "opening_hours",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "plural"
+      ]
+    },
+    {
+      "id": "word-snel",
+      "type": "word",
+      "dutch": "snel",
+      "english": "quick; quickly",
+      "category": "descriptions",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-zak",
+      "type": "word",
+      "dutch": "de zak",
+      "english": "bag",
+      "category": "shopping",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-moe",
+      "type": "word",
+      "dutch": "moe",
+      "english": "tired",
+      "category": "health",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-vaak",
+      "type": "word",
+      "dutch": "vaak",
+      "english": "often",
+      "category": "frequency",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-weleens",
+      "type": "word",
+      "dutch": "weleens",
+      "english": "sometimes; ever",
+      "category": "frequency",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-nooit",
+      "type": "word",
+      "dutch": "nooit",
+      "english": "never",
+      "category": "frequency",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-alles",
+      "type": "word",
+      "dutch": "alles",
+      "english": "everything",
+      "category": "pronouns",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-beterschap",
+      "type": "word",
+      "dutch": "beterschap",
+      "english": "get well soon",
+      "category": "health",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-bezig",
+      "type": "word",
+      "dutch": "bezig",
+      "english": "busy; occupied",
+      "category": "daily_life",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-broer",
+      "type": "word",
+      "dutch": "de broer",
+      "english": "brother",
+      "category": "home_and_family",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-daar",
+      "type": "word",
+      "dutch": "daar",
+      "english": "there",
+      "category": "location",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-druk",
+      "type": "word",
+      "dutch": "druk",
+      "english": "busy",
+      "category": "daily_life",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-eindelijk",
+      "type": "word",
+      "dutch": "eindelijk",
+      "english": "finally",
+      "category": "time",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-groet",
+      "type": "word",
+      "dutch": "de groet",
+      "english": "greeting",
+      "category": "communication",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-lekker",
+      "type": "word",
+      "dutch": "lekker",
+      "english": "tasty; pleasant",
+      "category": "descriptions",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-lopen",
+      "type": "word",
+      "dutch": "lopen",
+      "english": "to walk",
+      "category": "movement",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-moeder",
+      "type": "word",
+      "dutch": "de moeder",
+      "english": "mother",
+      "category": "home_and_family",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-paracetamol",
+      "type": "word",
+      "dutch": "de paracetamol",
+      "english": "paracetamol",
+      "category": "health",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-prima",
+      "type": "word",
+      "dutch": "prima",
+      "english": "fine; excellent",
+      "category": "reactions",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-vervelend",
+      "type": "word",
+      "dutch": "vervelend",
+      "english": "annoying; unpleasant",
+      "category": "feelings",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-vriend",
+      "type": "word",
+      "dutch": "de vriend",
+      "english": "male friend; boyfriend",
+      "category": "relationships",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-vriendin",
+      "type": "word",
+      "dutch": "de vriendin",
+      "english": "female friend; girlfriend",
+      "category": "relationships",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-waarom",
+      "type": "word",
+      "dutch": "waarom",
+      "english": "why",
+      "category": "question_words",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-warm",
+      "type": "word",
+      "dutch": "warm",
+      "english": "warm",
+      "category": "weather",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-het-weer",
+      "type": "word",
+      "dutch": "het weer",
+      "english": "weather",
+      "category": "weather",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-worden",
+      "type": "word",
+      "dutch": "worden",
+      "english": "to become",
+      "category": "core_verbs",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "irregular"
+      ]
+    },
+    {
+      "id": "word-ziek",
+      "type": "word",
+      "dutch": "ziek",
+      "english": "ill; sick",
+      "category": "health",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-zon",
+      "type": "word",
+      "dutch": "de zon",
+      "english": "sun",
+      "category": "weather",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-zus",
+      "type": "word",
+      "dutch": "de zus",
+      "english": "sister",
+      "category": "home_and_family",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-het-bezoek",
+      "type": "word",
+      "dutch": "het bezoek",
+      "english": "visit",
+      "category": "social",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-binnenkomen",
+      "type": "word",
+      "dutch": "binnenkomen",
+      "english": "to come in",
+      "category": "movement",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "separable"
+      ]
+    },
+    {
+      "id": "word-drinken",
+      "type": "word",
+      "dutch": "drinken",
+      "english": "to drink",
+      "category": "food",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-eruitzien",
+      "type": "word",
+      "dutch": "eruitzien",
+      "english": "to look; to appear",
+      "category": "descriptions",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "separable"
+      ]
+    },
+    {
+      "id": "word-geven",
+      "type": "word",
+      "dutch": "geven",
+      "english": "to give",
+      "category": "core_verbs",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "irregular"
+      ]
+    },
+    {
+      "id": "word-horen",
+      "type": "word",
+      "dutch": "horen",
+      "english": "to hear",
+      "category": "communication",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-huilen",
+      "type": "word",
+      "dutch": "huilen",
+      "english": "to cry",
+      "category": "feelings",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-jas",
+      "type": "word",
+      "dutch": "de jas",
+      "english": "coat",
+      "category": "clothing",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-jongen",
+      "type": "word",
+      "dutch": "de jongen",
+      "english": "boy",
+      "category": "people",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-klein",
+      "type": "word",
+      "dutch": "klein",
+      "english": "small",
+      "category": "descriptions",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-koffie",
+      "type": "word",
+      "dutch": "de koffie",
+      "english": "coffee",
+      "category": "drinks",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-lachen",
+      "type": "word",
+      "dutch": "lachen",
+      "english": "to laugh",
+      "category": "feelings",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-lief",
+      "type": "word",
+      "dutch": "lief",
+      "english": "sweet; kind",
+      "category": "descriptions",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-melk",
+      "type": "word",
+      "dutch": "de melk",
+      "english": "milk",
+      "category": "drinks",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-slapen",
+      "type": "word",
+      "dutch": "slapen",
+      "english": "to sleep",
+      "category": "daily_life",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-suiker",
+      "type": "word",
+      "dutch": "de suiker",
+      "english": "sugar",
+      "category": "food",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-de-thee",
+      "type": "word",
+      "dutch": "de thee",
+      "english": "tea",
+      "category": "drinks",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-zelf",
+      "type": "word",
+      "dutch": "zelf",
+      "english": "self; oneself",
+      "category": "pronouns",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-zitten",
+      "type": "word",
+      "dutch": "zitten",
+      "english": "to sit",
+      "category": "position",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-zonder",
+      "type": "word",
+      "dutch": "zonder",
+      "english": "without",
+      "category": "prepositions",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "word-zwart",
+      "type": "word",
+      "dutch": "zwart",
+      "english": "black",
+      "category": "colors",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "expression-ik-heb-dorst",
+      "type": "expression",
+      "dutch": "Ik heb dorst.",
+      "english": "I am thirsty.",
+      "category": "physical_state",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "health"
+      ]
+    },
+    {
+      "id": "expression-ik-heb-honger",
+      "type": "expression",
+      "dutch": "Ik heb honger.",
+      "english": "I am hungry.",
+      "category": "physical_state",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "food"
+      ]
+    },
+    {
+      "id": "expression-waar-kom-je-vandaan",
+      "type": "expression",
+      "dutch": "Waar kom je vandaan?",
+      "english": "Where are you from?",
+      "category": "introduction",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "question"
+      ]
+    },
+    {
+      "id": "expression-hoe-lang-woon-je-al-in-nederland",
+      "type": "expression",
+      "dutch": "Hoe lang woon je al in Nederland?",
+      "english": "How long have you been living in the Netherlands?",
+      "category": "introduction",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "time"
+      ]
+    },
+    {
+      "id": "expression-dat-klopt",
+      "type": "expression",
+      "dutch": "Dat klopt.",
+      "english": "That is correct.",
+      "category": "confirmation",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "conversation"
+      ]
+    },
+    {
+      "id": "expression-hoe-spel-ik-dat",
+      "type": "expression",
+      "dutch": "Hoe spel ik dat?",
+      "english": "How do I spell that?",
+      "category": "communication",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "spelling"
+      ]
+    },
+    {
+      "id": "expression-kan-ik-u-helpen",
+      "type": "expression",
+      "dutch": "Kan ik u helpen?",
+      "english": "Can I help you?",
+      "category": "service",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "formal",
+        "modal"
+      ]
+    },
+    {
+      "id": "expression-mag-ik-wat-vragen",
+      "type": "expression",
+      "dutch": "Mag ik wat vragen?",
+      "english": "May I ask something?",
+      "category": "politeness",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "modal"
+      ]
+    },
+    {
+      "id": "expression-graag-gedaan",
+      "type": "expression",
+      "dutch": "Graag gedaan.",
+      "english": "You're welcome.",
+      "category": "politeness",
+      "week": "week_01",
+      "tags": [
+        "A1"
+      ]
+    },
+    {
+      "id": "expression-leuk-je-te-ontmoeten",
+      "type": "expression",
+      "dutch": "Leuk je te ontmoeten.",
+      "english": "Nice to meet you.",
+      "category": "introduction",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "social"
+      ]
+    },
+    {
+      "id": "expression-zullen-we-elkaar-om-acht-uur-ontmoeten",
+      "type": "expression",
+      "dutch": "Zullen we elkaar om acht uur ontmoeten?",
+      "english": "Shall we meet each other at eight o'clock?",
+      "category": "arrangements",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "modal",
+        "time"
+      ]
+    },
+    {
+      "id": "expression-de-rijst-is-op",
+      "type": "expression",
+      "dutch": "De rijst is op.",
+      "english": "The rice is finished; we are out of rice.",
+      "category": "shopping",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "food"
+      ]
+    },
+    {
+      "id": "expression-tot-later",
+      "type": "expression",
+      "dutch": "Tot later.",
+      "english": "See you later.",
+      "category": "farewell",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "conversation"
+      ]
+    },
+    {
+      "id": "expression-zeg-het-maar",
+      "type": "expression",
+      "dutch": "Zeg het maar.",
+      "english": "Go ahead; tell me what you would like.",
+      "category": "service",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "shopping",
+        "particle"
+      ]
+    },
+    {
+      "id": "expression-kijk-eens",
+      "type": "expression",
+      "dutch": "Kijk eens.",
+      "english": "Take a look.",
+      "category": "conversation",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "particle"
+      ]
+    },
+    {
+      "id": "expression-anders-nog-iets",
+      "type": "expression",
+      "dutch": "Anders nog iets?",
+      "english": "Anything else?",
+      "category": "service",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "shopping"
+      ]
+    },
+    {
+      "id": "expression-fijne-dag",
+      "type": "expression",
+      "dutch": "Fijne dag!",
+      "english": "Have a nice day!",
+      "category": "farewell",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "politeness"
+      ]
+    },
+    {
+      "id": "expression-ik-heb-zin-in",
+      "type": "expression",
+      "dutch": "Ik heb zin in ...",
+      "english": "I feel like ...; I am in the mood for ...",
+      "category": "preference",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "fixed_expression"
+      ]
+    },
+    {
+      "id": "expression-tot-zo",
+      "type": "expression",
+      "dutch": "Tot zo.",
+      "english": "See you soon.",
+      "category": "farewell",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "conversation"
+      ]
+    },
+    {
+      "id": "expression-het-maakt-me-niet-uit",
+      "type": "expression",
+      "dutch": "Het maakt me niet uit.",
+      "english": "I don't mind; it doesn't matter to me.",
+      "category": "preference",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "fixed_expression"
+      ]
+    },
+    {
+      "id": "expression-je-ziet-er-goed-uit",
+      "type": "expression",
+      "dutch": "Je ziet er goed uit.",
+      "english": "You look well; you look good.",
+      "category": "health",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "separable_verb"
+      ]
+    },
+    {
+      "id": "expression-doe-maar",
+      "type": "expression",
+      "dutch": "Doe maar.",
+      "english": "Go ahead; that's fine.",
+      "category": "response",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "particle"
+      ]
+    },
+    {
+      "id": "expression-doe-maar-niet",
+      "type": "expression",
+      "dutch": "Doe maar niet.",
+      "english": "Better not; no thanks.",
+      "category": "response",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "particle",
+        "negation"
+      ]
+    },
+    {
+      "id": "expression-dat-is-lang-geleden",
+      "type": "expression",
+      "dutch": "Dat is lang geleden.",
+      "english": "That was a long time ago; long time no see.",
+      "category": "social",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "time"
+      ]
+    },
+    {
+      "id": "expression-ik-ben-goed-bezig",
+      "type": "expression",
+      "dutch": "Ik ben goed bezig.",
+      "english": "I am doing well; I am making good progress.",
+      "category": "encouragement",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "fixed_expression"
+      ]
+    },
+    {
+      "id": "expression-kom-binnen",
+      "type": "expression",
+      "dutch": "Kom binnen.",
+      "english": "Come in.",
+      "category": "visiting",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "imperative"
+      ]
+    },
+    {
+      "id": "expression-geef-je-jas-maar-hier",
+      "type": "expression",
+      "dutch": "Geef je jas maar hier.",
+      "english": "Just give me your coat.",
+      "category": "visiting",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "imperative",
+        "particle"
+      ]
+    },
+    {
+      "id": "expression-zal-ik-doen",
+      "type": "expression",
+      "dutch": "Zal ik doen.",
+      "english": "Will do; I'll do that.",
+      "category": "commitment",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "modal",
+        "response"
+      ]
+    },
+    {
+      "id": "particle-al",
+      "type": "particle",
+      "dutch": "al",
+      "english": "already",
+      "category": "discourse_particle",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "time"
+      ]
+    },
+    {
+      "id": "particle-nog",
+      "type": "particle",
+      "dutch": "nog",
+      "english": "still; yet; another",
+      "category": "discourse_particle",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "time"
+      ]
+    },
+    {
+      "id": "particle-maar",
+      "type": "particle",
+      "dutch": "maar",
+      "english": "just; go ahead",
+      "category": "discourse_particle",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "modal_particle"
+      ]
+    },
+    {
+      "id": "particle-wel",
+      "type": "particle",
+      "dutch": "wel",
+      "english": "indeed; actually; on the other hand",
+      "category": "discourse_particle",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "modal_particle"
+      ]
+    },
+    {
+      "id": "particle-even",
+      "type": "particle",
+      "dutch": "even",
+      "english": "for a moment; just; briefly",
+      "category": "discourse_particle",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "modal_particle"
+      ]
+    },
+    {
+      "id": "particle-hoor",
+      "type": "particle",
+      "dutch": "hoor",
+      "english": "you know; really; no problem",
+      "category": "discourse_particle",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "modal_particle"
+      ]
+    },
+    {
+      "id": "particle-toch",
+      "type": "particle",
+      "dutch": "toch",
+      "english": "still; anyway; surely",
+      "category": "discourse_particle",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "modal_particle"
+      ]
+    },
+    {
+      "id": "particle-joh",
+      "type": "particle",
+      "dutch": "joh",
+      "english": "come on; really; hey",
+      "category": "discourse_particle",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "informal"
+      ]
+    },
+    {
+      "id": "particle-alweer",
+      "type": "particle",
+      "dutch": "alweer",
+      "english": "again already",
+      "category": "discourse_particle",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "time"
+      ]
+    },
+    {
+      "id": "particle-nog-steeds",
+      "type": "particle",
+      "dutch": "nog steeds",
+      "english": "still",
+      "category": "discourse_particle",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "time"
+      ]
+    },
+    {
+      "id": "grammar_pattern-persoonsvorm-op-de-tweede-plaats",
+      "type": "grammar_pattern",
+      "dutch": "Persoonsvorm op de tweede plaats",
+      "english": "The finite verb is in second position",
+      "category": "grammar",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "word_order"
+      ]
+    },
+    {
+      "id": "grammar_pattern-regelmatige-werkwoorden-in-de-tegenwoordige-tijd",
+      "type": "grammar_pattern",
+      "dutch": "Regelmatige werkwoorden in de tegenwoordige tijd",
+      "english": "Regular verbs in the present tense",
+      "category": "grammar",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "present_tense"
+      ]
+    },
+    {
+      "id": "grammar_pattern-vragen-met-inversie",
+      "type": "grammar_pattern",
+      "dutch": "Vragen met inversie",
+      "english": "Questions using inversion",
+      "category": "grammar",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "questions"
+      ]
+    },
+    {
+      "id": "grammar_pattern-meervoud-met-en",
+      "type": "grammar_pattern",
+      "dutch": "Meervoud met -en",
+      "english": "Plural with -en",
+      "category": "grammar",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "plurals"
+      ]
+    },
+    {
+      "id": "grammar_pattern-meervoud-met-s",
+      "type": "grammar_pattern",
+      "dutch": "Meervoud met -s",
+      "english": "Plural with -s",
+      "category": "grammar",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "plurals"
+      ]
+    },
+    {
+      "id": "grammar_pattern-meervoud-gebruikt-altijd-de",
+      "type": "grammar_pattern",
+      "dutch": "Meervoud gebruikt altijd 'de'",
+      "english": "Plural nouns always use 'de'",
+      "category": "grammar",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "articles",
+        "plurals"
+      ]
+    },
+    {
+      "id": "grammar_pattern-modaal-werkwoord-met-infinitief",
+      "type": "grammar_pattern",
+      "dutch": "Modaal werkwoord met infinitief",
+      "english": "Modal verb with an infinitive",
+      "category": "grammar",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "modal_verbs",
+        "word_order"
+      ]
+    },
+    {
+      "id": "grammar_pattern-welk-en-welke",
+      "type": "grammar_pattern",
+      "dutch": "Welk en welke",
+      "english": "Welk and welke",
+      "category": "grammar",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "question_words",
+        "articles"
+      ]
+    },
+    {
+      "id": "grammar_pattern-dit-dat-en-deze-die",
+      "type": "grammar_pattern",
+      "dutch": "Dit/dat en deze/die",
+      "english": "This/that with de- and het-words",
+      "category": "grammar",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "demonstratives",
+        "articles"
+      ]
+    },
+    {
+      "id": "grammar_pattern-tot-en-tot-en-met",
+      "type": "grammar_pattern",
+      "dutch": "Tot en tot en met",
+      "english": "Until versus up to and including",
+      "category": "grammar",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "time"
+      ]
+    },
+    {
+      "id": "grammar_pattern-plaats-aangeven",
+      "type": "grammar_pattern",
+      "dutch": "Plaats aangeven",
+      "english": "Expressing location",
+      "category": "grammar",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "location",
+        "prepositions"
+      ]
+    },
+    {
+      "id": "grammar_pattern-klokkijken-met-half-kwart-voor-en-over",
+      "type": "grammar_pattern",
+      "dutch": "Klokkijken met half, kwart, voor en over",
+      "english": "Telling time with half, quarter, to, and past",
+      "category": "grammar",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "time"
+      ]
+    },
+    {
+      "id": "grammar_pattern-eruitzien-als-scheidbaar-werkwoord",
+      "type": "grammar_pattern",
+      "dutch": "Eruitzien als scheidbaar werkwoord",
+      "english": "Using the separable verb eruitzien",
+      "category": "grammar",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "separable_verbs",
+        "word_order"
+      ]
+    },
+    {
+      "id": "verb_construction-houden-van",
+      "type": "verb_construction",
+      "dutch": "houden van",
+      "english": "to love; to like",
+      "category": "verb_construction",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "fixed_preposition"
+      ]
+    },
+    {
+      "id": "verb_construction-boodschappen-doen",
+      "type": "verb_construction",
+      "dutch": "boodschappen doen",
+      "english": "to do the grocery shopping",
+      "category": "verb_construction",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "shopping"
+      ]
+    },
+    {
+      "id": "verb_construction-kunnen-infinitief",
+      "type": "verb_construction",
+      "dutch": "kunnen + infinitief",
+      "english": "can; to be able to",
+      "category": "verb_construction",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "modal"
+      ]
+    },
+    {
+      "id": "verb_construction-mogen-infinitief",
+      "type": "verb_construction",
+      "dutch": "mogen + infinitief",
+      "english": "may; to be allowed to",
+      "category": "verb_construction",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "modal"
+      ]
+    },
+    {
+      "id": "verb_construction-moeten-infinitief",
+      "type": "verb_construction",
+      "dutch": "moeten + infinitief",
+      "english": "must; to have to",
+      "category": "verb_construction",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "modal"
+      ]
+    },
+    {
+      "id": "verb_construction-willen-infinitief",
+      "type": "verb_construction",
+      "dutch": "willen + infinitief",
+      "english": "to want to",
+      "category": "verb_construction",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "modal"
+      ]
+    },
+    {
+      "id": "verb_construction-zullen-infinitief",
+      "type": "verb_construction",
+      "dutch": "zullen + infinitief",
+      "english": "shall; will",
+      "category": "verb_construction",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "modal"
+      ]
+    },
+    {
+      "id": "verb_construction-zin-hebben-in-om-te",
+      "type": "verb_construction",
+      "dutch": "zin hebben in / om te",
+      "english": "to feel like; to be in the mood for",
+      "category": "verb_construction",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "fixed_expression"
+      ]
+    },
+    {
+      "id": "verb_construction-eruitzien",
+      "type": "verb_construction",
+      "dutch": "eruitzien",
+      "english": "to look; to appear",
+      "category": "verb_construction",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "separable"
+      ]
+    },
+    {
+      "id": "dialogue-introduction-and-phone-number",
+      "type": "dialogue",
+      "dutch": "Introductions and telephone numbers",
+      "english": "Two new acquaintances introduce themselves and exchange contact details.",
+      "category": "dialogue",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "introduction",
+        "personal_details"
+      ]
+    },
+    {
+      "id": "dialogue-new-neighbor",
+      "type": "dialogue",
+      "dutch": "A new neighbor",
+      "english": "A new resident introduces herself to her neighbors.",
+      "category": "dialogue",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "neighbors",
+        "introduction"
+      ]
+    },
+    {
+      "id": "dialogue-at-the-market",
+      "type": "dialogue",
+      "dutch": "At the market",
+      "english": "A customer buys groceries from a seller.",
+      "category": "dialogue",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "shopping",
+        "service"
+      ]
+    },
+    {
+      "id": "dialogue-receiving-a-visitor",
+      "type": "dialogue",
+      "dutch": "Receiving a visitor",
+      "english": "Someone welcomes a visitor into their home.",
+      "category": "dialogue",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "visiting",
+        "hospitality"
+      ]
+    },
+    {
+      "id": "mistake-woond-woont",
+      "type": "mistake",
+      "dutch": "hij/zij woont",
+      "english": "For the third-person singular of 'wonen', use the stem 'woon' plus -t: woont.",
+      "category": "present_tense_spelling",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "verbs",
+        "spelling"
+      ]
+    },
+    {
+      "id": "mistake-sportt-sport",
+      "type": "mistake",
+      "dutch": "je sport",
+      "english": "The stem of 'sporten' is already 'sport', so only one final t is written.",
+      "category": "present_tense_spelling",
+      "week": "week_01",
+      "tags": [
+        "A1",
+        "verbs",
+        "spelling"
+      ]
+    }
+  ]
+}

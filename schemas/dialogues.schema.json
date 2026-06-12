@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "dialogues.schema.json",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "id",
+      "type",
+      "title",
+      "setting",
+      "week",
+      "source_images",
+      "ingestion_date",
+      "tags",
+      "target_ids",
+      "turns",
+      "notes"
+    ],
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "type": {
+        "const": "dialogue"
+      },
+      "title": {
+        "type": "string"
+      },
+      "setting": {
+        "type": "string"
+      },
+      "week": {
+        "$ref": "common.schema.json#/$defs/week"
+      },
+      "source_images": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "$ref": "common.schema.json#/$defs/sourceImage"
+        }
+      },
+      "ingestion_date": {
+        "type": "string",
+        "format": "date"
+      },
+      "tags": {
+        "$ref": "common.schema.json#/$defs/tags"
+      },
+      "target_ids": {
+        "type": "array",
+        "uniqueItems": true,
+        "items": {
+          "type": "string"
+        }
+      },
+      "turns": {
+        "type": "array",
+        "minItems": 2,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "speaker",
+            "dutch",
+            "english"
+          ],
+          "properties": {
+            "speaker": {
+              "type": "string"
+            },
+            "dutch": {
+              "type": "string"
+            },
+            "english": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "notes": {
+        "type": "string"
+      }
+    }
+  }
+}

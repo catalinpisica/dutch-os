@@ -1,0 +1,221 @@
+[
+  {
+    "id": "review-week-01",
+    "type": "review",
+    "week": "week_01",
+    "ingestion_date": "2026-06-12",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-01-page-01.jpg",
+      "sources/archive/2026/week_01/images/lesson-01-page-02.jpg",
+      "sources/archive/2026/week_01/images/lesson-01-page-03.jpg",
+      "sources/archive/2026/week_01/images/lesson-01-page-04.jpg",
+      "sources/archive/2026/week_01/images/lesson-02-page-01.jpg",
+      "sources/archive/2026/week_01/images/lesson-02-page-02.jpg",
+      "sources/archive/2026/week_01/images/lesson-02-page-03.jpg",
+      "sources/archive/2026/week_01/images/lesson-02-page-04.jpg",
+      "sources/archive/2026/week_01/images/lesson-03-page-01.jpg",
+      "sources/archive/2026/week_01/images/lesson-03-page-02.jpg",
+      "sources/archive/2026/week_01/images/lesson-04-page-01.jpg",
+      "sources/archive/2026/week_01/images/lesson-04-page-02.jpg",
+      "sources/archive/2026/week_01/images/lesson-04-page-03.jpg",
+      "sources/archive/2026/week_01/images/lesson-04-page-04.jpg",
+      "sources/archive/2026/week_01/images/lesson-05-page-01.jpg",
+      "sources/archive/2026/week_01/images/lesson-05-page-02.jpg",
+      "sources/archive/2026/week_01/images/lesson-05-page-03.jpg",
+      "sources/archive/2026/week_01/images/lesson-06-page-01.jpg",
+      "sources/archive/2026/week_01/images/lesson-06-page-02.jpg",
+      "sources/archive/2026/week_01/images/lesson-06-page-03.jpg",
+      "sources/archive/2026/week_01/images/lesson-06-page-04.jpg",
+      "sources/archive/2026/week_01/images/lesson-06-page-05.jpg",
+      "sources/archive/2026/week_01/images/lesson-06-page-06.jpg",
+      "sources/archive/2026/week_01/images/lesson-07-page-01.jpg",
+      "sources/archive/2026/week_01/images/lesson-07-page-02.jpg",
+      "sources/archive/2026/week_01/images/lesson-07-page-03.jpg",
+      "sources/archive/2026/week_01/images/lesson-07-page-04.jpg",
+      "sources/archive/2026/week_01/images/lesson-07-page-05.jpg",
+      "sources/archive/2026/week_01/images/lesson-07-page-06.jpg",
+      "sources/archive/2026/week_01/images/lesson-07-page-07.jpg",
+      "sources/archive/2026/week_01/images/lesson-07-page-08.jpg",
+      "sources/archive/2026/week_01/images/lesson-08-page-01.jpg",
+      "sources/archive/2026/week_01/images/lesson-08-page-02.jpg",
+      "sources/archive/2026/week_01/images/lesson-08-page-03.jpg",
+      "sources/archive/2026/week_01/images/lesson-08-page-04.jpg"
+    ],
+    "focus_ids": [
+      "expression-waar-kom-je-vandaan",
+      "expression-het-maakt-me-niet-uit",
+      "expression-geef-je-jas-maar-hier",
+      "particle-even",
+      "particle-hoor",
+      "grammar_pattern-modaal-werkwoord-met-infinitief",
+      "grammar_pattern-klokkijken-met-half-kwart-voor-en-over",
+      "verb_construction-zin-hebben-in-om-te"
+    ],
+    "recall": [
+      {
+        "prompt": "How do you ask someone where they come from?",
+        "answer": "Waar kom je vandaan?",
+        "target_ids": [
+          "expression-waar-kom-je-vandaan"
+        ]
+      },
+      {
+        "prompt": "What is the difference between 'even' and 'snel'?",
+        "answer": "'Even' presents an action as brief or easy; 'snel' focuses on speed.",
+        "target_ids": [
+          "particle-even",
+          "word-snel"
+        ]
+      },
+      {
+        "prompt": "Name the five modal verbs from the notes.",
+        "answer": "kunnen, mogen, moeten, willen, zullen",
+        "target_ids": [
+          "verb_construction-kunnen-infinitief",
+          "verb_construction-mogen-infinitief",
+          "verb_construction-moeten-infinitief",
+          "verb_construction-willen-infinitief",
+          "verb_construction-zullen-infinitief"
+        ]
+      }
+    ],
+    "translation": [
+      {
+        "prompt": "Translate: I don't mind.",
+        "answer": "Het maakt me niet uit.",
+        "target_ids": [
+          "expression-het-maakt-me-niet-uit"
+        ]
+      },
+      {
+        "prompt": "Translate: We are not allowed to text in class.",
+        "answer": "We mogen in de les niet appen.",
+        "target_ids": [
+          "verb_construction-mogen-infinitief"
+        ]
+      },
+      {
+        "prompt": "Translate: I feel like having coffee.",
+        "answer": "Ik heb zin in koffie.",
+        "target_ids": [
+          "verb_construction-zin-hebben-in-om-te"
+        ]
+      }
+    ],
+    "cloze": [
+      {
+        "prompt": "Geef je jas ___ hier.",
+        "answer": "maar",
+        "target_ids": [
+          "particle-maar",
+          "expression-geef-je-jas-maar-hier"
+        ]
+      },
+      {
+        "prompt": "Ze is ___ steeds ziek.",
+        "answer": "nog",
+        "target_ids": [
+          "particle-nog-steeds"
+        ]
+      },
+      {
+        "prompt": "Kun je ___ helpen?",
+        "answer": "even",
+        "target_ids": [
+          "particle-even"
+        ]
+      }
+    ],
+    "grammar": [
+      {
+        "prompt": "Put in normal main-clause order: In het weekend / ik / koken / pasta.",
+        "answer": "In het weekend kook ik pasta.",
+        "target_ids": [
+          "grammar_pattern-persoonsvorm-op-de-tweede-plaats"
+        ]
+      },
+      {
+        "prompt": "Choose welk/welke: ___ huis? ___ straat?",
+        "answer": "Welk huis? Welke straat?",
+        "target_ids": [
+          "grammar_pattern-welk-en-welke"
+        ]
+      },
+      {
+        "prompt": "What time is 'half zeven'?",
+        "answer": "6:30",
+        "target_ids": [
+          "grammar_pattern-klokkijken-met-half-kwart-voor-en-over"
+        ]
+      }
+    ],
+    "roleplay": [
+      {
+        "prompt": "You are buying vegetables at a market. Ask for one kilo of potatoes and ask whether you can pay by card.",
+        "answer": "Een kilo aardappels, alstublieft. Kan ik pinnen?",
+        "target_ids": [
+          "dialogue-at-the-market"
+        ]
+      },
+      {
+        "prompt": "Welcome a visitor, take their coat, and offer coffee or tea.",
+        "answer": "Kom binnen. Geef je jas maar hier. Wil je koffie of thee?",
+        "target_ids": [
+          "dialogue-receiving-a-visitor"
+        ]
+      }
+    ],
+    "mistake_ids": [
+      "mistake-woond-woont",
+      "mistake-sportt-sport"
+    ],
+    "needs_review": [
+      {
+        "source_image": "sources/archive/2026/week_01/images/lesson-01-page-01.jpg",
+        "text": "One low-confidence conjugation line under 'zijn' and 'hebben'",
+        "reason": "Several pronouns overlap in the handwriting; only clearly legible conjugations were extracted."
+      },
+      {
+        "source_image": "sources/archive/2026/week_01/images/lesson-01-page-02.jpg",
+        "text": "One vocabulary item between 'het dorp' and 'leren'",
+        "reason": "OCR and visual inspection do not agree on the Dutch word."
+      },
+      {
+        "source_image": "sources/archive/2026/week_01/images/lesson-03-page-01.jpg",
+        "text": "One item near 'meneer' and one after 'u'",
+        "reason": "The handwriting is too faint to distinguish the intended words reliably."
+      },
+      {
+        "source_image": "sources/archive/2026/week_01/images/lesson-05-page-01.jpg",
+        "text": "One verb after 'de markt'",
+        "reason": "It may be 'praten', but the initial letters are not reliable enough to store canonically."
+      },
+      {
+        "source_image": "sources/archive/2026/week_01/images/lesson-05-page-03.jpg",
+        "text": "The exact plural-rule list for endings -el/-en/-er/-je",
+        "reason": "The rule is identifiable, but parts of the handwritten ending list are cramped; the canonical explanation was normalized from only the clear portion."
+      },
+      {
+        "source_image": "sources/archive/2026/week_01/images/lesson-07-page-02.jpg",
+        "text": "Short vocabulary fragment containing 'zoon' and possibly 'ander/anders'",
+        "reason": "The page is sparse and several entries are clipped or abbreviated."
+      },
+      {
+        "source_image": "sources/archive/2026/week_01/images/lesson-07-page-07.jpg",
+        "text": "Two handwritten digital-time examples around quarter to four and quarter past nine",
+        "reason": "The hour labels are partly overwritten; the general grammar pattern is clear but the exact examples are not all retained."
+      },
+      {
+        "source_image": "sources/archive/2026/week_01/images/lesson-08-page-01.jpg",
+        "text": "One word after 'daar' and one word before 'lopen'",
+        "reason": "Likely 'druk' and 'lekker', but the source order and pairing with English glosses are not completely clear."
+      },
+      {
+        "source_image": "sources/archive/2026/week_01/images/lesson-08-page-02.jpg",
+        "text": "Compact phrase before '= will do'",
+        "reason": "Read as 'zal ik doen' using the existing seed entry as supporting context; retain for human confirmation."
+      }
+    ],
+    "notes": "First real ingestion run. The batch contains eight dated lesson groups but is labeled week_01 as requested."
+  }
+]

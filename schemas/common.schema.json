@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "common.schema.json",
+  "$defs": {
+    "week": {
+      "type": "string",
+      "pattern": "^week_[0-9]{2,}$"
+    },
+    "sourceImage": {
+      "type": "string",
+      "pattern": "^sources/archive/.+\\.(jpg|jpeg|png|heic)$"
+    },
+    "tags": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "example": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "dutch",
+        "english",
+        "source_type"
+      ],
+      "properties": {
+        "dutch": {
+          "type": "string",
+          "minLength": 1
+        },
+        "english": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_type": {
+          "enum": [
+            "class_note",
+            "ai_generated",
+            "reference"
+          ]
+        }
+      }
+    },
+    "baseItem": {
+      "type": "object",
+      "required": [
+        "id",
+        "type",
+        "dutch",
+        "english",
+        "category",
+        "examples",
+        "week",
+        "source_images",
+        "ingestion_date",
+        "tags",
+        "notes"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*(?:-[a-z0-9]+)*$"
+        },
+        "type": {
+          "type": "string"
+        },
+        "dutch": {
+          "type": "string",
+          "minLength": 1
+        },
+        "english": {
+          "type": "string",
+          "minLength": 1
+        },
+        "category": {
+          "type": "string",
+          "minLength": 1
+        },
+        "examples": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/example"
+          }
+        },
+        "week": {
+          "$ref": "#/$defs/week"
+        },
+        "source_images": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/sourceImage"
+          }
+        },
+        "ingestion_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "tags": {
+          "$ref": "#/$defs/tags"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
