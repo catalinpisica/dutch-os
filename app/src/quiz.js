@@ -100,9 +100,26 @@ export function checkAnswer(question, response) {
   return normalize(response) === normalize(question.answer);
 }
 
-export function loadProgress() {
+function progressKey(profile) {
+  return `dutch-os-progress:${profile}`;
+}
+
+export function loadProgress(profile = "catalin") {
   try {
-    return JSON.parse(localStorage.getItem("dutch-os-progress")) ?? defaultProgress();
+    const key = progressKey(profile);
+    const stored = localStorage.getItem(key);
+    if (stored) return JSON.parse(stored);
+
+    // Preserve progress created before profiles existed as Catalin's history.
+    if (profile === "catalin") {
+      const legacy = localStorage.getItem("dutch-os-progress");
+      if (legacy) {
+        localStorage.setItem(key, legacy);
+        localStorage.removeItem("dutch-os-progress");
+        return JSON.parse(legacy);
+      }
+    }
+    return defaultProgress();
   } catch {
     return defaultProgress();
   }
@@ -120,8 +137,8 @@ function defaultProgress() {
   };
 }
 
-export function saveSessionProgress(results) {
-  const progress = loadProgress();
+export function saveSessionProgress(results, profile = "catalin") {
+  const progress = loadProgress(profile);
   const today = new Date().toLocaleDateString("en-CA");
   const yesterday = new Date(Date.now() - 86400000).toLocaleDateString("en-CA");
   if (progress.lastPracticeDate !== today) {
@@ -138,6 +155,6 @@ export function saveSessionProgress(results) {
     item.lastPracticed = today;
     progress.items[result.itemId] = item;
   });
-  localStorage.setItem("dutch-os-progress", JSON.stringify(progress));
+  localStorage.setItem(progressKey(profile), JSON.stringify(progress));
   return progress;
 }

@@ -31,6 +31,16 @@ const TYPE_ICONS = {
   mistake: "!",
 };
 
+const PROFILES = {
+  catalin: "Catalin",
+  dana: "Dana",
+};
+
+function loadActiveProfile() {
+  const profile = localStorage.getItem("dutch-os-active-profile");
+  return PROFILES[profile] ? profile : "catalin";
+}
+
 const state = {
   data: null,
   query: "",
@@ -39,6 +49,7 @@ const state = {
   visible: 24,
   practiceItems: null,
   lesson: null,
+  profile: loadActiveProfile(),
 };
 
 const elements = {
@@ -67,6 +78,7 @@ const elements = {
   dialogContent: document.querySelector("#dialog-content"),
   dialogClose: document.querySelector("#dialog-close"),
   themeToggle: document.querySelector("#theme-toggle"),
+  profileSelect: document.querySelector("#profile-select"),
   fatalError: document.querySelector("#fatal-error"),
   academyStarts: document.querySelectorAll(".academy-start"),
   academyReview: document.querySelector("#academy-review"),
@@ -75,6 +87,7 @@ const elements = {
   practiceStreak: document.querySelector("#practice-streak"),
   practiceAccuracy: document.querySelector("#practice-accuracy"),
   coverageRing: document.querySelector("#coverage-ring"),
+  coverageTitle: document.querySelector("#coverage-title"),
   coveragePercent: document.querySelector("#coverage-percent"),
   coverageDetail: document.querySelector("#coverage-detail"),
   coverageBar: document.querySelector("#coverage-bar"),
@@ -222,7 +235,7 @@ function populateFilters() {
   `).join("");
 }
 
-function renderPracticeProgress(progress = loadProgress()) {
+function renderPracticeProgress(progress = loadProgress(state.profile)) {
   elements.practiceXp.textContent = progress.xp;
   elements.practiceStreak.textContent = progress.streak;
   elements.practiceAccuracy.textContent = progress.answered
@@ -231,7 +244,7 @@ function renderPracticeProgress(progress = loadProgress()) {
   renderCoverage(progress);
 }
 
-function renderCoverage(progress = loadProgress()) {
+function renderCoverage(progress = loadProgress(state.profile)) {
   if (!state.data) return;
   const week = elements.practiceWeekFilter.value || state.data.entrypoint.latest_week_start;
   const practiceTypes = new Set(["word", "expression", "particle"]);
@@ -250,7 +263,7 @@ function renderCoverage(progress = loadProgress()) {
   elements.coverageDetail.textContent = `${practiced.length} of ${ids.length} practice-ready items retrieved · ${mastered.length} showing stable recall.`;
 }
 
-function weakItemIds(progress = loadProgress()) {
+function weakItemIds(progress = loadProgress(state.profile)) {
   return Object.entries(progress.items)
     .filter(([, item]) => item.wrong > item.correct)
     .sort((left, right) => right[1].wrong - left[1].wrong)
@@ -314,7 +327,7 @@ function renderQuestion() {
 }
 
 function finishLesson() {
-  const progress = saveSessionProgress(state.lesson.results);
+  const progress = saveSessionProgress(state.lesson.results, state.lesson.profile);
   renderPracticeProgress(progress);
   const correct = state.lesson.results.filter((result) => result.correct).length;
   const total = state.lesson.results.length;
@@ -385,7 +398,7 @@ async function startLesson(mode = "recall", trigger = null) {
       mode,
     });
     if (!session.questions.length) throw new Error("No practice items available");
-    state.lesson = { ...session, index: 0, hearts: 3, results: [], response: "", checked: false, complete: false };
+    state.lesson = { ...session, profile: state.profile, index: 0, hearts: 3, results: [], response: "", checked: false, complete: false };
     renderQuestion();
     elements.lessonDialog.showModal();
   } catch (error) {
@@ -586,6 +599,12 @@ function bindEvents() {
     localStorage.setItem("dutch-os-theme", dark ? "dark" : "light");
     elements.themeToggle.setAttribute("aria-label", dark ? "Use light theme" : "Use dark theme");
   });
+  elements.profileSelect.addEventListener("change", () => {
+    state.profile = elements.profileSelect.value;
+    localStorage.setItem("dutch-os-active-profile", state.profile);
+    renderProfile();
+    renderPracticeProgress();
+  });
   elements.academyStarts.forEach((button) => button.addEventListener("click", () => startLesson(button.dataset.mode, button)));
   elements.academyReview.addEventListener("click", () => {
     const review = state.data.reviews.find((item) => item.week_start === elements.practiceWeekFilter.value);
@@ -602,6 +621,7 @@ async function init() {
     document.documentElement.dataset.theme = savedTheme;
     elements.themeToggle.setAttribute("aria-label", savedTheme === "dark" ? "Use light theme" : "Use dark theme");
   }
+  elements.profileSelect.value = state.profile;
   bindEvents();
   try {
     state.data = await loadDashboardData();
@@ -609,6 +629,7 @@ async function init() {
     renderStats();
     renderReview();
     populateFilters();
+    renderProfile();
     renderPracticeProgress();
     renderLibrary();
   } catch (error) {
@@ -616,6 +637,12 @@ async function init() {
     elements.fatalError.hidden = false;
     elements.heroSummary.textContent = "Repository data could not be loaded.";
   }
+}
+
+function renderProfile() {
+  const name = PROFILES[state.profile];
+  elements.coverageTitle.textContent = `${name}'s weekly coverage`;
+  elements.practiceXp.closest(".practice-stats").setAttribute("aria-label", `${name}'s local practice progress`);
 }
 
 init();

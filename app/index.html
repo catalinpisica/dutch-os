@@ -20,9 +20,18 @@
           <small>Your learning memory</small>
         </span>
       </a>
-      <button class="icon-button" id="theme-toggle" type="button" aria-label="Use dark theme" title="Change theme">
-        <span aria-hidden="true">◐</span>
-      </button>
+      <div class="header-actions">
+        <label class="profile-picker">
+          <span>Profile</span>
+          <select id="profile-select" aria-label="Active learner profile">
+            <option value="catalin">Catalin</option>
+            <option value="dana">Dana</option>
+          </select>
+        </label>
+        <button class="icon-button" id="theme-toggle" type="button" aria-label="Use dark theme" title="Change theme">
+          <span aria-hidden="true">◐</span>
+        </button>
+      </div>
     </header>
 
     <main id="main-content">
