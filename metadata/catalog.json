@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12",
+  "generated_at": "2026-06-14",
   "item_count": 256,
   "items": [
     {
@@ -8,10 +8,11 @@
       "dutch": "zijn",
       "english": "to be",
       "category": "core_verbs",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
         "A1",
-        "irregular"
+        "irregular",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -21,10 +22,11 @@
       "dutch": "hebben",
       "english": "to have",
       "category": "core_verbs",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
         "A1",
-        "irregular"
+        "irregular",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -34,9 +36,10 @@
       "dutch": "de dorst",
       "english": "thirst",
       "category": "states",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
-        "A1"
+        "A1",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -46,9 +49,10 @@
       "dutch": "de honger",
       "english": "hunger",
       "category": "states",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
-        "A1"
+        "A1",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -58,9 +62,10 @@
       "dutch": "het dorp",
       "english": "village",
       "category": "places",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
-        "A1"
+        "A1",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -70,9 +75,10 @@
       "dutch": "leren",
       "english": "to learn",
       "category": "learning",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
-        "A1"
+        "A1",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -82,9 +88,10 @@
       "dutch": "Nederland",
       "english": "the Netherlands",
       "category": "countries",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
-        "A1"
+        "A1",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -94,9 +101,10 @@
       "dutch": "niet",
       "english": "not",
       "category": "negation",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
-        "A1"
+        "A1",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -106,9 +114,10 @@
       "dutch": "nu",
       "english": "now",
       "category": "time",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
-        "A1"
+        "A1",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -118,9 +127,10 @@
       "dutch": "de school",
       "english": "school",
       "category": "places",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
-        "A1"
+        "A1",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -130,9 +140,10 @@
       "dutch": "de stad",
       "english": "city",
       "category": "places",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
-        "A1"
+        "A1",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -142,9 +153,10 @@
       "dutch": "uit",
       "english": "from; out of",
       "category": "prepositions",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
-        "A1"
+        "A1",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -154,9 +166,10 @@
       "dutch": "werken",
       "english": "to work",
       "category": "daily_life",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
-        "A1"
+        "A1",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -166,9 +179,10 @@
       "dutch": "de winkel",
       "english": "shop",
       "category": "places",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
-        "A1"
+        "A1",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -178,9 +192,10 @@
       "dutch": "wonen",
       "english": "to live; to reside",
       "category": "daily_life",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
-        "A1"
+        "A1",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -190,9 +205,10 @@
       "dutch": "het jaar",
       "english": "year",
       "category": "time",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
-        "A1"
+        "A1",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -202,9 +218,10 @@
       "dutch": "de maand",
       "english": "month",
       "category": "time",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
-        "A1"
+        "A1",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -214,9 +231,10 @@
       "dutch": "sporten",
       "english": "to exercise; to do sports",
       "category": "activities",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
-        "A1"
+        "A1",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -226,9 +244,10 @@
       "dutch": "koken",
       "english": "to cook",
       "category": "activities",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
-        "A1"
+        "A1",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -238,9 +257,10 @@
       "dutch": "de achternaam",
       "english": "last name",
       "category": "personal_details",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
-        "A1"
+        "A1",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -250,9 +270,10 @@
       "dutch": "heten",
       "english": "to be called",
       "category": "personal_details",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
-        "A1"
+        "A1",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -262,9 +283,10 @@
       "dutch": "hoelang",
       "english": "how long",
       "category": "question_words",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
-        "A1"
+        "A1",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -274,9 +296,10 @@
       "dutch": "kloppen",
       "english": "to be correct",
       "category": "communication",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
-        "A1"
+        "A1",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -286,9 +309,10 @@
       "dutch": "de les",
       "english": "lesson",
       "category": "learning",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
-        "A1"
+        "A1",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -298,9 +322,10 @@
       "dutch": "leuk",
       "english": "nice; fun",
       "category": "descriptions",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
-        "A1"
+        "A1",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -310,9 +335,10 @@
       "dutch": "mijn",
       "english": "my",
       "category": "pronouns",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
-        "A1"
+        "A1",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -322,9 +348,10 @@
       "dutch": "ook",
       "english": "also",
       "category": "linking",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
-        "A1"
+        "A1",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -334,9 +361,10 @@
       "dutch": "het telefoonnummer",
       "english": "telephone number",
       "category": "personal_details",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
-        "A1"
+        "A1",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -346,9 +374,10 @@
       "dutch": "vandaan",
       "english": "from",
       "category": "question_words",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
-        "A1"
+        "A1",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -358,9 +387,10 @@
       "dutch": "de voornaam",
       "english": "first name",
       "category": "personal_details",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
-        "A1"
+        "A1",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -370,9 +400,10 @@
       "dutch": "wat",
       "english": "what",
       "category": "question_words",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
-        "A1"
+        "A1",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -382,9 +413,10 @@
       "dutch": "het adres",
       "english": "address",
       "category": "personal_details",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
-        "A1"
+        "A1",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -394,9 +426,10 @@
       "dutch": "het e-mailadres",
       "english": "email address",
       "category": "personal_details",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
-        "A1"
+        "A1",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -406,9 +439,10 @@
       "dutch": "het formulier",
       "english": "form",
       "category": "administration",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
-        "A1"
+        "A1",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -418,9 +452,10 @@
       "dutch": "de geboortedatum",
       "english": "date of birth",
       "category": "personal_details",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
-        "A1"
+        "A1",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -430,9 +465,10 @@
       "dutch": "de gemeente",
       "english": "municipality",
       "category": "administration",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
-        "A1"
+        "A1",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -442,9 +478,10 @@
       "dutch": "het gemeentehuis",
       "english": "town hall",
       "category": "administration",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
-        "A1"
+        "A1",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -454,9 +491,10 @@
       "dutch": "helpen",
       "english": "to help",
       "category": "communication",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
-        "A1"
+        "A1",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -466,10 +504,11 @@
       "dutch": "invullen",
       "english": "to fill in",
       "category": "administration",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
         "A1",
-        "separable"
+        "separable",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -479,9 +518,10 @@
       "dutch": "de man",
       "english": "man",
       "category": "people",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
-        "A1"
+        "A1",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -491,10 +531,11 @@
       "dutch": "meneer",
       "english": "sir; Mr",
       "category": "people",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
         "A1",
-        "formal"
+        "formal",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -504,9 +545,10 @@
       "dutch": "mobiel",
       "english": "mobile",
       "category": "personal_details",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
-        "A1"
+        "A1",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -516,9 +558,10 @@
       "dutch": "de nationaliteit",
       "english": "nationality",
       "category": "personal_details",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
-        "A1"
+        "A1",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -528,9 +571,10 @@
       "dutch": "nieuw",
       "english": "new",
       "category": "descriptions",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
-        "A1"
+        "A1",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -540,9 +584,10 @@
       "dutch": "de postcode",
       "english": "postal code",
       "category": "personal_details",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
-        "A1"
+        "A1",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -552,9 +597,10 @@
       "dutch": "de vrouw",
       "english": "woman",
       "category": "people",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
-        "A1"
+        "A1",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -564,9 +610,10 @@
       "dutch": "de woonplaats",
       "english": "place of residence",
       "category": "personal_details",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
-        "A1"
+        "A1",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -576,9 +623,10 @@
       "dutch": "alleen",
       "english": "alone",
       "category": "home_and_family",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -588,10 +636,11 @@
       "dutch": "appen",
       "english": "to send a message",
       "category": "communication",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
         "A1",
-        "informal"
+        "informal",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -601,10 +650,11 @@
       "dutch": "de buren",
       "english": "neighbors",
       "category": "home_and_family",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
         "A1",
-        "plural"
+        "plural",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -614,9 +664,10 @@
       "dutch": "de buurvrouw",
       "english": "female neighbor",
       "category": "home_and_family",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -626,9 +677,10 @@
       "dutch": "getrouwd",
       "english": "married",
       "category": "relationships",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -638,9 +690,10 @@
       "dutch": "graag",
       "english": "gladly; with pleasure",
       "category": "preferences",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -650,9 +703,10 @@
       "dutch": "de hobby",
       "english": "hobby",
       "category": "activities",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -662,9 +716,10 @@
       "dutch": "het huis",
       "english": "house",
       "category": "home_and_family",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -674,10 +729,11 @@
       "dutch": "het kind",
       "english": "child",
       "category": "home_and_family",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
         "A1",
-        "irregular_plural"
+        "irregular_plural",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -687,9 +743,10 @@
       "dutch": "met",
       "english": "with",
       "category": "prepositions",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -699,9 +756,10 @@
       "dutch": "ontmoeten",
       "english": "to meet",
       "category": "relationships",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -711,9 +769,10 @@
       "dutch": "de poes",
       "english": "female cat",
       "category": "animals",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -723,9 +782,10 @@
       "dutch": "het restaurant",
       "english": "restaurant",
       "category": "places",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -735,9 +795,10 @@
       "dutch": "de week",
       "english": "week",
       "category": "time",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -747,9 +808,10 @@
       "dutch": "het weekend",
       "english": "weekend",
       "category": "time",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -759,9 +821,10 @@
       "dutch": "welkom",
       "english": "welcome",
       "category": "communication",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -771,9 +834,10 @@
       "dutch": "wie",
       "english": "who",
       "category": "question_words",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -783,9 +847,10 @@
       "dutch": "gezond",
       "english": "healthy",
       "category": "health",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -795,9 +860,10 @@
       "dutch": "vriendelijk",
       "english": "friendly",
       "category": "descriptions",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -807,9 +873,10 @@
       "dutch": "belangrijk",
       "english": "important",
       "category": "descriptions",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -819,9 +886,10 @@
       "dutch": "gelukkig",
       "english": "happy; fortunate",
       "category": "feelings",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -831,9 +899,10 @@
       "dutch": "de kater",
       "english": "male cat",
       "category": "animals",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -843,9 +912,10 @@
       "dutch": "het kitten",
       "english": "kitten",
       "category": "animals",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -855,9 +925,10 @@
       "dutch": "de appel",
       "english": "apple",
       "category": "food",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -867,9 +938,10 @@
       "dutch": "de banaan",
       "english": "banana",
       "category": "food",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -879,9 +951,10 @@
       "dutch": "bijna",
       "english": "almost",
       "category": "time_and_degree",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -891,10 +964,11 @@
       "dutch": "de boodschappen",
       "english": "groceries",
       "category": "shopping",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
         "A1",
-        "plural"
+        "plural",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -904,9 +978,10 @@
       "dutch": "het eten",
       "english": "food; meal",
       "category": "food",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -916,9 +991,10 @@
       "dutch": "het fruit",
       "english": "fruit",
       "category": "food",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -928,9 +1004,10 @@
       "dutch": "de groente",
       "english": "vegetable",
       "category": "food",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -940,9 +1017,10 @@
       "dutch": "de kip",
       "english": "chicken",
       "category": "food",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -952,9 +1030,10 @@
       "dutch": "kopen",
       "english": "to buy",
       "category": "shopping",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -964,9 +1043,10 @@
       "dutch": "de lijst",
       "english": "list",
       "category": "shopping",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -976,9 +1056,10 @@
       "dutch": "de markt",
       "english": "market",
       "category": "shopping",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -988,9 +1069,10 @@
       "dutch": "de rijst",
       "english": "rice",
       "category": "food",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1000,9 +1082,10 @@
       "dutch": "de supermarkt",
       "english": "supermarket",
       "category": "shopping",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1012,9 +1095,10 @@
       "dutch": "thuis",
       "english": "at home",
       "category": "home_and_family",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1024,9 +1108,10 @@
       "dutch": "de tomaat",
       "english": "tomato",
       "category": "food",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1036,9 +1121,10 @@
       "dutch": "de vis",
       "english": "fish",
       "category": "food",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1048,9 +1134,10 @@
       "dutch": "het vlees",
       "english": "meat",
       "category": "food",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1060,9 +1147,10 @@
       "dutch": "de wortel",
       "english": "carrot",
       "category": "food",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1072,9 +1160,10 @@
       "dutch": "de aardappel",
       "english": "potato",
       "category": "food",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1084,10 +1173,11 @@
       "dutch": "alsjeblieft",
       "english": "please; here you go",
       "category": "politeness",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
         "A1",
-        "informal"
+        "informal",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1097,10 +1187,11 @@
       "dutch": "alstublieft",
       "english": "please; here you go",
       "category": "politeness",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
         "A1",
-        "formal"
+        "formal",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1110,9 +1201,10 @@
       "dutch": "anders",
       "english": "otherwise; else",
       "category": "linking",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1122,10 +1214,11 @@
       "dutch": "het ei",
       "english": "egg",
       "category": "food",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
         "A1",
-        "irregular_plural"
+        "irregular_plural",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1135,9 +1228,10 @@
       "dutch": "fijn",
       "english": "nice; pleasant",
       "category": "descriptions",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1147,9 +1241,10 @@
       "dutch": "hoeveel",
       "english": "how much; how many",
       "category": "question_words",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1159,9 +1254,10 @@
       "dutch": "iets",
       "english": "something",
       "category": "pronouns",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1171,9 +1267,10 @@
       "dutch": "jammer",
       "english": "a pity; too bad",
       "category": "reactions",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1183,9 +1280,10 @@
       "dutch": "de kaas",
       "english": "cheese",
       "category": "food",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1195,9 +1293,10 @@
       "dutch": "de kilo",
       "english": "kilogram",
       "category": "quantities",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1207,10 +1306,11 @@
       "dutch": "mevrouw",
       "english": "madam; Ms",
       "category": "people",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
         "A1",
-        "formal"
+        "formal",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1220,10 +1320,11 @@
       "dutch": "nemen",
       "english": "to take",
       "category": "core_verbs",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
         "A1",
-        "irregular"
+        "irregular",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1233,9 +1334,10 @@
       "dutch": "pinnen",
       "english": "to pay by debit card",
       "category": "shopping",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1245,9 +1347,10 @@
       "dutch": "de verkoper",
       "english": "salesperson; seller",
       "category": "shopping",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1257,9 +1360,10 @@
       "dutch": "vers",
       "english": "fresh",
       "category": "food",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1269,9 +1373,10 @@
       "dutch": "altijd",
       "english": "always",
       "category": "frequency",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1281,9 +1386,10 @@
       "dutch": "dicht",
       "english": "closed",
       "category": "opening_hours",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1293,9 +1399,10 @@
       "dutch": "halen",
       "english": "to get; to fetch",
       "category": "shopping",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1305,9 +1412,10 @@
       "dutch": "liggen",
       "english": "to lie; to be located",
       "category": "location",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1317,10 +1425,11 @@
       "dutch": "weten",
       "english": "to know a fact",
       "category": "communication",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
         "A1",
-        "irregular"
+        "irregular",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1330,10 +1439,11 @@
       "dutch": "de bakker",
       "english": "baker; bakery",
       "category": "shopping",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
         "A1",
-        "time"
+        "time",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1343,9 +1453,10 @@
       "dutch": "het brood",
       "english": "bread",
       "category": "food",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1355,9 +1466,10 @@
       "dutch": "de buurt",
       "english": "neighborhood",
       "category": "places",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1367,9 +1479,10 @@
       "dutch": "duur",
       "english": "expensive",
       "category": "shopping",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1379,9 +1492,10 @@
       "dutch": "goedkoop",
       "english": "cheap",
       "category": "shopping",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1391,9 +1505,10 @@
       "dutch": "hier",
       "english": "here",
       "category": "location",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1403,9 +1518,10 @@
       "dutch": "kennen",
       "english": "to know; to be familiar with",
       "category": "communication",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1415,9 +1531,10 @@
       "dutch": "meestal",
       "english": "usually",
       "category": "frequency",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1427,9 +1544,10 @@
       "dutch": "de middag",
       "english": "afternoon",
       "category": "time",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1439,9 +1557,10 @@
       "dutch": "natuurlijk",
       "english": "of course",
       "category": "reactions",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1451,10 +1570,11 @@
       "dutch": "de ochtend",
       "english": "morning",
       "category": "time",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
         "A1",
-        "time"
+        "time",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1464,9 +1584,10 @@
       "dutch": "soms",
       "english": "sometimes",
       "category": "frequency",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1476,9 +1597,10 @@
       "dutch": "de straat",
       "english": "street",
       "category": "places",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1488,9 +1610,10 @@
       "dutch": "vragen",
       "english": "to ask",
       "category": "communication",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1500,9 +1623,10 @@
       "dutch": "wanneer",
       "english": "when",
       "category": "question_words",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1512,10 +1636,11 @@
       "dutch": "de chips",
       "english": "crisps; potato chips",
       "category": "food",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
         "A1",
-        "plural"
+        "plural",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1525,9 +1650,10 @@
       "dutch": "denken",
       "english": "to think",
       "category": "communication",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1537,9 +1663,10 @@
       "dutch": "het internet",
       "english": "internet",
       "category": "technology",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1549,9 +1676,10 @@
       "dutch": "de keuken",
       "english": "kitchen",
       "category": "home_and_family",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1561,9 +1689,10 @@
       "dutch": "laat",
       "english": "late",
       "category": "time",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1573,9 +1702,10 @@
       "dutch": "leeg",
       "english": "empty",
       "category": "descriptions",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1585,9 +1715,10 @@
       "dutch": "open",
       "english": "open",
       "category": "opening_hours",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1597,10 +1728,11 @@
       "dutch": "de openingstijden",
       "english": "opening hours",
       "category": "opening_hours",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
         "A1",
-        "plural"
+        "plural",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1610,9 +1742,10 @@
       "dutch": "snel",
       "english": "quick; quickly",
       "category": "descriptions",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1622,9 +1755,10 @@
       "dutch": "de zak",
       "english": "bag",
       "category": "shopping",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1634,9 +1768,10 @@
       "dutch": "moe",
       "english": "tired",
       "category": "health",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1646,9 +1781,10 @@
       "dutch": "vaak",
       "english": "often",
       "category": "frequency",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1658,9 +1794,10 @@
       "dutch": "weleens",
       "english": "sometimes; ever",
       "category": "frequency",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1670,9 +1807,10 @@
       "dutch": "nooit",
       "english": "never",
       "category": "frequency",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1682,9 +1820,10 @@
       "dutch": "alles",
       "english": "everything",
       "category": "pronouns",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1694,9 +1833,10 @@
       "dutch": "beterschap",
       "english": "get well soon",
       "category": "health",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1706,9 +1846,10 @@
       "dutch": "bezig",
       "english": "busy; occupied",
       "category": "daily_life",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1718,9 +1859,10 @@
       "dutch": "de broer",
       "english": "brother",
       "category": "home_and_family",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1730,9 +1872,10 @@
       "dutch": "daar",
       "english": "there",
       "category": "location",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1742,9 +1885,10 @@
       "dutch": "druk",
       "english": "busy",
       "category": "daily_life",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1754,9 +1898,10 @@
       "dutch": "eindelijk",
       "english": "finally",
       "category": "time",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1766,9 +1911,10 @@
       "dutch": "de groet",
       "english": "greeting",
       "category": "communication",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1778,9 +1924,10 @@
       "dutch": "lekker",
       "english": "tasty; pleasant",
       "category": "descriptions",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1790,9 +1937,10 @@
       "dutch": "lopen",
       "english": "to walk",
       "category": "movement",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1802,9 +1950,10 @@
       "dutch": "de moeder",
       "english": "mother",
       "category": "home_and_family",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1814,9 +1963,10 @@
       "dutch": "de paracetamol",
       "english": "paracetamol",
       "category": "health",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1826,9 +1976,10 @@
       "dutch": "prima",
       "english": "fine; excellent",
       "category": "reactions",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1838,9 +1989,10 @@
       "dutch": "vervelend",
       "english": "annoying; unpleasant",
       "category": "feelings",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1850,9 +2002,10 @@
       "dutch": "de vriend",
       "english": "male friend; boyfriend",
       "category": "relationships",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1862,9 +2015,10 @@
       "dutch": "de vriendin",
       "english": "female friend; girlfriend",
       "category": "relationships",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1874,9 +2028,10 @@
       "dutch": "waarom",
       "english": "why",
       "category": "question_words",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1886,9 +2041,10 @@
       "dutch": "warm",
       "english": "warm",
       "category": "weather",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1898,9 +2054,10 @@
       "dutch": "het weer",
       "english": "weather",
       "category": "weather",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1910,10 +2067,11 @@
       "dutch": "worden",
       "english": "to become",
       "category": "core_verbs",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
         "A1",
-        "irregular"
+        "irregular",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1923,9 +2081,10 @@
       "dutch": "ziek",
       "english": "ill; sick",
       "category": "health",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1935,9 +2094,10 @@
       "dutch": "de zon",
       "english": "sun",
       "category": "weather",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1947,9 +2107,10 @@
       "dutch": "de zus",
       "english": "sister",
       "category": "home_and_family",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1959,9 +2120,10 @@
       "dutch": "het bezoek",
       "english": "visit",
       "category": "social",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1971,10 +2133,11 @@
       "dutch": "binnenkomen",
       "english": "to come in",
       "category": "movement",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
         "A1",
-        "separable"
+        "separable",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1984,9 +2147,10 @@
       "dutch": "drinken",
       "english": "to drink",
       "category": "food",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -1996,10 +2160,11 @@
       "dutch": "eruitzien",
       "english": "to look; to appear",
       "category": "descriptions",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
         "A1",
-        "separable"
+        "separable",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -2009,10 +2174,11 @@
       "dutch": "geven",
       "english": "to give",
       "category": "core_verbs",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
         "A1",
-        "irregular"
+        "irregular",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -2022,9 +2188,10 @@
       "dutch": "horen",
       "english": "to hear",
       "category": "communication",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -2034,9 +2201,10 @@
       "dutch": "huilen",
       "english": "to cry",
       "category": "feelings",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -2046,9 +2214,10 @@
       "dutch": "de jas",
       "english": "coat",
       "category": "clothing",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -2058,9 +2227,10 @@
       "dutch": "de jongen",
       "english": "boy",
       "category": "people",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -2070,9 +2240,10 @@
       "dutch": "klein",
       "english": "small",
       "category": "descriptions",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -2082,9 +2253,10 @@
       "dutch": "de koffie",
       "english": "coffee",
       "category": "drinks",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -2094,9 +2266,10 @@
       "dutch": "lachen",
       "english": "to laugh",
       "category": "feelings",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -2106,9 +2279,10 @@
       "dutch": "lief",
       "english": "sweet; kind",
       "category": "descriptions",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -2118,9 +2292,10 @@
       "dutch": "de melk",
       "english": "milk",
       "category": "drinks",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -2130,9 +2305,10 @@
       "dutch": "slapen",
       "english": "to sleep",
       "category": "daily_life",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -2142,9 +2318,10 @@
       "dutch": "de suiker",
       "english": "sugar",
       "category": "food",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -2154,9 +2331,10 @@
       "dutch": "de thee",
       "english": "tea",
       "category": "drinks",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -2166,9 +2344,10 @@
       "dutch": "zelf",
       "english": "self; oneself",
       "category": "pronouns",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -2178,9 +2357,10 @@
       "dutch": "zitten",
       "english": "to sit",
       "category": "position",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -2190,9 +2370,10 @@
       "dutch": "zonder",
       "english": "without",
       "category": "prepositions",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -2202,9 +2383,10 @@
       "dutch": "zwart",
       "english": "black",
       "category": "colors",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -2214,10 +2396,11 @@
       "dutch": "gaan",
       "english": "to go",
       "category": "movement",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
         "A1",
-        "irregular"
+        "irregular",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -2227,10 +2410,11 @@
       "dutch": "u",
       "english": "you (formal)",
       "category": "pronouns",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
         "A1",
-        "formal"
+        "formal",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -2240,10 +2424,11 @@
       "dutch": "uw",
       "english": "your (formal)",
       "category": "pronouns",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
         "A1",
-        "formal"
+        "formal",
+        "2026-05-25"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -2253,9 +2438,10 @@
       "dutch": "praten",
       "english": "to talk",
       "category": "communication",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-01"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -2265,10 +2451,11 @@
       "dutch": "zaterdagochtend",
       "english": "Saturday morning",
       "category": "time",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
         "A1",
-        "time"
+        "time",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -2278,10 +2465,11 @@
       "dutch": "de zoon",
       "english": "son",
       "category": "family",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
         "A1",
-        "family"
+        "family",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -2291,9 +2479,10 @@
       "dutch": "kijken",
       "english": "to look; to watch",
       "category": "perception",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -2303,9 +2492,10 @@
       "dutch": "ander",
       "english": "other; another; different",
       "category": "descriptions",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
-        "A1"
+        "A1",
+        "2026-06-08"
       ],
       "source_path": "knowledge/words/items.json"
     },
@@ -2315,10 +2505,11 @@
       "dutch": "Ik heb dorst.",
       "english": "I am thirsty.",
       "category": "physical_state",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
         "A1",
-        "health"
+        "health",
+        "2026-05-25"
       ],
       "source_path": "knowledge/expressions/items.json"
     },
@@ -2328,10 +2519,11 @@
       "dutch": "Ik heb honger.",
       "english": "I am hungry.",
       "category": "physical_state",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
         "A1",
-        "food"
+        "food",
+        "2026-05-25"
       ],
       "source_path": "knowledge/expressions/items.json"
     },
@@ -2341,10 +2533,11 @@
       "dutch": "Waar kom je vandaan?",
       "english": "Where are you from?",
       "category": "introduction",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
         "A1",
-        "question"
+        "question",
+        "2026-05-25"
       ],
       "source_path": "knowledge/expressions/items.json"
     },
@@ -2354,10 +2547,11 @@
       "dutch": "Hoe lang woon je al in Nederland?",
       "english": "How long have you been living in the Netherlands?",
       "category": "introduction",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
         "A1",
-        "time"
+        "time",
+        "2026-05-25"
       ],
       "source_path": "knowledge/expressions/items.json"
     },
@@ -2367,10 +2561,11 @@
       "dutch": "Dat klopt.",
       "english": "That is correct.",
       "category": "confirmation",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
         "A1",
-        "conversation"
+        "conversation",
+        "2026-05-25"
       ],
       "source_path": "knowledge/expressions/items.json"
     },
@@ -2380,10 +2575,11 @@
       "dutch": "Hoe spel ik dat?",
       "english": "How do I spell that?",
       "category": "communication",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
         "A1",
-        "spelling"
+        "spelling",
+        "2026-05-25"
       ],
       "source_path": "knowledge/expressions/items.json"
     },
@@ -2393,11 +2589,12 @@
       "dutch": "Kan ik u helpen?",
       "english": "Can I help you?",
       "category": "service",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
         "A1",
         "formal",
-        "modal"
+        "modal",
+        "2026-05-25"
       ],
       "source_path": "knowledge/expressions/items.json"
     },
@@ -2407,10 +2604,11 @@
       "dutch": "Mag ik wat vragen?",
       "english": "May I ask something?",
       "category": "politeness",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
         "A1",
-        "modal"
+        "modal",
+        "2026-05-25"
       ],
       "source_path": "knowledge/expressions/items.json"
     },
@@ -2420,9 +2618,10 @@
       "dutch": "Graag gedaan.",
       "english": "You're welcome.",
       "category": "politeness",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
-        "A1"
+        "A1",
+        "2026-05-25"
       ],
       "source_path": "knowledge/expressions/items.json"
     },
@@ -2432,10 +2631,11 @@
       "dutch": "Leuk je te ontmoeten.",
       "english": "Nice to meet you.",
       "category": "introduction",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
         "A1",
-        "social"
+        "social",
+        "2026-06-01"
       ],
       "source_path": "knowledge/expressions/items.json"
     },
@@ -2445,11 +2645,12 @@
       "dutch": "Zullen we elkaar om acht uur ontmoeten?",
       "english": "Shall we meet each other at eight o'clock?",
       "category": "arrangements",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
         "A1",
         "modal",
-        "time"
+        "time",
+        "2026-06-01"
       ],
       "source_path": "knowledge/expressions/items.json"
     },
@@ -2459,10 +2660,11 @@
       "dutch": "De rijst is op.",
       "english": "The rice is finished; we are out of rice.",
       "category": "shopping",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
         "A1",
-        "food"
+        "food",
+        "2026-06-01"
       ],
       "source_path": "knowledge/expressions/items.json"
     },
@@ -2472,10 +2674,11 @@
       "dutch": "Tot later.",
       "english": "See you later.",
       "category": "farewell",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
         "A1",
-        "conversation"
+        "conversation",
+        "2026-06-01"
       ],
       "source_path": "knowledge/expressions/items.json"
     },
@@ -2485,11 +2688,12 @@
       "dutch": "Zeg het maar.",
       "english": "Go ahead; tell me what you would like.",
       "category": "service",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
         "A1",
         "shopping",
-        "particle"
+        "particle",
+        "2026-06-01"
       ],
       "source_path": "knowledge/expressions/items.json"
     },
@@ -2499,10 +2703,11 @@
       "dutch": "Kijk eens.",
       "english": "Take a look.",
       "category": "conversation",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
         "A1",
-        "particle"
+        "particle",
+        "2026-06-01"
       ],
       "source_path": "knowledge/expressions/items.json"
     },
@@ -2512,10 +2717,11 @@
       "dutch": "Anders nog iets?",
       "english": "Anything else?",
       "category": "service",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
         "A1",
-        "shopping"
+        "shopping",
+        "2026-06-01"
       ],
       "source_path": "knowledge/expressions/items.json"
     },
@@ -2525,10 +2731,11 @@
       "dutch": "Fijne dag!",
       "english": "Have a nice day!",
       "category": "farewell",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
         "A1",
-        "politeness"
+        "politeness",
+        "2026-06-01"
       ],
       "source_path": "knowledge/expressions/items.json"
     },
@@ -2538,10 +2745,11 @@
       "dutch": "Ik heb zin in ...",
       "english": "I feel like ...; I am in the mood for ...",
       "category": "preference",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
         "A1",
-        "fixed_expression"
+        "fixed_expression",
+        "2026-06-01"
       ],
       "source_path": "knowledge/expressions/items.json"
     },
@@ -2551,10 +2759,11 @@
       "dutch": "Tot zo.",
       "english": "See you soon.",
       "category": "farewell",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
         "A1",
-        "conversation"
+        "conversation",
+        "2026-06-08"
       ],
       "source_path": "knowledge/expressions/items.json"
     },
@@ -2564,10 +2773,11 @@
       "dutch": "Het maakt me niet uit.",
       "english": "I don't mind; it doesn't matter to me.",
       "category": "preference",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
         "A1",
-        "fixed_expression"
+        "fixed_expression",
+        "2026-06-08"
       ],
       "source_path": "knowledge/expressions/items.json"
     },
@@ -2577,10 +2787,11 @@
       "dutch": "Je ziet er goed uit.",
       "english": "You look well; you look good.",
       "category": "health",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
         "A1",
-        "separable_verb"
+        "separable_verb",
+        "2026-06-08"
       ],
       "source_path": "knowledge/expressions/items.json"
     },
@@ -2590,10 +2801,11 @@
       "dutch": "Doe maar.",
       "english": "Go ahead; that's fine.",
       "category": "response",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
         "A1",
-        "particle"
+        "particle",
+        "2026-06-08"
       ],
       "source_path": "knowledge/expressions/items.json"
     },
@@ -2603,11 +2815,12 @@
       "dutch": "Doe maar niet.",
       "english": "Better not; no thanks.",
       "category": "response",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
         "A1",
         "particle",
-        "negation"
+        "negation",
+        "2026-06-08"
       ],
       "source_path": "knowledge/expressions/items.json"
     },
@@ -2617,10 +2830,11 @@
       "dutch": "Dat is lang geleden.",
       "english": "That was a long time ago; long time no see.",
       "category": "social",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
         "A1",
-        "time"
+        "time",
+        "2026-06-08"
       ],
       "source_path": "knowledge/expressions/items.json"
     },
@@ -2630,10 +2844,11 @@
       "dutch": "Ik ben goed bezig.",
       "english": "I am doing well; I am making good progress.",
       "category": "encouragement",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
         "A1",
-        "fixed_expression"
+        "fixed_expression",
+        "2026-06-08"
       ],
       "source_path": "knowledge/expressions/items.json"
     },
@@ -2643,10 +2858,11 @@
       "dutch": "Kom binnen.",
       "english": "Come in.",
       "category": "visiting",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
         "A1",
-        "imperative"
+        "imperative",
+        "2026-06-08"
       ],
       "source_path": "knowledge/expressions/items.json"
     },
@@ -2656,11 +2872,12 @@
       "dutch": "Geef je jas maar hier.",
       "english": "Just give me your coat.",
       "category": "visiting",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
         "A1",
         "imperative",
-        "particle"
+        "particle",
+        "2026-06-08"
       ],
       "source_path": "knowledge/expressions/items.json"
     },
@@ -2670,11 +2887,12 @@
       "dutch": "Zal ik doen.",
       "english": "Will do; I'll do that.",
       "category": "commitment",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
         "A1",
         "modal",
-        "response"
+        "response",
+        "2026-06-08"
       ],
       "source_path": "knowledge/expressions/items.json"
     },
@@ -2684,10 +2902,11 @@
       "dutch": "al",
       "english": "already",
       "category": "discourse_particle",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
         "A1",
-        "time"
+        "time",
+        "2026-05-25"
       ],
       "source_path": "knowledge/particles/items.json"
     },
@@ -2697,10 +2916,11 @@
       "dutch": "nog",
       "english": "still; yet; another",
       "category": "discourse_particle",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
         "A1",
-        "time"
+        "time",
+        "2026-06-01"
       ],
       "source_path": "knowledge/particles/items.json"
     },
@@ -2710,10 +2930,11 @@
       "dutch": "maar",
       "english": "just; go ahead",
       "category": "discourse_particle",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
         "A1",
-        "modal_particle"
+        "modal_particle",
+        "2026-06-01"
       ],
       "source_path": "knowledge/particles/items.json"
     },
@@ -2723,10 +2944,11 @@
       "dutch": "wel",
       "english": "indeed; actually; on the other hand",
       "category": "discourse_particle",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
         "A1",
-        "modal_particle"
+        "modal_particle",
+        "2026-06-01"
       ],
       "source_path": "knowledge/particles/items.json"
     },
@@ -2736,10 +2958,11 @@
       "dutch": "even",
       "english": "for a moment; just; briefly",
       "category": "discourse_particle",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
         "A1",
-        "modal_particle"
+        "modal_particle",
+        "2026-06-08"
       ],
       "source_path": "knowledge/particles/items.json"
     },
@@ -2749,10 +2972,11 @@
       "dutch": "hoor",
       "english": "you know; really; no problem",
       "category": "discourse_particle",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
         "A1",
-        "modal_particle"
+        "modal_particle",
+        "2026-06-08"
       ],
       "source_path": "knowledge/particles/items.json"
     },
@@ -2762,10 +2986,11 @@
       "dutch": "toch",
       "english": "still; anyway; surely",
       "category": "discourse_particle",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
         "A1",
-        "modal_particle"
+        "modal_particle",
+        "2026-06-08"
       ],
       "source_path": "knowledge/particles/items.json"
     },
@@ -2775,10 +3000,11 @@
       "dutch": "joh",
       "english": "come on; really; hey",
       "category": "discourse_particle",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
         "A1",
-        "informal"
+        "informal",
+        "2026-06-08"
       ],
       "source_path": "knowledge/particles/items.json"
     },
@@ -2788,10 +3014,11 @@
       "dutch": "alweer",
       "english": "again already",
       "category": "discourse_particle",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
         "A1",
-        "time"
+        "time",
+        "2026-06-08"
       ],
       "source_path": "knowledge/particles/items.json"
     },
@@ -2801,10 +3028,11 @@
       "dutch": "nog steeds",
       "english": "still",
       "category": "discourse_particle",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
         "A1",
-        "time"
+        "time",
+        "2026-06-08"
       ],
       "source_path": "knowledge/particles/items.json"
     },
@@ -2814,10 +3042,11 @@
       "dutch": "Persoonsvorm op de tweede plaats",
       "english": "The finite verb is in second position",
       "category": "grammar",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
         "A1",
-        "word_order"
+        "word_order",
+        "2026-05-25"
       ],
       "source_path": "knowledge/grammar-patterns/items.json"
     },
@@ -2827,10 +3056,11 @@
       "dutch": "Regelmatige werkwoorden in de tegenwoordige tijd",
       "english": "Regular verbs in the present tense",
       "category": "grammar",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
         "A1",
-        "present_tense"
+        "present_tense",
+        "2026-05-25"
       ],
       "source_path": "knowledge/grammar-patterns/items.json"
     },
@@ -2840,10 +3070,11 @@
       "dutch": "Vragen met inversie",
       "english": "Questions using inversion",
       "category": "grammar",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
         "A1",
-        "questions"
+        "questions",
+        "2026-05-25"
       ],
       "source_path": "knowledge/grammar-patterns/items.json"
     },
@@ -2853,10 +3084,11 @@
       "dutch": "Meervoud met -en",
       "english": "Plural with -en",
       "category": "grammar",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
         "A1",
-        "plurals"
+        "plurals",
+        "2026-06-01"
       ],
       "source_path": "knowledge/grammar-patterns/items.json"
     },
@@ -2866,10 +3098,11 @@
       "dutch": "Meervoud met -s",
       "english": "Plural with -s",
       "category": "grammar",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
         "A1",
-        "plurals"
+        "plurals",
+        "2026-06-01"
       ],
       "source_path": "knowledge/grammar-patterns/items.json"
     },
@@ -2879,11 +3112,12 @@
       "dutch": "Meervoud gebruikt altijd 'de'",
       "english": "Plural nouns always use 'de'",
       "category": "grammar",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
         "A1",
         "articles",
-        "plurals"
+        "plurals",
+        "2026-05-25"
       ],
       "source_path": "knowledge/grammar-patterns/items.json"
     },
@@ -2893,11 +3127,12 @@
       "dutch": "Modaal werkwoord met infinitief",
       "english": "Modal verb with an infinitive",
       "category": "grammar",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
         "A1",
         "modal_verbs",
-        "word_order"
+        "word_order",
+        "2026-06-01"
       ],
       "source_path": "knowledge/grammar-patterns/items.json"
     },
@@ -2907,11 +3142,12 @@
       "dutch": "Welk en welke",
       "english": "Welk and welke",
       "category": "grammar",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
         "A1",
         "question_words",
-        "articles"
+        "articles",
+        "2026-06-01"
       ],
       "source_path": "knowledge/grammar-patterns/items.json"
     },
@@ -2921,11 +3157,12 @@
       "dutch": "Dit/dat en deze/die",
       "english": "This/that with de- and het-words",
       "category": "grammar",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
         "A1",
         "demonstratives",
-        "articles"
+        "articles",
+        "2026-06-08"
       ],
       "source_path": "knowledge/grammar-patterns/items.json"
     },
@@ -2935,10 +3172,11 @@
       "dutch": "Tot en tot en met",
       "english": "Until versus up to and including",
       "category": "grammar",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
         "A1",
-        "time"
+        "time",
+        "2026-06-08"
       ],
       "source_path": "knowledge/grammar-patterns/items.json"
     },
@@ -2948,11 +3186,12 @@
       "dutch": "Plaats aangeven",
       "english": "Expressing location",
       "category": "grammar",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
         "A1",
         "location",
-        "prepositions"
+        "prepositions",
+        "2026-06-08"
       ],
       "source_path": "knowledge/grammar-patterns/items.json"
     },
@@ -2962,10 +3201,11 @@
       "dutch": "Klokkijken met half, kwart, voor en over",
       "english": "Telling time with half, quarter, to, and past",
       "category": "grammar",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
         "A1",
-        "time"
+        "time",
+        "2026-06-08"
       ],
       "source_path": "knowledge/grammar-patterns/items.json"
     },
@@ -2975,11 +3215,12 @@
       "dutch": "Eruitzien als scheidbaar werkwoord",
       "english": "Using the separable verb eruitzien",
       "category": "grammar",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
         "A1",
         "separable_verbs",
-        "word_order"
+        "word_order",
+        "2026-06-08"
       ],
       "source_path": "knowledge/grammar-patterns/items.json"
     },
@@ -2989,10 +3230,11 @@
       "dutch": "houden van",
       "english": "to love; to like",
       "category": "verb_construction",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
         "A1",
-        "fixed_preposition"
+        "fixed_preposition",
+        "2026-06-01"
       ],
       "source_path": "knowledge/verb-constructions/items.json"
     },
@@ -3002,10 +3244,11 @@
       "dutch": "boodschappen doen",
       "english": "to do the grocery shopping",
       "category": "verb_construction",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
         "A1",
-        "shopping"
+        "shopping",
+        "2026-06-01"
       ],
       "source_path": "knowledge/verb-constructions/items.json"
     },
@@ -3015,10 +3258,11 @@
       "dutch": "kunnen + infinitief",
       "english": "can; to be able to",
       "category": "verb_construction",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
         "A1",
-        "modal"
+        "modal",
+        "2026-06-01"
       ],
       "source_path": "knowledge/verb-constructions/items.json"
     },
@@ -3028,10 +3272,11 @@
       "dutch": "mogen + infinitief",
       "english": "may; to be allowed to",
       "category": "verb_construction",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
         "A1",
-        "modal"
+        "modal",
+        "2026-06-01"
       ],
       "source_path": "knowledge/verb-constructions/items.json"
     },
@@ -3041,10 +3286,11 @@
       "dutch": "moeten + infinitief",
       "english": "must; to have to",
       "category": "verb_construction",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
         "A1",
-        "modal"
+        "modal",
+        "2026-06-01"
       ],
       "source_path": "knowledge/verb-constructions/items.json"
     },
@@ -3054,10 +3300,11 @@
       "dutch": "willen + infinitief",
       "english": "to want to",
       "category": "verb_construction",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
         "A1",
-        "modal"
+        "modal",
+        "2026-06-01"
       ],
       "source_path": "knowledge/verb-constructions/items.json"
     },
@@ -3067,10 +3314,11 @@
       "dutch": "zullen + infinitief",
       "english": "shall; will",
       "category": "verb_construction",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
         "A1",
-        "modal"
+        "modal",
+        "2026-06-01"
       ],
       "source_path": "knowledge/verb-constructions/items.json"
     },
@@ -3080,10 +3328,11 @@
       "dutch": "zin hebben in / om te",
       "english": "to feel like; to be in the mood for",
       "category": "verb_construction",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
         "A1",
-        "fixed_expression"
+        "fixed_expression",
+        "2026-06-01"
       ],
       "source_path": "knowledge/verb-constructions/items.json"
     },
@@ -3093,10 +3342,11 @@
       "dutch": "eruitzien",
       "english": "to look; to appear",
       "category": "verb_construction",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
         "A1",
-        "separable"
+        "separable",
+        "2026-06-08"
       ],
       "source_path": "knowledge/verb-constructions/items.json"
     },
@@ -3106,11 +3356,12 @@
       "dutch": "Introductions and telephone numbers",
       "english": "Two new acquaintances introduce themselves and exchange contact details.",
       "category": "dialogue",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
         "A1",
         "introduction",
-        "personal_details"
+        "personal_details",
+        "2026-05-25"
       ],
       "source_path": "knowledge/dialogues/items.json"
     },
@@ -3120,11 +3371,12 @@
       "dutch": "A new neighbor",
       "english": "A new resident introduces herself to her neighbors.",
       "category": "dialogue",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
         "A1",
         "neighbors",
-        "introduction"
+        "introduction",
+        "2026-06-01"
       ],
       "source_path": "knowledge/dialogues/items.json"
     },
@@ -3134,11 +3386,12 @@
       "dutch": "At the market",
       "english": "A customer buys groceries from a seller.",
       "category": "dialogue",
-      "week": "week_01",
+      "week_start": "2026-06-01",
       "tags": [
         "A1",
         "shopping",
-        "service"
+        "service",
+        "2026-06-01"
       ],
       "source_path": "knowledge/dialogues/items.json"
     },
@@ -3148,11 +3401,12 @@
       "dutch": "Receiving a visitor",
       "english": "Someone welcomes a visitor into their home.",
       "category": "dialogue",
-      "week": "week_01",
+      "week_start": "2026-06-08",
       "tags": [
         "A1",
         "visiting",
-        "hospitality"
+        "hospitality",
+        "2026-06-08"
       ],
       "source_path": "knowledge/dialogues/items.json"
     },
@@ -3162,11 +3416,12 @@
       "dutch": "hij/zij woont",
       "english": "For the third-person singular of 'wonen', use the stem 'woon' plus -t: woont.",
       "category": "present_tense_spelling",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
         "A1",
         "verbs",
-        "spelling"
+        "spelling",
+        "2026-05-25"
       ],
       "source_path": "knowledge/mistakes/items.json"
     },
@@ -3176,11 +3431,12 @@
       "dutch": "je sport",
       "english": "The stem of 'sporten' is already 'sport', so only one final t is written.",
       "category": "present_tense_spelling",
-      "week": "week_01",
+      "week_start": "2026-05-25",
       "tags": [
         "A1",
         "verbs",
-        "spelling"
+        "spelling",
+        "2026-05-25"
       ],
       "source_path": "knowledge/mistakes/items.json"
     }

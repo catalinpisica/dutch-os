@@ -6,7 +6,6 @@
     "correct": "hij/zij woont",
     "english": "For the third-person singular of 'wonen', use the stem 'woon' plus -t: woont.",
     "category": "present_tense_spelling",
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-01-page-04.jpg"
     ],
@@ -14,10 +13,12 @@
     "tags": [
       "A1",
       "verbs",
-      "spelling"
+      "spelling",
+      "2026-05-25"
     ],
     "status": "active",
-    "notes": "The handwritten conjugation table contains 'woond'; this is treated as a correction candidate."
+    "notes": "The handwritten conjugation table contains 'woond'; this is treated as a correction candidate.",
+    "week_start": "2026-05-25"
   },
   {
     "id": "mistake-sportt-sport",
@@ -26,7 +27,6 @@
     "correct": "je sport",
     "english": "The stem of 'sporten' is already 'sport', so only one final t is written.",
     "category": "present_tense_spelling",
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-02-page-04.jpg"
     ],
@@ -34,9 +34,11 @@
     "tags": [
       "A1",
       "verbs",
-      "spelling"
+      "spelling",
+      "2026-05-25"
     ],
     "status": "active",
-    "notes": "Visible in the question-formation notes and included as a likely learner correction."
+    "notes": "Visible in the question-formation notes and included as a likely learner correction.",
+    "week_start": "2026-05-25"
   }
 ]

@@ -1,8 +1,11 @@
 [
   {
-    "id": "review-week-01",
+    "id": "review-2026-05-25",
     "type": "review",
-    "week": "week_01",
+    "week_start": "2026-05-25",
+    "tags": [
+      "2026-05-25"
+    ],
     "ingestion_date": "2026-06-12",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-01-page-01.jpg",
@@ -14,7 +17,48 @@
       "sources/archive/2026/week_01/images/lesson-02-page-03.jpg",
       "sources/archive/2026/week_01/images/lesson-02-page-04.jpg",
       "sources/archive/2026/week_01/images/lesson-03-page-01.jpg",
-      "sources/archive/2026/week_01/images/lesson-03-page-02.jpg",
+      "sources/archive/2026/week_01/images/lesson-03-page-02.jpg"
+    ],
+    "focus_ids": [
+      "expression-waar-kom-je-vandaan"
+    ],
+    "recall": [
+      {
+        "prompt": "How do you ask someone where they come from?",
+        "answer": "Waar kom je vandaan?",
+        "target_ids": [
+          "expression-waar-kom-je-vandaan"
+        ]
+      }
+    ],
+    "translation": [],
+    "cloze": [],
+    "grammar": [
+      {
+        "prompt": "Put in normal main-clause order: In het weekend / ik / koken / pasta.",
+        "answer": "In het weekend kook ik pasta.",
+        "target_ids": [
+          "grammar_pattern-persoonsvorm-op-de-tweede-plaats"
+        ]
+      }
+    ],
+    "roleplay": [],
+    "mistake_ids": [
+      "mistake-woond-woont",
+      "mistake-sportt-sport"
+    ],
+    "needs_review": [],
+    "notes": "Historical material was grouped by archived lesson order during the week-start migration on 2026-06-14."
+  },
+  {
+    "id": "review-2026-06-01",
+    "type": "review",
+    "week_start": "2026-06-01",
+    "tags": [
+      "2026-06-01"
+    ],
+    "ingestion_date": "2026-06-12",
+    "source_images": [
       "sources/archive/2026/week_01/images/lesson-04-page-01.jpg",
       "sources/archive/2026/week_01/images/lesson-04-page-02.jpg",
       "sources/archive/2026/week_01/images/lesson-04-page-03.jpg",
@@ -27,46 +71,13 @@
       "sources/archive/2026/week_01/images/lesson-06-page-03.jpg",
       "sources/archive/2026/week_01/images/lesson-06-page-04.jpg",
       "sources/archive/2026/week_01/images/lesson-06-page-05.jpg",
-      "sources/archive/2026/week_01/images/lesson-06-page-06.jpg",
-      "sources/archive/2026/week_01/images/lesson-07-page-01.jpg",
-      "sources/archive/2026/week_01/images/lesson-07-page-02.jpg",
-      "sources/archive/2026/week_01/images/lesson-07-page-03.jpg",
-      "sources/archive/2026/week_01/images/lesson-07-page-04.jpg",
-      "sources/archive/2026/week_01/images/lesson-07-page-05.jpg",
-      "sources/archive/2026/week_01/images/lesson-07-page-06.jpg",
-      "sources/archive/2026/week_01/images/lesson-07-page-07.jpg",
-      "sources/archive/2026/week_01/images/lesson-07-page-08.jpg",
-      "sources/archive/2026/week_01/images/lesson-08-page-01.jpg",
-      "sources/archive/2026/week_01/images/lesson-08-page-02.jpg",
-      "sources/archive/2026/week_01/images/lesson-08-page-03.jpg",
-      "sources/archive/2026/week_01/images/lesson-08-page-04.jpg"
+      "sources/archive/2026/week_01/images/lesson-06-page-06.jpg"
     ],
     "focus_ids": [
-      "expression-waar-kom-je-vandaan",
-      "expression-het-maakt-me-niet-uit",
-      "expression-geef-je-jas-maar-hier",
-      "particle-even",
-      "particle-hoor",
       "grammar_pattern-modaal-werkwoord-met-infinitief",
-      "grammar_pattern-klokkijken-met-half-kwart-voor-en-over",
       "verb_construction-zin-hebben-in-om-te"
     ],
     "recall": [
-      {
-        "prompt": "How do you ask someone where they come from?",
-        "answer": "Waar kom je vandaan?",
-        "target_ids": [
-          "expression-waar-kom-je-vandaan"
-        ]
-      },
-      {
-        "prompt": "What is the difference between 'even' and 'snel'?",
-        "answer": "'Even' presents an action as brief or easy; 'snel' focuses on speed.",
-        "target_ids": [
-          "particle-even",
-          "word-snel"
-        ]
-      },
       {
         "prompt": "Name the five modal verbs from the notes.",
         "answer": "kunnen, mogen, moeten, willen, zullen",
@@ -81,13 +92,6 @@
     ],
     "translation": [
       {
-        "prompt": "Translate: I don't mind.",
-        "answer": "Het maakt me niet uit.",
-        "target_ids": [
-          "expression-het-maakt-me-niet-uit"
-        ]
-      },
-      {
         "prompt": "Translate: We are not allowed to text in class.",
         "answer": "We mogen in de les niet appen.",
         "target_ids": [
@@ -99,6 +103,77 @@
         "answer": "Ik heb zin in koffie.",
         "target_ids": [
           "verb_construction-zin-hebben-in-om-te"
+        ]
+      }
+    ],
+    "cloze": [],
+    "grammar": [
+      {
+        "prompt": "Choose welk/welke: ___ huis? ___ straat?",
+        "answer": "Welk huis? Welke straat?",
+        "target_ids": [
+          "grammar_pattern-welk-en-welke"
+        ]
+      }
+    ],
+    "roleplay": [
+      {
+        "prompt": "You are buying vegetables at a market. Ask for one kilo of potatoes and ask whether you can pay by card.",
+        "answer": "Een kilo aardappels, alstublieft. Kan ik pinnen?",
+        "target_ids": [
+          "dialogue-at-the-market"
+        ]
+      }
+    ],
+    "mistake_ids": [],
+    "needs_review": [],
+    "notes": "Historical material was grouped by archived lesson order during the week-start migration on 2026-06-14."
+  },
+  {
+    "id": "review-2026-06-08",
+    "type": "review",
+    "week_start": "2026-06-08",
+    "tags": [
+      "2026-06-08"
+    ],
+    "ingestion_date": "2026-06-12",
+    "source_images": [
+      "sources/archive/2026/week_01/images/lesson-07-page-01.jpg",
+      "sources/archive/2026/week_01/images/lesson-07-page-02.jpg",
+      "sources/archive/2026/week_01/images/lesson-07-page-03.jpg",
+      "sources/archive/2026/week_01/images/lesson-07-page-04.jpg",
+      "sources/archive/2026/week_01/images/lesson-07-page-05.jpg",
+      "sources/archive/2026/week_01/images/lesson-07-page-06.jpg",
+      "sources/archive/2026/week_01/images/lesson-07-page-07.jpg",
+      "sources/archive/2026/week_01/images/lesson-07-page-08.jpg",
+      "sources/archive/2026/week_01/images/lesson-08-page-01.jpg",
+      "sources/archive/2026/week_01/images/lesson-08-page-02.jpg",
+      "sources/archive/2026/week_01/images/lesson-08-page-03.jpg",
+      "sources/archive/2026/week_01/images/lesson-08-page-04.jpg"
+    ],
+    "focus_ids": [
+      "expression-het-maakt-me-niet-uit",
+      "expression-geef-je-jas-maar-hier",
+      "particle-even",
+      "particle-hoor",
+      "grammar_pattern-klokkijken-met-half-kwart-voor-en-over"
+    ],
+    "recall": [
+      {
+        "prompt": "What is the difference between 'even' and 'snel'?",
+        "answer": "'Even' presents an action as brief or easy; 'snel' focuses on speed.",
+        "target_ids": [
+          "particle-even",
+          "word-snel"
+        ]
+      }
+    ],
+    "translation": [
+      {
+        "prompt": "Translate: I don't mind.",
+        "answer": "Het maakt me niet uit.",
+        "target_ids": [
+          "expression-het-maakt-me-niet-uit"
         ]
       }
     ],
@@ -128,20 +203,6 @@
     ],
     "grammar": [
       {
-        "prompt": "Put in normal main-clause order: In het weekend / ik / koken / pasta.",
-        "answer": "In het weekend kook ik pasta.",
-        "target_ids": [
-          "grammar_pattern-persoonsvorm-op-de-tweede-plaats"
-        ]
-      },
-      {
-        "prompt": "Choose welk/welke: ___ huis? ___ straat?",
-        "answer": "Welk huis? Welke straat?",
-        "target_ids": [
-          "grammar_pattern-welk-en-welke"
-        ]
-      },
-      {
         "prompt": "What time is 'half zeven'?",
         "answer": "6:30",
         "target_ids": [
@@ -151,13 +212,6 @@
     ],
     "roleplay": [
       {
-        "prompt": "You are buying vegetables at a market. Ask for one kilo of potatoes and ask whether you can pay by card.",
-        "answer": "Een kilo aardappels, alstublieft. Kan ik pinnen?",
-        "target_ids": [
-          "dialogue-at-the-market"
-        ]
-      },
-      {
         "prompt": "Welcome a visitor, take their coat, and offer coffee or tea.",
         "answer": "Kom binnen. Geef je jas maar hier. Wil je koffie of thee?",
         "target_ids": [
@@ -165,11 +219,8 @@
         ]
       }
     ],
-    "mistake_ids": [
-      "mistake-woond-woont",
-      "mistake-sportt-sport"
-    ],
+    "mistake_ids": [],
     "needs_review": [],
-    "notes": "First real ingestion run. The batch contains eight dated lesson groups but is labeled week_01 as requested."
+    "notes": "Historical material was grouped by archived lesson order during the week-start migration on 2026-06-14."
   }
 ]

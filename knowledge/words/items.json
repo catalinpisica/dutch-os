@@ -12,19 +12,20 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-01-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "irregular"
+      "irregular",
+      "2026-05-25"
     ],
     "notes": "Present tense: ik ben; jij/je/u bent; hij/zij is; wij/jullie/zij zijn.",
     "part_of_speech": "verb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-hebben",
@@ -39,19 +40,20 @@
         "source_type": "class_note"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-01-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "irregular"
+      "irregular",
+      "2026-05-25"
     ],
     "notes": "Present tense: ik heb; jij/je hebt; u heeft/hebt; hij/zij heeft; wij/jullie/zij hebben.",
     "part_of_speech": "verb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-de-dorst",
@@ -60,18 +62,19 @@
     "english": "thirst",
     "category": "states",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-01-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-05-25"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": null
+    "plural": null,
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-de-honger",
@@ -80,18 +83,19 @@
     "english": "hunger",
     "category": "states",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-01-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-05-25"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": null
+    "plural": null,
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-het-dorp",
@@ -100,18 +104,19 @@
     "english": "village",
     "category": "places",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-01-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-05-25"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "het",
-    "plural": "de dorpen"
+    "plural": "de dorpen",
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-leren",
@@ -120,18 +125,19 @@
     "english": "to learn",
     "category": "learning",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-01-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-05-25"
     ],
     "notes": "",
     "part_of_speech": "verb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-nederland",
@@ -140,18 +146,19 @@
     "english": "the Netherlands",
     "category": "countries",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-01-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-05-25"
     ],
     "notes": "",
     "part_of_speech": "proper_noun",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-niet",
@@ -160,18 +167,19 @@
     "english": "not",
     "category": "negation",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-01-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-05-25"
     ],
     "notes": "",
     "part_of_speech": "adverb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-nu",
@@ -180,18 +188,19 @@
     "english": "now",
     "category": "time",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-01-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-05-25"
     ],
     "notes": "",
     "part_of_speech": "adverb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-de-school",
@@ -200,18 +209,19 @@
     "english": "school",
     "category": "places",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-01-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-05-25"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de scholen"
+    "plural": "de scholen",
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-de-stad",
@@ -220,18 +230,19 @@
     "english": "city",
     "category": "places",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-01-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-05-25"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de steden"
+    "plural": "de steden",
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-uit",
@@ -240,18 +251,19 @@
     "english": "from; out of",
     "category": "prepositions",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-01-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-05-25"
     ],
     "notes": "",
     "part_of_speech": "preposition",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-werken",
@@ -260,18 +272,19 @@
     "english": "to work",
     "category": "daily_life",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-01-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-05-25"
     ],
     "notes": "",
     "part_of_speech": "verb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-de-winkel",
@@ -280,18 +293,19 @@
     "english": "shop",
     "category": "places",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-01-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-05-25"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de winkels"
+    "plural": "de winkels",
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-wonen",
@@ -300,18 +314,19 @@
     "english": "to live; to reside",
     "category": "daily_life",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-01-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-05-25"
     ],
     "notes": "",
     "part_of_speech": "verb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-het-jaar",
@@ -320,18 +335,19 @@
     "english": "year",
     "category": "time",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-01-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-05-25"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "het",
-    "plural": "de jaren"
+    "plural": "de jaren",
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-de-maand",
@@ -340,18 +356,19 @@
     "english": "month",
     "category": "time",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-01-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-05-25"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de maanden"
+    "plural": "de maanden",
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-sporten",
@@ -360,18 +377,19 @@
     "english": "to exercise; to do sports",
     "category": "activities",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-01-page-04.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-05-25"
     ],
     "notes": "",
     "part_of_speech": "verb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-koken",
@@ -380,18 +398,19 @@
     "english": "to cook",
     "category": "activities",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-01-page-04.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-05-25"
     ],
     "notes": "",
     "part_of_speech": "verb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-de-achternaam",
@@ -400,18 +419,19 @@
     "english": "last name",
     "category": "personal_details",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-02-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-05-25"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de achternamen"
+    "plural": "de achternamen",
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-heten",
@@ -420,18 +440,19 @@
     "english": "to be called",
     "category": "personal_details",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-02-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-05-25"
     ],
     "notes": "",
     "part_of_speech": "verb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-hoelang",
@@ -440,18 +461,19 @@
     "english": "how long",
     "category": "question_words",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-02-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-05-25"
     ],
     "notes": "",
     "part_of_speech": "adverb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-kloppen",
@@ -460,18 +482,19 @@
     "english": "to be correct",
     "category": "communication",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-02-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-05-25"
     ],
     "notes": "",
     "part_of_speech": "verb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-de-les",
@@ -480,18 +503,19 @@
     "english": "lesson",
     "category": "learning",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-02-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-05-25"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de lessen"
+    "plural": "de lessen",
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-leuk",
@@ -500,18 +524,19 @@
     "english": "nice; fun",
     "category": "descriptions",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-02-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-05-25"
     ],
     "notes": "",
     "part_of_speech": "adjective",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-mijn",
@@ -520,18 +545,19 @@
     "english": "my",
     "category": "pronouns",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-02-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-05-25"
     ],
     "notes": "",
     "part_of_speech": "possessive_pronoun",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-ook",
@@ -540,18 +566,19 @@
     "english": "also",
     "category": "linking",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-02-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-05-25"
     ],
     "notes": "",
     "part_of_speech": "adverb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-het-telefoonnummer",
@@ -560,18 +587,19 @@
     "english": "telephone number",
     "category": "personal_details",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-02-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-05-25"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "het",
-    "plural": "de telefoonnummers"
+    "plural": "de telefoonnummers",
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-vandaan",
@@ -580,18 +608,19 @@
     "english": "from",
     "category": "question_words",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-02-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-05-25"
     ],
     "notes": "",
     "part_of_speech": "adverb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-de-voornaam",
@@ -600,18 +629,19 @@
     "english": "first name",
     "category": "personal_details",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-02-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-05-25"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de voornamen"
+    "plural": "de voornamen",
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-wat",
@@ -620,18 +650,19 @@
     "english": "what",
     "category": "question_words",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-02-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-05-25"
     ],
     "notes": "",
     "part_of_speech": "question_word",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-het-adres",
@@ -640,18 +671,19 @@
     "english": "address",
     "category": "personal_details",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-03-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-05-25"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "het",
-    "plural": "de adressen"
+    "plural": "de adressen",
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-het-e-mailadres",
@@ -660,18 +692,19 @@
     "english": "email address",
     "category": "personal_details",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-03-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-05-25"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "het",
-    "plural": "de e-mailadressen"
+    "plural": "de e-mailadressen",
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-het-formulier",
@@ -680,18 +713,19 @@
     "english": "form",
     "category": "administration",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-03-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-05-25"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "het",
-    "plural": "de formulieren"
+    "plural": "de formulieren",
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-de-geboortedatum",
@@ -700,18 +734,19 @@
     "english": "date of birth",
     "category": "personal_details",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-03-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-05-25"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de geboortedata"
+    "plural": "de geboortedata",
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-de-gemeente",
@@ -720,18 +755,19 @@
     "english": "municipality",
     "category": "administration",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-03-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-05-25"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de gemeenten"
+    "plural": "de gemeenten",
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-het-gemeentehuis",
@@ -740,18 +776,19 @@
     "english": "town hall",
     "category": "administration",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-03-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-05-25"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "het",
-    "plural": "de gemeentehuizen"
+    "plural": "de gemeentehuizen",
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-helpen",
@@ -760,18 +797,19 @@
     "english": "to help",
     "category": "communication",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-03-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-05-25"
     ],
     "notes": "",
     "part_of_speech": "verb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-invullen",
@@ -780,19 +818,20 @@
     "english": "to fill in",
     "category": "administration",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-03-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "separable"
+      "separable",
+      "2026-05-25"
     ],
     "notes": "",
     "part_of_speech": "verb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-de-man",
@@ -801,18 +840,19 @@
     "english": "man",
     "category": "people",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-03-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-05-25"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de mannen"
+    "plural": "de mannen",
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-meneer",
@@ -821,19 +861,20 @@
     "english": "sir; Mr",
     "category": "people",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-03-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "formal"
+      "formal",
+      "2026-05-25"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de heren"
+    "plural": "de heren",
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-mobiel",
@@ -842,18 +883,19 @@
     "english": "mobile",
     "category": "personal_details",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-03-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-05-25"
     ],
     "notes": "",
     "part_of_speech": "adjective",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-de-nationaliteit",
@@ -862,18 +904,19 @@
     "english": "nationality",
     "category": "personal_details",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-03-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-05-25"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de nationaliteiten"
+    "plural": "de nationaliteiten",
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-nieuw",
@@ -882,18 +925,19 @@
     "english": "new",
     "category": "descriptions",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-03-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-05-25"
     ],
     "notes": "",
     "part_of_speech": "adjective",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-de-postcode",
@@ -902,18 +946,19 @@
     "english": "postal code",
     "category": "personal_details",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-03-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-05-25"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de postcodes"
+    "plural": "de postcodes",
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-de-vrouw",
@@ -922,18 +967,19 @@
     "english": "woman",
     "category": "people",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-03-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-05-25"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de vrouwen"
+    "plural": "de vrouwen",
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-de-woonplaats",
@@ -942,18 +988,19 @@
     "english": "place of residence",
     "category": "personal_details",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-03-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-05-25"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de woonplaatsen"
+    "plural": "de woonplaatsen",
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-alleen",
@@ -962,18 +1009,19 @@
     "english": "alone",
     "category": "home_and_family",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-04-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "adverb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-appen",
@@ -982,19 +1030,20 @@
     "english": "to send a message",
     "category": "communication",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-04-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "informal"
+      "informal",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "verb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-de-buren",
@@ -1003,19 +1052,20 @@
     "english": "neighbors",
     "category": "home_and_family",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-04-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "plural"
+      "plural",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-de-buurvrouw",
@@ -1024,18 +1074,19 @@
     "english": "female neighbor",
     "category": "home_and_family",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-04-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de buurvrouwen"
+    "plural": "de buurvrouwen",
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-getrouwd",
@@ -1044,18 +1095,19 @@
     "english": "married",
     "category": "relationships",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-04-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "adjective",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-graag",
@@ -1064,18 +1116,19 @@
     "english": "gladly; with pleasure",
     "category": "preferences",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-04-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "adverb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-de-hobby",
@@ -1084,18 +1137,19 @@
     "english": "hobby",
     "category": "activities",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-04-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de hobby's"
+    "plural": "de hobby's",
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-het-huis",
@@ -1104,18 +1158,19 @@
     "english": "house",
     "category": "home_and_family",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-04-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "het",
-    "plural": "de huizen"
+    "plural": "de huizen",
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-het-kind",
@@ -1124,19 +1179,20 @@
     "english": "child",
     "category": "home_and_family",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-04-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "irregular_plural"
+      "irregular_plural",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "het",
-    "plural": "de kinderen"
+    "plural": "de kinderen",
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-met",
@@ -1145,18 +1201,19 @@
     "english": "with",
     "category": "prepositions",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-04-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "preposition",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-ontmoeten",
@@ -1165,18 +1222,19 @@
     "english": "to meet",
     "category": "relationships",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-04-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "verb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-de-poes",
@@ -1185,18 +1243,19 @@
     "english": "female cat",
     "category": "animals",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-04-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de poezen"
+    "plural": "de poezen",
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-het-restaurant",
@@ -1205,18 +1264,19 @@
     "english": "restaurant",
     "category": "places",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-04-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "het",
-    "plural": "de restaurants"
+    "plural": "de restaurants",
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-de-week",
@@ -1225,18 +1285,19 @@
     "english": "week",
     "category": "time",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-04-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de weken"
+    "plural": "de weken",
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-het-weekend",
@@ -1245,18 +1306,19 @@
     "english": "weekend",
     "category": "time",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-04-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "het",
-    "plural": "de weekenden"
+    "plural": "de weekenden",
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-welkom",
@@ -1265,18 +1327,19 @@
     "english": "welcome",
     "category": "communication",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-04-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "adjective",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-wie",
@@ -1285,18 +1348,19 @@
     "english": "who",
     "category": "question_words",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-04-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "question_word",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-gezond",
@@ -1305,18 +1369,19 @@
     "english": "healthy",
     "category": "health",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-04-page-03.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "adjective",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-vriendelijk",
@@ -1325,18 +1390,19 @@
     "english": "friendly",
     "category": "descriptions",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-04-page-03.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "adjective",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-belangrijk",
@@ -1345,18 +1411,19 @@
     "english": "important",
     "category": "descriptions",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-04-page-04.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "adjective",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-gelukkig",
@@ -1365,18 +1432,19 @@
     "english": "happy; fortunate",
     "category": "feelings",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-04-page-04.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "adjective",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-de-kater",
@@ -1385,18 +1453,19 @@
     "english": "male cat",
     "category": "animals",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-04-page-04.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de katers"
+    "plural": "de katers",
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-het-kitten",
@@ -1405,18 +1474,19 @@
     "english": "kitten",
     "category": "animals",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-04-page-04.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "het",
-    "plural": "de kittens"
+    "plural": "de kittens",
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-de-appel",
@@ -1425,18 +1495,19 @@
     "english": "apple",
     "category": "food",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-05-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de appels"
+    "plural": "de appels",
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-de-banaan",
@@ -1445,18 +1516,19 @@
     "english": "banana",
     "category": "food",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-05-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de bananen"
+    "plural": "de bananen",
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-bijna",
@@ -1465,18 +1537,19 @@
     "english": "almost",
     "category": "time_and_degree",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-05-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "adverb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-de-boodschappen",
@@ -1485,19 +1558,20 @@
     "english": "groceries",
     "category": "shopping",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-05-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "plural"
+      "plural",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-het-eten",
@@ -1506,18 +1580,19 @@
     "english": "food; meal",
     "category": "food",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-05-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "het",
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-het-fruit",
@@ -1526,18 +1601,19 @@
     "english": "fruit",
     "category": "food",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-05-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "het",
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-de-groente",
@@ -1546,18 +1622,19 @@
     "english": "vegetable",
     "category": "food",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-05-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de groenten"
+    "plural": "de groenten",
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-de-kip",
@@ -1566,18 +1643,19 @@
     "english": "chicken",
     "category": "food",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-05-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de kippen"
+    "plural": "de kippen",
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-kopen",
@@ -1586,18 +1664,19 @@
     "english": "to buy",
     "category": "shopping",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-05-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "verb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-de-lijst",
@@ -1606,18 +1685,19 @@
     "english": "list",
     "category": "shopping",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-05-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de lijsten"
+    "plural": "de lijsten",
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-de-markt",
@@ -1626,18 +1706,19 @@
     "english": "market",
     "category": "shopping",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-05-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de markten"
+    "plural": "de markten",
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-de-rijst",
@@ -1646,18 +1727,19 @@
     "english": "rice",
     "category": "food",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-05-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-de-supermarkt",
@@ -1666,18 +1748,19 @@
     "english": "supermarket",
     "category": "shopping",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-05-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de supermarkten"
+    "plural": "de supermarkten",
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-thuis",
@@ -1686,18 +1769,19 @@
     "english": "at home",
     "category": "home_and_family",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-05-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "adverb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-de-tomaat",
@@ -1706,18 +1790,19 @@
     "english": "tomato",
     "category": "food",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-05-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de tomaten"
+    "plural": "de tomaten",
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-de-vis",
@@ -1726,18 +1811,19 @@
     "english": "fish",
     "category": "food",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-05-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de vissen"
+    "plural": "de vissen",
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-het-vlees",
@@ -1746,18 +1832,19 @@
     "english": "meat",
     "category": "food",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-05-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "het",
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-de-wortel",
@@ -1766,18 +1853,19 @@
     "english": "carrot",
     "category": "food",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-05-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de wortels"
+    "plural": "de wortels",
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-de-aardappel",
@@ -1786,18 +1874,19 @@
     "english": "potato",
     "category": "food",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-06-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de aardappels"
+    "plural": "de aardappels",
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-alsjeblieft",
@@ -1806,19 +1895,20 @@
     "english": "please; here you go",
     "category": "politeness",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-06-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "informal"
+      "informal",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "adverb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-alstublieft",
@@ -1827,19 +1917,20 @@
     "english": "please; here you go",
     "category": "politeness",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-06-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "formal"
+      "formal",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "adverb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-anders",
@@ -1848,18 +1939,19 @@
     "english": "otherwise; else",
     "category": "linking",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-06-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "adverb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-het-ei",
@@ -1868,19 +1960,20 @@
     "english": "egg",
     "category": "food",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-06-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "irregular_plural"
+      "irregular_plural",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "het",
-    "plural": "de eieren"
+    "plural": "de eieren",
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-fijn",
@@ -1889,18 +1982,19 @@
     "english": "nice; pleasant",
     "category": "descriptions",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-06-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "adjective",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-hoeveel",
@@ -1909,18 +2003,19 @@
     "english": "how much; how many",
     "category": "question_words",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-06-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "question_word",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-iets",
@@ -1929,18 +2024,19 @@
     "english": "something",
     "category": "pronouns",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-06-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "pronoun",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-jammer",
@@ -1949,18 +2045,19 @@
     "english": "a pity; too bad",
     "category": "reactions",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-06-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "adjective",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-de-kaas",
@@ -1969,18 +2066,19 @@
     "english": "cheese",
     "category": "food",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-06-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-de-kilo",
@@ -1989,18 +2087,19 @@
     "english": "kilogram",
     "category": "quantities",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-06-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de kilo's"
+    "plural": "de kilo's",
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-mevrouw",
@@ -2009,19 +2108,20 @@
     "english": "madam; Ms",
     "category": "people",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-06-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "formal"
+      "formal",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de dames"
+    "plural": "de dames",
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-nemen",
@@ -2030,19 +2130,20 @@
     "english": "to take",
     "category": "core_verbs",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-06-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "irregular"
+      "irregular",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "verb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-pinnen",
@@ -2051,18 +2152,19 @@
     "english": "to pay by debit card",
     "category": "shopping",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-06-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "verb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-de-verkoper",
@@ -2071,19 +2173,20 @@
     "english": "salesperson; seller",
     "category": "shopping",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-05-page-02.jpg",
       "sources/archive/2026/week_01/images/lesson-06-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de verkopers"
+    "plural": "de verkopers",
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-vers",
@@ -2092,18 +2195,19 @@
     "english": "fresh",
     "category": "food",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-06-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "adjective",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-altijd",
@@ -2112,18 +2216,19 @@
     "english": "always",
     "category": "frequency",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-06-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "adverb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-dicht",
@@ -2132,18 +2237,19 @@
     "english": "closed",
     "category": "opening_hours",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-06-page-03.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "adjective",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-halen",
@@ -2152,18 +2258,19 @@
     "english": "to get; to fetch",
     "category": "shopping",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-06-page-03.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "verb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-liggen",
@@ -2172,18 +2279,19 @@
     "english": "to lie; to be located",
     "category": "location",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-06-page-03.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "verb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-weten",
@@ -2192,19 +2300,20 @@
     "english": "to know a fact",
     "category": "communication",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-06-page-03.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "irregular"
+      "irregular",
+      "2026-06-01"
     ],
     "notes": "",
     "part_of_speech": "verb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-de-bakker",
@@ -2213,7 +2322,6 @@
     "english": "baker; bakery",
     "category": "shopping",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-07-page-01.jpg",
       "sources/archive/2026/week_01/images/lesson-07-page-02.jpg"
@@ -2221,12 +2329,14 @@
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "time"
+      "time",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de bakkers"
+    "plural": "de bakkers",
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-het-brood",
@@ -2235,18 +2345,19 @@
     "english": "bread",
     "category": "food",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-07-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "het",
-    "plural": "de broden"
+    "plural": "de broden",
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-de-buurt",
@@ -2255,18 +2366,19 @@
     "english": "neighborhood",
     "category": "places",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-07-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de buurten"
+    "plural": "de buurten",
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-duur",
@@ -2275,18 +2387,19 @@
     "english": "expensive",
     "category": "shopping",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-07-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "adjective",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-goedkoop",
@@ -2295,18 +2408,19 @@
     "english": "cheap",
     "category": "shopping",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-07-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "adjective",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-hier",
@@ -2315,18 +2429,19 @@
     "english": "here",
     "category": "location",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-07-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "adverb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-kennen",
@@ -2335,18 +2450,19 @@
     "english": "to know; to be familiar with",
     "category": "communication",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-07-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "verb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-meestal",
@@ -2355,18 +2471,19 @@
     "english": "usually",
     "category": "frequency",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-07-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "adverb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-de-middag",
@@ -2375,18 +2492,19 @@
     "english": "afternoon",
     "category": "time",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-07-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de middagen"
+    "plural": "de middagen",
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-natuurlijk",
@@ -2395,18 +2513,19 @@
     "english": "of course",
     "category": "reactions",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-07-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "adverb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-de-ochtend",
@@ -2421,7 +2540,6 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-07-page-01.jpg",
       "sources/archive/2026/week_01/images/lesson-07-page-02.jpg"
@@ -2429,12 +2547,14 @@
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "time"
+      "time",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de ochtenden"
+    "plural": "de ochtenden",
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-soms",
@@ -2443,18 +2563,19 @@
     "english": "sometimes",
     "category": "frequency",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-07-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "adverb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-de-straat",
@@ -2463,18 +2584,19 @@
     "english": "street",
     "category": "places",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-07-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de straten"
+    "plural": "de straten",
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-vragen",
@@ -2483,18 +2605,19 @@
     "english": "to ask",
     "category": "communication",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-07-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "verb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-wanneer",
@@ -2503,18 +2626,19 @@
     "english": "when",
     "category": "question_words",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-07-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "question_word",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-de-chips",
@@ -2523,19 +2647,20 @@
     "english": "crisps; potato chips",
     "category": "food",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-07-page-03.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "plural"
+      "plural",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-denken",
@@ -2544,18 +2669,19 @@
     "english": "to think",
     "category": "communication",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-07-page-03.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "verb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-het-internet",
@@ -2564,18 +2690,19 @@
     "english": "internet",
     "category": "technology",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-07-page-03.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "het",
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-de-keuken",
@@ -2584,18 +2711,19 @@
     "english": "kitchen",
     "category": "home_and_family",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-07-page-03.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de keukens"
+    "plural": "de keukens",
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-laat",
@@ -2604,18 +2732,19 @@
     "english": "late",
     "category": "time",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-07-page-03.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "adjective",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-leeg",
@@ -2624,18 +2753,19 @@
     "english": "empty",
     "category": "descriptions",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-07-page-03.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "adjective",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-open",
@@ -2644,18 +2774,19 @@
     "english": "open",
     "category": "opening_hours",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-07-page-03.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "adjective",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-de-openingstijden",
@@ -2664,19 +2795,20 @@
     "english": "opening hours",
     "category": "opening_hours",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-07-page-03.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "plural"
+      "plural",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-snel",
@@ -2685,18 +2817,19 @@
     "english": "quick; quickly",
     "category": "descriptions",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-07-page-03.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "adjective",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-de-zak",
@@ -2705,18 +2838,19 @@
     "english": "bag",
     "category": "shopping",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-07-page-03.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de zakken"
+    "plural": "de zakken",
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-moe",
@@ -2725,18 +2859,19 @@
     "english": "tired",
     "category": "health",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-07-page-04.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "adjective",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-vaak",
@@ -2745,18 +2880,19 @@
     "english": "often",
     "category": "frequency",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-07-page-05.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "adverb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-weleens",
@@ -2765,18 +2901,19 @@
     "english": "sometimes; ever",
     "category": "frequency",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-07-page-05.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "adverb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-nooit",
@@ -2785,18 +2922,19 @@
     "english": "never",
     "category": "frequency",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-07-page-05.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "adverb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-alles",
@@ -2805,18 +2943,19 @@
     "english": "everything",
     "category": "pronouns",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "pronoun",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-beterschap",
@@ -2825,18 +2964,19 @@
     "english": "get well soon",
     "category": "health",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "interjection",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-bezig",
@@ -2845,18 +2985,19 @@
     "english": "busy; occupied",
     "category": "daily_life",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "adjective",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-de-broer",
@@ -2865,18 +3006,19 @@
     "english": "brother",
     "category": "home_and_family",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de broers"
+    "plural": "de broers",
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-daar",
@@ -2885,18 +3027,19 @@
     "english": "there",
     "category": "location",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "adverb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-druk",
@@ -2905,18 +3048,19 @@
     "english": "busy",
     "category": "daily_life",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "adjective",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-eindelijk",
@@ -2925,18 +3069,19 @@
     "english": "finally",
     "category": "time",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "adverb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-de-groet",
@@ -2945,18 +3090,19 @@
     "english": "greeting",
     "category": "communication",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de groeten"
+    "plural": "de groeten",
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-lekker",
@@ -2965,18 +3111,19 @@
     "english": "tasty; pleasant",
     "category": "descriptions",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "adjective",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-lopen",
@@ -2985,18 +3132,19 @@
     "english": "to walk",
     "category": "movement",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "verb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-de-moeder",
@@ -3005,18 +3153,19 @@
     "english": "mother",
     "category": "home_and_family",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de moeders"
+    "plural": "de moeders",
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-de-paracetamol",
@@ -3025,18 +3174,19 @@
     "english": "paracetamol",
     "category": "health",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-prima",
@@ -3045,18 +3195,19 @@
     "english": "fine; excellent",
     "category": "reactions",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "adjective",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-vervelend",
@@ -3065,18 +3216,19 @@
     "english": "annoying; unpleasant",
     "category": "feelings",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "adjective",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-de-vriend",
@@ -3085,18 +3237,19 @@
     "english": "male friend; boyfriend",
     "category": "relationships",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de vrienden"
+    "plural": "de vrienden",
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-de-vriendin",
@@ -3105,18 +3258,19 @@
     "english": "female friend; girlfriend",
     "category": "relationships",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de vriendinnen"
+    "plural": "de vriendinnen",
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-waarom",
@@ -3125,18 +3279,19 @@
     "english": "why",
     "category": "question_words",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "question_word",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-warm",
@@ -3145,18 +3300,19 @@
     "english": "warm",
     "category": "weather",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "adjective",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-het-weer",
@@ -3165,18 +3321,19 @@
     "english": "weather",
     "category": "weather",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "het",
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-worden",
@@ -3185,19 +3342,20 @@
     "english": "to become",
     "category": "core_verbs",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "irregular"
+      "irregular",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "verb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-ziek",
@@ -3206,18 +3364,19 @@
     "english": "ill; sick",
     "category": "health",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "adjective",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-de-zon",
@@ -3226,18 +3385,19 @@
     "english": "sun",
     "category": "weather",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de zonnen"
+    "plural": "de zonnen",
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-de-zus",
@@ -3246,18 +3406,19 @@
     "english": "sister",
     "category": "home_and_family",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de zussen"
+    "plural": "de zussen",
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-het-bezoek",
@@ -3266,18 +3427,19 @@
     "english": "visit",
     "category": "social",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-03.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "het",
-    "plural": "de bezoeken"
+    "plural": "de bezoeken",
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-binnenkomen",
@@ -3286,19 +3448,20 @@
     "english": "to come in",
     "category": "movement",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-03.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "separable"
+      "separable",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "verb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-drinken",
@@ -3307,18 +3470,19 @@
     "english": "to drink",
     "category": "food",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-03.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "verb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-eruitzien",
@@ -3327,19 +3491,20 @@
     "english": "to look; to appear",
     "category": "descriptions",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-03.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "separable"
+      "separable",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "verb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-geven",
@@ -3348,19 +3513,20 @@
     "english": "to give",
     "category": "core_verbs",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-03.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "irregular"
+      "irregular",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "verb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-horen",
@@ -3369,18 +3535,19 @@
     "english": "to hear",
     "category": "communication",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-03.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "verb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-huilen",
@@ -3389,18 +3556,19 @@
     "english": "to cry",
     "category": "feelings",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-03.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "verb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-de-jas",
@@ -3409,18 +3577,19 @@
     "english": "coat",
     "category": "clothing",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-03.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de jassen"
+    "plural": "de jassen",
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-de-jongen",
@@ -3429,18 +3598,19 @@
     "english": "boy",
     "category": "people",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-03.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "de jongens"
+    "plural": "de jongens",
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-klein",
@@ -3449,18 +3619,19 @@
     "english": "small",
     "category": "descriptions",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-03.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "adjective",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-de-koffie",
@@ -3469,18 +3640,19 @@
     "english": "coffee",
     "category": "drinks",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-03.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-lachen",
@@ -3489,18 +3661,19 @@
     "english": "to laugh",
     "category": "feelings",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-03.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "verb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-lief",
@@ -3509,18 +3682,19 @@
     "english": "sweet; kind",
     "category": "descriptions",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-03.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "adjective",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-de-melk",
@@ -3529,18 +3703,19 @@
     "english": "milk",
     "category": "drinks",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-03.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-slapen",
@@ -3549,18 +3724,19 @@
     "english": "to sleep",
     "category": "daily_life",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-03.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "verb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-de-suiker",
@@ -3569,18 +3745,19 @@
     "english": "sugar",
     "category": "food",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-03.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-de-thee",
@@ -3589,18 +3766,19 @@
     "english": "tea",
     "category": "drinks",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-03.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-zelf",
@@ -3609,18 +3787,19 @@
     "english": "self; oneself",
     "category": "pronouns",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-03.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "pronoun",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-zitten",
@@ -3629,18 +3808,19 @@
     "english": "to sit",
     "category": "position",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-03.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "verb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-zonder",
@@ -3649,18 +3829,19 @@
     "english": "without",
     "category": "prepositions",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-03.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "preposition",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-zwart",
@@ -3669,18 +3850,19 @@
     "english": "black",
     "category": "colors",
     "examples": [],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-03.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-06-08"
     ],
     "notes": "",
     "part_of_speech": "adjective",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-gaan",
@@ -3695,16 +3877,20 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-01-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
-    "tags": ["A1", "irregular"],
+    "tags": [
+      "A1",
+      "irregular",
+      "2026-05-25"
+    ],
     "notes": "",
     "part_of_speech": "verb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-u",
@@ -3719,16 +3905,20 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-03-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
-    "tags": ["A1", "formal"],
+    "tags": [
+      "A1",
+      "formal",
+      "2026-05-25"
+    ],
     "notes": "",
     "part_of_speech": "pronoun",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-uw",
@@ -3743,16 +3933,20 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-03-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
-    "tags": ["A1", "formal"],
+    "tags": [
+      "A1",
+      "formal",
+      "2026-05-25"
+    ],
     "notes": "",
     "part_of_speech": "possessive_pronoun",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-05-25"
   },
   {
     "id": "word-praten",
@@ -3767,16 +3961,19 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-05-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
-    "tags": ["A1"],
+    "tags": [
+      "A1",
+      "2026-06-01"
+    ],
     "notes": "",
     "part_of_speech": "verb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-01"
   },
   {
     "id": "word-zaterdagochtend",
@@ -3791,16 +3988,20 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-07-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
-    "tags": ["A1", "time"],
+    "tags": [
+      "A1",
+      "time",
+      "2026-06-08"
+    ],
     "notes": "",
     "part_of_speech": "noun",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-de-zoon",
@@ -3815,16 +4016,20 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-07-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
-    "tags": ["A1", "family"],
+    "tags": [
+      "A1",
+      "family",
+      "2026-06-08"
+    ],
     "notes": "",
     "part_of_speech": "noun",
     "article": "de",
-    "plural": "zonen"
+    "plural": "zonen",
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-kijken",
@@ -3839,16 +4044,19 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-07-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
-    "tags": ["A1"],
+    "tags": [
+      "A1",
+      "2026-06-08"
+    ],
     "notes": "",
     "part_of_speech": "verb",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   },
   {
     "id": "word-ander",
@@ -3863,15 +4071,18 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-07-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
-    "tags": ["A1"],
+    "tags": [
+      "A1",
+      "2026-06-08"
+    ],
     "notes": "Usually takes an ending before a noun: een andere dag.",
     "part_of_speech": "adjective",
     "article": null,
-    "plural": null
+    "plural": null,
+    "week_start": "2026-06-08"
   }
 ]

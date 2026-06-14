@@ -25,7 +25,8 @@ Dutch OS is the user’s AI-maintained Dutch learning memory. The repository, no
 - `schemas/`: JSON contracts for structured data.
 - `prompts/`: reusable ingestion and tutoring instructions.
 - `scripts/`: validation and maintenance utilities.
-- `app/`: planned GitHub Pages application, created only when implementation begins and kept separate from canonical data.
+- `chatgpt/dutch-os-chatgpt-context.md`: generated portable context uploaded to a ChatGPT Project for both text chat and Voice mode.
+- `app/`: static GitHub Pages learning cockpit, kept separate from and read-only toward canonical data.
 
 Read the relevant schema and prompt before changing data in an area.
 
@@ -41,6 +42,9 @@ The repository must remain usable through GitHub connectors even when code searc
 - AI tutors must check the catalog before claiming that the learner has studied an item.
 - Fetch complete category files only when full examples, notes, provenance, dialogue turns, corrections, or grammar explanations are needed.
 - Rebuild discovery metadata with `python3 scripts/rebuild_metadata.py` after canonical data changes.
+- The same rebuild must regenerate `chatgpt/dutch-os-chatgpt-context.md`; never maintain that file manually.
+- The generated ChatGPT context must contain every canonical item, all prepared reviews, active mistakes, examples, notes, grammar details, and dialogues, grouped by Monday `week_start`.
+- The user replaces the previous file in their ChatGPT Project after each ingestion so text chat and Voice mode share the latest learning memory.
 
 ## Evidence Rules
 
@@ -56,7 +60,7 @@ The repository must remain usable through GitHub connectors even when code searc
 - Store Dutch and idiomatic English only. Romanian may remain only in archived source material.
 - Follow the current schema exactly; update schema, data, and validation together when the model changes.
 - Use clear JSON and add fields only for a concrete tutoring, provenance, search, or maintenance need.
-- Required concepts include a stable ID, Dutch, English, category, tags, source images, course batch such as `week_01`, and ingestion date. Category-specific fields come from the schema.
+- Required concepts include a stable ID, Dutch, English, category, tags, source images, a Monday `week_start` date such as `2026-06-08`, and ingestion date. The exact `week_start` must also appear in the item's `tags` array. Category-specific fields come from the schema.
 - Keep entries useful for speaking and comprehension. Do not turn `knowledge/` into a generic dictionary.
 
 ## Stable IDs
@@ -109,11 +113,11 @@ Classify by learning function, not surface form alone.
 - Each ingestion must generate review material covering important new items, particles, grammar, difficult material, and recurring mistakes.
 - Reviews should include useful recall, translation, cloze, grammar, or roleplay prompts without mechanically including every extracted item.
 
-## Planned GitHub Pages App
+## GitHub Pages App
 
-The future app is a static, mobile-first Dutch learning cockpit for browsing repository knowledge and doing non-AI practice. GitHub Pages is its free hosting layer.
+The app is a static, mobile-first Dutch learning cockpit for browsing repository knowledge and doing non-AI practice. GitHub Pages is its free hosting layer.
 
-The app may provide:
+The app may progressively provide:
 
 - dashboard counts, latest batch, newest items, local weak items, and review suggestions;
 - browsing and filtering across every knowledge category and weekly review;
@@ -132,7 +136,7 @@ The app must:
 - remain mobile-first, accessible, fast, and maintainable with thousands of items;
 - avoid a heavy framework unless scale or demonstrated complexity justifies one.
 
-The app is not the AI tutor. Reasoning, conversation, correction, intelligent roleplay, and voice practice remain in ChatGPT through the GitHub connector. Codex maintains repository data and app code. If the UI reveals missing metadata or schema problems, fix the canonical data layer instead of hiding the problem in app code.
+The app is not the AI tutor. Reasoning, conversation, correction, intelligent roleplay, and voice practice remain in ChatGPT. Text chat may use the GitHub connector or the generated ChatGPT context; Voice mode uses the generated context uploaded to a ChatGPT Project. Codex maintains repository data, the generated context, and app code. If the UI reveals missing metadata or schema problems, fix the canonical data layer instead of hiding the problem in app code.
 
 Planned structure:
 
@@ -145,7 +149,7 @@ app/
   data-loader/
 ```
 
-The exact internal structure may evolve. The app must never become the source of truth, and it must not be implemented until the user requests the relevant roadmap phase.
+The exact internal structure may evolve. The app must never become the source of truth. Its data loader must continue reading canonical repository files instead of maintaining copied app data.
 
 ## Note Ingestion
 
@@ -153,14 +157,14 @@ When the user asks to process notes:
 
 1. Read `prompts/ingest-weekly-notes.md`, relevant schemas, and existing canonical data.
 2. Inspect every uploaded source and determine page order. Report ambiguous ordering.
-3. Assign the next course-batch label while preserving calendar context in the archive manifest.
-4. Move originals into `sources/archive/YYYY/week_NN/` without modifying them.
+3. Assign the Monday week-start date while preserving lesson-date context in the archive manifest.
+4. Move originals into `sources/archive/YYYY/YYYY-MM-DD/` without modifying them.
 5. Create the manifest, checksums, raw OCR, and curated transcription.
 6. Extract and classify only supported learning material.
 7. Detect duplicates and merge before creating records.
-8. Add provenance and ingestion metadata.
-9. Generate the review and update needs-review data.
-10. Rebuild affected catalogs, tags, statistics, and ingestion logs.
+8. Add provenance and ingestion metadata, including the exact `week_start` date in every item's `tags` array.
+9. Generate the review with the same explicit week tag and update needs-review data.
+10. Rebuild affected catalogs, tags, statistics, ingestion logs, and the portable ChatGPT context.
 11. Run validation and fix every failure.
 12. Report additions, merges, uncertainty, assumptions, and validation results.
 
@@ -190,7 +194,7 @@ Before finishing a substantial task:
 1. Confirm archived evidence was preserved.
 2. Check new records for duplicates.
 3. Validate all affected structured data.
-4. Confirm source paths and cross-references.
+4. Confirm source paths, cross-references, and that the generated ChatGPT context is current and complete.
 5. Summarize changes, uncertainty, assumptions, and anything not verified.
 
 The guiding test is: will this make the user’s Dutch easier to practice and maintain over the next five years with less manual work?

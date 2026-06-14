@@ -2,9 +2,9 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "common.schema.json",
   "$defs": {
-    "week": {
+    "weekStart": {
       "type": "string",
-      "pattern": "^week_[0-9]{2,}$"
+      "format": "date"
     },
     "sourceImage": {
       "type": "string",
@@ -53,7 +53,7 @@
         "english",
         "category",
         "examples",
-        "week",
+        "week_start",
         "source_images",
         "ingestion_date",
         "tags",
@@ -85,8 +85,8 @@
             "$ref": "#/$defs/example"
           }
         },
-        "week": {
-          "$ref": "#/$defs/week"
+        "week_start": {
+          "$ref": "#/$defs/weekStart"
         },
         "source_images": {
           "type": "array",

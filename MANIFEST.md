@@ -9,6 +9,8 @@ This is the connector-friendly discovery map for Dutch OS. When GitHub code sear
 3. `reviews/items.json` - prepared weekly exercises, focus IDs, roleplays, mistakes, and unresolved review items.
 4. `prompts/chatgpt-tutor-entrypoint.md` - instructions for ChatGPT and GitHub connectors.
 
+For ChatGPT text chat or Voice mode, download and upload `chatgpt/dutch-os-chatgpt-context.md` to the Dutch OS ChatGPT Project. That portable context does not require the other repository files.
+
 Fetch a full category file from `knowledge/` only after locating relevant IDs in the catalog.
 
 ## Canonical Knowledge
@@ -39,10 +41,16 @@ Metadata is derived and must not override canonical records.
 | --- | --- |
 | `metadata/ai-entrypoint.json` | Small first-fetch document for AI connectors. |
 | `metadata/catalog.json` | One index row per canonical item, with `source_path` for the complete record. |
-| `metadata/statistics.json` | Current totals by knowledge type and course week. |
+| `metadata/statistics.json` | Current totals by knowledge type and Monday week-start date. |
 | `metadata/tags.json` | Tag registry and usage counts. |
 | `metadata/ingestion-log.json` | Ingestion batches, duplicate handling, and review-resolution history. |
 | `metadata/needs_review.json` | Current unresolved transcription or classification questions. |
+
+## ChatGPT Export
+
+| Path | Contents |
+| --- | --- |
+| `chatgpt/dutch-os-chatgpt-context.md` | Generated, portable snapshot for ChatGPT text chat and Voice mode, grouped by Monday week-start date. |
 
 ## Schemas
 
@@ -74,9 +82,10 @@ Metadata is derived and must not override canonical records.
 | `sources/inbox/` | Temporary upload location for unprocessed note images. |
 | `sources/archive/` | Immutable images, OCR, transcriptions, checksums, and manifests. |
 | `scripts/rebuild_metadata.py` | Rebuilds catalog, statistics, tags, and AI entrypoint metadata. |
+| `scripts/generate_chatgpt_context.py` | Generates or checks the portable ChatGPT context file. |
 | `scripts/validate_json.py` | Validates canonical data, references, discovery paths, and indexes. |
 | `config/` | Learner and ingestion preferences. |
-| `app/` | Reserved for the future static GitHub Pages application. |
+| `app/` | Static GitHub Pages cockpit for dashboard browsing, search, reviews, and item details. |
 
 ## Source-Of-Truth Rule
 

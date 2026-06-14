@@ -1,5 +1,6 @@
 {
-  "batch_week_format": "week_NN",
+  "batch_week_start_format": "YYYY-MM-DD",
+  "week_starts_on": "monday",
   "preserve_original_images": true,
   "mark_uncertain_transcription": true,
   "required_translation_languages": ["english"],

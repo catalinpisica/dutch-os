@@ -37,7 +37,7 @@ app/
   data-loader/
 ```
 
-Do not create `app/` until Phase B begins.
+Phase B implementation lives in `app/` and reads repository data directly.
 
 ## Phase A - Data Layer Readiness
 
@@ -47,21 +47,22 @@ Do not create `app/` until Phase B begins.
 - Generate compact metadata indexes if loading category files directly becomes inefficient.
 - Keep validation green before UI work begins.
 
-## Phase B - Static Dashboard MVP
+## Phase B - Static Dashboard MVP (Implemented)
 
-- Create the GitHub Pages application shell.
-- Load repository JSON safely in the browser.
-- Show counts, latest batch, newest items, and review suggestions.
-- Browse words and expressions.
-- Add fast basic search.
-- Configure static GitHub Pages deployment.
+- [x] Create the GitHub Pages application shell.
+- [x] Load repository JSON safely in the browser.
+- [x] Show counts, latest batch, newest items, and review suggestions.
+- [x] Browse every canonical item type with full details.
+- [x] Add fast basic search and filters.
+- [x] Configure static GitHub Pages deployment.
 
-## Phase C - Practice MVP
+## Phase C - Practice MVP (Implemented)
 
-- Add Dutch-to-English and English-to-Dutch flashcards.
-- Add simple multiple-choice and fill-in-the-blank quizzes.
-- Track practiced IDs, correct and wrong counts, and last-practiced dates in `localStorage`.
-- Derive a device-local weak-item list.
+- [x] Add Dutch-to-English and English-to-Dutch recall exercises.
+- [x] Add multiple-choice, typed-answer, and fill-in-the-blank quizzes.
+- [x] Track practiced IDs, correct and wrong counts, XP, streak, and last-practiced dates in `localStorage`.
+- [x] Derive and prioritize a device-local weak-item list.
+- [x] Repeat missed items later in the same lesson when hearts remain.
 
 ## Phase D - Specialized Trainers
 
@@ -70,6 +71,8 @@ Do not create `app/` until Phase B begins.
 - Add mistake correction and local prioritization.
 - Add weekly browsing and review mode.
 - Add sentence rebuilding and particle-selection exercises.
+
+The weekly academy shell, coverage tracking, and cumulative lesson modes are implemented. Specialized particle, dialogue, mistake, and sentence-rebuilding trainers remain pending.
 
 ## Phase E - ChatGPT Bridge
 

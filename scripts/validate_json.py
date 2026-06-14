@@ -6,13 +6,16 @@ from __future__ import annotations
 import json
 import re
 import sys
+from datetime import date
 from pathlib import Path
+
+from generate_chatgpt_context import build_chatgpt_context
 
 
 ROOT = Path(__file__).resolve().parents[1]
 ARRAY_ROOTS = (ROOT / "knowledge", ROOT / "reviews")
 BASE_REQUIRED = {
-    "id", "type", "dutch", "english", "category", "examples", "week",
+    "id", "type", "dutch", "english", "category", "examples", "week_start",
     "source_images", "ingestion_date", "tags", "notes",
 }
 CATEGORY_REQUIRED = {
@@ -25,12 +28,12 @@ CATEGORY_REQUIRED = {
         "fixed_preposition", "separable",
     },
     "dialogues": {
-        "id", "type", "title", "setting", "week", "source_images",
+        "id", "type", "title", "setting", "week_start", "source_images",
         "ingestion_date", "tags", "target_ids", "turns", "notes",
     },
     "mistakes": {
         "id", "type", "incorrect", "correct", "english", "category",
-        "week", "source_images", "ingestion_date", "tags", "status", "notes",
+        "week_start", "source_images", "ingestion_date", "tags", "status", "notes",
     },
 }
 TYPE_TO_STAT_KEY = {
@@ -126,8 +129,22 @@ def main() -> int:
             else:
                 ids.add(item_id)
                 item_source_paths[item_id] = CATEGORY_SOURCE_PATHS[category]
-            if not re.fullmatch(r"week_[0-9]{2,}", str(item.get("week", ""))):
-                failures.append(f"{location}: invalid course week")
+            week_start = str(item.get("week_start", ""))
+            if not re.fullmatch(r"[0-9]{4}-[0-9]{2}-[0-9]{2}", week_start):
+                failures.append(f"{location}: invalid week_start date")
+            else:
+                try:
+                    if date.fromisoformat(week_start).weekday() != 0:
+                        failures.append(f"{location}: week_start must be a Monday")
+                except ValueError:
+                    failures.append(f"{location}: invalid week_start date")
+            tags = item.get("tags")
+            if not isinstance(tags, list) or item.get("week_start") not in tags:
+                failures.append(
+                    f"{location}: tags must include the item's week_start"
+                )
+            elif any(re.fullmatch(r"week_[0-9]{2,}", str(tag)) for tag in tags):
+                failures.append(f"{location}: contains a legacy week_NN tag")
             source_images = item.get("source_images")
             if not isinstance(source_images, list) or not source_images:
                 failures.append(f"{location}: source_images must be a non-empty array")
@@ -152,7 +169,7 @@ def main() -> int:
     review_path = ROOT / "reviews" / "items.json"
     reviews = parsed.get(review_path)
     review_required = {
-        "id", "type", "week", "ingestion_date", "source_images",
+        "id", "type", "week_start", "tags", "ingestion_date", "source_images",
         "focus_ids", "recall", "translation", "cloze", "grammar",
         "roleplay", "mistake_ids", "needs_review", "notes",
     }
@@ -165,6 +182,17 @@ def main() -> int:
             missing = sorted(review_required - review.keys())
             if missing:
                 failures.append(f"{location}: missing fields {', '.join(missing)}")
+            tags = review.get("tags")
+            if not isinstance(tags, list) or review.get("week_start") not in tags:
+                failures.append(
+                    f"{location}: tags must include the review's week_start"
+                )
+            week_start = str(review.get("week_start", ""))
+            try:
+                if date.fromisoformat(week_start).weekday() != 0:
+                    failures.append(f"{location}: week_start must be a Monday")
+            except ValueError:
+                failures.append(f"{location}: invalid week_start date")
             for source_image in review.get("source_images", []):
                 if not (ROOT / source_image).is_file():
                     failures.append(f"{location}: missing source image {source_image}")
@@ -212,7 +240,7 @@ def main() -> int:
     }
     catalog_ids: set[str] = set()
     catalog_required = {
-        "id", "type", "dutch", "english", "category", "week", "tags",
+        "id", "type", "dutch", "english", "category", "week_start", "tags",
         "source_path",
     }
     for index, catalog_item in enumerate(catalog_items):
@@ -249,7 +277,7 @@ def main() -> int:
             "dutch": expected_dutch,
             "english": expected_english,
             "category": expected_category,
-            "week": canonical_item["week"],
+            "week_start": canonical_item["week_start"],
             "tags": canonical_item["tags"],
         }
         for field, expected_value in expected_catalog_values.items():
@@ -295,6 +323,30 @@ def main() -> int:
                     failures.append(
                         f"metadata/statistics.json: inconsistent {stat_key} count"
                     )
+        expected_week_counts = {
+            week_start: sum(
+                item.get("week_start") == week_start for item in all_items
+            )
+            for week_start in sorted(
+                {str(item.get("week_start")) for item in all_items}
+            )
+        }
+        if statistics.get("by_week_start") != expected_week_counts:
+            failures.append(
+                "metadata/statistics.json: by_week_start is inconsistent"
+            )
+
+    tags_metadata = parsed.get(ROOT / "metadata" / "tags.json")
+    expected_tag_counts: dict[str, int] = {}
+    for item in all_items:
+        for tag in item.get("tags", []):
+            expected_tag_counts[str(tag)] = expected_tag_counts.get(str(tag), 0) + 1
+    expected_tags = [
+        {"tag": tag, "count": count}
+        for tag, count in sorted(expected_tag_counts.items())
+    ]
+    if not isinstance(tags_metadata, dict) or tags_metadata.get("tags") != expected_tags:
+        failures.append("metadata/tags.json: tag counts are inconsistent")
 
     entrypoint = parsed.get(ROOT / "metadata" / "ai-entrypoint.json")
     if not isinstance(entrypoint, dict):
@@ -318,17 +370,12 @@ def main() -> int:
             failures.append(
                 "metadata/ai-entrypoint.json: counts do not match statistics"
             )
-        expected_latest_week = max(
-            (str(item["week"]) for item in all_items),
-            key=lambda week: int(week.removeprefix("week_")),
+        expected_latest_week_start = max(
+            str(item["week_start"]) for item in all_items
         )
-        if entrypoint.get("latest_week") != expected_latest_week:
+        if entrypoint.get("latest_week_start") != expected_latest_week_start:
             failures.append(
-                "metadata/ai-entrypoint.json: latest_week is inconsistent"
-            )
-        if entrypoint.get("latest_batch") != expected_latest_week:
-            failures.append(
-                "metadata/ai-entrypoint.json: latest_batch is inconsistent"
+                "metadata/ai-entrypoint.json: latest_week_start is inconsistent"
             )
 
         fetch_order = entrypoint.get("recommended_fetch_order")
@@ -362,6 +409,17 @@ def main() -> int:
         print("JSON validation failed:")
         for failure in failures:
             print(f"- {failure}")
+        return 1
+
+    chatgpt_path = ROOT / "chatgpt" / "dutch-os-chatgpt-context.md"
+    expected_chatgpt_context = build_chatgpt_context(ROOT)
+    if not chatgpt_path.is_file():
+        print("JSON validation failed:")
+        print("- chatgpt/dutch-os-chatgpt-context.md: missing generated context")
+        return 1
+    if chatgpt_path.read_text(encoding="utf-8") != expected_chatgpt_context:
+        print("JSON validation failed:")
+        print("- chatgpt/dutch-os-chatgpt-context.md: generated context is stale")
         return 1
 
     print(
