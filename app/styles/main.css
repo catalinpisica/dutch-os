@@ -83,6 +83,20 @@ a { color: inherit; }
 .brand strong, .brand small { display: block; }
 .brand strong { font-family: Georgia, "Times New Roman", serif; font-size: 20px; }
 .brand small { color: var(--muted); font-size: 12px; margin-top: 2px; }
+.header-actions { display: flex; align-items: center; gap: 10px; }
+.profile-picker {
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 0 8px 0 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+}
+.profile-picker span { color: var(--muted); font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.profile-picker select { min-height: 32px; border: 0; background: transparent; color: var(--ink); font-weight: 750; cursor: pointer; }
+.profile-picker select:focus-visible { outline: 2px solid var(--orange); outline-offset: 1px; border-radius: 6px; }
 .icon-button {
   width: 42px;
   height: 42px;
@@ -403,6 +417,8 @@ blockquote small { margin-top: 12px; color: var(--orange); font-weight: 750; }
   .site-header, .hero, .stats-section, .practice-section, .review-section, .library-section { width: min(100% - 20px, 1180px); }
   .site-header { min-height: 68px; }
   .brand small { display: none; }
+  .profile-picker { padding-left: 10px; }
+  .profile-picker span { display: none; }
   .hero { min-height: 0; padding: 46px 22px; border-radius: 22px; }
   .hero h1 { font-size: 52px; }
   .hero-actions { align-items: flex-start; flex-direction: column; gap: 16px; }
