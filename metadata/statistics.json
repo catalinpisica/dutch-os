@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12",
+  "generated_at": "2026-06-14",
   "totals": {
     "knowledge_items": 256,
     "words": 190,
@@ -10,7 +10,9 @@
     "dialogues": 4,
     "mistakes": 2
   },
-  "by_week": {
-    "week_01": 256
+  "by_week_start": {
+    "2026-05-25": 67,
+    "2026-06-01": 89,
+    "2026-06-08": 100
   }
 }

@@ -12,17 +12,18 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-01-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "health"
+      "health",
+      "2026-05-25"
     ],
     "notes": "",
-    "register": "neutral"
+    "register": "neutral",
+    "week_start": "2026-05-25"
   },
   {
     "id": "expression-ik-heb-honger",
@@ -37,7 +38,6 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-01-page-01.jpg",
       "sources/archive/2026/week_01/images/lesson-03-page-02.jpg"
@@ -45,10 +45,12 @@
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "food"
+      "food",
+      "2026-05-25"
     ],
     "notes": "",
-    "register": "neutral"
+    "register": "neutral",
+    "week_start": "2026-05-25"
   },
   {
     "id": "expression-waar-kom-je-vandaan",
@@ -63,17 +65,18 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-02-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "question"
+      "question",
+      "2026-05-25"
     ],
     "notes": "Use 'u' instead of 'je' in formal contexts.",
-    "register": "neutral"
+    "register": "neutral",
+    "week_start": "2026-05-25"
   },
   {
     "id": "expression-hoe-lang-woon-je-al-in-nederland",
@@ -88,17 +91,18 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-02-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "time"
+      "time",
+      "2026-05-25"
     ],
     "notes": "",
-    "register": "neutral"
+    "register": "neutral",
+    "week_start": "2026-05-25"
   },
   {
     "id": "expression-dat-klopt",
@@ -113,17 +117,18 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-02-page-03.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "conversation"
+      "conversation",
+      "2026-05-25"
     ],
     "notes": "",
-    "register": "neutral"
+    "register": "neutral",
+    "week_start": "2026-05-25"
   },
   {
     "id": "expression-hoe-spel-ik-dat",
@@ -138,17 +143,18 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-02-page-03.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "spelling"
+      "spelling",
+      "2026-05-25"
     ],
     "notes": "",
-    "register": "neutral"
+    "register": "neutral",
+    "week_start": "2026-05-25"
   },
   {
     "id": "expression-kan-ik-u-helpen",
@@ -163,7 +169,6 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-03-page-02.jpg"
     ],
@@ -171,10 +176,12 @@
     "tags": [
       "A1",
       "formal",
-      "modal"
+      "modal",
+      "2026-05-25"
     ],
     "notes": "The handwriting is slightly unclear, but the full phrase and translation are legible.",
-    "register": "formal"
+    "register": "formal",
+    "week_start": "2026-05-25"
   },
   {
     "id": "expression-mag-ik-wat-vragen",
@@ -189,17 +196,18 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-03-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "modal"
+      "modal",
+      "2026-05-25"
     ],
     "notes": "",
-    "register": "neutral"
+    "register": "neutral",
+    "week_start": "2026-05-25"
   },
   {
     "id": "expression-graag-gedaan",
@@ -214,16 +222,17 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-03-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
-      "A1"
+      "A1",
+      "2026-05-25"
     ],
     "notes": "",
-    "register": "neutral"
+    "register": "neutral",
+    "week_start": "2026-05-25"
   },
   {
     "id": "expression-leuk-je-te-ontmoeten",
@@ -238,17 +247,18 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-04-page-03.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "social"
+      "social",
+      "2026-06-01"
     ],
     "notes": "Informal; use 'u' for a formal version.",
-    "register": "informal"
+    "register": "informal",
+    "week_start": "2026-06-01"
   },
   {
     "id": "expression-zullen-we-elkaar-om-acht-uur-ontmoeten",
@@ -263,7 +273,6 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-04-page-03.jpg"
     ],
@@ -271,10 +280,12 @@
     "tags": [
       "A1",
       "modal",
-      "time"
+      "time",
+      "2026-06-01"
     ],
     "notes": "",
-    "register": "neutral"
+    "register": "neutral",
+    "week_start": "2026-06-01"
   },
   {
     "id": "expression-de-rijst-is-op",
@@ -289,17 +300,18 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-05-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "food"
+      "food",
+      "2026-06-01"
     ],
     "notes": "",
-    "register": "neutral"
+    "register": "neutral",
+    "week_start": "2026-06-01"
   },
   {
     "id": "expression-tot-later",
@@ -314,17 +326,18 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-05-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "conversation"
+      "conversation",
+      "2026-06-01"
     ],
     "notes": "",
-    "register": "neutral"
+    "register": "neutral",
+    "week_start": "2026-06-01"
   },
   {
     "id": "expression-zeg-het-maar",
@@ -339,7 +352,6 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-06-page-01.jpg"
     ],
@@ -347,10 +359,12 @@
     "tags": [
       "A1",
       "shopping",
-      "particle"
+      "particle",
+      "2026-06-01"
     ],
     "notes": "Common service phrase; 'maar' softens the imperative.",
-    "register": "neutral"
+    "register": "neutral",
+    "week_start": "2026-06-01"
   },
   {
     "id": "expression-kijk-eens",
@@ -365,17 +379,18 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-06-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "particle"
+      "particle",
+      "2026-06-01"
     ],
     "notes": "",
-    "register": "neutral"
+    "register": "neutral",
+    "week_start": "2026-06-01"
   },
   {
     "id": "expression-anders-nog-iets",
@@ -390,17 +405,18 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-06-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "shopping"
+      "shopping",
+      "2026-06-01"
     ],
     "notes": "",
-    "register": "neutral"
+    "register": "neutral",
+    "week_start": "2026-06-01"
   },
   {
     "id": "expression-fijne-dag",
@@ -415,17 +431,18 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-06-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "politeness"
+      "politeness",
+      "2026-06-01"
     ],
     "notes": "",
-    "register": "neutral"
+    "register": "neutral",
+    "week_start": "2026-06-01"
   },
   {
     "id": "expression-ik-heb-zin-in",
@@ -445,7 +462,6 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-06-page-06.jpg",
       "sources/archive/2026/week_01/images/lesson-07-page-03.jpg"
@@ -453,10 +469,12 @@
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "fixed_expression"
+      "fixed_expression",
+      "2026-06-01"
     ],
     "notes": "Use 'zin in' with a noun and 'zin om te' with an infinitive.",
-    "register": "neutral"
+    "register": "neutral",
+    "week_start": "2026-06-01"
   },
   {
     "id": "expression-tot-zo",
@@ -471,17 +489,18 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-07-page-04.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "conversation"
+      "conversation",
+      "2026-06-08"
     ],
     "notes": "",
-    "register": "neutral"
+    "register": "neutral",
+    "week_start": "2026-06-08"
   },
   {
     "id": "expression-het-maakt-me-niet-uit",
@@ -501,17 +520,18 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-04.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "fixed_expression"
+      "fixed_expression",
+      "2026-06-08"
     ],
     "notes": "Merged with the existing seed entry and linked to the handwritten source.",
-    "register": "neutral"
+    "register": "neutral",
+    "week_start": "2026-06-08"
   },
   {
     "id": "expression-je-ziet-er-goed-uit",
@@ -526,17 +546,18 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-04.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "separable_verb"
+      "separable_verb",
+      "2026-06-08"
     ],
     "notes": "",
-    "register": "neutral"
+    "register": "neutral",
+    "week_start": "2026-06-08"
   },
   {
     "id": "expression-doe-maar",
@@ -551,17 +572,18 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-04.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "particle"
+      "particle",
+      "2026-06-08"
     ],
     "notes": "Meaning depends on context; it often accepts an offer.",
-    "register": "neutral"
+    "register": "neutral",
+    "week_start": "2026-06-08"
   },
   {
     "id": "expression-doe-maar-niet",
@@ -576,7 +598,6 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-04.jpg"
     ],
@@ -584,10 +605,12 @@
     "tags": [
       "A1",
       "particle",
-      "negation"
+      "negation",
+      "2026-06-08"
     ],
     "notes": "",
-    "register": "neutral"
+    "register": "neutral",
+    "week_start": "2026-06-08"
   },
   {
     "id": "expression-dat-is-lang-geleden",
@@ -602,17 +625,18 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-04.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "time"
+      "time",
+      "2026-06-08"
     ],
     "notes": "",
-    "register": "neutral"
+    "register": "neutral",
+    "week_start": "2026-06-08"
   },
   {
     "id": "expression-ik-ben-goed-bezig",
@@ -627,17 +651,18 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-04.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "fixed_expression"
+      "fixed_expression",
+      "2026-06-08"
     ],
     "notes": "",
-    "register": "neutral"
+    "register": "neutral",
+    "week_start": "2026-06-08"
   },
   {
     "id": "expression-kom-binnen",
@@ -652,17 +677,18 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-04.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "imperative"
+      "imperative",
+      "2026-06-08"
     ],
     "notes": "informal",
-    "register": "informal"
+    "register": "informal",
+    "week_start": "2026-06-08"
   },
   {
     "id": "expression-geef-je-jas-maar-hier",
@@ -677,7 +703,6 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-04.jpg"
     ],
@@ -685,10 +710,12 @@
     "tags": [
       "A1",
       "imperative",
-      "particle"
+      "particle",
+      "2026-06-08"
     ],
     "notes": "Merged with the existing seed entry. 'Maar' makes the imperative sound welcoming rather than abrupt.",
-    "register": "informal"
+    "register": "informal",
+    "week_start": "2026-06-08"
   },
   {
     "id": "expression-zal-ik-doen",
@@ -703,7 +730,6 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-02.jpg"
     ],
@@ -711,9 +737,11 @@
     "tags": [
       "A1",
       "modal",
-      "response"
+      "response",
+      "2026-06-08"
     ],
     "notes": "Merged with the existing seed entry. The handwriting is compact, but the phrase is supported by the supplied seed example.",
-    "register": "neutral"
+    "register": "neutral",
+    "week_start": "2026-06-08"
   }
 ]

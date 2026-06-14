@@ -12,20 +12,21 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-02-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "time"
+      "time",
+      "2026-05-25"
     ],
     "notes": "",
     "functions": [
       "marks that something has happened or continued before now"
     ],
-    "tone_effect": "Adds an 'already' perspective."
+    "tone_effect": "Adds an 'already' perspective.",
+    "week_start": "2026-05-25"
   },
   {
     "id": "particle-nog",
@@ -45,7 +46,6 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-04-page-01.jpg",
       "sources/archive/2026/week_01/images/lesson-06-page-02.jpg"
@@ -53,14 +53,16 @@
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "time"
+      "time",
+      "2026-06-01"
     ],
     "notes": "",
     "functions": [
       "marks continuation",
       "asks for an additional item"
     ],
-    "tone_effect": "Meaning changes with context."
+    "tone_effect": "Meaning changes with context.",
+    "week_start": "2026-06-01"
   },
   {
     "id": "particle-maar",
@@ -80,7 +82,6 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-05-page-02.jpg",
       "sources/archive/2026/week_01/images/lesson-06-page-01.jpg",
@@ -89,14 +90,16 @@
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "modal_particle"
+      "modal_particle",
+      "2026-06-01"
     ],
     "notes": "This use is different from the conjunction 'maar' meaning 'but'.",
     "functions": [
       "softens an imperative",
       "encourages an action"
     ],
-    "tone_effect": "Makes commands and suggestions less abrupt."
+    "tone_effect": "Makes commands and suggestions less abrupt.",
+    "week_start": "2026-06-01"
   },
   {
     "id": "particle-wel",
@@ -116,7 +119,6 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-05-page-02.jpg",
       "sources/archive/2026/week_01/images/lesson-07-page-01.jpg"
@@ -124,14 +126,16 @@
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "modal_particle"
+      "modal_particle",
+      "2026-06-01"
     ],
     "notes": "",
     "functions": [
       "adds contrast",
       "reassures or contradicts"
     ],
-    "tone_effect": "Often carries contrast that English expresses through stress or context."
+    "tone_effect": "Often carries contrast that English expresses through stress or context.",
+    "week_start": "2026-06-01"
   },
   {
     "id": "particle-even",
@@ -151,7 +155,6 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-07-page-04.jpg",
       "sources/archive/2026/week_01/images/lesson-08-page-02.jpg"
@@ -159,14 +162,16 @@
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "modal_particle"
+      "modal_particle",
+      "2026-06-08"
     ],
     "notes": "",
     "functions": [
       "presents an action as brief or low-effort",
       "softens a request"
     ],
-    "tone_effect": "Makes a request sound casual and manageable."
+    "tone_effect": "Makes a request sound casual and manageable.",
+    "week_start": "2026-06-08"
   },
   {
     "id": "particle-hoor",
@@ -186,7 +191,6 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-07-page-01.jpg",
       "sources/archive/2026/week_01/images/lesson-08-page-02.jpg"
@@ -194,14 +198,16 @@
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "modal_particle"
+      "modal_particle",
+      "2026-06-08"
     ],
     "notes": "",
     "functions": [
       "reassures",
       "emphasizes a friendly correction or statement"
     ],
-    "tone_effect": "Usually makes a sentence warmer or more emphatic; intonation matters."
+    "tone_effect": "Usually makes a sentence warmer or more emphatic; intonation matters.",
+    "week_start": "2026-06-08"
   },
   {
     "id": "particle-toch",
@@ -216,21 +222,22 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-04.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "modal_particle"
+      "modal_particle",
+      "2026-06-08"
     ],
     "notes": "",
     "functions": [
       "seeks confirmation",
       "marks contrast or persistence"
     ],
-    "tone_effect": "Can sound persuasive, surprised, or corrective."
+    "tone_effect": "Can sound persuasive, surprised, or corrective.",
+    "week_start": "2026-06-08"
   },
   {
     "id": "particle-joh",
@@ -245,21 +252,22 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "informal"
+      "informal",
+      "2026-06-08"
     ],
     "notes": "",
     "functions": [
       "informal exclamation",
       "expresses surprise or softens directness"
     ],
-    "tone_effect": "Very informal and strongly dependent on intonation."
+    "tone_effect": "Very informal and strongly dependent on intonation.",
+    "week_start": "2026-06-08"
   },
   {
     "id": "particle-alweer",
@@ -274,21 +282,22 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-03.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "time"
+      "time",
+      "2026-06-08"
     ],
     "notes": "Merged with the existing seed entry.",
     "functions": [
       "marks repetition",
       "suggests something happened sooner or more often than expected"
     ],
-    "tone_effect": "Often conveys surprise or mild annoyance."
+    "tone_effect": "Often conveys surprise or mild annoyance.",
+    "week_start": "2026-06-08"
   },
   {
     "id": "particle-nog-steeds",
@@ -303,7 +312,6 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-01.jpg",
       "sources/archive/2026/week_01/images/lesson-08-page-02.jpg"
@@ -311,12 +319,14 @@
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "time"
+      "time",
+      "2026-06-08"
     ],
     "notes": "Merged with the existing seed entry.",
     "functions": [
       "marks that a state or action continues"
     ],
-    "tone_effect": "Can imply persistence beyond an expected point."
+    "tone_effect": "Can imply persistence beyond an expected point.",
+    "week_start": "2026-06-08"
   }
 ]

@@ -12,7 +12,7 @@
       "correct",
       "english",
       "category",
-      "week",
+      "week_start",
       "source_images",
       "ingestion_date",
       "tags",
@@ -38,8 +38,8 @@
       "category": {
         "type": "string"
       },
-      "week": {
-        "$ref": "common.schema.json#/$defs/week"
+      "week_start": {
+        "$ref": "common.schema.json#/$defs/weekStart"
       },
       "source_images": {
         "type": "array",

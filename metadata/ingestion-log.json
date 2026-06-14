@@ -1,7 +1,6 @@
 [
   {
-    "id": "ingestion-week-01",
-    "week": "week_01",
+    "id": "ingestion-historical-2026-05-25-to-2026-06-08",
     "ingestion_date": "2026-06-12",
     "image_count": 35,
     "created_count": 243,
@@ -16,6 +15,12 @@
     "needs_review_count": 0,
     "resolved_needs_review_count": 9,
     "review_resolution_date": "2026-06-12",
-    "status": "complete"
+    "status": "complete",
+    "week_starts": [
+      "2026-05-25",
+      "2026-06-01",
+      "2026-06-08"
+    ],
+    "migration_note": "The original combined week_01 ingestion was redistributed by archived lesson order into three Monday-based batches on 2026-06-14."
   }
 ]

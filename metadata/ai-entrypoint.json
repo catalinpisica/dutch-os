@@ -19,8 +19,7 @@
     "verb_construction": 9,
     "word": 190
   },
-  "latest_week": "week_01",
-  "latest_batch": "week_01",
+  "latest_week_start": "2026-06-08",
   "paths": {
     "manifest": "MANIFEST.md",
     "catalog": "metadata/catalog.json",
@@ -28,6 +27,7 @@
     "tags": "metadata/tags.json",
     "needs_review": "metadata/needs_review.json",
     "reviews": "reviews/items.json",
+    "chatgpt_context": "chatgpt/dutch-os-chatgpt-context.md",
     "tutoring_entrypoint": "prompts/chatgpt-tutor-entrypoint.md",
     "tutoring_prompt": "prompts/tutor.md",
     "ingestion_prompt": "prompts/ingest-weekly-notes.md",

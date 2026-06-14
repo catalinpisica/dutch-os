@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f0e6">
+    <meta name="description" content="A personal Dutch learning cockpit powered by Dutch OS repository data.">
+    <title>Dutch OS</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <script type="module" src="./src/app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <a class="brand" href="#dashboard" aria-label="Dutch OS dashboard">
+        <span class="brand-mark" aria-hidden="true">NL</span>
+        <span>
+          <strong>Dutch OS</strong>
+          <small>Your learning memory</small>
+        </span>
+      </a>
+      <button class="icon-button" id="theme-toggle" type="button" aria-label="Use dark theme" title="Change theme">
+        <span aria-hidden="true">◐</span>
+      </button>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="dashboard" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow" id="today-label">Your Dutch, organized</p>
+          <h1 id="hero-title">Goed bezig.</h1>
+          <p class="hero-text" id="hero-summary">Loading your learning memory…</p>
+          <div class="hero-actions">
+            <button class="primary-button" id="review-button" type="button">Start this week’s review</button>
+            <a class="text-link" href="#library">Browse everything <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+        <div class="week-card" aria-live="polite">
+          <span class="week-card-label">Latest week</span>
+          <strong id="latest-week">—</strong>
+          <span id="latest-week-count">Loading items…</span>
+        </div>
+      </section>
+
+      <section class="stats-section" aria-labelledby="stats-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">At a glance</p>
+            <h2 id="stats-title">Your knowledge</h2>
+          </div>
+          <span class="updated-label" id="updated-label"></span>
+        </div>
+        <div class="stats-grid" id="stats-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="practice-section" id="practice" aria-labelledby="practice-title">
+        <div class="academy-header">
+          <div>
+            <p class="eyebrow">Weekly academy</p>
+            <h2 id="practice-title">Learn it. Retrieve it. Use it. Keep it.</h2>
+            <p>One long quiz feels productive, but spaced retrieval is what makes this week’s Dutch stick. Complete these stages across the week.</p>
+          </div>
+          <label class="practice-week">
+            <span>Academy week</span>
+            <select id="practice-week-filter"></select>
+          </label>
+        </div>
+
+        <div class="coverage-panel">
+          <div class="coverage-ring" id="coverage-ring" style="--coverage: 0">
+            <strong id="coverage-percent">0%</strong>
+            <span>covered</span>
+          </div>
+          <div class="coverage-copy">
+            <strong id="coverage-title">Your weekly coverage</strong>
+            <span id="coverage-detail">Start practicing to build durable recall.</span>
+            <div class="coverage-track"><span id="coverage-bar"></span></div>
+          </div>
+          <div class="practice-stats" aria-label="Local practice progress">
+            <div><strong id="practice-xp">0</strong><span>XP</span></div>
+            <div><strong id="practice-streak">0</strong><span>day streak</span></div>
+            <div><strong id="practice-accuracy">—</strong><span>accuracy</span></div>
+          </div>
+        </div>
+
+        <div class="academy-grid">
+          <article class="academy-stage">
+            <span class="stage-number">1</span>
+            <p class="stage-kicker">Recognition</p>
+            <h3>First contact</h3>
+            <p>Build familiarity with this week’s words and expressions using supported translation choices.</p>
+            <button class="secondary-button academy-start" data-mode="recognition" type="button">Start 20 questions</button>
+          </article>
+          <article class="academy-stage academy-stage--accent">
+            <span class="stage-number">2</span>
+            <p class="stage-kicker">Active recall</p>
+            <h3>Recall without hints</h3>
+            <p>Produce Dutch from English and complete sentences. Effortful retrieval strengthens memory.</p>
+            <button class="primary-button academy-start" data-mode="recall" type="button">Start 25 questions</button>
+          </article>
+          <article class="academy-stage">
+            <span class="stage-number">3</span>
+            <p class="stage-kicker">Application</p>
+            <h3>Use it in context</h3>
+            <p>Work through every prepared translation, cloze, grammar, recall, and roleplay prompt for the week.</p>
+            <button class="secondary-button" id="academy-review" type="button">Open weekly workshop</button>
+          </article>
+          <article class="academy-stage">
+            <span class="stage-number">4</span>
+            <p class="stage-kicker">Cumulative retention</p>
+            <h3>Mastery challenge</h3>
+            <p>Mix this week with weak and older items. Interleaving helps you choose the right Dutch under pressure.</p>
+            <button class="secondary-button academy-start" data-mode="mastery" type="button">Start 30 questions</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="review-section" id="review" aria-labelledby="review-title">
+        <div class="review-panel">
+          <div class="review-heading">
+            <div>
+              <p class="eyebrow">Weekly practice</p>
+              <h2 id="review-title">This week’s workshop</h2>
+            </div>
+            <span class="review-badge" id="review-count">—</span>
+          </div>
+          <div id="review-content" class="review-content">
+            <p>Loading your prepared review…</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="library-section" id="library" aria-labelledby="library-title">
+        <div class="section-heading library-heading">
+          <div>
+            <p class="eyebrow">Library</p>
+            <h2 id="library-title">Find what you’ve learned</h2>
+          </div>
+          <span id="result-count" class="result-count"></span>
+        </div>
+
+        <form class="search-panel" id="search-form" role="search">
+          <label class="search-field">
+            <span class="visually-hidden">Search learned Dutch</span>
+            <span class="search-icon" aria-hidden="true">⌕</span>
+            <input id="search-input" type="search" autocomplete="off" placeholder="Search Dutch, English, category or tag…">
+          </label>
+          <div class="filters" aria-label="Filter learned items">
+            <label>
+              <span>Type</span>
+              <select id="type-filter">
+                <option value="all">All types</option>
+              </select>
+            </label>
+            <label>
+              <span>Week</span>
+              <select id="week-filter">
+                <option value="all">All weeks</option>
+              </select>
+            </label>
+          </div>
+        </form>
+
+        <div class="active-filter" id="active-filter" hidden>
+          <span id="active-filter-label"></span>
+          <button type="button" id="clear-filters">Clear filters</button>
+        </div>
+
+        <div class="item-grid" id="item-grid" aria-live="polite"></div>
+        <button class="secondary-button load-more" id="load-more" type="button" hidden>Show more</button>
+      </section>
+    </main>
+
+    <footer>
+      <p>Dutch OS reads directly from your canonical repository data.</p>
+      <a href="../chatgpt/dutch-os-chatgpt-context.md">Open ChatGPT context</a>
+    </footer>
+
+    <dialog class="item-dialog" id="item-dialog" aria-labelledby="dialog-title">
+      <div class="dialog-header">
+        <div>
+          <p class="eyebrow" id="dialog-type"></p>
+          <h2 id="dialog-title"></h2>
+        </div>
+        <button class="icon-button close-button" id="dialog-close" type="button" aria-label="Close details">×</button>
+      </div>
+      <div id="dialog-content" class="dialog-content"></div>
+    </dialog>
+
+    <dialog class="lesson-dialog" id="lesson-dialog" aria-labelledby="lesson-title">
+      <div class="lesson-shell">
+        <header class="lesson-header">
+          <button class="lesson-close" id="lesson-close" type="button" aria-label="Leave lesson">×</button>
+          <div class="lesson-progress" aria-label="Lesson progress"><span id="lesson-progress-bar"></span></div>
+          <div class="lesson-status"><span id="lesson-counter"></span><span class="lesson-hearts" id="lesson-hearts" aria-label="Three hearts remaining">♥ ♥ ♥</span></div>
+        </header>
+        <main class="lesson-main">
+          <p class="eyebrow" id="question-label">Choose the answer</p>
+          <h2 id="lesson-title">Loading lesson…</h2>
+          <p class="question-hint" id="question-hint" hidden></p>
+          <div class="answer-area" id="answer-area"></div>
+        </main>
+        <footer class="lesson-footer" id="lesson-footer">
+          <div class="feedback" id="lesson-feedback" hidden>
+            <strong id="feedback-title"></strong>
+            <span id="feedback-copy"></span>
+          </div>
+          <button class="primary-button lesson-check" id="lesson-check" type="button" disabled>Check</button>
+        </footer>
+      </div>
+    </dialog>
+
+    <div class="fatal-error" id="fatal-error" hidden role="alert">
+      <strong>Dutch OS could not load its repository data.</strong>
+      <span>Serve the repository root over HTTP or check the deployed data paths.</span>
+    </div>
+  </body>
+</html>

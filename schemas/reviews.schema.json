@@ -8,7 +8,8 @@
     "required": [
       "id",
       "type",
-      "week",
+      "week_start",
+      "tags",
       "ingestion_date",
       "source_images",
       "focus_ids",
@@ -28,8 +29,11 @@
       "type": {
         "const": "review"
       },
-      "week": {
-        "$ref": "common.schema.json#/$defs/week"
+      "week_start": {
+        "$ref": "common.schema.json#/$defs/weekStart"
+      },
+      "tags": {
+        "$ref": "common.schema.json#/$defs/tags"
       },
       "ingestion_date": {
         "type": "string",

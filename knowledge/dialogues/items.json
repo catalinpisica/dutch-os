@@ -4,7 +4,6 @@
     "type": "dialogue",
     "title": "Introductions and telephone numbers",
     "setting": "Two new acquaintances introduce themselves and exchange contact details.",
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-02-page-02.jpg",
       "sources/archive/2026/week_01/images/lesson-02-page-03.jpg"
@@ -13,7 +12,8 @@
     "tags": [
       "A1",
       "introduction",
-      "personal_details"
+      "personal_details",
+      "2026-05-25"
     ],
     "target_ids": [
       "expression-waar-kom-je-vandaan",
@@ -77,14 +77,14 @@
         "english": "How do I spell that?"
       }
     ],
-    "notes": "Normalized from handwritten class dialogue; obvious spelling noise was corrected without changing meaning."
+    "notes": "Normalized from handwritten class dialogue; obvious spelling noise was corrected without changing meaning.",
+    "week_start": "2026-05-25"
   },
   {
     "id": "dialogue-new-neighbor",
     "type": "dialogue",
     "title": "A new neighbor",
     "setting": "A new resident introduces herself to her neighbors.",
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-04-page-02.jpg"
     ],
@@ -92,7 +92,8 @@
     "tags": [
       "A1",
       "neighbors",
-      "introduction"
+      "introduction",
+      "2026-06-01"
     ],
     "target_ids": [
       "expression-leuk-je-te-ontmoeten"
@@ -129,14 +130,14 @@
         "english": "I would like to meet my new neighbors."
       }
     ],
-    "notes": "Normalized from handwritten class dialogue; obvious spelling noise was corrected without changing meaning."
+    "notes": "Normalized from handwritten class dialogue; obvious spelling noise was corrected without changing meaning.",
+    "week_start": "2026-06-01"
   },
   {
     "id": "dialogue-at-the-market",
     "type": "dialogue",
     "title": "At the market",
     "setting": "A customer buys groceries from a seller.",
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-06-page-01.jpg",
       "sources/archive/2026/week_01/images/lesson-06-page-02.jpg"
@@ -145,7 +146,8 @@
     "tags": [
       "A1",
       "shopping",
-      "service"
+      "service",
+      "2026-06-01"
     ],
     "target_ids": [
       "expression-zeg-het-maar",
@@ -179,14 +181,14 @@
         "english": "Of course. Have a nice day!"
       }
     ],
-    "notes": "Normalized from handwritten class dialogue; obvious spelling noise was corrected without changing meaning."
+    "notes": "Normalized from handwritten class dialogue; obvious spelling noise was corrected without changing meaning.",
+    "week_start": "2026-06-01"
   },
   {
     "id": "dialogue-receiving-a-visitor",
     "type": "dialogue",
     "title": "Receiving a visitor",
     "setting": "Someone welcomes a visitor into their home.",
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-03.jpg",
       "sources/archive/2026/week_01/images/lesson-08-page-04.jpg"
@@ -195,7 +197,8 @@
     "tags": [
       "A1",
       "visiting",
-      "hospitality"
+      "hospitality",
+      "2026-06-08"
     ],
     "target_ids": [
       "expression-kom-binnen",
@@ -234,6 +237,7 @@
         "english": "Milk please, but no sugar."
       }
     ],
-    "notes": "Normalized from handwritten class dialogue; obvious spelling noise was corrected without changing meaning."
+    "notes": "Normalized from handwritten class dialogue; obvious spelling noise was corrected without changing meaning.",
+    "week_start": "2026-06-08"
   }
 ]

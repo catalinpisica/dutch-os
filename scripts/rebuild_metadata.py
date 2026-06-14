@@ -6,6 +6,8 @@ from collections import Counter
 from datetime import date
 from pathlib import Path
 
+from generate_chatgpt_context import build_chatgpt_context
+
 
 ROOT = Path(__file__).resolve().parents[1]
 KNOWLEDGE_DIRS = (
@@ -72,7 +74,7 @@ def main() -> None:
                 "dutch": dutch,
                 "english": english,
                 "category": category,
-                "week": item["week"],
+                "week_start": item["week_start"],
                 "tags": item["tags"],
                 "source_path": item_source_paths[item["id"]],
             }
@@ -98,21 +100,18 @@ def main() -> None:
         },
     )
 
-    week_counts = Counter(item["week"] for item in items)
+    week_counts = Counter(item["week_start"] for item in items)
     write_json(
         ROOT / "metadata" / "statistics.json",
         {
             "generated_at": generated_at,
             "totals": {"knowledge_items": len(items), **totals},
-            "by_week": dict(sorted(week_counts.items())),
+            "by_week_start": dict(sorted(week_counts.items())),
         },
     )
 
     counts_by_type = Counter(item["type"] for item in items)
-    latest_week = max(
-        week_counts,
-        key=lambda week: int(week.removeprefix("week_")),
-    )
+    latest_week_start = max(week_counts)
     write_json(
         ROOT / "metadata" / "ai-entrypoint.json",
         {
@@ -135,8 +134,7 @@ def main() -> None:
             ],
             "total_items": len(items),
             "counts_by_type": dict(sorted(counts_by_type.items())),
-            "latest_week": latest_week,
-            "latest_batch": latest_week,
+            "latest_week_start": latest_week_start,
             "paths": {
                 "manifest": "MANIFEST.md",
                 "catalog": "metadata/catalog.json",
@@ -144,6 +142,7 @@ def main() -> None:
                 "tags": "metadata/tags.json",
                 "needs_review": "metadata/needs_review.json",
                 "reviews": "reviews/items.json",
+                "chatgpt_context": "chatgpt/dutch-os-chatgpt-context.md",
                 "tutoring_entrypoint": "prompts/chatgpt-tutor-entrypoint.md",
                 "tutoring_prompt": "prompts/tutor.md",
                 "ingestion_prompt": "prompts/ingest-weekly-notes.md",
@@ -164,7 +163,14 @@ def main() -> None:
         },
     )
 
-    print(f"Rebuilt metadata for {len(items)} canonical items.")
+    chatgpt_path = ROOT / "chatgpt" / "dutch-os-chatgpt-context.md"
+    chatgpt_path.parent.mkdir(parents=True, exist_ok=True)
+    chatgpt_path.write_text(build_chatgpt_context(ROOT), encoding="utf-8")
+
+    print(
+        f"Rebuilt metadata for {len(items)} canonical items and generated "
+        "the ChatGPT context."
+    )
 
 
 if __name__ == "__main__":

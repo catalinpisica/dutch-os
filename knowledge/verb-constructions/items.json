@@ -12,21 +12,22 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-04-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "fixed_preposition"
+      "fixed_preposition",
+      "2026-06-01"
     ],
     "notes": "",
     "infinitive": "houden",
     "construction": "houden van + noun/person",
     "word_order_notes": "The finite form of 'houden' is conjugated; 'van' remains with its object.",
     "fixed_preposition": "van",
-    "separable": false
+    "separable": false,
+    "week_start": "2026-06-01"
   },
   {
     "id": "verb_construction-boodschappen-doen",
@@ -41,21 +42,22 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-05-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "shopping"
+      "shopping",
+      "2026-06-01"
     ],
     "notes": "",
     "infinitive": "doen",
     "construction": "boodschappen doen",
     "word_order_notes": "Conjugate 'doen'; 'boodschappen' remains the object.",
     "fixed_preposition": null,
-    "separable": false
+    "separable": false,
+    "week_start": "2026-06-01"
   },
   {
     "id": "verb_construction-kunnen-infinitief",
@@ -70,7 +72,6 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-06-page-03.jpg",
       "sources/archive/2026/week_01/images/lesson-06-page-04.jpg"
@@ -78,14 +79,16 @@
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "modal"
+      "modal",
+      "2026-06-01"
     ],
     "notes": "",
     "infinitive": "kunnen",
     "construction": "conjugated kunnen + infinitive",
     "word_order_notes": "The infinitive normally goes at the end of the main clause.",
     "fixed_preposition": null,
-    "separable": false
+    "separable": false,
+    "week_start": "2026-06-01"
   },
   {
     "id": "verb_construction-mogen-infinitief",
@@ -105,7 +108,6 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-06-page-02.jpg",
       "sources/archive/2026/week_01/images/lesson-06-page-04.jpg"
@@ -113,14 +115,16 @@
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "modal"
+      "modal",
+      "2026-06-01"
     ],
     "notes": "",
     "infinitive": "mogen",
     "construction": "conjugated mogen + infinitive",
     "word_order_notes": "The infinitive normally goes at the end of the main clause.",
     "fixed_preposition": null,
-    "separable": false
+    "separable": false,
+    "week_start": "2026-06-01"
   },
   {
     "id": "verb_construction-moeten-infinitief",
@@ -135,7 +139,6 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-06-page-03.jpg",
       "sources/archive/2026/week_01/images/lesson-06-page-05.jpg"
@@ -143,14 +146,16 @@
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "modal"
+      "modal",
+      "2026-06-01"
     ],
     "notes": "",
     "infinitive": "moeten",
     "construction": "conjugated moeten + infinitive",
     "word_order_notes": "The infinitive normally goes at the end of the main clause.",
     "fixed_preposition": null,
-    "separable": false
+    "separable": false,
+    "week_start": "2026-06-01"
   },
   {
     "id": "verb_construction-willen-infinitief",
@@ -165,7 +170,6 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-04-page-02.jpg",
       "sources/archive/2026/week_01/images/lesson-06-page-03.jpg",
@@ -175,14 +179,16 @@
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "modal"
+      "modal",
+      "2026-06-01"
     ],
     "notes": "",
     "infinitive": "willen",
     "construction": "conjugated willen + infinitive",
     "word_order_notes": "The infinitive normally goes at the end of the main clause.",
     "fixed_preposition": null,
-    "separable": false
+    "separable": false,
+    "week_start": "2026-06-01"
   },
   {
     "id": "verb_construction-zullen-infinitief",
@@ -202,7 +208,6 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-06-page-03.jpg",
       "sources/archive/2026/week_01/images/lesson-06-page-05.jpg",
@@ -211,14 +216,16 @@
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "modal"
+      "modal",
+      "2026-06-01"
     ],
     "notes": "",
     "infinitive": "zullen",
     "construction": "conjugated zullen + infinitive",
     "word_order_notes": "Use it for proposals, promises, or future intent; the infinitive normally goes at the end.",
     "fixed_preposition": null,
-    "separable": false
+    "separable": false,
+    "week_start": "2026-06-01"
   },
   {
     "id": "verb_construction-zin-hebben-in-om-te",
@@ -238,7 +245,6 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-06-page-06.jpg",
       "sources/archive/2026/week_01/images/lesson-07-page-03.jpg"
@@ -246,14 +252,16 @@
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "fixed_expression"
+      "fixed_expression",
+      "2026-06-01"
     ],
     "notes": "",
     "infinitive": "hebben",
     "construction": "zin hebben in + noun OR zin hebben om te + infinitive",
     "word_order_notes": "Use 'in' before a noun and 'om te' before an infinitive phrase.",
     "fixed_preposition": null,
-    "separable": false
+    "separable": false,
+    "week_start": "2026-06-01"
   },
   {
     "id": "verb_construction-eruitzien",
@@ -268,7 +276,6 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-03.jpg",
       "sources/archive/2026/week_01/images/lesson-08-page-04.jpg"
@@ -276,13 +283,15 @@
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "separable"
+      "separable",
+      "2026-06-08"
     ],
     "notes": "",
     "infinitive": "eruitzien",
     "construction": "er + complement + uitzien",
     "word_order_notes": "In a main clause the verb separates: 'Je ziet er goed uit.'",
     "fixed_preposition": null,
-    "separable": true
+    "separable": true,
+    "week_start": "2026-06-08"
   }
 ]

@@ -17,19 +17,20 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-01-page-04.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "word_order"
+      "word_order",
+      "2026-05-25"
     ],
     "notes": "",
     "pattern": "[position 1] + finite verb + subject/rest",
     "explanation": "In a Dutch main clause, the conjugated verb normally occupies the second grammatical position.",
-    "constraints": []
+    "constraints": [],
+    "week_start": "2026-05-25"
   },
   {
     "id": "grammar_pattern-regelmatige-werkwoorden-in-de-tegenwoordige-tijd",
@@ -44,21 +45,22 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-01-page-04.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "present_tense"
+      "present_tense",
+      "2026-05-25"
     ],
     "notes": "",
     "pattern": "ik: stem; jij/hij/zij: stem + t; wij/jullie/zij: infinitive",
     "explanation": "Use the stem with 'ik', add -t for most singular subjects, and use the infinitive for plural subjects.",
     "constraints": [
       "With inversion after jij/je, the -t is usually dropped: Werk jij?"
-    ]
+    ],
+    "week_start": "2026-05-25"
   },
   {
     "id": "grammar_pattern-vragen-met-inversie",
@@ -78,7 +80,6 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-02-page-04.jpg",
       "sources/archive/2026/week_01/images/lesson-06-page-04.jpg"
@@ -86,12 +87,14 @@
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "questions"
+      "questions",
+      "2026-05-25"
     ],
     "notes": "",
     "pattern": "question word + finite verb + subject + rest OR finite verb + subject + rest",
     "explanation": "In a direct question, the finite verb comes before the subject.",
-    "constraints": []
+    "constraints": [],
+    "week_start": "2026-05-25"
   },
   {
     "id": "grammar_pattern-meervoud-met-en",
@@ -111,7 +114,6 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-05-page-02.jpg",
       "sources/archive/2026/week_01/images/lesson-05-page-03.jpg"
@@ -119,7 +121,8 @@
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "plurals"
+      "plurals",
+      "2026-06-01"
     ],
     "notes": "",
     "pattern": "noun stem + en",
@@ -127,7 +130,8 @@
     "constraints": [
       "A doubled vowel in a closed syllable is often written as one vowel in an open plural syllable: boom - bomen.",
       "A consonant may double after a short vowel: bos - bossen."
-    ]
+    ],
+    "week_start": "2026-06-01"
   },
   {
     "id": "grammar_pattern-meervoud-met-s",
@@ -147,19 +151,20 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-05-page-03.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "plurals"
+      "plurals",
+      "2026-06-01"
     ],
     "notes": "",
     "pattern": "noun + s or 's",
     "explanation": "Many nouns ending in an unstressed vowel or sounds such as -el, -en, -er, -je take -s. An apostrophe preserves a long vowel sound after a, i, o, u, or y.",
-    "constraints": []
+    "constraints": [],
+    "week_start": "2026-06-01"
   },
   {
     "id": "grammar_pattern-meervoud-gebruikt-altijd-de",
@@ -174,7 +179,6 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-03-page-02.jpg"
     ],
@@ -182,12 +186,14 @@
     "tags": [
       "A1",
       "articles",
-      "plurals"
+      "plurals",
+      "2026-05-25"
     ],
     "notes": "",
     "pattern": "de + plural noun",
     "explanation": "All plural nouns take the definite article 'de', even when the singular uses 'het'.",
-    "constraints": []
+    "constraints": [],
+    "week_start": "2026-05-25"
   },
   {
     "id": "grammar_pattern-modaal-werkwoord-met-infinitief",
@@ -207,7 +213,6 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-06-page-02.jpg",
       "sources/archive/2026/week_01/images/lesson-06-page-03.jpg",
@@ -218,12 +223,14 @@
     "tags": [
       "A1",
       "modal_verbs",
-      "word_order"
+      "word_order",
+      "2026-06-01"
     ],
     "notes": "",
     "pattern": "subject + conjugated modal + rest + infinitive",
     "explanation": "The modal verb is conjugated and the second verb remains an infinitive at the end of the clause.",
-    "constraints": []
+    "constraints": [],
+    "week_start": "2026-06-01"
   },
   {
     "id": "grammar_pattern-welk-en-welke",
@@ -248,7 +255,6 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-06-page-06.jpg",
       "sources/archive/2026/week_01/images/lesson-07-page-05.jpg"
@@ -257,12 +263,14 @@
     "tags": [
       "A1",
       "question_words",
-      "articles"
+      "articles",
+      "2026-06-01"
     ],
     "notes": "",
     "pattern": "welk + het-word; welke + de-word/plural",
     "explanation": "Use 'welk' with singular het-nouns and 'welke' with singular de-nouns and all plurals.",
-    "constraints": []
+    "constraints": [],
+    "week_start": "2026-06-01"
   },
   {
     "id": "grammar_pattern-dit-dat-en-deze-die",
@@ -282,7 +290,6 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-07-page-06.jpg"
     ],
@@ -290,12 +297,14 @@
     "tags": [
       "A1",
       "demonstratives",
-      "articles"
+      "articles",
+      "2026-06-08"
     ],
     "notes": "",
     "pattern": "dit/dat + het-word; deze/die + de-word",
     "explanation": "Use 'dit' and 'dat' with singular het-nouns, and 'deze' and 'die' with de-nouns and plurals.",
-    "constraints": []
+    "constraints": [],
+    "week_start": "2026-06-08"
   },
   {
     "id": "grammar_pattern-tot-en-tot-en-met",
@@ -315,19 +324,20 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-07-page-06.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "time"
+      "time",
+      "2026-06-08"
     ],
     "notes": "",
     "pattern": "tot + endpoint; tot en met + included endpoint",
     "explanation": "'Tot' normally excludes the endpoint, while 'tot en met' explicitly includes it.",
-    "constraints": []
+    "constraints": [],
+    "week_start": "2026-06-08"
   },
   {
     "id": "grammar_pattern-plaats-aangeven",
@@ -347,7 +357,6 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-07-page-06.jpg"
     ],
@@ -355,12 +364,14 @@
     "tags": [
       "A1",
       "location",
-      "prepositions"
+      "prepositions",
+      "2026-06-08"
     ],
     "notes": "",
     "pattern": "preposition + noun phrase",
     "explanation": "Common location expressions include in, voor, achter, boven, naast, onder, tussen, tegen, aan, links van, rechts van, dicht bij, and ver van.",
-    "constraints": []
+    "constraints": [],
+    "week_start": "2026-06-08"
   },
   {
     "id": "grammar_pattern-klokkijken-met-half-kwart-voor-en-over",
@@ -385,7 +396,6 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-07-page-04.jpg",
       "sources/archive/2026/week_01/images/lesson-07-page-07.jpg",
@@ -394,12 +404,14 @@
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "time"
+      "time",
+      "2026-06-08"
     ],
     "notes": "",
     "pattern": "[minutes] over/voor [hour]; half + next hour",
     "explanation": "Dutch 'half zeven' means half an hour before seven, or 6:30. Use 'over' for minutes past and 'voor' for minutes to.",
-    "constraints": []
+    "constraints": [],
+    "week_start": "2026-06-08"
   },
   {
     "id": "grammar_pattern-eruitzien-als-scheidbaar-werkwoord",
@@ -419,7 +431,6 @@
         "source_type": "ai_generated"
       }
     ],
-    "week": "week_01",
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-04.jpg"
     ],
@@ -427,11 +438,13 @@
     "tags": [
       "A1",
       "separable_verbs",
-      "word_order"
+      "word_order",
+      "2026-06-08"
     ],
     "notes": "",
     "pattern": "subject + ziet/zien + er + complement + uit",
     "explanation": "In a main clause, 'eruitzien' separates around the complement.",
-    "constraints": []
+    "constraints": [],
+    "week_start": "2026-06-08"
   }
 ]

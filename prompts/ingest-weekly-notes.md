@@ -4,7 +4,7 @@ Process the new handwritten Dutch notes currently placed under `sources/inbox/`.
 
 ## Inputs
 
-- Target course batch: `<week_NN>`
+- Target week start: `<YYYY-MM-DD>` (Monday)
 - Optional class context: `<topic, textbook chapter, teacher correction, or leave blank>`
 
 ## Required Workflow
@@ -17,11 +17,11 @@ Process the new handwritten Dutch notes currently placed under `sources/inbox/`.
 6. Preserve all previous sources, examples, notes, relations, and learning history when merging. Increment `exposure_count` and update `last_seen`.
 7. Add idiomatic English translations or explanations. Do not add Romanian translations. Distinguish literal meaning from pragmatic meaning where useful.
 8. Add concise examples. Label generated examples with `source_type: ai_generated`; never present them as class-note quotations.
-9. Record archived source-image provenance for each item. Use stable IDs and a course batch such as `week_01`.
-10. Create or update a weekly review in `reviews/items.json`, emphasizing new material and recurring mistakes.
-11. Rebuild derived metadata files or clearly report that they remain pending.
+9. Record archived source-image provenance for each item. Use stable IDs and the Monday week-start date, such as `2026-06-08`. Add that exact date to both `week_start` and the item's `tags` array.
+10. Create or update a weekly review in `reviews/items.json`, emphasizing new material and recurring mistakes. Give the review the same `week_start` value and date tag.
+11. Rebuild derived metadata and `chatgpt/dutch-os-chatgpt-context.md`; do not leave the portable ChatGPT snapshot stale.
 12. Run `python3 scripts/validate_json.py` and fix all failures.
-13. Move the completed source package to `sources/archive/YYYY/week_NN/` with:
+13. Move the completed source package to `sources/archive/YYYY/YYYY-MM-DD/` with:
     - original images
     - `transcription.md`
     - `manifest.json` containing checksums, processing date, uncertainties, and changed item IDs
