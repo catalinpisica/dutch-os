@@ -6,8 +6,8 @@
     <meta name="theme-color" content="#f4f0e6">
     <meta name="description" content="Polilingua, a personal Dutch learning academy and memory.">
     <title>Polilingua</title>
-    <link rel="stylesheet" href="./styles/main.css">
-    <script type="module" src="./src/app.js"></script>
+    <link rel="stylesheet" href="./styles/main.css?v=20260615-3">
+    <script type="module" src="./src/app.js?v=20260615-2"></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -99,6 +99,11 @@
           </div>
         </div>
 
+        <div class="academy-scope" aria-label="Academy content scope">
+          <button type="button" data-scope="week" aria-pressed="true">This week</button>
+          <button type="button" data-scope="all" aria-pressed="false">Full content</button>
+        </div>
+
         <div class="coverage-panel">
           <div class="coverage-ring" id="coverage-ring" style="--coverage: 0">
             <strong id="coverage-percent">0%</strong>
@@ -114,11 +119,6 @@
             <div><strong id="practice-streak">0</strong><span>day streak</span></div>
             <div><strong id="practice-accuracy">—</strong><span>accuracy</span></div>
           </div>
-        </div>
-
-        <div class="academy-scope" aria-label="Academy content scope">
-          <button type="button" data-scope="week" aria-pressed="true">This week</button>
-          <button type="button" data-scope="all" aria-pressed="false">Full content</button>
         </div>
 
         <div class="academy-grid">
@@ -179,6 +179,25 @@
         </div>
       </section>
     </main>
+
+    <nav class="mobile-tab-bar" aria-label="App navigation">
+      <button type="button" data-mobile-view="home" aria-current="page">
+        <span aria-hidden="true">⌂</span>
+        <strong>Home</strong>
+      </button>
+      <button type="button" data-mobile-view="academy">
+        <span aria-hidden="true">Aa</span>
+        <strong>Academy</strong>
+      </button>
+      <button type="button" data-mobile-view="simulator">
+        <span aria-hidden="true">◷</span>
+        <strong>Simulator</strong>
+      </button>
+      <button type="button" data-mobile-view="dictionary">
+        <span aria-hidden="true">⌕</span>
+        <strong>Dictionary</strong>
+      </button>
+    </nav>
 
     <footer>
       <p>Polilingua reads directly from your canonical repository data.</p>

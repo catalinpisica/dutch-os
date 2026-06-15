@@ -203,9 +203,11 @@ function normalizeProgress(progress, key) {
       answered: progress.answered ?? 0,
       correct: progress.correct ?? 0,
       xp: progress.xp ?? 0,
+      items: {},
     };
     localStorage.setItem(key, JSON.stringify(progress));
   }
+  Object.values(progress.byWeek).forEach((week) => { week.items ??= {}; });
   return progress;
 }
 
@@ -237,7 +239,7 @@ export function saveSessionProgress(results, profile = "catalin") {
   const correctAnswers = results.filter((result) => result.correct).length;
   progress.xp += earnedXp;
   const week = mondayOf(today);
-  const weekly = progress.byWeek[week] ?? { sessions: 0, answered: 0, correct: 0, xp: 0 };
+  const weekly = progress.byWeek[week] ?? { sessions: 0, answered: 0, correct: 0, xp: 0, items: {} };
   weekly.sessions += 1;
   weekly.answered += results.length;
   weekly.correct += correctAnswers;
@@ -248,6 +250,10 @@ export function saveSessionProgress(results, profile = "catalin") {
     item[result.correct ? "correct" : "wrong"] += 1;
     item.lastPracticed = today;
     progress.items[result.itemId] = item;
+    const weeklyItem = weekly.items[result.itemId] ?? { correct: 0, wrong: 0, lastPracticed: null };
+    weeklyItem[result.correct ? "correct" : "wrong"] += 1;
+    weeklyItem.lastPracticed = today;
+    weekly.items[result.itemId] = weeklyItem;
   });
   localStorage.setItem(progressKey(profile), JSON.stringify(progress));
   return progress;

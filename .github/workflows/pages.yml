@@ -29,7 +29,7 @@ jobs:
       - name: Build static site artifact
         run: |
           mkdir -p _site
-          cp -R app chatgpt knowledge metadata reviews _site/
+          cp -R app knowledge metadata reviews _site/
           cp index.html .nojekyll _site/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
