@@ -1,5 +1,5 @@
 import { loadCanonicalItem, loadDashboardData, loadPracticeItems } from "../data-loader/repository.js";
-import { buildReviewQueue, buildReviewSession, buildSession, checkAnswer, describeGrammar, loadProgress, saveSessionProgress } from "./quiz.js?v=20260615-3";
+import { buildMistakeQueue, buildMistakeSession, buildReviewQueue, buildReviewSession, buildSession, checkAnswer, describeGrammar, loadProgress, saveSessionProgress } from "./quiz.js?v=20260615-4";
 
 const TYPE_LABELS = {
   word: "Word",
@@ -102,6 +102,8 @@ const elements = {
   coverageBar: document.querySelector("#coverage-bar"),
   reviewQueueDetail: document.querySelector("#review-queue-detail"),
   startReviewQueue: document.querySelector("#start-review-queue"),
+  mistakeQueueDetail: document.querySelector("#mistake-queue-detail"),
+  startMistakeReview: document.querySelector("#start-mistake-review"),
   lessonDialog: document.querySelector("#lesson-dialog"),
   lessonClose: document.querySelector("#lesson-close"),
   lessonProgressBar: document.querySelector("#lesson-progress-bar"),
@@ -294,6 +296,7 @@ function renderPracticeProgress(progress = loadProgress(state.profile)) {
     : "—";
   renderCoverage(progress, scopedProgress);
   renderReviewQueue(progress);
+  renderMistakeQueue(progress);
 }
 
 function renderReviewQueue(progress = loadProgress(state.profile)) {
@@ -309,6 +312,21 @@ function renderReviewQueue(progress = loadProgress(state.profile)) {
   elements.startReviewQueue.textContent = queue.dueCount
     ? `Review ${sessionSize} due item${sessionSize === 1 ? "" : "s"}`
     : "Nothing due";
+}
+
+function renderMistakeQueue(progress = loadProgress(state.profile)) {
+  if (!state.data) return;
+  const week = state.academyScope === "week" ? mondayOf(new Date()) : "all";
+  const queue = buildMistakeQueue(state.data.catalog.items, progress, { week, size: 20 });
+  const scope = state.academyScope === "week" ? "in this week's material" : "across your full library";
+  elements.mistakeQueueDetail.textContent = queue.itemCount
+    ? `${queue.mistakeCount} unresolved mistake${queue.mistakeCount === 1 ? "" : "s"} across ${queue.itemCount} item${queue.itemCount === 1 ? "" : "s"} ${scope}. Correct answers reduce the queue.`
+    : `No unresolved mistakes ${scope}.`;
+  elements.startMistakeReview.disabled = queue.itemCount === 0;
+  const sessionSize = Math.min(20, queue.itemCount);
+  elements.startMistakeReview.textContent = queue.itemCount
+    ? `Repair ${sessionSize} item${sessionSize === 1 ? "" : "s"}`
+    : "No mistakes";
 }
 
 function renderCoverage(progress = loadProgress(state.profile), scopedProgress = progress) {
@@ -473,7 +491,7 @@ function checkLessonAnswer() {
 }
 
 async function startLesson(mode = "recall", trigger = null) {
-  const sizes = { recognition: 20, recall: 20, sentences: 20, review: 20 };
+  const sizes = { recognition: 20, recall: 20, sentences: 20, review: 20, mistakes: 20 };
   const originalLabel = trigger?.textContent;
   if (trigger) {
     trigger.disabled = true;
@@ -485,9 +503,12 @@ async function startLesson(mode = "recall", trigger = null) {
     const previousIds = state.lesson?.mode === mode && state.lesson?.scope === state.academyScope
       ? state.lesson.sourceIds
       : [];
+    const progress = loadProgress(state.profile);
     const session = mode === "review"
-      ? buildReviewSession(state.practiceItems, loadProgress(state.profile), { week, size: sizes.review })
-      : buildSession(state.practiceItems, {
+      ? buildReviewSession(state.practiceItems, progress, { week, size: sizes.review })
+      : mode === "mistakes"
+        ? buildMistakeSession(state.practiceItems, progress, { week, size: sizes.mistakes })
+        : buildSession(state.practiceItems, {
         week,
         size: sizes[mode] ?? 20,
         weakIds: weakItemIds(),
@@ -951,6 +972,7 @@ function bindEvents() {
   });
   elements.academyStarts.forEach((button) => button.addEventListener("click", () => startLesson(button.dataset.mode, button)));
   elements.startReviewQueue.addEventListener("click", () => startLesson("review", elements.startReviewQueue));
+  elements.startMistakeReview.addEventListener("click", () => startLesson("mistakes", elements.startMistakeReview));
   elements.academyScopes.forEach((button) => button.addEventListener("click", () => setAcademyScope(button.dataset.scope)));
   elements.leaderboardScopes.forEach((button) => button.addEventListener("click", () => setLeaderboardScope(button.dataset.leaderboardScope)));
   elements.openDictionary.addEventListener("click", () => {

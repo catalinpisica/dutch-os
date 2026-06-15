@@ -268,6 +268,44 @@ export function buildReviewSession(allItems, progress, options = {}) {
   return { questions, sourceCount: queue.dueCount };
 }
 
+function unresolvedMistakes(itemProgress) {
+  if (!itemProgress) return 0;
+  return itemProgress.mistakeDebt ?? Math.max(0, (itemProgress.wrong ?? 0) - (itemProgress.correct ?? 0));
+}
+
+export function buildMistakeQueue(allItems, progress, options = {}) {
+  const week = options.week ?? "all";
+  const size = options.size ?? 20;
+  const ranked = allItems
+    .filter((item) => PRACTICE_TYPES.has(item.type)
+      && item.dutch
+      && item.english
+      && (week === "all" || item.week_start === week))
+    .map((item) => ({
+      item,
+      debt: unresolvedMistakes(progress.items?.[item.id]),
+      lastPracticed: progress.items?.[item.id]?.lastPracticed ?? "",
+    }))
+    .filter((entry) => entry.debt > 0)
+    .sort((left, right) => right.debt - left.debt
+      || left.lastPracticed.localeCompare(right.lastPracticed)
+      || left.item.dutch.localeCompare(right.item.dutch, "nl"));
+  return {
+    items: ranked.slice(0, size).map((entry) => entry.item),
+    itemCount: ranked.length,
+    mistakeCount: ranked.reduce((total, entry) => total + entry.debt, 0),
+  };
+}
+
+export function buildMistakeSession(allItems, progress, options = {}) {
+  const queue = buildMistakeQueue(allItems, progress, options);
+  const questions = queue.items.map((item, index) => {
+    const cloze = makeCloze(item);
+    return index % 2 === 1 && cloze ? cloze : makeTyped(item);
+  });
+  return { questions, sourceCount: queue.itemCount };
+}
+
 export function checkAnswer(question, response) {
   return normalize(response) === normalize(question.answer);
 }
@@ -305,7 +343,9 @@ function mondayOf(dateValue) {
 }
 
 function normalizeProgress(progress, key) {
+  let changed = false;
   progress.byWeek ??= {};
+  progress.items ??= {};
   if (!Object.keys(progress.byWeek).length && progress.lastPracticeDate) {
     const week = mondayOf(progress.lastPracticeDate);
     progress.byWeek[week] = {
@@ -318,6 +358,13 @@ function normalizeProgress(progress, key) {
     localStorage.setItem(key, JSON.stringify(progress));
   }
   Object.values(progress.byWeek).forEach((week) => { week.items ??= {}; });
+  Object.values(progress.items ?? {}).forEach((item) => {
+    if (item.mistakeDebt === undefined) {
+      item.mistakeDebt = Math.max(0, (item.wrong ?? 0) - (item.correct ?? 0));
+      changed = true;
+    }
+  });
+  if (changed) localStorage.setItem(key, JSON.stringify(progress));
   return progress;
 }
 
@@ -357,7 +404,9 @@ export function saveSessionProgress(results, profile = "catalin") {
   progress.byWeek[week] = weekly;
   results.forEach((result) => {
     const item = progress.items[result.itemId] ?? { correct: 0, wrong: 0, lastPracticed: null };
+    item.mistakeDebt ??= Math.max(0, item.wrong - item.correct);
     item[result.correct ? "correct" : "wrong"] += 1;
+    item.mistakeDebt = result.correct ? Math.max(0, item.mistakeDebt - 1) : item.mistakeDebt + 1;
     item.lastPracticed = today;
     progress.items[result.itemId] = item;
     const weeklyItem = weekly.items[result.itemId] ?? { correct: 0, wrong: 0, lastPracticed: null };
