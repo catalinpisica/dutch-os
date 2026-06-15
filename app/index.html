@@ -6,8 +6,8 @@
     <meta name="theme-color" content="#f4f0e6">
     <meta name="description" content="Polilingua, a personal Dutch learning academy and memory.">
     <title>Polilingua</title>
-    <link rel="stylesheet" href="./styles/main.css?v=20260615-9">
-    <script type="module" src="./src/app.js?v=20260615-8"></script>
+    <link rel="stylesheet" href="./styles/main.css?v=20260615-10">
+    <script type="module" src="./src/app.js?v=20260615-9"></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -114,14 +114,24 @@
           </div>
         </div>
 
-        <article class="review-queue" aria-live="polite">
-          <div>
-            <p class="stage-kicker">Spaced repetition</p>
-            <h3>Review what is due</h3>
-            <p id="review-queue-detail">Building your personal review queue…</p>
-          </div>
-          <button class="primary-button" id="start-review-queue" type="button">Review due items</button>
-        </article>
+        <div class="academy-review-tools">
+          <article class="review-queue" aria-live="polite">
+            <div>
+              <p class="stage-kicker">Spaced repetition</p>
+              <h3>Review what is due</h3>
+              <p id="review-queue-detail">Building your personal review queue…</p>
+            </div>
+            <button class="primary-button" id="start-review-queue" type="button">Review due items</button>
+          </article>
+          <article class="review-queue mistake-queue" aria-live="polite">
+            <div>
+              <p class="stage-kicker">Mistake review</p>
+              <h3>Repair weak answers</h3>
+              <p id="mistake-queue-detail">Checking your unresolved mistakes…</p>
+            </div>
+            <button class="secondary-button" id="start-mistake-review" type="button">Review mistakes</button>
+          </article>
+        </div>
 
         <div class="academy-grid">
           <article class="academy-stage">
