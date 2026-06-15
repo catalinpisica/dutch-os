@@ -16,16 +16,18 @@ Process the new handwritten Dutch notes attached to the current chat or placed u
 5. Compare candidates using exact spelling, normalized forms, inflections, separable verbs, meaning, and usage. Merge genuine duplicates.
 6. Preserve all previous sources, examples, notes, relations, and learning history when merging. Increment `exposure_count` and update `last_seen`.
 7. Add idiomatic English translations or explanations. Do not add Romanian translations. Distinguish literal meaning from pragmatic meaning where useful.
-8. Add concise examples. Label generated examples with `source_type: ai_generated`; never present them as class-note quotations.
-9. Record archived source-image provenance for each item. Use stable IDs and the Monday week-start date, such as `2026-06-08`. Add that exact date to both `week_start` and the item's `tags` array.
-10. Create or update a weekly review in `reviews/items.json`, emphasizing new material and recurring mistakes. Give the review the same `week_start` value and date tag.
-11. Rebuild the catalog, tags, and statistics used by the app.
-12. Run `python3 scripts/validate_json.py` and fix all failures.
-13. Copy attached originals, or move inbox originals, into the completed source package at `sources/archive/YYYY/YYYY-MM-DD/` with:
+8. Check whether the notes contain an incorrect form, incomplete grammar rule, missing contrast, or an example that needs clarification. Improve the derived lesson material when the correction or enrichment is well supported by the week's topic.
+9. Keep all enrichment within taught scope. Use only words and expressions shown in the current lesson or already present in canonical knowledge. Do not create new canonical words or expressions without evidence in the uploaded notes.
+10. Add concise examples. Label generated examples with `source_type: ai_generated`; never present them as class-note quotations. Prefer simple English explanations when a Dutch example would require untaught vocabulary.
+11. Record archived source-image provenance for each item. Use stable IDs and the Monday week-start date, such as `2026-06-08`. Add that exact date to both `week_start` and the item's `tags` array.
+12. Create or update a weekly review in `reviews/items.json`, emphasizing new material, corrected misunderstandings, important topic explanations, and recurring mistakes. Give the review the same `week_start` value and date tag.
+13. Rebuild the catalog, tags, and statistics used by the app.
+14. Run `python3 scripts/validate_json.py` and fix all failures.
+15. Copy attached originals, or move inbox originals, into the completed source package at `sources/archive/YYYY/YYYY-MM-DD/` with:
     - original images
     - `transcription.md`
     - `manifest.json` containing checksums, processing date, uncertainties, and changed item IDs
-14. Summarize created, merged, and uncertain items. Commit the ingestion as one focused change when requested.
+16. Summarize created, merged, corrected, enriched, and uncertain items. Commit the ingestion as one focused change when requested.
 
 ## Quality Rules
 
@@ -33,3 +35,4 @@ Process the new handwritten Dutch notes attached to the current chat or placed u
 - Do not overwrite conflicting information; retain both interpretations with an explanatory note.
 - Keep entries useful for app practice, roleplay exercises, search, and spaced repetition.
 - Treat archived sources as immutable after ingestion.
+- Do not silently turn general Dutch knowledge into supposedly taught vocabulary. Generated enrichment must explain the lesson, not expand its lexical scope.

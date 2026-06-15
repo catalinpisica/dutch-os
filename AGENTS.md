@@ -47,10 +47,11 @@ For this workflow:
 4. Inspect every supplied image and establish reading order from EXIF capture time, filename, visible page numbering, and content continuity. Ask the user only when unresolved ordering or handwriting uncertainty would materially affect accuracy.
 5. Execute the entire `Note Ingestion` workflow below without waiting for separate approval between routine steps.
 6. Update everything required for the app in the same task: archived evidence, canonical knowledge, weekly review material, needs-review records, ingestion history, catalog, tags, statistics, and any app data contract affected by the new material.
-7. Run metadata rebuilding and all validation. Fix failures rather than reporting an incomplete ingestion.
-8. Verify the app still loads and that the new week, item counts, dictionary entries, and Academy scope are available. Use the in-app browser when a local app URL is available.
-9. Do not commit or push unless the user explicitly asks. The ingestion itself is complete without a Git operation.
-10. Finish with a concise report of the assigned week, images processed, items created, items enriched or merged, uncertainties, review updates, app verification, and validation result.
+7. Improve the lesson notes when they contain a supported error, incomplete grammar explanation, missing contrast, or unclear example. Stay strictly within the week's taught topics and vocabulary already present in that lesson or previously learned canonical material. Do not introduce new canonical words or expressions merely to make the lesson richer.
+8. Run metadata rebuilding and all validation. Fix failures rather than reporting an incomplete ingestion.
+9. Verify the app still loads and that the new week, item counts, dictionary entries, and Academy scope are available. Use the in-app browser when a local app URL is available.
+10. Do not commit or push unless the user explicitly asks. The ingestion itself is complete without a Git operation.
+11. Finish with a concise report of the assigned week, images processed, items created, items enriched or merged, corrections and note improvements, uncertainties, review updates, app verification, and validation result.
 
 If no attached images and no real inbox images exist, report that no lesson pictures were found and identify the locations checked. This is the only normal missing-input case that should stop the workflow.
 
@@ -128,6 +129,10 @@ Classify by learning function, not surface form alone.
 - Include an English translation and distinguish generated examples from source examples.
 - Each ingestion must generate review material covering important new items, particles, grammar, difficult material, and recurring mistakes.
 - Reviews should include useful recall, translation, cloze, grammar, or roleplay prompts without mechanically including every extracted item.
+- Improve incomplete lesson material with concise rules, contrasts, corrections, and generated examples when this helps explain the taught topic.
+- Generated improvements may reuse words and expressions from the current lesson or previously learned canonical data, but must not introduce untaught vocabulary as new learning material.
+- Never create a new canonical word or expression unless it is supported by the uploaded lesson evidence. If an explanation genuinely requires an unfamiliar helper word, prefer simple English explanation instead.
+- Preserve the source transcription unchanged and clearly distinguish teacher-provided content from Codex corrections or generated enrichment.
 
 ## GitHub Pages App
 
@@ -177,13 +182,15 @@ When the user asks to process notes:
 5. Copy attached originals, or move inbox originals, into `sources/archive/YYYY/YYYY-MM-DD/` without modifying image contents.
 6. Create the manifest, checksums, raw OCR, and curated transcription.
 7. Extract and classify only supported learning material.
-8. Detect duplicates and merge before creating records.
-9. Add provenance and ingestion metadata, including the exact `week_start` date in every item's `tags` array.
-10. Generate the review with the same explicit week tag and update needs-review data.
-11. Rebuild affected catalogs, tags, statistics, and ingestion logs.
-12. Run validation and fix every failure.
-13. Verify the updated week and material in the app.
-14. Report additions, merges, uncertainty, assumptions, app verification, and validation results.
+8. Check the lesson for incorrect forms, incomplete rules, missing contrasts, or examples that would be misleading without context. Correct or enrich the derived material while preserving the raw transcription and source evidence.
+9. Keep enrichment inside the taught scope: use only words and expressions visible in the current lesson or already present in canonical data. Do not add new canonical vocabulary or expressions without source support.
+10. Detect duplicates and merge before creating records.
+11. Add provenance and ingestion metadata, including the exact `week_start` date in every item's `tags` array.
+12. Generate the review with the same explicit week tag and update needs-review data.
+13. Rebuild affected catalogs, tags, statistics, and ingestion logs.
+14. Run validation and fix every failure.
+15. Verify the updated week and material in the app.
+16. Report additions, merges, corrections, generated enrichment, uncertainty, assumptions, app verification, and validation results.
 
 Do not claim an ingestion is complete until every uploaded source has been inspected and archived.
 

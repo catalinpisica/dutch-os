@@ -54,11 +54,49 @@ function normalize(value) {
 }
 
 function distractors(items, target, field, count = 3) {
+  const sameType = items.filter((item) => item.id !== target.id && item.type === target.type && item[field]);
+  const sameGrammar = target.part_of_speech
+    ? sameType.filter((item) => item.part_of_speech === target.part_of_speech)
+    : sameType;
+  const candidates = [...shuffle(sameGrammar), ...shuffle(sameType)];
   return [...new Set(
-    shuffle(items.filter((item) => item.id !== target.id && item[field]))
+    candidates
       .map((item) => item[field])
       .filter((value) => normalize(value) !== normalize(target[field]))
   )].slice(0, count);
+}
+
+const GRAMMAR_EXPLANATIONS = {
+  adjective: "a describing word",
+  adverb: "a word that describes how, when, where, or how often",
+  expression: "a fixed multi-word phrase",
+  noun: "a person, place, thing, or idea",
+  particle: "a small context word that changes tone or emphasis",
+  "particle phrase": "a short phrase that changes tone, emphasis, or timing",
+  preposition: "a word showing place, direction, or relationship",
+  pronoun: "a word used instead of a noun",
+  "proper noun": "the name of a specific person, place, or thing",
+  verb: "an action or state word",
+  word: "one vocabulary item",
+};
+
+function readableGrammar(value) {
+  return String(value ?? "word").replaceAll("_", " ");
+}
+
+export function describeGrammar(value) {
+  const grammar = readableGrammar(value);
+  return `${grammar} — ${GRAMMAR_EXPLANATIONS[grammar] ?? "the kind of Dutch item needed here"}`;
+}
+
+function clozeCue(item, grammar = null) {
+  const expected = grammar ?? (item.type === "expression"
+    ? "expression"
+    : item.part_of_speech ?? (item.type === "particle" ? "particle" : "word"));
+  return {
+    expected: describeGrammar(expected),
+    meaning: item.english,
+  };
 }
 
 function makeChoice(items, item, direction) {
@@ -70,6 +108,7 @@ function makeChoice(items, item, direction) {
     label: direction === "nl-en" ? "Choose the English meaning" : "Choose the Dutch translation",
     prompt: item[from],
     answer: item[to],
+    answerTranslation: item[from],
     options: shuffle([item[to], ...distractors(items, item, to)]),
     direction,
   };
@@ -82,6 +121,7 @@ function makeTyped(item) {
     label: "Write this in Dutch",
     prompt: item.english,
     answer: item.dutch,
+    answerTranslation: item.english,
     direction: "en-nl",
   };
 }
@@ -96,16 +136,17 @@ function makeCloze(item, suppliedExample = null) {
   if (!example.dutch.toLocaleLowerCase("nl-NL").includes(word.toLocaleLowerCase("nl-NL"))) return null;
   const escaped = word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   const pattern = new RegExp(`(^|\\s)${escaped}(?=\\s|[.,!?;:]|$)`, "i");
+  const cue = clozeCue(item);
   return {
     kind: "cloze",
     itemId: item.id,
     label: "Complete the sentence",
     prompt: example.dutch.replace(pattern, (match, prefix) => `${prefix}____`),
     hint: example.english,
-    expected: item.type === "expression"
-      ? "expression"
-      : item.part_of_speech ?? (item.type === "particle" ? "particle" : "word"),
+    expected: cue.expected,
+    meaningHint: cue.meaning,
     answer: word,
+    answerTranslation: item.english,
     direction: "cloze",
   };
 }
@@ -113,6 +154,11 @@ function makeCloze(item, suppliedExample = null) {
 export function buildSession(allItems, options = {}) {
   const size = options.size ?? 10;
   const excludedIds = new Set(options.excludeIds ?? []);
+  const recognitionPool = allItems.filter((item) =>
+    PRACTICE_TYPES.has(item.type)
+    && item.dutch
+    && item.english
+  );
   let eligible = allItems.filter((item) =>
     PRACTICE_TYPES.has(item.type)
     && item.dutch
@@ -122,21 +168,28 @@ export function buildSession(allItems, options = {}) {
   );
   if (options.mode === "sentences") {
     const eligibleIds = new Set(eligible.map((item) => item.id));
+    const eligibleById = new Map(eligible.map((item) => [item.id, item]));
     const sourceQuestions = eligible.flatMap((item) =>
       (item.examples ?? []).map((example) => makeCloze(item, example)).filter(Boolean)
     );
     const authoredQuestions = AUTHORED_SENTENCES
       .filter(([itemId]) => eligibleIds.has(itemId))
-      .map(([itemId, prompt, answer, expected]) => ({
-        kind: "cloze",
-        itemId,
-        label: "Complete the sentence",
-        prompt,
-        hint: null,
-        expected,
-        answer,
-        direction: "cloze",
-      }));
+      .map(([itemId, prompt, answer, expected]) => {
+        const item = eligibleById.get(itemId);
+        const cue = clozeCue(item, expected);
+        return {
+          kind: "cloze",
+          itemId,
+          label: "Complete the sentence",
+          prompt,
+          hint: null,
+          expected: cue.expected,
+          meaningHint: cue.meaning,
+          answer,
+          answerTranslation: item.english,
+          direction: "cloze",
+        };
+      });
     const questions = shuffle([...authoredQuestions, ...sourceQuestions])
       .filter((question, index, values) => values.findIndex((candidate) => candidate.prompt === question.prompt) === index)
       .slice(0, size)
@@ -149,7 +202,7 @@ export function buildSession(allItems, options = {}) {
   const selected = [...weak, ...remaining].slice(0, Math.min(size, eligible.length));
   const questions = selected.map((item, index) => {
     const cloze = makeCloze(item);
-    if (options.mode === "recognition") return makeChoice(eligible, item, index % 2 === 0 ? "nl-en" : "en-nl");
+    if (options.mode === "recognition") return makeChoice(recognitionPool, item, index % 2 === 0 ? "nl-en" : "en-nl");
     if (options.mode === "recall") return makeTyped(item);
     if (index % 4 === 3 && cloze) return cloze;
     if (index % 3 === 2) return makeTyped(item);

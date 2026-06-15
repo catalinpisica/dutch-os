@@ -1,5 +1,5 @@
 import { loadCanonicalItem, loadDashboardData, loadPracticeItems } from "../data-loader/repository.js";
-import { buildSession, checkAnswer, loadProgress, saveSessionProgress } from "./quiz.js?v=20260615-1";
+import { buildSession, checkAnswer, describeGrammar, loadProgress, saveSessionProgress } from "./quiz.js?v=20260615-2";
 
 const TYPE_LABELS = {
   word: "Word",
@@ -334,9 +334,25 @@ function renderQuestion() {
   elements.lessonCounter.textContent = `${lesson.index + 1} / ${lesson.questions.length}`;
   elements.questionLabel.textContent = question.label;
   elements.lessonTitle.textContent = question.prompt;
-  const cue = question.expected ? `Expected: ${question.expected}` : question.hint;
-  elements.questionHint.hidden = !cue;
-  elements.questionHint.textContent = cue ?? "";
+  const expected = question.expected
+    ? (question.expected.includes(" — ") ? question.expected : describeGrammar(question.expected))
+    : null;
+  const cue = expected ? `Expected: ${expected}` : question.hint;
+  elements.questionHint.hidden = !cue && !question.meaningHint;
+  elements.questionHint.innerHTML = cue ? `<span>${escapeHtml(cue)}</span>` : "";
+  if (question.meaningHint) {
+    elements.questionHint.insertAdjacentHTML("beforeend", `
+      <button class="hint-button" type="button" aria-expanded="false">Hint</button>
+      <span class="meaning-hint" hidden>Meaning: “${escapeHtml(question.meaningHint)}”</span>
+    `);
+    elements.questionHint.querySelector(".hint-button").addEventListener("click", (event) => {
+      const hint = elements.questionHint.querySelector(".meaning-hint");
+      const revealed = !hint.hidden;
+      hint.hidden = revealed;
+      event.currentTarget.setAttribute("aria-expanded", String(!revealed));
+      event.currentTarget.textContent = revealed ? "Hint" : "Hide hint";
+    });
+  }
   elements.lessonFeedback.hidden = true;
   elements.lessonRetry.hidden = true;
   elements.lessonFooter.dataset.state = "idle";
@@ -426,7 +442,12 @@ function checkLessonAnswer() {
   lesson.results.push({ itemId: question.itemId, correct });
   elements.lessonFeedback.hidden = false;
   elements.feedbackTitle.textContent = correct ? "Correct!" : "Not quite";
-  elements.feedbackCopy.textContent = correct ? "+10 XP" : `Correct answer: ${question.answer}`;
+  const translatedAnswer = question.answerTranslation
+    ? `${question.answer} · ${question.answerTranslation}`
+    : question.answer;
+  elements.feedbackCopy.textContent = correct
+    ? `${translatedAnswer} · +10 XP`
+    : `Correct answer: ${translatedAnswer}`;
   elements.lessonFooter.dataset.state = correct ? "correct" : "wrong";
   elements.lessonCheck.textContent = lesson.index === lesson.questions.length - 1 ? "See results" : "Continue";
   elements.lessonCheck.disabled = false;
@@ -718,9 +739,17 @@ function timeSimulatorQuestions() {
   }
   return shuffled(candidates).slice(0, 10).map(({ hour, minute }) => {
     const answer = dutchTime(hour, minute);
-    const distractors = shuffled(candidates)
-      .map((candidate) => dutchTime(candidate.hour, candidate.minute))
-      .filter((value, index, values) => value !== answer && values.indexOf(value) === index)
+    const nearbyMinutes = [
+      (minute + 5) % 60,
+      (minute + 55) % 60,
+      (minute + 10) % 60,
+      (minute + 50) % 60,
+      (minute + 15) % 60,
+      (minute + 45) % 60,
+      (minute + 30) % 60,
+    ];
+    const distractors = [...new Set(nearbyMinutes.map((otherMinute) => dutchTime(hour, otherMinute)))]
+      .filter((value) => value !== answer)
       .slice(0, 3);
     return {
       question: "Hoe laat is het?",
