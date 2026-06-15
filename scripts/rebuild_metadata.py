@@ -6,9 +6,6 @@ from collections import Counter
 from datetime import date
 from pathlib import Path
 
-from generate_chatgpt_context import build_chatgpt_context
-
-
 ROOT = Path(__file__).resolve().parents[1]
 KNOWLEDGE_DIRS = (
     "words",
@@ -110,67 +107,7 @@ def main() -> None:
         },
     )
 
-    counts_by_type = Counter(item["type"] for item in items)
-    latest_week_start = max(week_counts)
-    write_json(
-        ROOT / "metadata" / "ai-entrypoint.json",
-        {
-            "schema_version": "1.0",
-            "repo_purpose": (
-                "Dutch OS is the learner's AI-maintained, long-term Dutch "
-                "language memory and tutoring dataset."
-            ),
-            "source_of_truth": (
-                "Canonical learning data lives in knowledge/**/items.json and "
-                "reviews/items.json. Metadata is derived; sources/archive is "
-                "immutable evidence."
-            ),
-            "recommended_fetch_order": [
-                "metadata/ai-entrypoint.json",
-                "metadata/catalog.json",
-                "reviews/items.json",
-                "prompts/chatgpt-tutor-entrypoint.md",
-                "prompts/tutor.md",
-            ],
-            "total_items": len(items),
-            "counts_by_type": dict(sorted(counts_by_type.items())),
-            "latest_week_start": latest_week_start,
-            "paths": {
-                "manifest": "MANIFEST.md",
-                "catalog": "metadata/catalog.json",
-                "statistics": "metadata/statistics.json",
-                "tags": "metadata/tags.json",
-                "needs_review": "metadata/needs_review.json",
-                "reviews": "reviews/items.json",
-                "chatgpt_context": "chatgpt/dutch-os-chatgpt-context.md",
-                "tutoring_entrypoint": "prompts/chatgpt-tutor-entrypoint.md",
-                "tutoring_prompt": "prompts/tutor.md",
-                "ingestion_prompt": "prompts/ingest-weekly-notes.md",
-                "schemas": {
-                    "common": "schemas/common.schema.json",
-                    "words": "schemas/words.schema.json",
-                    "expressions": "schemas/expressions.schema.json",
-                    "particles": "schemas/particles.schema.json",
-                    "grammar_patterns": "schemas/grammar-patterns.schema.json",
-                    "verb_constructions": "schemas/verb-constructions.schema.json",
-                    "dialogues": "schemas/dialogues.schema.json",
-                    "mistakes": "schemas/mistakes.schema.json",
-                    "reviews": "schemas/reviews.schema.json",
-                    "needs_review": "schemas/needs-review.schema.json",
-                },
-                "canonical": SOURCE_PATHS,
-            },
-        },
-    )
-
-    chatgpt_path = ROOT / "chatgpt" / "dutch-os-chatgpt-context.md"
-    chatgpt_path.parent.mkdir(parents=True, exist_ok=True)
-    chatgpt_path.write_text(build_chatgpt_context(ROOT), encoding="utf-8")
-
-    print(
-        f"Rebuilt metadata for {len(items)} canonical items and generated "
-        "the ChatGPT context."
-    )
+    print(f"Rebuilt metadata for {len(items)} canonical items.")
 
 
 if __name__ == "__main__":

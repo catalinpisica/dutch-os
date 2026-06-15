@@ -20,10 +20,10 @@ Canonical knowledge and archived evidence remain the priority. The GitHub Pages 
 ## Web App Constraints
 
 - Static-only GitHub Pages deployment.
-- No backend, database, authentication, paid hosting, API key, or OpenAI API call.
+- No backend, database, authentication, paid hosting, API key, or LLM API call in the current app.
 - Read canonical repository JSON and Markdown without modifying them.
 - Store optional device-specific progress only in `localStorage`.
-- Keep AI tutoring and voice practice in the ChatGPT Dutch OS project.
+- Keep the current app independent from external AI services.
 - Prefer mobile-first, accessible, lightweight implementation over visual complexity.
 
 Planned structure:
@@ -73,13 +73,6 @@ Phase B implementation lives in `app/` and reads repository data directly.
 - Add sentence rebuilding and particle-selection exercises.
 
 The weekly academy shell, coverage tracking, and cumulative lesson modes are implemented. Specialized particle, dialogue, mistake, and sentence-rebuilding trainers remain pending.
-
-## Phase E - ChatGPT Bridge
-
-- Generate prompts from selected batches, categories, items, weak items, particles, dialogues, or mistakes.
-- Add copy-to-clipboard behavior.
-- Keep generated prompts explicit about repository use, one-question-at-a-time practice, immediate correction, English explanations, and limited unfamiliar vocabulary.
-- Do not call the OpenAI API from the app.
 
 ## Phase F - Polish
 

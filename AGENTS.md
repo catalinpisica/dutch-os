@@ -12,8 +12,8 @@ Dutch OS is the user’s AI-maintained Dutch learning memory. The repository, no
 1. Preserve source evidence.
 2. Keep canonical data accurate, deduplicated, and traceable.
 3. Minimize manual maintenance for the user.
-4. Optimize data for practical ChatGPT tutoring, including voice practice and roleplay.
-5. Build the data layer before the planned web application; do not let UI needs weaken canonical data.
+4. Optimize data for practical app-based learning, review, and roleplay exercises.
+5. Keep the app useful without weakening canonical data or source provenance.
 
 ## Repository Areas
 
@@ -23,28 +23,44 @@ Dutch OS is the user’s AI-maintained Dutch learning memory. The repository, no
 - `reviews/`: generated review and practice material.
 - `metadata/`: derived catalogs, statistics, tags, ingestion logs, and `needs_review.json`.
 - `schemas/`: JSON contracts for structured data.
-- `prompts/`: reusable ingestion and tutoring instructions.
+- `prompts/`: reusable note-ingestion instructions.
 - `scripts/`: validation and maintenance utilities.
-- `chatgpt/dutch-os-chatgpt-context.md`: generated portable context uploaded to a ChatGPT Project for both text chat and Voice mode.
 - `app/`: static GitHub Pages learning cockpit, kept separate from and read-only toward canonical data.
 
 Read the relevant schema and prompt before changing data in an area.
 
-## AI Discovery
+## One-Command Weekly Workflow
 
-The repository must remain usable through GitHub connectors even when code search is unavailable.
+In a new Codex chat for this repository, the user may upload all lesson pictures and say only something like:
 
-- `metadata/ai-entrypoint.json` is the first machine-readable file an AI tutor should fetch.
-- `metadata/catalog.json` is the second fetch and must index every canonical item.
+- `Process this week's pictures.`
+- `Process this week's notes.`
+- `Update the app with this week's lesson.`
+
+Treat these as complete, actionable requests for the full note-ingestion workflow. Do not ask the user to restate repository rules, provide a folder structure, name every image, specify the current week, or request each maintenance step separately.
+
+For this workflow:
+
+1. Use image files attached to the current chat when provided. Their reported local paths are valid ingestion inputs even when they are outside `sources/inbox/`.
+2. Otherwise, find real image files under `sources/inbox/`. Ignore `.gitkeep`, `.DS_Store`, and empty placeholder week folders.
+3. Unless the user gives another lesson date, assign the Monday starting the current local calendar week in `Europe/Amsterdam`. Use image dates and visible lesson dates as supporting context; if they clearly contradict the assumed week, investigate before writing canonical data.
+4. Inspect every supplied image and establish reading order from EXIF capture time, filename, visible page numbering, and content continuity. Ask the user only when unresolved ordering or handwriting uncertainty would materially affect accuracy.
+5. Execute the entire `Note Ingestion` workflow below without waiting for separate approval between routine steps.
+6. Update everything required for the app in the same task: archived evidence, canonical knowledge, weekly review material, needs-review records, ingestion history, catalog, tags, statistics, and any app data contract affected by the new material.
+7. Run metadata rebuilding and all validation. Fix failures rather than reporting an incomplete ingestion.
+8. Verify the app still loads and that the new week, item counts, dictionary entries, and Academy scope are available. Use the in-app browser when a local app URL is available.
+9. Do not commit or push unless the user explicitly asks. The ingestion itself is complete without a Git operation.
+10. Finish with a concise report of the assigned week, images processed, items created, items enriched or merged, uncertainties, review updates, app verification, and validation result.
+
+If no attached images and no real inbox images exist, report that no lesson pictures were found and identify the locations checked. This is the only normal missing-input case that should stop the workflow.
+
+## App Data Discovery
+
+- `metadata/catalog.json` must index every canonical item used by the app.
 - Every catalog row must include `source_path`, pointing to the category file containing the full record.
-- `MANIFEST.md` is the human-readable repository map.
-- `prompts/chatgpt-tutor-entrypoint.md` defines the connector fetch workflow.
-- AI tutors must check the catalog before claiming that the learner has studied an item.
-- Fetch complete category files only when full examples, notes, provenance, dialogue turns, corrections, or grammar explanations are needed.
-- Rebuild discovery metadata with `python3 scripts/rebuild_metadata.py` after canonical data changes.
-- The same rebuild must regenerate `chatgpt/dutch-os-chatgpt-context.md`; never maintain that file manually.
-- The generated ChatGPT context must contain every canonical item, all prepared reviews, active mistakes, examples, notes, grammar details, and dialogues, grouped by Monday `week_start`.
-- The user replaces the previous file in their ChatGPT Project after each ingestion so text chat and Voice mode share the latest learning memory.
+- `metadata/statistics.json` and `metadata/tags.json` provide app summaries and filters.
+- The app fetches complete category files only when full item details or practice data are needed.
+- Rebuild app metadata with `python3 scripts/rebuild_metadata.py` after canonical data changes.
 
 ## Evidence Rules
 
@@ -59,7 +75,7 @@ The repository must remain usable through GitHub connectors even when code searc
 
 - Store Dutch and idiomatic English only. Romanian may remain only in archived source material.
 - Follow the current schema exactly; update schema, data, and validation together when the model changes.
-- Use clear JSON and add fields only for a concrete tutoring, provenance, search, or maintenance need.
+- Use clear JSON and add fields only for a concrete learning, provenance, search, or maintenance need.
 - Required concepts include a stable ID, Dutch, English, category, tags, source images, a Monday `week_start` date such as `2026-06-08`, and ingestion date. The exact `week_start` must also appear in the item's `tags` array. Category-specific fields come from the schema.
 - Keep entries useful for speaking and comprehension. Do not turn `knowledge/` into a generic dictionary.
 
@@ -125,18 +141,17 @@ The app may progressively provide:
 - flashcards, quizzes, cloze tasks, sentence rebuilding, particle selection, dialogue gap-fill, and mistake correction;
 - dedicated particle, dialogue, mistake, and weekly-review modes;
 - device-specific practice history in `localStorage`;
-- copyable ChatGPT prompts generated from selected batches, categories, or item IDs.
 
 The app must:
 
 - use only static HTML, CSS, JavaScript, and repository data compatible with GitHub Pages;
-- require no backend, server-side code, database, authentication, paid infrastructure, API key, or browser-side OpenAI API call;
+- require no backend, server-side code, database, authentication, paid infrastructure, API key, or browser-side LLM API call;
 - treat `knowledge/`, `reviews/`, and `metadata/` as read-only inputs;
 - keep `localStorage` progress device-specific and non-canonical;
 - remain mobile-first, accessible, fast, and maintainable with thousands of items;
 - avoid a heavy framework unless scale or demonstrated complexity justifies one.
 
-The app is not the AI tutor. Reasoning, conversation, correction, intelligent roleplay, and voice practice remain in ChatGPT. Text chat may use the GitHub connector or the generated ChatGPT context; Voice mode uses the generated context uploaded to a ChatGPT Project. Codex maintains repository data, the generated context, and app code. If the UI reveals missing metadata or schema problems, fix the canonical data layer instead of hiding the problem in app code.
+There is currently no chat, voice, connector, or LLM integration. A future LLM API integration may be designed separately, but the current app must not depend on one. Codex maintains repository data and app code. If the UI reveals missing metadata or schema problems, fix the canonical data layer instead of hiding the problem in app code.
 
 Planned structure:
 
@@ -156,17 +171,19 @@ The exact internal structure may evolve. The app must never become the source of
 When the user asks to process notes:
 
 1. Read `prompts/ingest-weekly-notes.md`, relevant schemas, and existing canonical data.
-2. Inspect every uploaded source and determine page order. Report ambiguous ordering.
-3. Assign the Monday week-start date while preserving lesson-date context in the archive manifest.
-4. Move originals into `sources/archive/YYYY/YYYY-MM-DD/` without modifying them.
-5. Create the manifest, checksums, raw OCR, and curated transcription.
-6. Extract and classify only supported learning material.
-7. Detect duplicates and merge before creating records.
-8. Add provenance and ingestion metadata, including the exact `week_start` date in every item's `tags` array.
-9. Generate the review with the same explicit week tag and update needs-review data.
-10. Rebuild affected catalogs, tags, statistics, ingestion logs, and the portable ChatGPT context.
-11. Run validation and fix every failure.
-12. Report additions, merges, uncertainty, assumptions, and validation results.
+2. Resolve input images from current-chat attachments first, then from `sources/inbox/`.
+3. Inspect every uploaded source and determine page order. Report only material unresolved ambiguity.
+4. Assign the Monday week-start date while preserving lesson-date context in the archive manifest.
+5. Copy attached originals, or move inbox originals, into `sources/archive/YYYY/YYYY-MM-DD/` without modifying image contents.
+6. Create the manifest, checksums, raw OCR, and curated transcription.
+7. Extract and classify only supported learning material.
+8. Detect duplicates and merge before creating records.
+9. Add provenance and ingestion metadata, including the exact `week_start` date in every item's `tags` array.
+10. Generate the review with the same explicit week tag and update needs-review data.
+11. Rebuild affected catalogs, tags, statistics, and ingestion logs.
+12. Run validation and fix every failure.
+13. Verify the updated week and material in the app.
+14. Report additions, merges, uncertainty, assumptions, app verification, and validation results.
 
 Do not claim an ingestion is complete until every uploaded source has been inspected and archived.
 
@@ -178,7 +195,7 @@ After changing JSON, schemas, reviews, or metadata, run:
 python3 scripts/validate_json.py
 ```
 
-Do not finish with validation failures. Validation must continue to cover JSON syntax, required fields, stable IDs, source paths, batch labels, English-only canonical data, cross-references, catalog source paths, AI entrypoint paths and counts, and derived metadata consistency.
+Do not finish with validation failures. Validation must continue to cover JSON syntax, required fields, stable IDs, source paths, batch labels, English-only canonical data, cross-references, catalog source paths and counts, and derived metadata consistency.
 
 ## Commits
 
@@ -194,7 +211,7 @@ Before finishing a substantial task:
 1. Confirm archived evidence was preserved.
 2. Check new records for duplicates.
 3. Validate all affected structured data.
-4. Confirm source paths, cross-references, and that the generated ChatGPT context is current and complete.
+4. Confirm source paths, cross-references, and derived app metadata.
 5. Summarize changes, uncertainty, assumptions, and anything not verified.
 
 The guiding test is: will this make the user’s Dutch easier to practice and maintain over the next five years with less manual work?

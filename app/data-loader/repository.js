@@ -15,13 +15,18 @@ async function fetchJson(path) {
 }
 
 export async function loadDashboardData() {
-  const [entrypoint, catalog, statistics, reviews] = await Promise.all([
-    fetchJson("../metadata/ai-entrypoint.json"),
+  const [catalog, statistics, reviews] = await Promise.all([
     fetchJson("../metadata/catalog.json"),
     fetchJson("../metadata/statistics.json"),
     fetchJson("../reviews/items.json"),
   ]);
-  return { entrypoint, catalog, statistics, reviews };
+  const weekStarts = catalog.items.map((item) => item.week_start).sort();
+  return {
+    catalog,
+    statistics,
+    reviews,
+    latestWeekStart: weekStarts.at(-1),
+  };
 }
 
 export async function loadCanonicalItem(catalogItem) {
@@ -29,8 +34,8 @@ export async function loadCanonicalItem(catalogItem) {
   return records.find((item) => item.id === catalogItem.id) ?? null;
 }
 
-export async function loadPracticeItems(entrypoint) {
-  const paths = Object.values(entrypoint.paths.canonical);
+export async function loadPracticeItems(catalog) {
+  const paths = [...new Set(catalog.items.map((item) => item.source_path))];
   const groups = await Promise.all(paths.map((path) => fetchJson(`../${path}`)));
   return groups.flat();
 }

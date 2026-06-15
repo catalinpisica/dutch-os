@@ -1,5 +1,40 @@
 const PRACTICE_TYPES = new Set(["word", "expression", "particle"]);
 
+const AUTHORED_SENTENCES = [
+  ["word-duur", "Deze jas kost honderd euro. Hij is erg ____.", "duur", "adjective"],
+  ["word-goedkoop", "Deze koffie kost maar één euro. Dat is ____.", "goedkoop", "adjective"],
+  ["word-hier", "Kom maar ____. Je kunt naast mij zitten.", "hier", "adverb"],
+  ["word-daar", "Zie je die winkel? Ik werk ____.", "daar", "adverb"],
+  ["word-meestal", "Ik drink ____ koffie in de ochtend, maar soms thee.", "meestal", "adverb"],
+  ["word-soms", "Ik fiets vaak, maar ____ neem ik de bus.", "soms", "adverb"],
+  ["word-vaak", "Zij sport vier keer per week. Ze sport dus ____.", "vaak", "adverb"],
+  ["word-nooit", "Hij drinkt geen koffie. Hij drinkt ____ koffie.", "nooit", "adverb"],
+  ["word-natuurlijk", "Kun je me helpen? Ja, ____!", "natuurlijk", "adverb"],
+  ["word-open", "Je kunt naar binnen; de winkel is ____.", "open", "adjective"],
+  ["word-leeg", "Er zit niets meer in de zak. De zak is ____.", "leeg", "adjective"],
+  ["word-laat", "Het is al middernacht. Het is erg ____.", "laat", "adjective"],
+  ["word-moe", "Ik heb slecht geslapen, dus ik ben ____.", "moe", "adjective"],
+  ["word-druk", "Ik heb vandaag veel werk. Ik ben erg ____.", "druk", "adjective"],
+  ["word-warm", "De zon schijnt en het is 28 graden. Het is ____.", "warm", "adjective"],
+  ["word-ziek", "Hij heeft koorts en blijft in bed. Hij is ____.", "ziek", "adjective"],
+  ["word-prima", "Hoe gaat het? Het gaat ____.", "prima", "adjective"],
+  ["word-vervelend", "Je trein is weer te laat. Wat ____!", "vervelend", "adjective"],
+  ["word-binnenkomen", "De deur is open. Je mag ____.", "binnenkomen", "verb"],
+  ["word-drinken", "Wil je koffie of thee ____?", "drinken", "verb"],
+  ["word-slapen", "Ik ben moe. Ik wil vroeg gaan ____.", "slapen", "verb"],
+  ["word-vragen", "Ik weet het niet. Ik ga het aan de leraar ____.", "vragen", "verb"],
+  ["word-zonder", "Ik drink koffie ____ suiker.", "zonder", "preposition"],
+  ["particle-even", "Wacht ____; ik pak mijn jas.", "even", "particle"],
+  ["particle-hoor", "Dat is helemaal prima, ____.", "hoor", "particle"],
+  ["particle-toch", "Je komt morgen ook, ____?", "toch", "particle"],
+  ["particle-nog-steeds", "De bus is twintig minuten te laat en ik wacht ____.", "nog steeds", "particle phrase"],
+  ["particle-alweer", "Ben je nu ____ thuis? Dat ging snel!", "alweer", "particle"],
+  ["expression-kom-binnen", "De deur is open. ____!", "Kom binnen", "expression"],
+  ["expression-het-maakt-me-niet-uit", "Koffie of thee? ____. Kies jij maar.", "Het maakt me niet uit", "expression"],
+  ["expression-doe-maar-niet", "Wil je nog koffie? Nee, ____. Ik heb genoeg.", "doe maar niet", "expression"],
+  ["expression-zal-ik-doen", "Kun je morgen bellen? Ja, ____. ", "zal ik doen", "expression"],
+];
+
 function shuffle(values) {
   const result = [...values];
   for (let index = result.length - 1; index > 0; index -= 1) {
@@ -51,20 +86,25 @@ function makeTyped(item) {
   };
 }
 
-function makeCloze(item) {
-  const example = item.examples?.find((candidate) => {
+function makeCloze(item, suppliedExample = null) {
+  const example = suppliedExample ?? item.examples?.find((candidate) => {
     const itemText = item.dutch.replace(/[.!?]$/, "");
-    return itemText.split(/\s+/).length === 1 && candidate.dutch.toLocaleLowerCase("nl-NL").includes(itemText.toLocaleLowerCase("nl-NL"));
+    return candidate.dutch.toLocaleLowerCase("nl-NL").includes(itemText.toLocaleLowerCase("nl-NL"));
   });
   if (!example) return null;
   const word = item.dutch.replace(/[.!?]$/, "");
-  const pattern = new RegExp(`\\b${word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i");
+  if (!example.dutch.toLocaleLowerCase("nl-NL").includes(word.toLocaleLowerCase("nl-NL"))) return null;
+  const escaped = word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const pattern = new RegExp(`(^|\\s)${escaped}(?=\\s|[.,!?;:]|$)`, "i");
   return {
     kind: "cloze",
     itemId: item.id,
     label: "Complete the sentence",
-    prompt: example.dutch.replace(pattern, "____"),
+    prompt: example.dutch.replace(pattern, (match, prefix) => `${prefix}____`),
     hint: example.english,
+    expected: item.type === "expression"
+      ? "expression"
+      : item.part_of_speech ?? (item.type === "particle" ? "particle" : "word"),
     answer: word,
     direction: "cloze",
   };
@@ -72,12 +112,37 @@ function makeCloze(item) {
 
 export function buildSession(allItems, options = {}) {
   const size = options.size ?? 10;
-  const eligible = allItems.filter((item) =>
+  const excludedIds = new Set(options.excludeIds ?? []);
+  let eligible = allItems.filter((item) =>
     PRACTICE_TYPES.has(item.type)
     && item.dutch
     && item.english
     && (options.week === "all" || item.week_start === options.week)
+    && !excludedIds.has(item.id)
   );
+  if (options.mode === "sentences") {
+    const eligibleIds = new Set(eligible.map((item) => item.id));
+    const sourceQuestions = eligible.flatMap((item) =>
+      (item.examples ?? []).map((example) => makeCloze(item, example)).filter(Boolean)
+    );
+    const authoredQuestions = AUTHORED_SENTENCES
+      .filter(([itemId]) => eligibleIds.has(itemId))
+      .map(([itemId, prompt, answer, expected]) => ({
+        kind: "cloze",
+        itemId,
+        label: "Complete the sentence",
+        prompt,
+        hint: null,
+        expected,
+        answer,
+        direction: "cloze",
+      }));
+    const questions = shuffle([...authoredQuestions, ...sourceQuestions])
+      .filter((question, index, values) => values.findIndex((candidate) => candidate.prompt === question.prompt) === index)
+      .slice(0, size)
+      .map((question) => ({ ...question, hint: null }));
+    return { questions, sourceCount: questions.length };
+  }
   const weakIds = new Set(options.weakIds ?? []);
   const weak = shuffle(eligible.filter((item) => weakIds.has(item.id)));
   const remaining = shuffle(eligible.filter((item) => !weakIds.has(item.id)));
@@ -85,10 +150,7 @@ export function buildSession(allItems, options = {}) {
   const questions = selected.map((item, index) => {
     const cloze = makeCloze(item);
     if (options.mode === "recognition") return makeChoice(eligible, item, index % 2 === 0 ? "nl-en" : "en-nl");
-    if (options.mode === "recall") {
-      if (index % 3 === 2 && cloze) return cloze;
-      return makeTyped(item);
-    }
+    if (options.mode === "recall") return makeTyped(item);
     if (index % 4 === 3 && cloze) return cloze;
     if (index % 3 === 2) return makeTyped(item);
     return makeChoice(eligible, item, index % 2 === 0 ? "nl-en" : "en-nl");
@@ -108,7 +170,7 @@ export function loadProgress(profile = "catalin") {
   try {
     const key = progressKey(profile);
     const stored = localStorage.getItem(key);
-    if (stored) return JSON.parse(stored);
+    if (stored) return normalizeProgress(JSON.parse(stored), key);
 
     // Preserve progress created before profiles existed as Catalin's history.
     if (profile === "catalin") {
@@ -116,13 +178,35 @@ export function loadProgress(profile = "catalin") {
       if (legacy) {
         localStorage.setItem(key, legacy);
         localStorage.removeItem("dutch-os-progress");
-        return JSON.parse(legacy);
+        return normalizeProgress(JSON.parse(legacy), key);
       }
     }
     return defaultProgress();
   } catch {
     return defaultProgress();
   }
+}
+
+function mondayOf(dateValue) {
+  const date = new Date(`${dateValue}T12:00:00`);
+  const day = date.getDay();
+  date.setDate(date.getDate() + (day === 0 ? -6 : 1 - day));
+  return date.toLocaleDateString("en-CA");
+}
+
+function normalizeProgress(progress, key) {
+  progress.byWeek ??= {};
+  if (!Object.keys(progress.byWeek).length && progress.lastPracticeDate) {
+    const week = mondayOf(progress.lastPracticeDate);
+    progress.byWeek[week] = {
+      sessions: progress.sessions ?? 0,
+      answered: progress.answered ?? 0,
+      correct: progress.correct ?? 0,
+      xp: progress.xp ?? 0,
+    };
+    localStorage.setItem(key, JSON.stringify(progress));
+  }
+  return progress;
 }
 
 function defaultProgress() {
@@ -133,6 +217,7 @@ function defaultProgress() {
     xp: 0,
     streak: 0,
     lastPracticeDate: null,
+    byWeek: {},
     items: {},
   };
 }
@@ -148,7 +233,16 @@ export function saveSessionProgress(results, profile = "catalin") {
   progress.sessions += 1;
   progress.answered += results.length;
   progress.correct += results.filter((result) => result.correct).length;
-  progress.xp += results.reduce((total, result) => total + (result.correct ? 10 : 2), 0);
+  const earnedXp = results.reduce((total, result) => total + (result.correct ? 10 : 2), 0);
+  const correctAnswers = results.filter((result) => result.correct).length;
+  progress.xp += earnedXp;
+  const week = mondayOf(today);
+  const weekly = progress.byWeek[week] ?? { sessions: 0, answered: 0, correct: 0, xp: 0 };
+  weekly.sessions += 1;
+  weekly.answered += results.length;
+  weekly.correct += correctAnswers;
+  weekly.xp += earnedXp;
+  progress.byWeek[week] = weekly;
   results.forEach((result) => {
     const item = progress.items[result.itemId] ?? { correct: 0, wrong: 0, lastPracticed: null };
     item[result.correct ? "correct" : "wrong"] += 1;

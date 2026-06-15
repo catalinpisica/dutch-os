@@ -9,9 +9,6 @@ import sys
 from datetime import date
 from pathlib import Path
 
-from generate_chatgpt_context import build_chatgpt_context
-
-
 ROOT = Path(__file__).resolve().parents[1]
 ARRAY_ROOTS = (ROOT / "knowledge", ROOT / "reviews")
 BASE_REQUIRED = {
@@ -60,17 +57,6 @@ def contains_forbidden_romanian_key(value: object) -> bool:
     if isinstance(value, list):
         return any(contains_forbidden_romanian_key(child) for child in value)
     return False
-
-
-def nested_strings(value: object):
-    if isinstance(value, str):
-        yield value
-    elif isinstance(value, dict):
-        for child in value.values():
-            yield from nested_strings(child)
-    elif isinstance(value, list):
-        for child in value:
-            yield from nested_strings(child)
 
 
 def main() -> int:
@@ -348,78 +334,10 @@ def main() -> int:
     if not isinstance(tags_metadata, dict) or tags_metadata.get("tags") != expected_tags:
         failures.append("metadata/tags.json: tag counts are inconsistent")
 
-    entrypoint = parsed.get(ROOT / "metadata" / "ai-entrypoint.json")
-    if not isinstance(entrypoint, dict):
-        failures.append("metadata/ai-entrypoint.json: expected an object")
-    else:
-        if entrypoint.get("total_items") != len(catalog_items):
-            failures.append(
-                "metadata/ai-entrypoint.json: total_items does not match catalog"
-            )
-        catalog_type_counts = {
-            item_type: sum(
-                item.get("type") == item_type for item in catalog_items
-            )
-            for item_type in TYPE_TO_STAT_KEY
-        }
-        if entrypoint.get("counts_by_type") != catalog_type_counts:
-            failures.append(
-                "metadata/ai-entrypoint.json: counts do not match catalog"
-            )
-        if entrypoint.get("counts_by_type") != expected_type_counts:
-            failures.append(
-                "metadata/ai-entrypoint.json: counts do not match statistics"
-            )
-        expected_latest_week_start = max(
-            str(item["week_start"]) for item in all_items
-        )
-        if entrypoint.get("latest_week_start") != expected_latest_week_start:
-            failures.append(
-                "metadata/ai-entrypoint.json: latest_week_start is inconsistent"
-            )
-
-        fetch_order = entrypoint.get("recommended_fetch_order")
-        if not isinstance(fetch_order, list) or fetch_order[:2] != [
-            "metadata/ai-entrypoint.json",
-            "metadata/catalog.json",
-        ]:
-            failures.append(
-                "metadata/ai-entrypoint.json: invalid recommended fetch order"
-            )
-        else:
-            for listed_path in fetch_order:
-                if not isinstance(listed_path, str) or not (ROOT / listed_path).is_file():
-                    failures.append(
-                        "metadata/ai-entrypoint.json: missing fetch path "
-                        f"{listed_path}"
-                    )
-
-        paths = entrypoint.get("paths")
-        if not isinstance(paths, dict):
-            failures.append("metadata/ai-entrypoint.json: paths must be an object")
-        else:
-            for listed_path in nested_strings(paths):
-                if not (ROOT / listed_path).exists():
-                    failures.append(
-                        "metadata/ai-entrypoint.json: missing listed path "
-                        f"{listed_path}"
-                    )
-
     if failures:
         print("JSON validation failed:")
         for failure in failures:
             print(f"- {failure}")
-        return 1
-
-    chatgpt_path = ROOT / "chatgpt" / "dutch-os-chatgpt-context.md"
-    expected_chatgpt_context = build_chatgpt_context(ROOT)
-    if not chatgpt_path.is_file():
-        print("JSON validation failed:")
-        print("- chatgpt/dutch-os-chatgpt-context.md: missing generated context")
-        return 1
-    if chatgpt_path.read_text(encoding="utf-8") != expected_chatgpt_context:
-        print("JSON validation failed:")
-        print("- chatgpt/dutch-os-chatgpt-context.md: generated context is stale")
         return 1
 
     print(

@@ -6,8 +6,8 @@ All notable changes to Dutch OS are documented here.
 
 ### Added
 
-- Added a connector-friendly `MANIFEST.md`, AI entrypoint metadata, and ChatGPT tutor entrypoint prompt.
-- Added catalog `source_path` indexes and validation for discovery counts and file paths.
+- Added the repository manifest and catalog `source_path` indexes.
+- Added validation for catalog counts and source file paths.
 
 ### Resolved
 
@@ -23,7 +23,7 @@ All notable changes to Dutch OS are documented here.
 - Initial long-term repository architecture.
 - Category-specific JSON Schemas and canonical data files.
 - Five seed learning entries based on existing Dutch class examples.
-- Weekly note ingestion and ChatGPT tutor prompt templates.
+- Weekly note-ingestion templates.
 - Source inbox and archive conventions.
 - Starter learner configuration, metadata, reviews, and validation tooling.
 - Maintainer instructions for AI-driven deduplication and merging.
