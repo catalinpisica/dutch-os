@@ -6,8 +6,8 @@
     <meta name="theme-color" content="#f4f0e6">
     <meta name="description" content="Polilingua, a personal Dutch learning academy and memory.">
     <title>Polilingua</title>
-    <link rel="stylesheet" href="./styles/main.css?v=20260615-10">
-    <script type="module" src="./src/app.js?v=20260615-9"></script>
+    <link rel="stylesheet" href="./styles/main.css?v=20260615-13">
+    <script type="module" src="./src/app.js?v=20260615-10"></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -87,8 +87,8 @@
         <div class="academy-header">
           <div>
             <p class="eyebrow">Academy</p>
-            <h2 id="practice-title">Choose how you want to train.</h2>
-            <p>Move from recognition to active production, then test vocabulary inside complete sentences.</p>
+            <h2 id="practice-title">Build knowledge that lasts.</h2>
+            <p>Learn new material in context, retrieve it from memory, then revisit what needs attention.</p>
           </div>
         </div>
 
@@ -114,6 +114,45 @@
           </div>
         </div>
 
+        <div class="academy-group-heading">
+          <div><span>1</span><div><p class="eyebrow">Learn</p><h3>Build new memories</h3></div></div>
+          <p>Follow these exercises in order when material is new.</p>
+        </div>
+        <div class="academy-grid">
+          <article class="academy-stage">
+            <span class="stage-number">1</span>
+            <p class="stage-kicker">Understand</p>
+            <h3>Learn in context</h3>
+            <p>Read a Dutch sentence and work out the highlighted word. New and lightly practised words come first.</p>
+            <button class="primary-button academy-start" data-mode="context" type="button">Learn 20 words</button>
+          </article>
+          <article class="academy-stage">
+            <span class="stage-number">2</span>
+            <p class="stage-kicker">Recognize</p>
+            <h3>Recognize meaning</h3>
+            <p>Choose the correct Dutch or English translation from four options.</p>
+            <button class="secondary-button academy-start" data-mode="recognition" type="button">Start 20 questions</button>
+          </article>
+          <article class="academy-stage">
+            <span class="stage-number">3</span>
+            <p class="stage-kicker">Active recall</p>
+            <h3>Produce the Dutch</h3>
+            <p>See the English meaning and type the Dutch from memory without choices.</p>
+            <button class="primary-button academy-start" data-mode="recall" type="button">Start 20 questions</button>
+          </article>
+          <article class="academy-stage">
+            <span class="stage-number">4</span>
+            <p class="stage-kicker">Complete sentences</p>
+            <h3>Find the missing word</h3>
+            <p>Try from context first, then reveal a meaning hint when you need one.</p>
+            <button class="secondary-button academy-start" data-mode="sentences" type="button">Start 20 questions</button>
+          </article>
+        </div>
+
+        <div class="academy-group-heading">
+          <div><span>2</span><div><p class="eyebrow">Review</p><h3>Keep it strong</h3></div></div>
+          <p>These queues adapt to your practice history.</p>
+        </div>
         <div class="academy-review-tools">
           <article class="review-queue" aria-live="polite">
             <div>
@@ -133,36 +172,17 @@
           </article>
         </div>
 
-        <div class="academy-grid">
-          <article class="academy-stage">
-            <span class="stage-number">1</span>
-            <p class="stage-kicker">Recognition</p>
-            <h3>Recognize meaning</h3>
-            <p>Choose the correct Dutch or English translation from four options.</p>
-            <button class="secondary-button academy-start" data-mode="recognition" type="button">Start 20 questions</button>
-          </article>
-          <article class="academy-stage">
-            <span class="stage-number">2</span>
-            <p class="stage-kicker">Active recall</p>
-            <h3>Produce the Dutch</h3>
-            <p>See the English meaning and type the Dutch from memory without choices.</p>
-            <button class="primary-button academy-start" data-mode="recall" type="button">Start 20 questions</button>
-          </article>
-          <article class="academy-stage">
-            <span class="stage-number">3</span>
-            <p class="stage-kicker">Complete sentences</p>
-            <h3>Find the missing word</h3>
-            <p>Try from context first, then reveal a meaning hint when you need one.</p>
-            <button class="secondary-button academy-start" data-mode="sentences" type="button">Start 20 questions</button>
-          </article>
-          <article class="academy-stage">
-            <span class="stage-number">4</span>
+        <div class="academy-group-heading academy-group-heading--reference">
+          <div><span>3</span><div><p class="eyebrow">Reference</p><h3>Look something up</h3></div></div>
+        </div>
+        <article class="dictionary-stage">
+          <div>
             <p class="stage-kicker">Dictionary</p>
             <h3>Explore what you know</h3>
             <p id="dictionary-stage-copy">Search and filter everything first learned this week.</p>
-            <button class="secondary-button" id="open-dictionary" type="button">Open dictionary</button>
-          </article>
-        </div>
+          </div>
+          <button class="secondary-button" id="open-dictionary" type="button">Open dictionary</button>
+        </article>
       </section>
 
       <section class="simulator-section" id="simulator" aria-labelledby="simulator-title">
