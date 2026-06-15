@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#f4f0e6">
-    <meta name="description" content="A personal Dutch learning cockpit powered by Dutch OS repository data.">
-    <title>Dutch OS</title>
+    <meta name="description" content="Polilingua, a personal Dutch learning academy and memory.">
+    <title>Polilingua</title>
     <link rel="stylesheet" href="./styles/main.css">
     <script type="module" src="./src/app.js"></script>
   </head>
@@ -13,43 +13,70 @@
     <a class="skip-link" href="#main-content">Skip to content</a>
 
     <header class="site-header">
-      <a class="brand" href="#dashboard" aria-label="Dutch OS dashboard">
-        <span class="brand-mark" aria-hidden="true">NL</span>
-        <span>
-          <strong>Dutch OS</strong>
-          <small>Your learning memory</small>
-        </span>
+      <a class="brand" href="#dashboard" aria-label="Polilingua dashboard">
+        <strong>poli<span>lingua</span><i aria-hidden="true"></i></strong>
       </a>
       <div class="header-actions">
-        <label class="profile-picker">
-          <span>Profile</span>
-          <select id="profile-select" aria-label="Active learner profile">
-            <option value="catalin">Catalin</option>
-            <option value="dana">Dana</option>
-          </select>
+        <div class="profile-control">
+          <button class="profile-picker" id="profile-trigger" type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="profile-menu">
+            <img class="profile-avatar" id="profile-avatar" src="./assets/profiles/catalin.jpg" alt="">
+            <span class="profile-name" id="profile-name">Catalin</span>
+            <span class="profile-chevron" aria-hidden="true"></span>
+          </button>
+          <div class="profile-menu" id="profile-menu" role="menu" aria-label="Choose learner" hidden>
+            <p>Who is learning?</p>
+            <button class="profile-option" type="button" role="menuitemradio" data-profile="catalin" aria-checked="true">
+              <img src="./assets/profiles/catalin.jpg" alt="">
+              <span><strong>Catalin</strong><small>Continue your progress</small></span>
+              <i aria-hidden="true">✓</i>
+            </button>
+            <button class="profile-option" type="button" role="menuitemradio" data-profile="dana" aria-checked="false">
+              <img src="./assets/profiles/dana.jpg" alt="">
+              <span><strong>Dana</strong><small>Continue your progress</small></span>
+              <i aria-hidden="true">✓</i>
+            </button>
+          </div>
+        </div>
+        <label class="theme-switch" title="Dark mode">
+          <span class="visually-hidden">Dark mode</span>
+          <input id="theme-toggle" type="checkbox" role="switch" aria-label="Dark mode">
+          <span class="theme-track" aria-hidden="true"><span class="theme-thumb"></span></span>
         </label>
-        <button class="icon-button" id="theme-toggle" type="button" aria-label="Use dark theme" title="Change theme">
-          <span aria-hidden="true">◐</span>
-        </button>
       </div>
     </header>
 
     <main id="main-content">
       <section class="hero" id="dashboard" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow" id="today-label">Your Dutch, organized</p>
           <h1 id="hero-title">Goed bezig.</h1>
           <p class="hero-text" id="hero-summary">Loading your learning memory…</p>
           <div class="hero-actions">
-            <button class="primary-button" id="review-button" type="button">Start this week’s review</button>
-            <a class="text-link" href="#library">Browse everything <span aria-hidden="true">→</span></a>
+            <button class="hero-nav-button" data-scroll-target=".leaderboard-section" type="button"><span aria-hidden="true">↗</span>Leaderboard</button>
+            <button class="hero-nav-button" data-scroll-target=".stats-section" type="button"><span aria-hidden="true">∑</span>Overview</button>
+            <button class="hero-nav-button hero-nav-button--primary" data-scroll-target="#practice" type="button"><span aria-hidden="true">Aa</span>Academy</button>
+            <button class="hero-nav-button" data-scroll-target="#simulator" type="button"><span aria-hidden="true">◷</span>Simulator</button>
+            <button class="hero-nav-button" id="hero-dictionary" type="button"><span aria-hidden="true">⌕</span>Dictionary</button>
           </div>
         </div>
         <div class="week-card" aria-live="polite">
-          <span class="week-card-label">Latest week</span>
+          <span class="week-card-label">Today</span>
           <strong id="latest-week">—</strong>
           <span id="latest-week-count">Loading items…</span>
         </div>
+      </section>
+
+      <section class="leaderboard-section" aria-labelledby="leaderboard-title">
+        <div class="leaderboard-header">
+          <div>
+            <p class="eyebrow">Friendly competition</p>
+            <h2 id="leaderboard-title">Leaderboard</h2>
+          </div>
+          <div class="leaderboard-scope" aria-label="Leaderboard period">
+            <button type="button" data-leaderboard-scope="week" aria-pressed="true">This week</button>
+            <button type="button" data-leaderboard-scope="all" aria-pressed="false">All time</button>
+          </div>
+        </div>
+        <div class="leaderboard-list" id="leaderboard-list" aria-live="polite"></div>
       </section>
 
       <section class="stats-section" aria-labelledby="stats-title">
@@ -66,14 +93,10 @@
       <section class="practice-section" id="practice" aria-labelledby="practice-title">
         <div class="academy-header">
           <div>
-            <p class="eyebrow">Weekly academy</p>
-            <h2 id="practice-title">Learn it. Retrieve it. Use it. Keep it.</h2>
-            <p>One long quiz feels productive, but spaced retrieval is what makes this week’s Dutch stick. Complete these stages across the week.</p>
+            <p class="eyebrow">Academy</p>
+            <h2 id="practice-title">Choose how you want to train.</h2>
+            <p>Move from recognition to active production, then test vocabulary inside complete sentences.</p>
           </div>
-          <label class="practice-week">
-            <span>Academy week</span>
-            <select id="practice-week-filter"></select>
-          </label>
         </div>
 
         <div class="coverage-panel">
@@ -93,97 +116,72 @@
           </div>
         </div>
 
+        <div class="academy-scope" aria-label="Academy content scope">
+          <button type="button" data-scope="week" aria-pressed="true">This week</button>
+          <button type="button" data-scope="all" aria-pressed="false">Full content</button>
+        </div>
+
         <div class="academy-grid">
           <article class="academy-stage">
             <span class="stage-number">1</span>
             <p class="stage-kicker">Recognition</p>
-            <h3>First contact</h3>
-            <p>Build familiarity with this week’s words and expressions using supported translation choices.</p>
+            <h3>Recognize meaning</h3>
+            <p>Choose the correct Dutch or English translation from four options.</p>
             <button class="secondary-button academy-start" data-mode="recognition" type="button">Start 20 questions</button>
           </article>
-          <article class="academy-stage academy-stage--accent">
+          <article class="academy-stage">
             <span class="stage-number">2</span>
             <p class="stage-kicker">Active recall</p>
-            <h3>Recall without hints</h3>
-            <p>Produce Dutch from English and complete sentences. Effortful retrieval strengthens memory.</p>
-            <button class="primary-button academy-start" data-mode="recall" type="button">Start 25 questions</button>
+            <h3>Produce the Dutch</h3>
+            <p>See the English meaning and type the Dutch from memory without choices.</p>
+            <button class="primary-button academy-start" data-mode="recall" type="button">Start 20 questions</button>
           </article>
           <article class="academy-stage">
             <span class="stage-number">3</span>
-            <p class="stage-kicker">Application</p>
-            <h3>Use it in context</h3>
-            <p>Work through every prepared translation, cloze, grammar, recall, and roleplay prompt for the week.</p>
-            <button class="secondary-button" id="academy-review" type="button">Open weekly workshop</button>
+            <p class="stage-kicker">Complete sentences</p>
+            <h3>Find the missing word</h3>
+            <p>Complete Dutch sentences from context alone, without translations or hints.</p>
+            <button class="secondary-button academy-start" data-mode="sentences" type="button">Start 20 questions</button>
           </article>
           <article class="academy-stage">
             <span class="stage-number">4</span>
-            <p class="stage-kicker">Cumulative retention</p>
-            <h3>Mastery challenge</h3>
-            <p>Mix this week with weak and older items. Interleaving helps you choose the right Dutch under pressure.</p>
-            <button class="secondary-button academy-start" data-mode="mastery" type="button">Start 30 questions</button>
+            <p class="stage-kicker">Dictionary</p>
+            <h3>Explore what you know</h3>
+            <p id="dictionary-stage-copy">Search and filter everything first learned this week.</p>
+            <button class="secondary-button" id="open-dictionary" type="button">Open dictionary</button>
           </article>
         </div>
       </section>
 
-      <section class="review-section" id="review" aria-labelledby="review-title">
-        <div class="review-panel">
-          <div class="review-heading">
-            <div>
-              <p class="eyebrow">Weekly practice</p>
-              <h2 id="review-title">This week’s workshop</h2>
-            </div>
-            <span class="review-badge" id="review-count">—</span>
-          </div>
-          <div id="review-content" class="review-content">
-            <p>Loading your prepared review…</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="library-section" id="library" aria-labelledby="library-title">
-        <div class="section-heading library-heading">
+      <section class="simulator-section" id="simulator" aria-labelledby="simulator-title">
+        <div class="section-heading simulator-heading">
           <div>
-            <p class="eyebrow">Library</p>
-            <h2 id="library-title">Find what you’ve learned</h2>
+            <p class="eyebrow">Simulator</p>
+            <h2 id="simulator-title">Practice real-life patterns.</h2>
           </div>
-          <span id="result-count" class="result-count"></span>
+          <p>Interactive drills for skills that need repetition, not memorized definitions.</p>
         </div>
-
-        <form class="search-panel" id="search-form" role="search">
-          <label class="search-field">
-            <span class="visually-hidden">Search learned Dutch</span>
-            <span class="search-icon" aria-hidden="true">⌕</span>
-            <input id="search-input" type="search" autocomplete="off" placeholder="Search Dutch, English, category or tag…">
-          </label>
-          <div class="filters" aria-label="Filter learned items">
-            <label>
-              <span>Type</span>
-              <select id="type-filter">
-                <option value="all">All types</option>
-              </select>
-            </label>
-            <label>
-              <span>Week</span>
-              <select id="week-filter">
-                <option value="all">All weeks</option>
-              </select>
-            </label>
-          </div>
-        </form>
-
-        <div class="active-filter" id="active-filter" hidden>
-          <span id="active-filter-label"></span>
-          <button type="button" id="clear-filters">Clear filters</button>
+        <div class="simulator-grid">
+          <article class="simulator-card simulator-card--time">
+            <span class="simulator-icon" aria-hidden="true">◷</span>
+            <p class="stage-kicker">Time</p>
+            <h3>What time is it?</h3>
+            <p>Read a digital clock and choose the natural Dutch way to say the time.</p>
+            <button class="primary-button simulator-start" data-simulator="time" type="button">Start time simulator</button>
+          </article>
+          <article class="simulator-card simulator-card--place">
+            <span class="simulator-icon" aria-hidden="true">⌖</span>
+            <p class="stage-kicker">Location</p>
+            <h3>Where is it?</h3>
+            <p>Use visual scenes to practise Dutch location words and prepositions.</p>
+            <button class="secondary-button simulator-start" data-simulator="location" type="button">Start location simulator</button>
+          </article>
         </div>
-
-        <div class="item-grid" id="item-grid" aria-live="polite"></div>
-        <button class="secondary-button load-more" id="load-more" type="button" hidden>Show more</button>
       </section>
     </main>
 
     <footer>
-      <p>Dutch OS reads directly from your canonical repository data.</p>
-      <a href="../chatgpt/dutch-os-chatgpt-context.md">Open ChatGPT context</a>
+      <p>Polilingua reads directly from your canonical repository data.</p>
     </footer>
 
     <dialog class="item-dialog" id="item-dialog" aria-labelledby="dialog-title">
@@ -197,12 +195,50 @@
       <div id="dialog-content" class="dialog-content"></div>
     </dialog>
 
+    <dialog class="dictionary-dialog" id="dictionary-dialog" aria-labelledby="dictionary-title">
+      <div class="dictionary-shell">
+        <header class="dictionary-header">
+          <button class="lesson-close" id="dictionary-close" type="button" aria-label="Close dictionary">×</button>
+          <div>
+            <p class="eyebrow" id="dictionary-scope-label">This week</p>
+            <h2 id="dictionary-title">Dictionary</h2>
+          </div>
+          <span id="result-count" class="result-count"></span>
+        </header>
+        <main class="dictionary-main">
+          <form class="search-panel" id="search-form" role="search">
+            <label class="search-field">
+              <span class="visually-hidden">Search learned Dutch</span>
+              <span class="search-icon" aria-hidden="true">⌕</span>
+              <input id="search-input" type="search" autocomplete="off" placeholder="Search Dutch, English, category or tag…">
+            </label>
+            <div class="filters" aria-label="Filter learned items">
+              <label>
+                <span>Type</span>
+                <select id="type-filter"><option value="all">All types</option></select>
+              </label>
+              <label id="dictionary-week-control">
+                <span>Week</span>
+                <select id="week-filter"><option value="all">All weeks</option></select>
+              </label>
+            </div>
+          </form>
+          <div class="active-filter" id="active-filter" hidden>
+            <span id="active-filter-label"></span>
+            <button type="button" id="clear-filters">Clear filters</button>
+          </div>
+          <div class="item-grid" id="item-grid" aria-live="polite"></div>
+          <button class="secondary-button load-more" id="load-more" type="button" hidden>Show more</button>
+        </main>
+      </div>
+    </dialog>
+
     <dialog class="lesson-dialog" id="lesson-dialog" aria-labelledby="lesson-title">
       <div class="lesson-shell">
         <header class="lesson-header">
           <button class="lesson-close" id="lesson-close" type="button" aria-label="Leave lesson">×</button>
           <div class="lesson-progress" aria-label="Lesson progress"><span id="lesson-progress-bar"></span></div>
-          <div class="lesson-status"><span id="lesson-counter"></span><span class="lesson-hearts" id="lesson-hearts" aria-label="Three hearts remaining">♥ ♥ ♥</span></div>
+          <div class="lesson-status"><span id="lesson-counter"></span></div>
         </header>
         <main class="lesson-main">
           <p class="eyebrow" id="question-label">Choose the answer</p>
@@ -215,13 +251,42 @@
             <strong id="feedback-title"></strong>
             <span id="feedback-copy"></span>
           </div>
+          <button class="secondary-button lesson-retry" id="lesson-retry" type="button" hidden>Try another set</button>
           <button class="primary-button lesson-check" id="lesson-check" type="button" disabled>Check</button>
         </footer>
       </div>
     </dialog>
 
+    <dialog class="simulator-dialog" id="simulator-dialog" aria-labelledby="simulator-question">
+      <div class="simulator-shell">
+        <header class="lesson-header">
+          <button class="lesson-close" id="simulator-close" type="button" aria-label="Close simulator">×</button>
+          <div class="lesson-progress"><span id="simulator-progress"></span></div>
+          <div class="lesson-status" id="simulator-counter"></div>
+        </header>
+        <main class="simulator-main">
+          <div class="simulator-titlebar">
+            <p class="eyebrow" id="simulator-label">Simulator</p>
+            <button class="rules-button" id="simulator-rules-button" type="button">View rules</button>
+          </div>
+          <h2 id="simulator-question">Loading…</h2>
+          <aside class="simulator-rules" id="simulator-rules" hidden>
+            <div class="rules-heading">
+              <strong id="rules-title">Rules</strong>
+              <button type="button" id="rules-close" aria-label="Close rules">×</button>
+            </div>
+            <div id="rules-content"></div>
+          </aside>
+          <div class="simulator-visual" id="simulator-visual"></div>
+          <div class="choice-grid" id="simulator-answers"></div>
+          <div class="simulator-feedback" id="simulator-feedback" hidden></div>
+          <button class="primary-button simulator-next" id="simulator-next" type="button" hidden>Next question</button>
+        </main>
+      </div>
+    </dialog>
+
     <div class="fatal-error" id="fatal-error" hidden role="alert">
-      <strong>Dutch OS could not load its repository data.</strong>
+      <strong>Polilingua could not load its repository data.</strong>
       <span>Serve the repository root over HTTP or check the deployed data paths.</span>
     </div>
   </body>

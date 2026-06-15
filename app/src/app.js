@@ -32,8 +32,8 @@ const TYPE_ICONS = {
 };
 
 const PROFILES = {
-  catalin: "Catalin",
-  dana: "Dana",
+  catalin: { name: "Catalin", avatar: "./assets/profiles/catalin.jpg" },
+  dana: { name: "Dana", avatar: "./assets/profiles/dana.jpg" },
 };
 
 function loadActiveProfile() {
@@ -49,6 +49,9 @@ const state = {
   visible: 24,
   practiceItems: null,
   lesson: null,
+  academyScope: "week",
+  leaderboardScope: "week",
+  simulator: null,
   profile: loadActiveProfile(),
 };
 
@@ -57,11 +60,11 @@ const elements = {
   latestWeek: document.querySelector("#latest-week"),
   latestWeekCount: document.querySelector("#latest-week-count"),
   heroSummary: document.querySelector("#hero-summary"),
-  todayLabel: document.querySelector("#today-label"),
   updatedLabel: document.querySelector("#updated-label"),
-  reviewButton: document.querySelector("#review-button"),
-  reviewCount: document.querySelector("#review-count"),
-  reviewContent: document.querySelector("#review-content"),
+  heroNavButtons: document.querySelectorAll("[data-scroll-target]"),
+  heroDictionary: document.querySelector("#hero-dictionary"),
+  leaderboardScopes: document.querySelectorAll("[data-leaderboard-scope]"),
+  leaderboardList: document.querySelector("#leaderboard-list"),
   searchForm: document.querySelector("#search-form"),
   searchInput: document.querySelector("#search-input"),
   typeFilter: document.querySelector("#type-filter"),
@@ -78,11 +81,17 @@ const elements = {
   dialogContent: document.querySelector("#dialog-content"),
   dialogClose: document.querySelector("#dialog-close"),
   themeToggle: document.querySelector("#theme-toggle"),
-  profileSelect: document.querySelector("#profile-select"),
+  profileControl: document.querySelector(".profile-control"),
+  profileTrigger: document.querySelector("#profile-trigger"),
+  profileMenu: document.querySelector("#profile-menu"),
+  profileName: document.querySelector("#profile-name"),
+  profileOptions: document.querySelectorAll("[data-profile]"),
+  profileAvatar: document.querySelector("#profile-avatar"),
   fatalError: document.querySelector("#fatal-error"),
   academyStarts: document.querySelectorAll(".academy-start"),
-  academyReview: document.querySelector("#academy-review"),
-  practiceWeekFilter: document.querySelector("#practice-week-filter"),
+  academyScopes: document.querySelectorAll("[data-scope]"),
+  openDictionary: document.querySelector("#open-dictionary"),
+  dictionaryStageCopy: document.querySelector("#dictionary-stage-copy"),
   practiceXp: document.querySelector("#practice-xp"),
   practiceStreak: document.querySelector("#practice-streak"),
   practiceAccuracy: document.querySelector("#practice-accuracy"),
@@ -94,7 +103,6 @@ const elements = {
   lessonDialog: document.querySelector("#lesson-dialog"),
   lessonClose: document.querySelector("#lesson-close"),
   lessonProgressBar: document.querySelector("#lesson-progress-bar"),
-  lessonHearts: document.querySelector("#lesson-hearts"),
   lessonCounter: document.querySelector("#lesson-counter"),
   questionLabel: document.querySelector("#question-label"),
   lessonTitle: document.querySelector("#lesson-title"),
@@ -104,7 +112,28 @@ const elements = {
   lessonFeedback: document.querySelector("#lesson-feedback"),
   feedbackTitle: document.querySelector("#feedback-title"),
   feedbackCopy: document.querySelector("#feedback-copy"),
+  lessonRetry: document.querySelector("#lesson-retry"),
   lessonCheck: document.querySelector("#lesson-check"),
+  dictionaryDialog: document.querySelector("#dictionary-dialog"),
+  dictionaryClose: document.querySelector("#dictionary-close"),
+  dictionaryScopeLabel: document.querySelector("#dictionary-scope-label"),
+  dictionaryWeekControl: document.querySelector("#dictionary-week-control"),
+  simulatorStarts: document.querySelectorAll(".simulator-start"),
+  simulatorDialog: document.querySelector("#simulator-dialog"),
+  simulatorClose: document.querySelector("#simulator-close"),
+  simulatorProgress: document.querySelector("#simulator-progress"),
+  simulatorCounter: document.querySelector("#simulator-counter"),
+  simulatorLabel: document.querySelector("#simulator-label"),
+  simulatorQuestion: document.querySelector("#simulator-question"),
+  simulatorVisual: document.querySelector("#simulator-visual"),
+  simulatorAnswers: document.querySelector("#simulator-answers"),
+  simulatorFeedback: document.querySelector("#simulator-feedback"),
+  simulatorNext: document.querySelector("#simulator-next"),
+  simulatorRulesButton: document.querySelector("#simulator-rules-button"),
+  simulatorRules: document.querySelector("#simulator-rules"),
+  rulesTitle: document.querySelector("#rules-title"),
+  rulesContent: document.querySelector("#rules-content"),
+  rulesClose: document.querySelector("#rules-close"),
 };
 
 function mondayOf(date) {
@@ -153,71 +182,58 @@ function renderStats() {
   `).join("");
 }
 
+function leaderboardStats(profile) {
+  const progress = loadProgress(profile);
+  if (state.leaderboardScope === "all") return progress;
+  return progress.byWeek?.[mondayOf(new Date())] ?? { sessions: 0, answered: 0, correct: 0, xp: 0 };
+}
+
+function renderLeaderboard() {
+  const ranking = Object.entries(PROFILES)
+    .map(([id, profile]) => ({ id, ...profile, stats: leaderboardStats(id) }))
+    .sort((left, right) => right.stats.xp - left.stats.xp || right.stats.correct - left.stats.correct || left.name.localeCompare(right.name));
+  elements.leaderboardList.innerHTML = ranking.map((profile, index) => {
+    const accuracy = profile.stats.answered ? Math.round((profile.stats.correct / profile.stats.answered) * 100) : 0;
+    return `
+      <article class="leaderboard-row${profile.id === state.profile ? " is-active" : ""}">
+        <span class="leaderboard-rank">${index + 1}</span>
+        <img src="${profile.avatar}" alt="${profile.name}">
+        <div class="leaderboard-person">
+          <strong>${profile.name}${profile.id === state.profile ? " <small>You</small>" : ""}</strong>
+          <span>${profile.stats.sessions ?? 0} lessons · ${accuracy}% accuracy</span>
+        </div>
+        <div class="leaderboard-xp"><strong>${profile.stats.xp ?? 0}</strong><span>XP</span></div>
+      </article>`;
+  }).join("");
+}
+
+function setLeaderboardScope(scope) {
+  state.leaderboardScope = scope;
+  elements.leaderboardScopes.forEach((button) => {
+    button.setAttribute("aria-pressed", String(button.dataset.leaderboardScope === scope));
+  });
+  renderLeaderboard();
+}
+
 function renderHero() {
-  const { entrypoint, statistics, catalog } = state.data;
-  const latestWeek = entrypoint.latest_week_start;
-  const latestCount = statistics.by_week_start[latestWeek] ?? 0;
-  const latestItems = catalog.items.filter((item) => item.week_start === latestWeek);
-  const expressions = latestItems.filter((item) => item.type === "expression").length;
-  const particles = latestItems.filter((item) => item.type === "particle").length;
+  const { statistics, catalog } = state.data;
+  const today = new Date();
   const currentWeek = mondayOf(new Date());
+  const currentCount = statistics.by_week_start[currentWeek] ?? 0;
+  const currentItems = catalog.items.filter((item) => item.week_start === currentWeek);
+  const expressions = currentItems.filter((item) => item.type === "expression").length;
+  const particles = currentItems.filter((item) => item.type === "particle").length;
 
-  elements.todayLabel.textContent = `Today · ${new Intl.DateTimeFormat("en-GB", { weekday: "long", day: "numeric", month: "long" }).format(new Date())}`;
-  elements.latestWeek.textContent = formatWeek(latestWeek, { year: true });
-  elements.latestWeekCount.textContent = `${latestCount} items first learned`;
-  elements.heroSummary.textContent = latestWeek === currentWeek
-    ? `This week you added ${latestCount} items, including ${expressions} expressions and ${particles} particles.`
-    : `Your latest recorded week added ${latestCount} items. Pick up where you left off with a focused review.`;
+  elements.latestWeek.textContent = new Intl.DateTimeFormat("en-GB", {
+    day: "numeric",
+    month: "short",
+    year: "numeric",
+  }).format(today);
+  elements.latestWeekCount.textContent = `${currentCount} ${currentCount === 1 ? "item" : "items"} learned this week`;
+  elements.heroSummary.textContent = currentCount
+    ? `This week you added ${currentCount} items, including ${expressions} expressions and ${particles} particles.`
+    : "Nothing has been added this week yet. Your full academy and earlier lessons are ready whenever you are.";
   elements.updatedLabel.textContent = `Updated ${formatWeek(state.data.catalog.generated_at, { year: true })}`;
-}
-
-function reviewExercises(review) {
-  return ["recall", "translation", "cloze", "grammar", "roleplay"]
-    .flatMap((section) => review[section].map((exercise) => ({ ...exercise, section })));
-}
-
-function renderReview() {
-  const latestWeek = state.data.entrypoint.latest_week_start;
-  const review = state.data.reviews.find((item) => item.week_start === latestWeek);
-  if (!review) {
-    elements.reviewContent.innerHTML = "<p>No prepared review is available for the latest week yet.</p>";
-    elements.reviewCount.textContent = "0 prompts";
-    return;
-  }
-
-  const exercises = reviewExercises(review);
-  const weekItems = state.data.catalog.items.filter((item) => item.week_start === latestWeek);
-  const curriculum = Object.entries(TYPE_PLURALS)
-    .map(([type, label]) => [label, weekItems.filter((item) => item.type === type).length])
-    .filter(([, count]) => count > 0);
-  const activityCounts = ["recall", "translation", "cloze", "grammar", "roleplay"]
-    .map((section) => [section, review[section].length])
-    .filter(([, count]) => count > 0);
-  elements.reviewCount.textContent = `${exercises.length} prompts`;
-  elements.reviewContent.innerHTML = `
-    <div class="review-summary">
-      <span class="review-number">${exercises.length}</span>
-      <div>
-        <strong>Prepared exercises</strong>
-        <span>Teacher-prepared application prompts</span>
-      </div>
-    </div>
-    <div class="workshop-breakdown">
-      <div>
-        <strong>This week’s curriculum</strong>
-        <span>${curriculum.map(([label, count]) => `${count} ${label.toLocaleLowerCase()}`).join(" · ")}</span>
-      </div>
-      <div>
-        <strong>Workshop activities</strong>
-        <span>${activityCounts.map(([label, count]) => `${count} ${label}`).join(" · ")}</span>
-      </div>
-    </div>
-    <div class="review-topics">
-      ${review.focus_ids.slice(0, 5).map((id) => `<span>${escapeHtml(id.split("-").slice(1).join(" ").replaceAll("_", " "))}</span>`).join("")}
-    </div>
-    <button class="primary-button" id="open-review" type="button">Open full workshop</button>
-  `;
-  document.querySelector("#open-review").addEventListener("click", () => showReviewDialog(review));
 }
 
 function populateFilters() {
@@ -230,9 +246,6 @@ function populateFilters() {
   elements.weekFilter.insertAdjacentHTML("beforeend", weeks.map((week) => `
     <option value="${week}">Week of ${formatWeek(week, { year: true })}</option>
   `).join(""));
-  elements.practiceWeekFilter.innerHTML = weeks.map((week) => `
-    <option value="${week}">Week of ${formatWeek(week, { year: true })}</option>
-  `).join("");
 }
 
 function renderPracticeProgress(progress = loadProgress(state.profile)) {
@@ -246,7 +259,7 @@ function renderPracticeProgress(progress = loadProgress(state.profile)) {
 
 function renderCoverage(progress = loadProgress(state.profile)) {
   if (!state.data) return;
-  const week = elements.practiceWeekFilter.value || state.data.entrypoint.latest_week_start;
+  const week = state.data.latestWeekStart;
   const practiceTypes = new Set(["word", "expression", "particle"]);
   const ids = state.data.catalog.items
     .filter((item) => item.week_start === week && practiceTypes.has(item.type))
@@ -280,13 +293,13 @@ function renderQuestion() {
   const progress = (lesson.index / lesson.questions.length) * 100;
   elements.lessonProgressBar.style.width = `${progress}%`;
   elements.lessonCounter.textContent = `${lesson.index + 1} / ${lesson.questions.length}`;
-  elements.lessonHearts.textContent = Array.from({ length: 3 }, (_, index) => index < lesson.hearts ? "♥" : "♡").join(" ");
-  elements.lessonHearts.setAttribute("aria-label", `${lesson.hearts} hearts remaining`);
   elements.questionLabel.textContent = question.label;
   elements.lessonTitle.textContent = question.prompt;
-  elements.questionHint.hidden = !question.hint;
-  elements.questionHint.textContent = question.hint ?? "";
+  const cue = question.expected ? `Expected: ${question.expected}` : question.hint;
+  elements.questionHint.hidden = !cue;
+  elements.questionHint.textContent = cue ?? "";
   elements.lessonFeedback.hidden = true;
+  elements.lessonRetry.hidden = true;
   elements.lessonFooter.dataset.state = "idle";
   elements.lessonCheck.textContent = "Check";
   elements.lessonCheck.disabled = true;
@@ -329,6 +342,7 @@ function renderQuestion() {
 function finishLesson() {
   const progress = saveSessionProgress(state.lesson.results, state.lesson.profile);
   renderPracticeProgress(progress);
+  renderLeaderboard();
   const correct = state.lesson.results.filter((result) => result.correct).length;
   const total = state.lesson.results.length;
   elements.lessonProgressBar.style.width = "100%";
@@ -345,8 +359,9 @@ function finishLesson() {
   `;
   elements.lessonFeedback.hidden = true;
   elements.lessonFooter.dataset.state = "complete";
+  elements.lessonRetry.hidden = false;
   elements.lessonCheck.disabled = false;
-  elements.lessonCheck.textContent = "Finish";
+  elements.lessonCheck.textContent = "Close";
   state.lesson.complete = true;
 }
 
@@ -359,7 +374,7 @@ function checkLessonAnswer() {
   }
   if (lesson.checked) {
     lesson.index += 1;
-    if (lesson.index >= lesson.questions.length || lesson.hearts === 0) finishLesson();
+    if (lesson.index >= lesson.questions.length) finishLesson();
     else renderQuestion();
     return;
   }
@@ -367,40 +382,50 @@ function checkLessonAnswer() {
   const correct = checkAnswer(question, lesson.response);
   lesson.checked = true;
   lesson.results.push({ itemId: question.itemId, correct });
-  if (!correct) {
-    lesson.hearts -= 1;
-    if (!question.retry) {
-      lesson.questions.push({ ...question, retry: true, label: "Try this one again" });
-    }
-  }
   elements.lessonFeedback.hidden = false;
   elements.feedbackTitle.textContent = correct ? "Correct!" : "Not quite";
   elements.feedbackCopy.textContent = correct ? "+10 XP" : `Correct answer: ${question.answer}`;
   elements.lessonFooter.dataset.state = correct ? "correct" : "wrong";
-  elements.lessonCheck.textContent = lesson.index === lesson.questions.length - 1 || lesson.hearts === 0 ? "See results" : "Continue";
+  elements.lessonCheck.textContent = lesson.index === lesson.questions.length - 1 ? "See results" : "Continue";
   elements.lessonCheck.disabled = false;
   elements.answerArea.querySelectorAll("button, input").forEach((control) => { control.disabled = true; });
 }
 
 async function startLesson(mode = "recall", trigger = null) {
-  const sizes = { recognition: 20, recall: 25, mastery: 30 };
+  const sizes = { recognition: 20, recall: 20, sentences: 20 };
   const originalLabel = trigger?.textContent;
   if (trigger) {
     trigger.disabled = true;
     trigger.textContent = "Building lesson…";
   }
   try {
-    state.practiceItems ??= await loadPracticeItems(state.data.entrypoint);
+    state.practiceItems ??= await loadPracticeItems(state.data.catalog);
+    const week = state.academyScope === "week" ? state.data.latestWeekStart : "all";
+    const previousIds = state.lesson?.mode === mode && state.lesson?.scope === state.academyScope
+      ? state.lesson.sourceIds
+      : [];
     const session = buildSession(state.practiceItems, {
-      week: mode === "mastery" ? "all" : elements.practiceWeekFilter.value,
-      size: sizes[mode] ?? 25,
+      week,
+      size: sizes[mode] ?? 20,
       weakIds: weakItemIds(),
+      excludeIds: mode === "sentences" ? [] : previousIds,
       mode,
     });
     if (!session.questions.length) throw new Error("No practice items available");
-    state.lesson = { ...session, profile: state.profile, index: 0, hearts: 3, results: [], response: "", checked: false, complete: false };
+    state.lesson = {
+      ...session,
+      mode,
+      scope: state.academyScope,
+      sourceIds: session.questions.map((question) => question.itemId),
+      profile: state.profile,
+      index: 0,
+      results: [],
+      response: "",
+      checked: false,
+      complete: false,
+    };
     renderQuestion();
-    elements.lessonDialog.showModal();
+    if (!elements.lessonDialog.open) elements.lessonDialog.showModal();
   } catch (error) {
     console.error(error);
     elements.fatalError.hidden = false;
@@ -547,29 +572,231 @@ async function showItemDialog(itemId) {
   }
 }
 
-function showReviewDialog(review) {
-  const exercises = reviewExercises(review);
-  elements.dialogType.textContent = `Prepared review · Week of ${formatWeek(review.week_start, { year: true })}`;
-  elements.dialogTitle.textContent = "Weekly practice";
-  elements.dialogContent.innerHTML = `
-    <div class="exercise-list">
-      ${exercises.map((exercise, index) => `
-        <details ${index === 0 ? "open" : ""}>
-          <summary><span>${TYPE_LABELS[exercise.section] ?? exercise.section}</span>${escapeHtml(exercise.prompt)}</summary>
-          <div><strong>Answer</strong><p>${escapeHtml(exercise.answer)}</p></div>
-        </details>
-      `).join("")}
-    </div>
-  `;
-  elements.dialog.showModal();
-}
-
 function updateFilters() {
   state.query = elements.searchInput.value;
   state.type = elements.typeFilter.value;
   state.week = elements.weekFilter.value;
   state.visible = 24;
   renderLibrary();
+}
+
+function setAcademyScope(scope) {
+  state.academyScope = scope;
+  elements.academyScopes.forEach((button) => {
+    button.setAttribute("aria-pressed", String(button.dataset.scope === scope));
+  });
+  elements.dictionaryStageCopy.textContent = scope === "week"
+    ? "Search and explore everything first learned this week."
+    : "Search and filter your complete Dutch learning history.";
+}
+
+function openDictionary() {
+  const weekly = state.academyScope === "week";
+  state.query = "";
+  state.type = "all";
+  state.week = weekly ? state.data.latestWeekStart : "all";
+  state.visible = 24;
+  elements.searchInput.value = "";
+  elements.typeFilter.value = "all";
+  elements.weekFilter.value = state.week;
+  elements.dictionaryWeekControl.hidden = weekly;
+  elements.dictionaryScopeLabel.textContent = weekly
+    ? `Week of ${formatWeek(state.week, { year: true })}`
+    : "Full content";
+  renderLibrary();
+  elements.dictionaryDialog.showModal();
+}
+
+const HOUR_WORDS = ["twaalf", "een", "twee", "drie", "vier", "vijf", "zes", "zeven", "acht", "negen", "tien", "elf"];
+const ENGLISH_HOURS = ["twelve", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven"];
+
+function dutchTime(hour, minute) {
+  const current = HOUR_WORDS[hour % 12];
+  const next = HOUR_WORDS[(hour + 1) % 12];
+  const forms = {
+    0: `${current} uur`,
+    5: `vijf over ${current}`,
+    10: `tien over ${current}`,
+    15: `kwart over ${current}`,
+    20: `tien voor half ${next}`,
+    25: `vijf voor half ${next}`,
+    30: `half ${next}`,
+    35: `vijf over half ${next}`,
+    40: `tien over half ${next}`,
+    45: `kwart voor ${next}`,
+    50: `tien voor ${next}`,
+    55: `vijf voor ${next}`,
+  };
+  return forms[minute];
+}
+
+function englishTime(hour, minute) {
+  const current = ENGLISH_HOURS[hour % 12];
+  const next = ENGLISH_HOURS[(hour + 1) % 12];
+  const forms = {
+    0: `${current} o'clock`,
+    5: `five past ${current}`,
+    10: `ten past ${current}`,
+    15: `quarter past ${current}`,
+    20: `twenty past ${current}`,
+    25: `twenty-five past ${current}`,
+    30: `half past ${current}`,
+    35: `twenty-five to ${next}`,
+    40: `twenty to ${next}`,
+    45: `quarter to ${next}`,
+    50: `ten to ${next}`,
+    55: `five to ${next}`,
+  };
+  return forms[minute];
+}
+
+function shuffled(values) {
+  const result = [...values];
+  for (let index = result.length - 1; index > 0; index -= 1) {
+    const other = Math.floor(Math.random() * (index + 1));
+    [result[index], result[other]] = [result[other], result[index]];
+  }
+  return result;
+}
+
+function timeSimulatorQuestions() {
+  const candidates = [];
+  for (let hour = 1; hour <= 12; hour += 1) {
+    for (let minute = 0; minute < 60; minute += 5) candidates.push({ hour, minute });
+  }
+  return shuffled(candidates).slice(0, 10).map(({ hour, minute }) => {
+    const answer = dutchTime(hour, minute);
+    const distractors = shuffled(candidates)
+      .map((candidate) => dutchTime(candidate.hour, candidate.minute))
+      .filter((value, index, values) => value !== answer && values.indexOf(value) === index)
+      .slice(0, 3);
+    return {
+      question: "Hoe laat is het?",
+      answer,
+      translation: `${String(hour).padStart(2, "0")}:${String(minute).padStart(2, "0")} · ${englishTime(hour, minute)}`,
+      options: shuffled([answer, ...distractors]),
+      visual: `<div class="digital-clock" role="img" aria-label="Digital clock showing ${String(hour).padStart(2, "0")}:${String(minute).padStart(2, "0")}">
+        <span>${String(hour).padStart(2, "0")}</span><i>:</i><span>${String(minute).padStart(2, "0")}</span>
+      </div>`,
+    };
+  });
+}
+
+const LOCATION_SCENES = [
+  ["in", "in", "inside / in", "The ball is inside the box"],
+  ["op", "on", "on top of", "The ball is on the box"],
+  ["onder", "under", "under", "The ball is under the box"],
+  ["naast", "next", "next to", "The ball is next to the box"],
+  ["voor", "front", "in front of", "The ball is in front of the box"],
+  ["achter", "behind", "behind", "The ball is behind the box"],
+  ["tussen", "between", "between", "The ball is between the boxes"],
+  ["tegen", "against", "against", "The ball is against the wall"],
+  ["aan", "attached", "on / attached to", "The picture is on the wall"],
+  ["links van", "left", "to the left of", "The ball is left of the box"],
+  ["rechts van", "right", "to the right of", "The ball is right of the box"],
+  ["boven", "above", "above", "The ball is above the box"],
+];
+
+function locationSimulatorQuestions() {
+  return shuffled(LOCATION_SCENES).slice(0, 10).map(([answer, scene, translation, description]) => ({
+    question: "Welk plaatswoord past?",
+    answer,
+    translation,
+    options: shuffled([answer, ...shuffled(LOCATION_SCENES.map(([word]) => word).filter((word) => word !== answer)).slice(0, 3)]),
+    visual: `<div class="place-scene place-scene--${scene}" aria-label="${description}"><span class="scene-ball"></span><span class="scene-box"></span>${scene === "between" ? '<span class="scene-box scene-box--second"></span>' : ""}${["against", "attached"].includes(scene) ? '<span class="scene-wall"></span>' : ""}</div>`,
+  }));
+}
+
+function startSimulator(mode) {
+  const questions = mode === "time" ? timeSimulatorQuestions() : locationSimulatorQuestions();
+  state.simulator = { mode, questions, index: 0, correct: 0, locked: false };
+  elements.simulatorRules.hidden = true;
+  renderSimulatorQuestion();
+  if (!elements.simulatorDialog.open) elements.simulatorDialog.showModal();
+}
+
+function simulatorRulesHtml(mode) {
+  if (mode === "time") {
+    return `
+      <div class="rule-intro">
+        <strong>The central idea</strong>
+        <p>Dutch speakers organize the hour around two anchors: the current full hour and the next half hour. From :20 until :40, the phrase is built around <em>half + the next hour</em>.</p>
+      </div>
+      <ol class="rule-steps">
+        <li><strong>Minutes 00–15: count after the current hour.</strong><span>Use <em>over</em>: 08:10 is <em>tien over acht</em>. At :15 use <em>kwart over</em>.</span></li>
+        <li><strong>Minutes 20–25: count down to the half hour.</strong><span>08:20 is ten minutes before 08:30, so say <em>tien voor half negen</em>. The hour after <em>half</em> is always the upcoming hour.</span></li>
+        <li><strong>Minute 30: say half + the upcoming hour.</strong><span>08:30 is <em>half negen</em>. This literally means halfway toward nine.</span></li>
+        <li><strong>Minutes 35–40: count after the half hour.</strong><span>08:35 is <em>vijf over half negen</em>; 08:40 is <em>tien over half negen</em>.</span></li>
+        <li><strong>Minutes 45–55: count down to the next full hour.</strong><span>Use <em>voor</em>: 08:45 is <em>kwart voor negen</em>; 08:55 is <em>vijf voor negen</em>.</span></li>
+        <li><strong>Exact hours use uur.</strong><span>08:00 is <em>acht uur</em>. In everyday speech, <em>uur</em> is normally omitted in the other patterns.</span></li>
+      </ol>
+      <div class="rule-warning"><strong>Common English-speaker mistake</strong><p><em>Half negen</em> means 08:30, never 09:30. Always look forward to the next hour after <em>half</em>.</p></div>`;
+  }
+  return `
+    <p>Use a location word before the noun phrase: <strong>De bal ligt onder de tafel.</strong></p>
+    <dl class="rules-list rules-list--words">
+      ${LOCATION_SCENES.map(([word, , translation]) => `<div><dt>${escapeHtml(word)}</dt><dd>${escapeHtml(translation)}</dd></div>`).join("")}
+    </dl>
+    <p class="rule-note"><strong>Useful pattern:</strong> subject + <em>staat/ligt/zit</em> + location word + noun.</p>`;
+}
+
+function showSimulatorRules() {
+  const mode = state.simulator?.mode ?? "time";
+  elements.rulesTitle.textContent = mode === "time" ? "How to tell time in Dutch" : "Dutch location words";
+  elements.rulesContent.innerHTML = simulatorRulesHtml(mode);
+  elements.simulatorRules.hidden = false;
+}
+
+function renderSimulatorQuestion() {
+  const simulator = state.simulator;
+  const question = simulator.questions[simulator.index];
+  elements.simulatorLabel.textContent = simulator.mode === "time" ? "Time simulator" : "Location simulator";
+  elements.simulatorQuestion.textContent = question.question;
+  elements.simulatorCounter.textContent = `${simulator.index + 1} / ${simulator.questions.length}`;
+  elements.simulatorProgress.style.width = `${(simulator.index / simulator.questions.length) * 100}%`;
+  elements.simulatorVisual.innerHTML = question.visual;
+  elements.simulatorFeedback.hidden = true;
+  elements.simulatorNext.hidden = true;
+  elements.simulatorAnswers.innerHTML = question.options.map((option, index) => `
+    <button class="answer-choice" type="button" data-simulator-answer="${escapeHtml(option)}"><span>${index + 1}</span>${escapeHtml(option)}</button>
+  `).join("");
+  elements.simulatorAnswers.querySelectorAll("[data-simulator-answer]").forEach((button) => {
+    button.addEventListener("click", () => answerSimulator(button.dataset.simulatorAnswer));
+  });
+}
+
+function answerSimulator(response) {
+  const simulator = state.simulator;
+  if (simulator.locked) return;
+  simulator.locked = true;
+  const question = simulator.questions[simulator.index];
+  const correct = response === question.answer;
+  if (correct) simulator.correct += 1;
+  elements.simulatorFeedback.hidden = false;
+  elements.simulatorFeedback.className = `simulator-feedback ${correct ? "correct" : "wrong"}`;
+  elements.simulatorFeedback.innerHTML = correct
+    ? `<strong>Correct!</strong><span>${escapeHtml(question.answer)} · ${escapeHtml(question.translation)}</span>`
+    : `<strong>Correct answer: ${escapeHtml(question.answer)}</strong><span>${escapeHtml(question.translation)}</span>`;
+  elements.simulatorAnswers.querySelectorAll("button").forEach((button) => { button.disabled = true; });
+  elements.simulatorNext.hidden = false;
+  elements.simulatorNext.textContent = simulator.index === simulator.questions.length - 1 ? "See results" : "Next question";
+}
+
+function nextSimulatorQuestion() {
+  const simulator = state.simulator;
+  simulator.index += 1;
+  simulator.locked = false;
+  if (simulator.index < simulator.questions.length) {
+    renderSimulatorQuestion();
+    return;
+  }
+  elements.simulatorProgress.style.width = "100%";
+  elements.simulatorQuestion.textContent = "Simulator complete";
+  elements.simulatorVisual.innerHTML = `<div class="simulator-score"><strong>${simulator.correct}/10</strong><span>correct</span></div>`;
+  elements.simulatorAnswers.innerHTML = `<button class="primary-button" id="simulator-again" type="button">Try another round</button>`;
+  elements.simulatorFeedback.hidden = true;
+  elements.simulatorNext.hidden = true;
+  document.querySelector("#simulator-again").addEventListener("click", () => startSimulator(simulator.mode));
 }
 
 function bindEvents() {
@@ -580,7 +807,7 @@ function bindEvents() {
   elements.clearFilters.addEventListener("click", () => {
     elements.searchInput.value = "";
     elements.typeFilter.value = "all";
-    elements.weekFilter.value = "all";
+    elements.weekFilter.value = state.academyScope === "week" ? state.data.latestWeekStart : "all";
     updateFilters();
     elements.searchInput.focus();
   });
@@ -588,30 +815,58 @@ function bindEvents() {
     state.visible += 24;
     renderLibrary();
   });
-  elements.reviewButton.addEventListener("click", () => document.querySelector("#review").scrollIntoView({ behavior: "smooth" }));
+  elements.heroNavButtons.forEach((button) => button.addEventListener("click", () => {
+    document.querySelector(button.dataset.scrollTarget)?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }));
+  elements.heroDictionary.addEventListener("click", () => {
+    setAcademyScope("all");
+    openDictionary();
+  });
   elements.dialogClose.addEventListener("click", () => elements.dialog.close());
   elements.dialog.addEventListener("click", (event) => {
     if (event.target === elements.dialog) elements.dialog.close();
   });
-  elements.themeToggle.addEventListener("click", () => {
-    const dark = document.documentElement.dataset.theme !== "dark";
+  elements.themeToggle.addEventListener("change", () => {
+    const dark = elements.themeToggle.checked;
     document.documentElement.dataset.theme = dark ? "dark" : "light";
     localStorage.setItem("dutch-os-theme", dark ? "dark" : "light");
-    elements.themeToggle.setAttribute("aria-label", dark ? "Use light theme" : "Use dark theme");
   });
-  elements.profileSelect.addEventListener("change", () => {
-    state.profile = elements.profileSelect.value;
-    localStorage.setItem("dutch-os-active-profile", state.profile);
-    renderProfile();
-    renderPracticeProgress();
+  elements.profileTrigger.addEventListener("click", () => {
+    const open = elements.profileTrigger.getAttribute("aria-expanded") === "true";
+    setProfileMenuOpen(!open);
+  });
+  elements.profileOptions.forEach((option) => {
+    option.addEventListener("click", () => {
+      state.profile = option.dataset.profile;
+      localStorage.setItem("dutch-os-active-profile", state.profile);
+      renderProfile();
+      renderPracticeProgress();
+      renderLeaderboard();
+      setProfileMenuOpen(false);
+      elements.profileTrigger.focus();
+    });
+  });
+  document.addEventListener("click", (event) => {
+    if (!elements.profileControl.contains(event.target)) setProfileMenuOpen(false);
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      setProfileMenuOpen(false);
+      elements.profileTrigger.focus();
+    }
   });
   elements.academyStarts.forEach((button) => button.addEventListener("click", () => startLesson(button.dataset.mode, button)));
-  elements.academyReview.addEventListener("click", () => {
-    const review = state.data.reviews.find((item) => item.week_start === elements.practiceWeekFilter.value);
-    if (review) showReviewDialog(review);
-  });
-  elements.practiceWeekFilter.addEventListener("change", () => renderPracticeProgress());
+  elements.academyScopes.forEach((button) => button.addEventListener("click", () => setAcademyScope(button.dataset.scope)));
+  elements.leaderboardScopes.forEach((button) => button.addEventListener("click", () => setLeaderboardScope(button.dataset.leaderboardScope)));
+  elements.openDictionary.addEventListener("click", openDictionary);
+  elements.dictionaryClose.addEventListener("click", () => elements.dictionaryDialog.close());
+  elements.simulatorStarts.forEach((button) => button.addEventListener("click", () => startSimulator(button.dataset.simulator)));
+  elements.simulatorClose.addEventListener("click", () => elements.simulatorDialog.close());
+  elements.simulatorNext.addEventListener("click", nextSimulatorQuestion);
+  elements.simulatorRulesButton.addEventListener("click", showSimulatorRules);
+  elements.rulesClose.addEventListener("click", () => { elements.simulatorRules.hidden = true; });
   elements.lessonCheck.addEventListener("click", checkLessonAnswer);
+  elements.lessonRetry.addEventListener("click", () => startLesson(state.lesson.mode));
   elements.lessonClose.addEventListener("click", () => elements.lessonDialog.close());
 }
 
@@ -619,19 +874,18 @@ async function init() {
   const savedTheme = localStorage.getItem("dutch-os-theme");
   if (savedTheme) {
     document.documentElement.dataset.theme = savedTheme;
-    elements.themeToggle.setAttribute("aria-label", savedTheme === "dark" ? "Use light theme" : "Use dark theme");
   }
-  elements.profileSelect.value = state.profile;
+  elements.themeToggle.checked = savedTheme === "dark";
   bindEvents();
   try {
     state.data = await loadDashboardData();
     renderHero();
     renderStats();
-    renderReview();
+    setLeaderboardScope("week");
     populateFilters();
+    setAcademyScope("week");
     renderProfile();
     renderPracticeProgress();
-    renderLibrary();
   } catch (error) {
     console.error(error);
     elements.fatalError.hidden = false;
@@ -640,9 +894,26 @@ async function init() {
 }
 
 function renderProfile() {
-  const name = PROFILES[state.profile];
+  const { name, avatar } = PROFILES[state.profile];
+  elements.profileAvatar.src = avatar;
+  elements.profileAvatar.alt = `${name} profile photo`;
+  elements.profileName.textContent = name;
+  elements.profileOptions.forEach((option) => {
+    const selected = option.dataset.profile === state.profile;
+    option.setAttribute("aria-checked", String(selected));
+    option.classList.toggle("selected", selected);
+  });
   elements.coverageTitle.textContent = `${name}'s weekly coverage`;
   elements.practiceXp.closest(".practice-stats").setAttribute("aria-label", `${name}'s local practice progress`);
+}
+
+function setProfileMenuOpen(open) {
+  elements.profileTrigger.setAttribute("aria-expanded", String(open));
+  elements.profileMenu.hidden = !open;
+  if (open) {
+    const selected = elements.profileMenu.querySelector(`[data-profile="${state.profile}"]`);
+    selected?.focus();
+  }
 }
 
 init();

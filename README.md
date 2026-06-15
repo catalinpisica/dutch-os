@@ -12,14 +12,13 @@ schemas/     JSON Schemas for every knowledge and review file
 sources/     Uploaded note images and immutable processed source packages
 reviews/     Generated weekly review material
 metadata/    Ingestion history, tag registry, and derived statistics
-prompts/     Repeatable instructions for ingestion and tutoring
+prompts/     Repeatable instructions for note ingestion
 config/      Learner and ingestion preferences
 scripts/     Local integrity and JSON validation tools
 app/         Static GitHub Pages learning cockpit
-chatgpt/     Generated portable context for ChatGPT text chat and Voice mode
 ```
 
-Knowledge files are JSON arrays. Every item has a stable ID, Dutch text, an English translation or explanation, examples, source provenance, tags, a Monday `week_start`, and an ingestion date. The week start is stored both as a field and an ISO-date tag so ChatGPT can resolve calendar phrases such as "this week" directly. Category-specific fields add linguistic detail without changing the shared core.
+Knowledge files are JSON arrays. Every item has a stable ID, Dutch text, an English translation or explanation, examples, source provenance, tags, a Monday `week_start`, and an ingestion date. The week start is stored both as a field and an ISO-date tag so the app can build accurate weekly views. Category-specific fields add linguistic detail without changing the shared core.
 
 ## Add Weekly Notes
 
@@ -46,26 +45,9 @@ Codex should follow [prompts/ingest-weekly-notes.md](prompts/ingest-weekly-notes
 
 Original archived sources are immutable. Reviews and metadata are derived and may be regenerated.
 
-## ChatGPT Context
-
-Use [chatgpt/dutch-os-chatgpt-context.md](chatgpt/dutch-os-chatgpt-context.md) as the single file uploaded to a Dutch OS ChatGPT Project. It contains all learned material and prepared reviews, grouped by Monday `week_start`, so both text chat and Voice mode can answer questions such as "What did I learn this week?" without accessing GitHub during the conversation.
-
-After every ingestion, `python3 scripts/rebuild_metadata.py` regenerates this file automatically. Replace the previous Project file with the newly generated version; do not edit the export manually.
-
-## ChatGPT Tutoring
-
-When this repository is connected to ChatGPT, use [prompts/tutor.md](prompts/tutor.md) as the tutoring contract. ChatGPT should prioritize canonical entries, adapt practice to difficulty and mistake history, cite item IDs when useful, and avoid claiming that generated examples came from class notes.
-
-Useful practice requests include:
-
-- “Quiz me on items learned in the week starting 2026-06-08.”
-- “Create a Dutch roleplay using my recent expressions.”
-- “Practice my recurring word-order mistakes.”
-- “Give me a short voice exercise at my current level.”
-
 ## Web App
 
-The repository includes a static, mobile-first GitHub Pages cockpit under `app/`. The dashboard provides learning counts, latest-week context, prepared review previews, search, filters, and full canonical item details. Interactive lessons mix multiple choice, typed Dutch recall, and cloze questions, with immediate feedback, hearts, XP, streaks, retries, and device-local weak-item prioritization. It reads repository data without modifying it. Later roadmap phases add specialized trainers and ChatGPT prompt generation. AI tutoring and voice practice remain in ChatGPT.
+The repository includes a static, mobile-first GitHub Pages learning app under `app/`. It provides dashboard counts, weekly context, separate learner profiles, a leaderboard, search, filters, canonical item details, interactive lessons, and focused simulators. Practice progress is stored locally per profile. The app reads repository data without modifying it and currently has no chat, voice, connector, or LLM integration.
 
 ## Validation
 
@@ -76,7 +58,3 @@ python3 scripts/validate_json.py
 ```
 
 This checks JSON syntax, required schema fields, course-week labels, unique IDs, archived source paths, English-only data, cross-references, and catalog consistency.
-
-## Version
-
-This is the version 0.1 repository foundation. It intentionally does not include a web application, OCR service, or automated spaced-repetition engine yet.
