@@ -6,8 +6,8 @@
     <meta name="theme-color" content="#f4f0e6">
     <meta name="description" content="Polilingua, a personal Dutch learning academy and memory.">
     <title>Polilingua</title>
-    <link rel="stylesheet" href="./styles/main.css?v=20260615-7">
-    <script type="module" src="./src/app.js?v=20260615-7"></script>
+    <link rel="stylesheet" href="./styles/main.css?v=20260615-9">
+    <script type="module" src="./src/app.js?v=20260615-8"></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -113,6 +113,15 @@
             <div><strong id="practice-accuracy">—</strong><span>accuracy</span></div>
           </div>
         </div>
+
+        <article class="review-queue" aria-live="polite">
+          <div>
+            <p class="stage-kicker">Spaced repetition</p>
+            <h3>Review what is due</h3>
+            <p id="review-queue-detail">Building your personal review queue…</p>
+          </div>
+          <button class="primary-button" id="start-review-queue" type="button">Review due items</button>
+        </article>
 
         <div class="academy-grid">
           <article class="academy-stage">
