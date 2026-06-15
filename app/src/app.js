@@ -1,5 +1,5 @@
 import { loadCanonicalItem, loadDashboardData, loadPracticeItems } from "../data-loader/repository.js";
-import { buildSession, checkAnswer, describeGrammar, loadProgress, saveSessionProgress } from "./quiz.js?v=20260615-2";
+import { buildReviewQueue, buildReviewSession, buildSession, checkAnswer, describeGrammar, loadProgress, saveSessionProgress } from "./quiz.js?v=20260615-3";
 
 const TYPE_LABELS = {
   word: "Word",
@@ -100,6 +100,8 @@ const elements = {
   coveragePercent: document.querySelector("#coverage-percent"),
   coverageDetail: document.querySelector("#coverage-detail"),
   coverageBar: document.querySelector("#coverage-bar"),
+  reviewQueueDetail: document.querySelector("#review-queue-detail"),
+  startReviewQueue: document.querySelector("#start-review-queue"),
   lessonDialog: document.querySelector("#lesson-dialog"),
   lessonClose: document.querySelector("#lesson-close"),
   lessonProgressBar: document.querySelector("#lesson-progress-bar"),
@@ -291,6 +293,22 @@ function renderPracticeProgress(progress = loadProgress(state.profile)) {
     ? `${Math.round((scopedProgress.correct / scopedProgress.answered) * 100)}%`
     : "—";
   renderCoverage(progress, scopedProgress);
+  renderReviewQueue(progress);
+}
+
+function renderReviewQueue(progress = loadProgress(state.profile)) {
+  if (!state.data) return;
+  const week = state.academyScope === "week" ? mondayOf(new Date()) : "all";
+  const queue = buildReviewQueue(state.data.catalog.items, progress, { week, size: 20 });
+  const scope = state.academyScope === "week" ? "from this week" : "from your full library";
+  elements.reviewQueueDetail.textContent = queue.dueCount
+    ? `${queue.dueCount} item${queue.dueCount === 1 ? " is" : "s are"} due ${scope}. Mistakes and overdue material come first.`
+    : `Nothing is due ${scope}. Your next review will appear as intervals mature.`;
+  elements.startReviewQueue.disabled = queue.dueCount === 0;
+  const sessionSize = Math.min(20, queue.dueCount);
+  elements.startReviewQueue.textContent = queue.dueCount
+    ? `Review ${sessionSize} due item${sessionSize === 1 ? "" : "s"}`
+    : "Nothing due";
 }
 
 function renderCoverage(progress = loadProgress(state.profile), scopedProgress = progress) {
@@ -455,7 +473,7 @@ function checkLessonAnswer() {
 }
 
 async function startLesson(mode = "recall", trigger = null) {
-  const sizes = { recognition: 20, recall: 20, sentences: 20 };
+  const sizes = { recognition: 20, recall: 20, sentences: 20, review: 20 };
   const originalLabel = trigger?.textContent;
   if (trigger) {
     trigger.disabled = true;
@@ -467,13 +485,15 @@ async function startLesson(mode = "recall", trigger = null) {
     const previousIds = state.lesson?.mode === mode && state.lesson?.scope === state.academyScope
       ? state.lesson.sourceIds
       : [];
-    const session = buildSession(state.practiceItems, {
-      week,
-      size: sizes[mode] ?? 20,
-      weakIds: weakItemIds(),
-      excludeIds: mode === "sentences" ? [] : previousIds,
-      mode,
-    });
+    const session = mode === "review"
+      ? buildReviewSession(state.practiceItems, loadProgress(state.profile), { week, size: sizes.review })
+      : buildSession(state.practiceItems, {
+        week,
+        size: sizes[mode] ?? 20,
+        weakIds: weakItemIds(),
+        excludeIds: mode === "sentences" ? [] : previousIds,
+        mode,
+      });
     if (!session.questions.length) throw new Error("No practice items available");
     state.lesson = {
       ...session,
@@ -930,6 +950,7 @@ function bindEvents() {
     }
   });
   elements.academyStarts.forEach((button) => button.addEventListener("click", () => startLesson(button.dataset.mode, button)));
+  elements.startReviewQueue.addEventListener("click", () => startLesson("review", elements.startReviewQueue));
   elements.academyScopes.forEach((button) => button.addEventListener("click", () => setAcademyScope(button.dataset.scope)));
   elements.leaderboardScopes.forEach((button) => button.addEventListener("click", () => setLeaderboardScope(button.dataset.leaderboardScope)));
   elements.openDictionary.addEventListener("click", () => {

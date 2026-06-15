@@ -211,6 +211,63 @@ export function buildSession(allItems, options = {}) {
   return { questions, sourceCount: eligible.length };
 }
 
+function reviewIntervalDays(itemProgress) {
+  if (!itemProgress || itemProgress.wrong > itemProgress.correct) return 0;
+  const strength = Math.max(0, itemProgress.correct - itemProgress.wrong);
+  return [0, 1, 3, 7, 14, 30][Math.min(strength, 5)];
+}
+
+function daysSince(dateValue, now) {
+  if (!dateValue) return Number.POSITIVE_INFINITY;
+  const date = new Date(`${dateValue}T12:00:00`);
+  return Math.floor((now.getTime() - date.getTime()) / 86400000);
+}
+
+export function buildReviewQueue(allItems, progress, options = {}) {
+  const now = options.now ?? new Date();
+  const week = options.week ?? "all";
+  const size = options.size ?? 20;
+  const ranked = allItems
+    .filter((item) => PRACTICE_TYPES.has(item.type)
+      && item.dutch
+      && item.english
+      && (week === "all" || item.week_start === week))
+    .map((item) => {
+      const itemProgress = progress.items?.[item.id];
+      const interval = reviewIntervalDays(itemProgress);
+      const elapsed = daysSince(itemProgress?.lastPracticed, now);
+      const unseen = !itemProgress;
+      return {
+        item,
+        due: unseen || elapsed >= interval,
+        priority: itemProgress?.wrong > itemProgress?.correct ? 0 : unseen ? 2 : 1,
+        weakness: itemProgress ? itemProgress.wrong - itemProgress.correct : 0,
+        overdue: elapsed - interval,
+      };
+    })
+    .filter((entry) => entry.due)
+    .sort((left, right) => left.priority - right.priority
+      || right.weakness - left.weakness
+      || right.overdue - left.overdue
+      || left.item.dutch.localeCompare(right.item.dutch, "nl"));
+  return {
+    items: ranked.slice(0, size).map((entry) => entry.item),
+    dueCount: ranked.length,
+  };
+}
+
+export function buildReviewSession(allItems, progress, options = {}) {
+  const queue = buildReviewQueue(allItems, progress, options);
+  const recognitionPool = allItems.filter((item) => PRACTICE_TYPES.has(item.type) && item.dutch && item.english);
+  const questions = queue.items.map((item, index) => {
+    const cloze = makeCloze(item);
+    if (index % 3 === 0) return makeChoice(recognitionPool, item, index % 2 === 0 ? "nl-en" : "en-nl");
+    if (index % 3 === 1) return makeTyped(item);
+    return cloze ?? makeTyped(item);
+  });
+  return { questions, sourceCount: queue.dueCount };
+}
+
 export function checkAnswer(question, response) {
   return normalize(response) === normalize(question.answer);
 }
