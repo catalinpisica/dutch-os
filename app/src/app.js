@@ -1,5 +1,5 @@
 import { loadCanonicalItem, loadDashboardData, loadPracticeItems } from "../data-loader/repository.js";
-import { buildSession, checkAnswer, loadProgress, saveSessionProgress } from "./quiz.js";
+import { buildSession, checkAnswer, loadProgress, saveSessionProgress } from "./quiz.js?v=20260615-1";
 
 const TYPE_LABELS = {
   word: "Word",
@@ -52,6 +52,8 @@ const state = {
   academyScope: "week",
   leaderboardScope: "week",
   simulator: null,
+  mobileView: "home",
+  previousMobileView: "home",
   profile: loadActiveProfile(),
 };
 
@@ -134,7 +136,32 @@ const elements = {
   rulesTitle: document.querySelector("#rules-title"),
   rulesContent: document.querySelector("#rules-content"),
   rulesClose: document.querySelector("#rules-close"),
+  mobileTabs: document.querySelectorAll("[data-mobile-view]"),
 };
+
+function isMobileLayout() {
+  return window.matchMedia("(max-width: 620px)").matches;
+}
+
+function showMobileView(view, options = {}) {
+  if (view === "dictionary") {
+    state.previousMobileView = state.mobileView === "dictionary" ? state.previousMobileView : state.mobileView;
+  } else {
+    state.mobileView = view;
+  }
+  document.body.dataset.mobileView = view;
+  elements.mobileTabs.forEach((button) => {
+    const active = button.dataset.mobileView === view;
+    if (active) button.setAttribute("aria-current", "page");
+    else button.removeAttribute("aria-current");
+  });
+  if (options.scroll !== false) window.scrollTo({ top: 0, behavior: options.smooth ? "smooth" : "auto" });
+}
+
+function closeDictionary() {
+  elements.dictionaryDialog.close();
+  if (isMobileLayout()) showMobileView(state.previousMobileView, { scroll: false });
+}
 
 function mondayOf(date) {
   const value = new Date(date);
@@ -242,38 +269,53 @@ function populateFilters() {
     <option value="${type}">${TYPE_PLURALS[type] ?? type}</option>
   `).join(""));
 
-  const weeks = [...new Set(state.data.catalog.items.map((item) => item.week_start))].sort().reverse();
+  const weeks = [...new Set([
+    mondayOf(new Date()),
+    ...state.data.catalog.items.map((item) => item.week_start),
+  ])].sort().reverse();
   elements.weekFilter.insertAdjacentHTML("beforeend", weeks.map((week) => `
     <option value="${week}">Week of ${formatWeek(week, { year: true })}</option>
   `).join(""));
 }
 
 function renderPracticeProgress(progress = loadProgress(state.profile)) {
-  elements.practiceXp.textContent = progress.xp;
+  if (!state.data) return;
+  const currentWeek = mondayOf(new Date());
+  const scopedProgress = state.academyScope === "week"
+    ? progress.byWeek?.[currentWeek] ?? { sessions: 0, answered: 0, correct: 0, xp: 0, items: {} }
+    : progress;
+  const name = PROFILES[state.profile].name;
+  elements.coverageTitle.textContent = state.academyScope === "week"
+    ? `${name}'s coverage this week`
+    : `${name}'s full-content coverage`;
+  elements.practiceXp.textContent = scopedProgress.xp ?? 0;
   elements.practiceStreak.textContent = progress.streak;
-  elements.practiceAccuracy.textContent = progress.answered
-    ? `${Math.round((progress.correct / progress.answered) * 100)}%`
+  elements.practiceAccuracy.textContent = scopedProgress.answered
+    ? `${Math.round((scopedProgress.correct / scopedProgress.answered) * 100)}%`
     : "—";
-  renderCoverage(progress);
+  renderCoverage(progress, scopedProgress);
 }
 
-function renderCoverage(progress = loadProgress(state.profile)) {
-  if (!state.data) return;
-  const week = state.data.latestWeekStart;
+function renderCoverage(progress = loadProgress(state.profile), scopedProgress = progress) {
+  const currentWeek = mondayOf(new Date());
   const practiceTypes = new Set(["word", "expression", "particle"]);
   const ids = state.data.catalog.items
-    .filter((item) => item.week_start === week && practiceTypes.has(item.type))
+    .filter((item) => practiceTypes.has(item.type)
+      && (state.academyScope === "all" || item.week_start === currentWeek))
     .map((item) => item.id);
-  const practiced = ids.filter((id) => progress.items[id]?.correct || progress.items[id]?.wrong);
+  const itemProgress = state.academyScope === "week" ? scopedProgress.items ?? {} : progress.items;
+  const practiced = ids.filter((id) => itemProgress[id]?.correct || itemProgress[id]?.wrong);
   const mastered = ids.filter((id) => {
-    const item = progress.items[id];
+    const item = itemProgress[id];
     return item && item.correct >= 2 && item.correct > item.wrong;
   });
   const percent = ids.length ? Math.round((practiced.length / ids.length) * 100) : 0;
   elements.coverageRing.style.setProperty("--coverage", percent);
   elements.coveragePercent.textContent = `${percent}%`;
   elements.coverageBar.style.width = `${percent}%`;
-  elements.coverageDetail.textContent = `${practiced.length} of ${ids.length} practice-ready items retrieved · ${mastered.length} showing stable recall.`;
+  elements.coverageDetail.textContent = ids.length
+    ? `${practiced.length} of ${ids.length} practice-ready items retrieved · ${mastered.length} showing stable recall.`
+    : "No practice-ready items have been added for this week yet.";
 }
 
 function weakItemIds(progress = loadProgress(state.profile)) {
@@ -341,6 +383,9 @@ function renderQuestion() {
 
 function finishLesson() {
   const progress = saveSessionProgress(state.lesson.results, state.lesson.profile);
+  const scopedXp = state.lesson.scope === "week"
+    ? progress.byWeek?.[mondayOf(new Date())]?.xp ?? 0
+    : progress.xp;
   renderPracticeProgress(progress);
   renderLeaderboard();
   const correct = state.lesson.results.filter((result) => result.correct).length;
@@ -354,7 +399,7 @@ function finishLesson() {
     <div class="lesson-result">
       <div><strong>${correct}/${total}</strong><span>correct</span></div>
       <div><strong>${progress.streak}</strong><span>day streak</span></div>
-      <div><strong>${progress.xp}</strong><span>total XP</span></div>
+      <div><strong>${scopedXp}</strong><span>${state.lesson.scope === "week" ? "this week XP" : "total XP"}</span></div>
     </div>
   `;
   elements.lessonFeedback.hidden = true;
@@ -400,7 +445,7 @@ async function startLesson(mode = "recall", trigger = null) {
   }
   try {
     state.practiceItems ??= await loadPracticeItems(state.data.catalog);
-    const week = state.academyScope === "week" ? state.data.latestWeekStart : "all";
+    const week = state.academyScope === "week" ? mondayOf(new Date()) : "all";
     const previousIds = state.lesson?.mode === mode && state.lesson?.scope === state.academyScope
       ? state.lesson.sourceIds
       : [];
@@ -588,13 +633,23 @@ function setAcademyScope(scope) {
   elements.dictionaryStageCopy.textContent = scope === "week"
     ? "Search and explore everything first learned this week."
     : "Search and filter your complete Dutch learning history.";
+  const currentWeek = mondayOf(new Date());
+  const hasWeeklyItems = state.data.catalog.items.some((item) =>
+    item.week_start === currentWeek && ["word", "expression", "particle"].includes(item.type));
+  elements.academyStarts.forEach((button) => {
+    button.dataset.defaultLabel ??= button.textContent;
+    const unavailable = scope === "week" && !hasWeeklyItems;
+    button.disabled = unavailable;
+    button.textContent = unavailable ? "No items this week" : button.dataset.defaultLabel;
+  });
+  renderPracticeProgress();
 }
 
 function openDictionary() {
   const weekly = state.academyScope === "week";
   state.query = "";
   state.type = "all";
-  state.week = weekly ? state.data.latestWeekStart : "all";
+  state.week = weekly ? mondayOf(new Date()) : "all";
   state.visible = 24;
   elements.searchInput.value = "";
   elements.typeFilter.value = "all";
@@ -807,7 +862,7 @@ function bindEvents() {
   elements.clearFilters.addEventListener("click", () => {
     elements.searchInput.value = "";
     elements.typeFilter.value = "all";
-    elements.weekFilter.value = state.academyScope === "week" ? state.data.latestWeekStart : "all";
+    elements.weekFilter.value = state.academyScope === "week" ? mondayOf(new Date()) : "all";
     updateFilters();
     elements.searchInput.focus();
   });
@@ -816,10 +871,21 @@ function bindEvents() {
     renderLibrary();
   });
   elements.heroNavButtons.forEach((button) => button.addEventListener("click", () => {
+    if (isMobileLayout()) {
+      const view = button.dataset.scrollTarget === "#practice"
+        ? "academy"
+        : button.dataset.scrollTarget === "#simulator" ? "simulator" : "home";
+      showMobileView(view);
+      if (view === "home") {
+        document.querySelector(button.dataset.scrollTarget)?.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+      return;
+    }
     document.querySelector(button.dataset.scrollTarget)?.scrollIntoView({ behavior: "smooth", block: "start" });
   }));
   elements.heroDictionary.addEventListener("click", () => {
     setAcademyScope("all");
+    if (isMobileLayout()) showMobileView("dictionary", { scroll: false });
     openDictionary();
   });
   elements.dialogClose.addEventListener("click", () => elements.dialog.close());
@@ -858,8 +924,26 @@ function bindEvents() {
   elements.academyStarts.forEach((button) => button.addEventListener("click", () => startLesson(button.dataset.mode, button)));
   elements.academyScopes.forEach((button) => button.addEventListener("click", () => setAcademyScope(button.dataset.scope)));
   elements.leaderboardScopes.forEach((button) => button.addEventListener("click", () => setLeaderboardScope(button.dataset.leaderboardScope)));
-  elements.openDictionary.addEventListener("click", openDictionary);
-  elements.dictionaryClose.addEventListener("click", () => elements.dictionaryDialog.close());
+  elements.openDictionary.addEventListener("click", () => {
+    if (isMobileLayout()) showMobileView("dictionary", { scroll: false });
+    openDictionary();
+  });
+  elements.dictionaryClose.addEventListener("click", closeDictionary);
+  elements.dictionaryDialog.addEventListener("close", () => {
+    if (isMobileLayout() && document.body.dataset.mobileView === "dictionary") {
+      showMobileView(state.previousMobileView, { scroll: false });
+    }
+  });
+  elements.mobileTabs.forEach((button) => button.addEventListener("click", () => {
+    const view = button.dataset.mobileView;
+    if (view === "dictionary") {
+      setAcademyScope("all");
+      showMobileView("dictionary", { scroll: false });
+      openDictionary();
+      return;
+    }
+    showMobileView(view);
+  }));
   elements.simulatorStarts.forEach((button) => button.addEventListener("click", () => startSimulator(button.dataset.simulator)));
   elements.simulatorClose.addEventListener("click", () => elements.simulatorDialog.close());
   elements.simulatorNext.addEventListener("click", nextSimulatorQuestion);
@@ -876,6 +960,7 @@ async function init() {
     document.documentElement.dataset.theme = savedTheme;
   }
   elements.themeToggle.checked = savedTheme === "dark";
+  showMobileView("home", { scroll: false });
   bindEvents();
   try {
     state.data = await loadDashboardData();
@@ -903,7 +988,6 @@ function renderProfile() {
     option.setAttribute("aria-checked", String(selected));
     option.classList.toggle("selected", selected);
   });
-  elements.coverageTitle.textContent = `${name}'s weekly coverage`;
   elements.practiceXp.closest(".practice-stats").setAttribute("aria-label", `${name}'s local practice progress`);
 }
 
