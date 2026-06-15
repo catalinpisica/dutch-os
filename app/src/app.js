@@ -63,8 +63,6 @@ const elements = {
   latestWeekCount: document.querySelector("#latest-week-count"),
   heroSummary: document.querySelector("#hero-summary"),
   updatedLabel: document.querySelector("#updated-label"),
-  heroNavButtons: document.querySelectorAll("[data-scroll-target]"),
-  heroDictionary: document.querySelector("#hero-dictionary"),
   leaderboardScopes: document.querySelectorAll("[data-leaderboard-scope]"),
   leaderboardList: document.querySelector("#leaderboard-list"),
   searchForm: document.querySelector("#search-form"),
@@ -195,14 +193,13 @@ function escapeHtml(value) {
 function renderStats() {
   const { statistics } = state.data;
   const cards = [
-    ["knowledge_items", "Learned items", "∑"],
-    ["words", "Words", "Aa"],
-    ["expressions", "Expressions", "“ ”"],
-    ["grammar-patterns", "Grammar patterns", "S"],
+    ["knowledge_items", "Total items"],
+    ["words", "Words"],
+    ["expressions", "Expressions"],
+    ["grammar-patterns", "Grammar"],
   ];
-  elements.statsGrid.innerHTML = cards.map(([key, label, icon]) => `
+  elements.statsGrid.innerHTML = cards.map(([key, label]) => `
     <article class="stat-card">
-      <span class="stat-icon" aria-hidden="true">${icon}</span>
       <strong>${statistics.totals[key].toLocaleString()}</strong>
       <span>${label}</span>
     </article>
@@ -869,24 +866,6 @@ function bindEvents() {
   elements.loadMore.addEventListener("click", () => {
     state.visible += 24;
     renderLibrary();
-  });
-  elements.heroNavButtons.forEach((button) => button.addEventListener("click", () => {
-    if (isMobileLayout()) {
-      const view = button.dataset.scrollTarget === "#practice"
-        ? "academy"
-        : button.dataset.scrollTarget === "#simulator" ? "simulator" : "home";
-      showMobileView(view);
-      if (view === "home") {
-        document.querySelector(button.dataset.scrollTarget)?.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
-      return;
-    }
-    document.querySelector(button.dataset.scrollTarget)?.scrollIntoView({ behavior: "smooth", block: "start" });
-  }));
-  elements.heroDictionary.addEventListener("click", () => {
-    setAcademyScope("all");
-    if (isMobileLayout()) showMobileView("dictionary", { scroll: false });
-    openDictionary();
   });
   elements.dialogClose.addEventListener("click", () => elements.dialog.close());
   elements.dialog.addEventListener("click", (event) => {
