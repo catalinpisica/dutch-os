@@ -1,29 +1,29 @@
 const PRACTICE_TYPES = new Set(["word", "expression", "particle"]);
 
 const AUTHORED_SENTENCES = [
-  ["word-duur", "Deze jas kost honderd euro. Hij is erg ____.", "duur", "adjective"],
-  ["word-goedkoop", "Deze koffie kost maar één euro. Dat is ____.", "goedkoop", "adjective"],
-  ["word-hier", "Kom maar ____. Je kunt naast mij zitten.", "hier", "adverb"],
-  ["word-daar", "Zie je die winkel? Ik werk ____.", "daar", "adverb"],
-  ["word-meestal", "Ik drink ____ koffie in de ochtend, maar soms thee.", "meestal", "adverb"],
-  ["word-soms", "Ik fiets vaak, maar ____ neem ik de bus.", "soms", "adverb"],
-  ["word-vaak", "Zij sport vier keer per week. Ze sport dus ____.", "vaak", "adverb"],
-  ["word-nooit", "Hij drinkt geen koffie. Hij drinkt ____ koffie.", "nooit", "adverb"],
-  ["word-natuurlijk", "Kun je me helpen? Ja, ____!", "natuurlijk", "adverb"],
-  ["word-open", "Je kunt naar binnen; de winkel is ____.", "open", "adjective"],
-  ["word-leeg", "Er zit niets meer in de zak. De zak is ____.", "leeg", "adjective"],
-  ["word-laat", "Het is al middernacht. Het is erg ____.", "laat", "adjective"],
-  ["word-moe", "Ik heb slecht geslapen, dus ik ben ____.", "moe", "adjective"],
-  ["word-druk", "Ik heb vandaag veel werk. Ik ben erg ____.", "druk", "adjective"],
-  ["word-warm", "De zon schijnt en het is 28 graden. Het is ____.", "warm", "adjective"],
-  ["word-ziek", "Hij heeft koorts en blijft in bed. Hij is ____.", "ziek", "adjective"],
-  ["word-prima", "Hoe gaat het? Het gaat ____.", "prima", "adjective"],
-  ["word-vervelend", "Je trein is weer te laat. Wat ____!", "vervelend", "adjective"],
-  ["word-binnenkomen", "De deur is open. Je mag ____.", "binnenkomen", "verb"],
-  ["word-drinken", "Wil je koffie of thee ____?", "drinken", "verb"],
-  ["word-slapen", "Ik ben moe. Ik wil vroeg gaan ____.", "slapen", "verb"],
-  ["word-vragen", "Ik weet het niet. Ik ga het aan de leraar ____.", "vragen", "verb"],
-  ["word-zonder", "Ik drink koffie ____ suiker.", "zonder", "preposition"],
+  ["word-duur", "Deze jas kost honderd euro. Hij is erg ____.", "duur", "adjective", "This jacket costs one hundred euros. It is very expensive."],
+  ["word-goedkoop", "Deze koffie kost maar één euro. Dat is ____.", "goedkoop", "adjective", "This coffee costs only one euro. That is cheap."],
+  ["word-hier", "Kom maar ____. Je kunt naast mij zitten.", "hier", "adverb", "Come here. You can sit next to me."],
+  ["word-daar", "Zie je die winkel? Ik werk ____.", "daar", "adverb", "Do you see that shop? I work there."],
+  ["word-meestal", "Ik drink ____ koffie in de ochtend, maar soms thee.", "meestal", "adverb", "I usually drink coffee in the morning, but sometimes tea."],
+  ["word-soms", "Ik fiets vaak, maar ____ neem ik de bus.", "soms", "adverb", "I often cycle, but sometimes I take the bus."],
+  ["word-vaak", "Zij sport vier keer per week. Ze sport dus ____.", "vaak", "adverb", "She exercises four times a week. So she exercises often."],
+  ["word-nooit", "Hij drinkt geen koffie. Hij drinkt ____ koffie.", "nooit", "adverb", "He does not drink coffee. He never drinks coffee."],
+  ["word-natuurlijk", "Kun je me helpen? Ja, ____!", "natuurlijk", "adverb", "Can you help me? Yes, of course!"],
+  ["word-open", "Je kunt naar binnen; de winkel is ____.", "open", "adjective", "You can go inside; the shop is open."],
+  ["word-leeg", "Er zit niets meer in de zak. De zak is ____.", "leeg", "adjective", "There is nothing left in the bag. The bag is empty."],
+  ["word-laat", "Het is al middernacht. Het is erg ____.", "laat", "adjective", "It is already midnight. It is very late."],
+  ["word-moe", "Ik heb slecht geslapen, dus ik ben ____.", "moe", "adjective", "I slept badly, so I am tired."],
+  ["word-druk", "Ik heb vandaag veel werk. Ik ben erg ____.", "druk", "adjective", "I have a lot of work today. I am very busy."],
+  ["word-warm", "De zon schijnt en het is 28 graden. Het is ____.", "warm", "adjective", "The sun is shining and it is 28 degrees. It is warm."],
+  ["word-ziek", "Hij heeft koorts en blijft in bed. Hij is ____.", "ziek", "adjective", "He has a fever and stays in bed. He is ill."],
+  ["word-prima", "Hoe gaat het? Het gaat ____.", "prima", "adjective", "How are you? I am fine."],
+  ["word-vervelend", "Je trein is weer te laat. Wat ____!", "vervelend", "adjective", "Your train is late again. How annoying!"],
+  ["word-binnenkomen", "De deur is open. Je mag ____.", "binnenkomen", "verb", "The door is open. You may come in."],
+  ["word-drinken", "Wil je koffie of thee ____?", "drinken", "verb", "Would you like to drink coffee or tea?"],
+  ["word-slapen", "Ik ben moe. Ik wil vroeg gaan ____.", "slapen", "verb", "I am tired. I want to go to sleep early."],
+  ["word-vragen", "Ik weet het niet. Ik ga het aan de leraar ____.", "vragen", "verb", "I do not know. I am going to ask the teacher."],
+  ["word-zonder", "Ik drink koffie ____ suiker.", "zonder", "preposition", "I drink coffee without sugar."],
   ["particle-even", "Wacht ____; ik pak mijn jas.", "even", "particle"],
   ["particle-hoor", "Dat is helemaal prima, ____.", "hoor", "particle"],
   ["particle-toch", "Je komt morgen ook, ____?", "toch", "particle"],
@@ -123,6 +123,69 @@ function makeTyped(item) {
     answer: item.dutch,
     answerTranslation: item.english,
     direction: "en-nl",
+  };
+}
+
+function makeContextChoice(items, item, sentence, target, translation) {
+  return {
+    kind: "choice",
+    itemId: item.id,
+    label: "What does the highlighted word mean?",
+    prompt: sentence,
+    contextTarget: target,
+    contextTranslation: translation,
+    answer: item.english,
+    answerTranslation: item.dutch,
+    options: shuffle([item.english, ...distractors(items, item, "english")]),
+    direction: "context-nl-en",
+  };
+}
+
+function wholeTargetInSentence(sentence, target) {
+  const escaped = target.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const match = sentence.match(new RegExp(`(^|\\s)(${escaped})(?=\\s|[.,!?;:]|$)`, "i"));
+  return match?.[2] ?? null;
+}
+
+export function buildContextSession(allItems, progress, options = {}) {
+  const size = options.size ?? 20;
+  const excludedIds = new Set(options.excludeIds ?? []);
+  const wordPool = allItems.filter((item) => item.type === "word" && item.dutch && item.english);
+  const itemsById = new Map(wordPool.map((item) => [item.id, item]));
+  const authored = AUTHORED_SENTENCES
+    .filter(([itemId, , , , translation]) => itemsById.has(itemId) && translation)
+    .map(([itemId, prompt, answer, , translation]) => ({
+      item: itemsById.get(itemId),
+      sentence: prompt.replace("____", answer),
+      target: answer,
+      translation,
+    }));
+  const authoredIds = new Set(authored.map(({ item }) => item.id));
+  const sourced = wordPool.flatMap((item) => (item.examples ?? [])
+    .map((example) => ({ example, target: example.dutch && wholeTargetInSentence(example.dutch, item.dutch) }))
+    .filter(({ example, target }) => example.english && target)
+    .slice(0, 1)
+    .map(({ example, target }) => ({ item, sentence: example.dutch, target, translation: example.english })))
+    .filter(({ item }) => !authoredIds.has(item.id));
+  let candidates = [...authored, ...sourced].filter(({ item }) =>
+    (options.week === "all" || item.week_start === options.week) && !excludedIds.has(item.id));
+  if (!candidates.length && excludedIds.size) {
+    candidates = [...authored, ...sourced].filter(({ item }) => options.week === "all" || item.week_start === options.week);
+  }
+  candidates.sort((left, right) => {
+    const leftProgress = progress.items?.[left.item.id];
+    const rightProgress = progress.items?.[right.item.id];
+    const leftAttempts = (leftProgress?.correct ?? 0) + (leftProgress?.wrong ?? 0);
+    const rightAttempts = (rightProgress?.correct ?? 0) + (rightProgress?.wrong ?? 0);
+    return leftAttempts - rightAttempts
+      || (leftProgress?.lastPracticed ?? "").localeCompare(rightProgress?.lastPracticed ?? "")
+      || left.item.dutch.localeCompare(right.item.dutch, "nl");
+  });
+  const selected = candidates.slice(0, Math.min(size, candidates.length));
+  return {
+    questions: selected.map(({ item, sentence, target, translation }) =>
+      makeContextChoice(wordPool, item, sentence, target, translation)),
+    sourceCount: candidates.length,
   };
 }
 

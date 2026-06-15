@@ -124,7 +124,8 @@ Classify by learning function, not surface form alone.
 
 ## Examples and Reviews
 
-- Generate at most one or two examples for important items.
+- Give each newly ingested word one natural context sentence so the Academy's `Learn in context` mode can teach it. Use only vocabulary from the current lesson or previously learned canonical material.
+- Generate at most one or two examples for other important items.
 - Keep examples natural, practical, beginner-friendly, and within the learner’s likely vocabulary.
 - Include an English translation and distinguish generated examples from source examples.
 - Each ingestion must generate review material covering important new items, particles, grammar, difficult material, and recurring mistakes.

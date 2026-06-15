@@ -1,5 +1,5 @@
 import { loadCanonicalItem, loadDashboardData, loadPracticeItems } from "../data-loader/repository.js";
-import { buildMistakeQueue, buildMistakeSession, buildReviewQueue, buildReviewSession, buildSession, checkAnswer, describeGrammar, loadProgress, saveSessionProgress } from "./quiz.js?v=20260615-4";
+import { buildContextSession, buildMistakeQueue, buildMistakeSession, buildReviewQueue, buildReviewSession, buildSession, checkAnswer, describeGrammar, loadProgress, saveSessionProgress } from "./quiz.js?v=20260615-5";
 
 const TYPE_LABELS = {
   word: "Word",
@@ -362,6 +362,14 @@ function currentQuestion() {
   return state.lesson.questions[state.lesson.index];
 }
 
+function highlightedPrompt(sentence, target) {
+  const source = String(sentence);
+  const needle = String(target);
+  const index = source.toLocaleLowerCase("nl-NL").indexOf(needle.toLocaleLowerCase("nl-NL"));
+  if (index < 0) return escapeHtml(source);
+  return `${escapeHtml(source.slice(0, index))}<mark>${escapeHtml(source.slice(index, index + needle.length))}</mark>${escapeHtml(source.slice(index + needle.length))}`;
+}
+
 function renderQuestion() {
   const lesson = state.lesson;
   const question = currentQuestion();
@@ -369,7 +377,11 @@ function renderQuestion() {
   elements.lessonProgressBar.style.width = `${progress}%`;
   elements.lessonCounter.textContent = `${lesson.index + 1} / ${lesson.questions.length}`;
   elements.questionLabel.textContent = question.label;
-  elements.lessonTitle.textContent = question.prompt;
+  if (question.contextTarget) {
+    elements.lessonTitle.innerHTML = highlightedPrompt(question.prompt, question.contextTarget);
+  } else {
+    elements.lessonTitle.textContent = question.prompt;
+  }
   const expected = question.expected
     ? (question.expected.includes(" — ") ? question.expected : describeGrammar(question.expected))
     : null;
@@ -484,6 +496,10 @@ function checkLessonAnswer() {
   elements.feedbackCopy.textContent = correct
     ? `${translatedAnswer} · +10 XP`
     : `Correct answer: ${translatedAnswer}`;
+  if (question.contextTranslation) {
+    elements.questionHint.hidden = false;
+    elements.questionHint.innerHTML = `<span>Full sentence: ${escapeHtml(question.contextTranslation)}</span>`;
+  }
   elements.lessonFooter.dataset.state = correct ? "correct" : "wrong";
   elements.lessonCheck.textContent = lesson.index === lesson.questions.length - 1 ? "See results" : "Continue";
   elements.lessonCheck.disabled = false;
@@ -491,7 +507,7 @@ function checkLessonAnswer() {
 }
 
 async function startLesson(mode = "recall", trigger = null) {
-  const sizes = { recognition: 20, recall: 20, sentences: 20, review: 20, mistakes: 20 };
+  const sizes = { context: 20, recognition: 20, recall: 20, sentences: 20, review: 20, mistakes: 20 };
   const originalLabel = trigger?.textContent;
   if (trigger) {
     trigger.disabled = true;
@@ -504,7 +520,13 @@ async function startLesson(mode = "recall", trigger = null) {
       ? state.lesson.sourceIds
       : [];
     const progress = loadProgress(state.profile);
-    const session = mode === "review"
+    const session = mode === "context"
+      ? buildContextSession(state.practiceItems, progress, {
+        week,
+        size: sizes.context,
+        excludeIds: previousIds,
+      })
+      : mode === "review"
       ? buildReviewSession(state.practiceItems, progress, { week, size: sizes.review })
       : mode === "mistakes"
         ? buildMistakeSession(state.practiceItems, progress, { week, size: sizes.mistakes })
