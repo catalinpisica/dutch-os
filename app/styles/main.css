@@ -332,7 +332,14 @@ main { overflow: hidden; }
 .academy-scope { width: fit-content; display: grid; grid-template-columns: repeat(2, 1fr); gap: 4px; margin-top: 22px; padding: 4px; border: 1px solid var(--line); border-radius: 16px; background: var(--surface); }
 .academy-scope button { min-height: 44px; padding: 0 22px; border: 0; border-radius: 12px; background: transparent; color: var(--muted); font-weight: 800; cursor: pointer; }
 .academy-scope button[aria-pressed="true"] { background: #1d5b43; color: #fff; box-shadow: 0 6px 16px rgba(29,91,67,.18); }
-.academy-review-tools { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 14px; }
+.academy-group-heading { margin-top: 28px; display: flex; align-items: end; justify-content: space-between; gap: 24px; }
+.academy-group-heading > div { display: flex; align-items: center; gap: 12px; }
+.academy-group-heading > div > span { width: 34px; height: 34px; display: grid; place-items: center; border-radius: 11px; background: var(--green); color: #fff; font-weight: 850; }
+.academy-group-heading .eyebrow { margin: 0 0 2px; }
+.academy-group-heading h3 { margin: 0; font: 700 28px Georgia, serif; }
+.academy-group-heading > p { max-width: 390px; margin: 0; color: var(--muted); line-height: 1.45; }
+.academy-group-heading--reference { margin-top: 24px; }
+.academy-review-tools { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 12px; }
 .review-queue { padding: 22px 24px; display: flex; align-items: center; justify-content: space-between; gap: 24px; border: 1px solid color-mix(in srgb, var(--green) 30%, var(--line)); border-radius: 22px; background: color-mix(in srgb, var(--green-soft) 55%, var(--surface)); }
 .review-queue .stage-kicker { margin: 0 0 5px; color: var(--green); }
 .review-queue h3 { margin: 0; font: 700 30px Georgia, serif; }
@@ -340,13 +347,18 @@ main { overflow: hidden; }
 .review-queue button { flex: 0 0 auto; }
 .mistake-queue { border-color: color-mix(in srgb, var(--orange) 35%, var(--line)); background: color-mix(in srgb, var(--orange-soft) 58%, var(--surface)); }
 .mistake-queue .stage-kicker { color: var(--orange); }
-.academy-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-top: 14px; }
+.academy-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-top: 12px; }
 .academy-stage { position: relative; min-height: 310px; padding: 30px; display: flex; flex-direction: column; align-items: flex-start; border: 1px solid color-mix(in srgb, var(--green) 18%, var(--line)); border-radius: 24px; background: var(--surface); }
 .stage-number { width: 42px; height: 42px; display: grid; place-items: center; border-radius: 13px; background: var(--orange-soft); color: var(--orange); font-weight: 800; }
 .stage-kicker { margin: 24px 0 6px; color: var(--orange); font-size: 11px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
 .academy-stage h3 { margin: 0; font: 700 32px Georgia, serif; }
 .academy-stage > p:not(.stage-kicker) { color: var(--muted); line-height: 1.55; }
 .academy-stage button { margin-top: auto; }
+.dictionary-stage { margin-top: 12px; padding: 20px 24px; display: flex; align-items: center; justify-content: space-between; gap: 24px; border: 1px solid var(--line); border-radius: 22px; background: var(--surface); }
+.dictionary-stage .stage-kicker { margin: 0 0 4px; }
+.dictionary-stage h3 { margin: 0; font: 700 27px Georgia, serif; }
+.dictionary-stage p:last-child { margin: 6px 0 0; color: var(--muted); }
+.dictionary-stage button { flex: 0 0 auto; }
 
 .simulator-heading { align-items: end; }
 .simulator-heading > p { max-width: 470px; margin: 0; color: var(--muted); line-height: 1.55; }
@@ -545,6 +557,7 @@ blockquote small { margin-top: 12px; color: var(--orange); font-weight: 750; }
 .lesson-hearts { color: #d94b4b; font-weight: 800; }
 .lesson-main { width: min(760px, calc(100% - 32px)); margin: 0 auto; padding: 54px 0 80px; overflow: visible; }
 .lesson-main h2 { margin: 0; font: 700 clamp(36px, 7vw, 64px)/1.08 Georgia, serif; letter-spacing: -.035em; }
+.lesson-main h2 mark { padding: 0 .08em; border-radius: .16em; background: var(--orange-soft); color: var(--orange); box-decoration-break: clone; -webkit-box-decoration-break: clone; }
 .question-hint { margin: 16px 0 0; color: var(--muted); font-size: 18px; }
 .question-hint > span { display: block; }
 .hint-button { min-height: 34px; margin-top: 10px; padding: 0 14px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--green); font-weight: 800; cursor: pointer; }
@@ -682,7 +695,14 @@ blockquote small { margin-top: 12px; color: var(--orange); font-weight: 750; }
   .academy-header > div > p:not(.eyebrow), .simulator-heading > p { display: none; }
   .academy-scope { width: 100%; }
   .academy-scope button { padding-inline: 10px; }
-  .academy-review-tools { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; margin-top: 8px; }
+  .academy-group-heading { margin-top: 14px; align-items: center; }
+  .academy-group-heading > div { gap: 8px; }
+  .academy-group-heading > div > span { width: 28px; height: 28px; border-radius: 9px; font-size: 12px; }
+  .academy-group-heading .eyebrow { display: none; }
+  .academy-group-heading h3 { font-size: 22px; }
+  .academy-group-heading > p { display: none; }
+  .academy-group-heading--reference { margin-top: 14px; }
+  .academy-review-tools { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; margin-top: 7px; }
   .review-queue { min-width: 0; padding: 11px; display: flex; align-items: stretch; flex-direction: column; gap: 7px; border-radius: 18px; }
   .review-queue .stage-kicker { display: none; }
   .review-queue h3 { font-size: 19px; line-height: 1.05; }
@@ -705,6 +725,10 @@ blockquote small { margin-top: 12px; color: var(--orange); font-weight: 750; }
   .academy-stage h3 { font-size: 22px; line-height: 1.05; }
   .academy-stage > p:not(.stage-kicker) { display: none; }
   .academy-stage button { width: 100%; min-height: 42px; padding: 8px; font-size: 11px; }
+  .dictionary-stage { margin-top: 7px; padding: 12px; border-radius: 18px; }
+  .dictionary-stage .stage-kicker, .dictionary-stage p:last-child { display: none; }
+  .dictionary-stage h3 { font-size: 21px; }
+  .dictionary-stage button { min-height: 42px; padding: 8px 12px; font-size: 11px; }
   .simulator-heading { align-items: start; }
   .simulator-grid { grid-template-columns: 1fr; }
   .simulator-card { min-height: 154px; padding: 16px; display: grid; grid-template-columns: 42px 1fr; grid-template-rows: auto auto 1fr; column-gap: 12px; border-radius: 18px; }
