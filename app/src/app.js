@@ -1,5 +1,5 @@
 import { loadCanonicalItem, loadDashboardData, loadPracticeItems } from "../data-loader/repository.js";
-import { buildContextSession, buildMistakeQueue, buildMistakeSession, buildReviewQueue, buildReviewSession, buildSession, checkAnswer, describeGrammar, loadProgress, saveSessionProgress } from "./quiz.js?v=20260615-5";
+import { buildContextSession, buildGuidedSession, buildMistakeQueue, buildMistakeSession, buildRetryQuestion, buildReviewQueue, buildReviewSession, buildSession, checkAnswer, describeGrammar, loadProgress, saveSessionProgress } from "./quiz.js?v=20260618-1";
 
 const TYPE_LABELS = {
   word: "Word",
@@ -90,8 +90,6 @@ const elements = {
   fatalError: document.querySelector("#fatal-error"),
   academyStarts: document.querySelectorAll(".academy-start"),
   academyScopes: document.querySelectorAll("[data-scope]"),
-  openDictionary: document.querySelector("#open-dictionary"),
-  dictionaryStageCopy: document.querySelector("#dictionary-stage-copy"),
   practiceXp: document.querySelector("#practice-xp"),
   practiceStreak: document.querySelector("#practice-streak"),
   practiceAccuracy: document.querySelector("#practice-accuracy"),
@@ -308,10 +306,7 @@ function renderReviewQueue(progress = loadProgress(state.profile)) {
     ? `${queue.dueCount} item${queue.dueCount === 1 ? " is" : "s are"} due ${scope}. Mistakes and overdue material come first.`
     : `Nothing is due ${scope}. Your next review will appear as intervals mature.`;
   elements.startReviewQueue.disabled = queue.dueCount === 0;
-  const sessionSize = Math.min(20, queue.dueCount);
-  elements.startReviewQueue.textContent = queue.dueCount
-    ? `Review ${sessionSize} due item${sessionSize === 1 ? "" : "s"}`
-    : "Nothing due";
+  elements.startReviewQueue.textContent = queue.dueCount ? "Start" : "None";
 }
 
 function renderMistakeQueue(progress = loadProgress(state.profile)) {
@@ -323,15 +318,12 @@ function renderMistakeQueue(progress = loadProgress(state.profile)) {
     ? `${queue.mistakeCount} unresolved mistake${queue.mistakeCount === 1 ? "" : "s"} across ${queue.itemCount} item${queue.itemCount === 1 ? "" : "s"} ${scope}. Correct answers reduce the queue.`
     : `No unresolved mistakes ${scope}.`;
   elements.startMistakeReview.disabled = queue.itemCount === 0;
-  const sessionSize = Math.min(20, queue.itemCount);
-  elements.startMistakeReview.textContent = queue.itemCount
-    ? `Repair ${sessionSize} item${sessionSize === 1 ? "" : "s"}`
-    : "No mistakes";
+  elements.startMistakeReview.textContent = queue.itemCount ? "Start" : "None";
 }
 
 function renderCoverage(progress = loadProgress(state.profile), scopedProgress = progress) {
   const currentWeek = mondayOf(new Date());
-  const practiceTypes = new Set(["word", "expression", "particle"]);
+  const practiceTypes = new Set(["word", "expression", "particle", "verb_construction"]);
   const ids = state.data.catalog.items
     .filter((item) => practiceTypes.has(item.type)
       && (state.academyScope === "all" || item.week_start === currentWeek))
@@ -370,6 +362,49 @@ function highlightedPrompt(sentence, target) {
   return `${escapeHtml(source.slice(0, index))}<mark>${escapeHtml(source.slice(index, index + needle.length))}</mark>${escapeHtml(source.slice(index + needle.length))}`;
 }
 
+function renderSentenceBuilder(question, lesson) {
+  const selected = [];
+  const update = () => {
+    const selectedIds = new Set(selected.map((token) => token.id));
+    elements.answerArea.innerHTML = `
+      <div class="sentence-builder">
+        <div class="built-sentence" aria-live="polite">
+          ${selected.length ? selected.map((token) => `
+            <button type="button" data-remove-token="${escapeHtml(token.id)}">${escapeHtml(token.text)}</button>
+          `).join("") : "<span>Tap the words in the correct order</span>"}
+        </div>
+        <div class="word-bank">
+          ${question.tokens.map((token) => `
+            <button type="button" data-add-token="${escapeHtml(token.id)}" ${selectedIds.has(token.id) ? "disabled" : ""}>${escapeHtml(token.text)}</button>
+          `).join("")}
+        </div>
+        <button class="clear-sentence" type="button" ${selected.length ? "" : "disabled"}>Clear</button>
+      </div>
+    `;
+    lesson.response = selected.map((token) => token.text).join(" ");
+    elements.lessonCheck.disabled = selected.length !== question.tokens.length;
+    elements.answerArea.querySelectorAll("[data-add-token]").forEach((button) => {
+      button.addEventListener("click", () => {
+        const token = question.tokens.find((candidate) => candidate.id === button.dataset.addToken);
+        if (token) selected.push(token);
+        update();
+      });
+    });
+    elements.answerArea.querySelectorAll("[data-remove-token]").forEach((button) => {
+      button.addEventListener("click", () => {
+        const index = selected.findIndex((token) => token.id === button.dataset.removeToken);
+        if (index >= 0) selected.splice(index, 1);
+        update();
+      });
+    });
+    elements.answerArea.querySelector(".clear-sentence").addEventListener("click", () => {
+      selected.splice(0);
+      update();
+    });
+  };
+  update();
+}
+
 function renderQuestion() {
   const lesson = state.lesson;
   const question = currentQuestion();
@@ -382,6 +417,7 @@ function renderQuestion() {
   } else {
     elements.lessonTitle.textContent = question.prompt;
   }
+  elements.lessonTitle.classList.toggle("sentence-build-prompt", question.kind === "sentence-build");
   const expected = question.expected
     ? (question.expected.includes(" — ") ? question.expected : describeGrammar(question.expected))
     : null;
@@ -409,7 +445,9 @@ function renderQuestion() {
   lesson.checked = false;
   lesson.response = "";
 
-  if (question.kind === "choice") {
+  if (question.kind === "sentence-build") {
+    renderSentenceBuilder(question, lesson);
+  } else if (question.kind === "choice") {
     elements.answerArea.innerHTML = `<div class="choice-grid">${question.options.map((option, index) => `
       <button class="answer-choice" type="button" data-answer="${escapeHtml(option)}">
         <span>${index + 1}</span>${escapeHtml(option)}
@@ -442,8 +480,23 @@ function renderQuestion() {
   }
 }
 
+function saveCurrentLessonProgress() {
+  const lesson = state.lesson;
+  if (!lesson) return loadProgress(state.profile);
+  const unsavedResults = lesson.results.slice(lesson.savedResultsCount ?? 0);
+  if (!unsavedResults.length) return loadProgress(lesson.profile);
+  const progress = saveSessionProgress(unsavedResults, lesson.profile, {
+    countSession: !lesson.sessionSaved,
+  });
+  lesson.savedResultsCount = lesson.results.length;
+  lesson.sessionSaved = true;
+  renderPracticeProgress(progress);
+  renderLeaderboard();
+  return progress;
+}
+
 function finishLesson() {
-  const progress = saveSessionProgress(state.lesson.results, state.lesson.profile);
+  const progress = saveCurrentLessonProgress();
   const scopedXp = state.lesson.scope === "week"
     ? progress.byWeek?.[mondayOf(new Date())]?.xp ?? 0
     : progress.xp;
@@ -471,6 +524,28 @@ function finishLesson() {
   state.lesson.complete = true;
 }
 
+function queueRetryQuestion(question) {
+  const lesson = state.lesson;
+  if (!lesson || !state.practiceItems) return;
+  if ((lesson.insertedRetries ?? 0) >= 8) return;
+  const retryCounts = lesson.retryCounts ?? {};
+  const currentCount = retryCounts[question.itemId] ?? 0;
+  if (currentCount >= 2) return;
+  const item = state.practiceItems.find((candidate) => candidate.id === question.itemId);
+  if (!item?.dutch || !item?.english) return;
+  const retryQuestion = {
+    ...buildRetryQuestion(item),
+    label: "Try this one again",
+    retry: true,
+  };
+  const insertAt = Math.min(lesson.questions.length, lesson.index + 4);
+  lesson.questions.splice(insertAt, 0, retryQuestion);
+  retryCounts[question.itemId] = currentCount + 1;
+  lesson.retryCounts = retryCounts;
+  lesson.insertedRetries = (lesson.insertedRetries ?? 0) + 1;
+  lesson.sourceIds.push(question.itemId);
+}
+
 function checkLessonAnswer() {
   const lesson = state.lesson;
   if (!lesson || !lesson.response) return;
@@ -488,14 +563,17 @@ function checkLessonAnswer() {
   const correct = checkAnswer(question, lesson.response);
   lesson.checked = true;
   lesson.results.push({ itemId: question.itemId, correct });
+  if (!correct) queueRetryQuestion(question);
+  saveCurrentLessonProgress();
   elements.lessonFeedback.hidden = false;
   elements.feedbackTitle.textContent = correct ? "Correct!" : "Not quite";
   const translatedAnswer = question.answerTranslation
     ? `${question.answer} · ${question.answerTranslation}`
     : question.answer;
+  const answerNote = question.answerNote ? ` · ${question.answerNote}` : "";
   elements.feedbackCopy.textContent = correct
-    ? `${translatedAnswer} · +10 XP`
-    : `Correct answer: ${translatedAnswer}`;
+    ? `${translatedAnswer}${answerNote} · +10 XP`
+    : `Correct answer: ${translatedAnswer}${answerNote}`;
   if (question.contextTranslation) {
     elements.questionHint.hidden = false;
     elements.questionHint.innerHTML = `<span>Full sentence: ${escapeHtml(question.contextTranslation)}</span>`;
@@ -507,11 +585,11 @@ function checkLessonAnswer() {
 }
 
 async function startLesson(mode = "recall", trigger = null) {
-  const sizes = { context: 20, recognition: 20, recall: 20, sentences: 20, review: 20, mistakes: 20 };
+  const sizes = { daily: 36, context: 20, recognition: 20, recall: 20, sentences: 20, building: 20, review: 20, mistakes: 20 };
   const originalLabel = trigger?.textContent;
   if (trigger) {
     trigger.disabled = true;
-    trigger.textContent = "Building lesson…";
+    trigger.textContent = mode === "daily" ? "Building practice…" : "Building lesson…";
   }
   try {
     state.practiceItems ??= await loadPracticeItems(state.data.catalog);
@@ -520,7 +598,13 @@ async function startLesson(mode = "recall", trigger = null) {
       ? state.lesson.sourceIds
       : [];
     const progress = loadProgress(state.profile);
-    const session = mode === "context"
+    const session = mode === "daily"
+      ? buildGuidedSession(state.practiceItems, progress, {
+        week,
+        size: sizes.daily,
+        targetCount: 8,
+      })
+      : mode === "context"
       ? buildContextSession(state.practiceItems, progress, {
         week,
         size: sizes.context,
@@ -534,7 +618,7 @@ async function startLesson(mode = "recall", trigger = null) {
         week,
         size: sizes[mode] ?? 20,
         weakIds: weakItemIds(),
-        excludeIds: mode === "sentences" ? [] : previousIds,
+        excludeIds: ["sentences", "building"].includes(mode) ? [] : previousIds,
         mode,
       });
     if (!session.questions.length) throw new Error("No practice items available");
@@ -546,6 +630,10 @@ async function startLesson(mode = "recall", trigger = null) {
       profile: state.profile,
       index: 0,
       results: [],
+      savedResultsCount: 0,
+      sessionSaved: false,
+      retryCounts: {},
+      insertedRetries: 0,
       response: "",
       checked: false,
       complete: false,
@@ -555,7 +643,7 @@ async function startLesson(mode = "recall", trigger = null) {
   } catch (error) {
     console.error(error);
     elements.fatalError.hidden = false;
-    elements.fatalError.querySelector("strong").textContent = "A practice lesson could not be created.";
+    elements.fatalError.querySelector("strong").textContent = "A practice session could not be created.";
   } finally {
     if (trigger) {
       trigger.disabled = false;
@@ -711,17 +799,17 @@ function setAcademyScope(scope) {
   elements.academyScopes.forEach((button) => {
     button.setAttribute("aria-pressed", String(button.dataset.scope === scope));
   });
-  elements.dictionaryStageCopy.textContent = scope === "week"
-    ? "Search and explore everything first learned this week."
-    : "Search and filter your complete Dutch learning history.";
   const currentWeek = mondayOf(new Date());
-  const hasWeeklyItems = state.data.catalog.items.some((item) =>
-    item.week_start === currentWeek && ["word", "expression", "particle"].includes(item.type));
+  const practiceTypes = ["word", "expression", "particle", "verb_construction"];
+  const scopeItems = state.data.catalog.items.filter((item) =>
+    practiceTypes.includes(item.type)
+    && (scope === "all" || item.week_start === currentWeek));
+  const hasWeeklyItems = scopeItems.length > 0;
   elements.academyStarts.forEach((button) => {
     button.dataset.defaultLabel ??= button.textContent;
     const unavailable = scope === "week" && !hasWeeklyItems;
     button.disabled = unavailable;
-    button.textContent = unavailable ? "No items this week" : button.dataset.defaultLabel;
+    button.textContent = unavailable ? "None" : button.dataset.defaultLabel;
   });
   renderPracticeProgress();
 }
@@ -736,11 +824,13 @@ function openDictionary() {
   elements.typeFilter.value = "all";
   elements.weekFilter.value = state.week;
   elements.dictionaryWeekControl.hidden = weekly;
-  elements.dictionaryScopeLabel.textContent = weekly
-    ? `Week of ${formatWeek(state.week, { year: true })}`
-    : "Full content";
+  elements.dictionaryScopeLabel.textContent = "Dictionary";
   renderLibrary();
-  elements.dictionaryDialog.showModal();
+  if (isMobileLayout()) {
+    if (!elements.dictionaryDialog.open) elements.dictionaryDialog.show();
+  } else if (!elements.dictionaryDialog.open) {
+    elements.dictionaryDialog.showModal();
+  }
 }
 
 const HOUR_WORDS = ["twaalf", "een", "twee", "drie", "vier", "vijf", "zes", "zeven", "acht", "negen", "tien", "elf"];
@@ -997,10 +1087,6 @@ function bindEvents() {
   elements.startMistakeReview.addEventListener("click", () => startLesson("mistakes", elements.startMistakeReview));
   elements.academyScopes.forEach((button) => button.addEventListener("click", () => setAcademyScope(button.dataset.scope)));
   elements.leaderboardScopes.forEach((button) => button.addEventListener("click", () => setLeaderboardScope(button.dataset.leaderboardScope)));
-  elements.openDictionary.addEventListener("click", () => {
-    if (isMobileLayout()) showMobileView("dictionary", { scroll: false });
-    openDictionary();
-  });
   elements.dictionaryClose.addEventListener("click", closeDictionary);
   elements.dictionaryDialog.addEventListener("close", () => {
     if (isMobileLayout() && document.body.dataset.mobileView === "dictionary") {
@@ -1015,6 +1101,7 @@ function bindEvents() {
       openDictionary();
       return;
     }
+    if (elements.dictionaryDialog.open) elements.dictionaryDialog.close();
     showMobileView(view);
   }));
   elements.simulatorStarts.forEach((button) => button.addEventListener("click", () => startSimulator(button.dataset.simulator)));
