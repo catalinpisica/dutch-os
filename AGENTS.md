@@ -49,7 +49,7 @@ For this workflow:
 6. Update everything required for the app in the same task: archived evidence, canonical knowledge, weekly review material, needs-review records, ingestion history, catalog, tags, statistics, and any app data contract affected by the new material.
 7. Improve the lesson notes when they contain a supported error, incomplete grammar explanation, missing contrast, or unclear example. Stay strictly within the week's taught topics and vocabulary already present in that lesson or previously learned canonical material. Do not introduce new canonical words or expressions merely to make the lesson richer.
 8. Run metadata rebuilding and all validation. Fix failures rather than reporting an incomplete ingestion.
-9. Verify the app still loads and that the new week, item counts, dictionary entries, and Academy scope are available. Use the in-app browser when a local app URL is available.
+9. Verify the app still loads and that the new week, item counts, dictionary entries, and Academy scope are available. Also verify that new material appears in the relevant Academy modes: Learn in context, Recognize meaning, Produce the Dutch, Find the missing word, Build the sentence, spaced repetition, and mistake review. Use the in-app browser when a local app URL is available.
 10. Do not commit or push unless the user explicitly asks. The ingestion itself is complete without a Git operation.
 11. Finish with a concise report of the assigned week, images processed, items created, items enriched or merged, corrections and note improvements, uncertainties, review updates, app verification, and validation result.
 
@@ -125,11 +125,13 @@ Classify by learning function, not surface form alone.
 ## Examples and Reviews
 
 - Give each newly ingested word one natural context sentence so the Academy's `Learn in context` mode can teach it. Use only vocabulary from the current lesson or previously learned canonical material.
-- Generate at most one or two examples for other important items.
+- Give important new words, expressions, particles, and grammar patterns at least one short example sentence when supported or useful, so the Academy can generate `Find the missing word` and `Build the sentence` exercises.
+- Prefer examples of 3-9 Dutch words when possible; this keeps sentence-building usable on phone screens.
+- Generate at most one or two examples for each important item.
 - Keep examples natural, practical, beginner-friendly, and within the learner’s likely vocabulary.
 - Include an English translation and distinguish generated examples from source examples.
 - Each ingestion must generate review material covering important new items, particles, grammar, difficult material, and recurring mistakes.
-- Reviews should include useful recall, translation, cloze, grammar, or roleplay prompts without mechanically including every extracted item.
+- Reviews should include useful recall, translation, cloze, sentence-building, grammar, or roleplay prompts without mechanically including every extracted item.
 - Improve incomplete lesson material with concise rules, contrasts, corrections, and generated examples when this helps explain the taught topic.
 - Generated improvements may reuse words and expressions from the current lesson or previously learned canonical data, but must not introduce untaught vocabulary as new learning material.
 - Never create a new canonical word or expression unless it is supported by the uploaded lesson evidence. If an explanation genuinely requires an unfamiliar helper word, prefer simple English explanation instead.
@@ -144,7 +146,8 @@ The app may progressively provide:
 - dashboard counts, latest batch, newest items, local weak items, and review suggestions;
 - browsing and filtering across every knowledge category and weekly review;
 - client-side search across Dutch, English, examples, tags, categories, and notes;
-- flashcards, quizzes, cloze tasks, sentence rebuilding, particle selection, dialogue gap-fill, and mistake correction;
+- flashcards, quizzes, contextual vocabulary, cloze tasks, sentence rebuilding, particle selection, dialogue gap-fill, spaced repetition, and mistake correction;
+- dedicated Academy modes for Learn in context, Recognize meaning, Produce the Dutch, Find the missing word, Build the sentence, Review due items, and Repair weak answers;
 - dedicated particle, dialogue, mistake, and weekly-review modes;
 - device-specific practice history in `localStorage`;
 
@@ -188,10 +191,11 @@ When the user asks to process notes:
 10. Detect duplicates and merge before creating records.
 11. Add provenance and ingestion metadata, including the exact `week_start` date in every item's `tags` array.
 12. Generate the review with the same explicit week tag and update needs-review data.
-13. Rebuild affected catalogs, tags, statistics, and ingestion logs.
-14. Run validation and fix every failure.
-15. Verify the updated week and material in the app.
-16. Report additions, merges, corrections, generated enrichment, uncertainty, assumptions, app verification, and validation results.
+13. Ensure new material has enough app-ready practice data: Dutch text, English meaning, examples with English translations, week tags, and source references for Learn in context, recognition, recall, cloze, sentence-building, review queue, mistake review, dictionary, and filters.
+14. Rebuild affected catalogs, tags, statistics, and ingestion logs.
+15. Run validation and fix every failure.
+16. Verify the updated week and material in the app, including this week/full content filters and all current Academy modes.
+17. Report additions, merges, corrections, generated enrichment, uncertainty, assumptions, app verification, and validation results.
 
 Do not claim an ingestion is complete until every uploaded source has been inspected and archived.
 

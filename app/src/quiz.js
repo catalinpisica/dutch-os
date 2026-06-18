@@ -1,4 +1,5 @@
-const PRACTICE_TYPES = new Set(["word", "expression", "particle"]);
+const PRACTICE_TYPES = new Set(["word", "expression", "particle", "verb_construction"]);
+const GUIDED_TYPE_ORDER = ["word", "expression", "particle", "verb_construction"];
 
 const AUTHORED_SENTENCES = [
   ["word-duur", "Deze jas kost honderd euro. Hij is erg ____.", "duur", "adjective", "This jacket costs one hundred euros. It is very expensive."],
@@ -61,9 +62,27 @@ function distractors(items, target, field, count = 3) {
   const candidates = [...shuffle(sameGrammar), ...shuffle(sameType)];
   return [...new Set(
     candidates
-      .map((item) => item[field])
-      .filter((value) => normalize(value) !== normalize(target[field]))
+      .map((item) => practiceValue(item, field))
+      .filter((value) => normalize(value) !== normalize(practiceValue(target, field)))
   )].slice(0, count);
+}
+
+function practiceDutch(item) {
+  if (item.type === "verb_construction" && /\+\s*infinitief/i.test(item.dutch)) {
+    return item.infinitive ?? item.dutch.replace(/\s*\+\s*infinitief/i, "").trim();
+  }
+  return item.dutch;
+}
+
+function practiceValue(item, field) {
+  return field === "dutch" ? practiceDutch(item) : item[field];
+}
+
+function answerNote(item) {
+  if (item.type !== "verb_construction") return null;
+  const practiceAnswer = practiceDutch(item);
+  if (normalize(practiceAnswer) === normalize(item.dutch)) return null;
+  return `Pattern: ${item.dutch}. In a sentence, use a conjugated form plus another verb.`;
 }
 
 const GRAMMAR_EXPLANATIONS = {
@@ -106,10 +125,11 @@ function makeChoice(items, item, direction) {
     kind: "choice",
     itemId: item.id,
     label: direction === "nl-en" ? "Choose the English meaning" : "Choose the Dutch translation",
-    prompt: item[from],
-    answer: item[to],
-    answerTranslation: item[from],
-    options: shuffle([item[to], ...distractors(items, item, to)]),
+    prompt: practiceValue(item, from),
+    answer: practiceValue(item, to),
+    answerTranslation: practiceValue(item, from),
+    answerNote: answerNote(item),
+    options: shuffle([practiceValue(item, to), ...distractors(items, item, to)]),
     direction,
   };
 }
@@ -120,24 +140,57 @@ function makeTyped(item) {
     itemId: item.id,
     label: "Write this in Dutch",
     prompt: item.english,
-    answer: item.dutch,
+    answer: practiceDutch(item),
     answerTranslation: item.english,
+    answerNote: answerNote(item),
     direction: "en-nl",
   };
+}
+
+export function buildRetryQuestion(item) {
+  return makeTyped(item);
 }
 
 function makeContextChoice(items, item, sentence, target, translation) {
   return {
     kind: "choice",
     itemId: item.id,
-    label: "What does the highlighted word mean?",
+    label: "What does the highlighted Dutch mean?",
     prompt: sentence,
     contextTarget: target,
     contextTranslation: translation,
     answer: item.english,
-    answerTranslation: item.dutch,
+    answerTranslation: practiceDutch(item),
+    answerNote: answerNote(item),
     options: shuffle([item.english, ...distractors(items, item, "english")]),
     direction: "context-nl-en",
+  };
+}
+
+function sentenceTokens(sentence) {
+  return sentence.trim().split(/\s+/).map((text, index) => ({ id: `${index}-${text}`, text }));
+}
+
+function shuffledDifferently(tokens) {
+  let shuffled = shuffle(tokens);
+  if (shuffled.every((token, index) => token.id === tokens[index].id) && shuffled.length > 1) {
+    shuffled = [...shuffled.slice(1), shuffled[0]];
+  }
+  return shuffled;
+}
+
+function makeSentenceBuild(item, example) {
+  const tokens = sentenceTokens(example.dutch);
+  return {
+    kind: "sentence-build",
+    itemId: item.id,
+    label: "Build this sentence in Dutch",
+    prompt: example.english,
+    hint: "Tap a chosen word to move it back.",
+    answer: example.dutch,
+    contextTranslation: example.english,
+    tokens: shuffledDifferently(tokens),
+    direction: "sentence-build",
   };
 }
 
@@ -147,11 +200,9 @@ function wholeTargetInSentence(sentence, target) {
   return match?.[2] ?? null;
 }
 
-export function buildContextSession(allItems, progress, options = {}) {
-  const size = options.size ?? 20;
-  const excludedIds = new Set(options.excludeIds ?? []);
-  const wordPool = allItems.filter((item) => item.type === "word" && item.dutch && item.english);
-  const itemsById = new Map(wordPool.map((item) => [item.id, item]));
+function contextSources(allItems) {
+  const practicePool = allItems.filter((item) => PRACTICE_TYPES.has(item.type) && item.dutch && item.english);
+  const itemsById = new Map(practicePool.map((item) => [item.id, item]));
   const authored = AUTHORED_SENTENCES
     .filter(([itemId, , , , translation]) => itemsById.has(itemId) && translation)
     .map(([itemId, prompt, answer, , translation]) => ({
@@ -161,16 +212,24 @@ export function buildContextSession(allItems, progress, options = {}) {
       translation,
     }));
   const authoredIds = new Set(authored.map(({ item }) => item.id));
-  const sourced = wordPool.flatMap((item) => (item.examples ?? [])
+  const sourced = practicePool.flatMap((item) => (item.examples ?? [])
     .map((example) => ({ example, target: example.dutch && wholeTargetInSentence(example.dutch, item.dutch) }))
     .filter(({ example, target }) => example.english && target)
     .slice(0, 1)
     .map(({ example, target }) => ({ item, sentence: example.dutch, target, translation: example.english })))
     .filter(({ item }) => !authoredIds.has(item.id));
-  let candidates = [...authored, ...sourced].filter(({ item }) =>
+  return [...authored, ...sourced];
+}
+
+export function buildContextSession(allItems, progress, options = {}) {
+  const size = options.size ?? 20;
+  const excludedIds = new Set(options.excludeIds ?? []);
+  const practicePool = allItems.filter((item) => PRACTICE_TYPES.has(item.type) && item.dutch && item.english);
+  let candidates = contextSources(allItems).filter(({ item }) =>
     (options.week === "all" || item.week_start === options.week) && !excludedIds.has(item.id));
   if (!candidates.length && excludedIds.size) {
-    candidates = [...authored, ...sourced].filter(({ item }) => options.week === "all" || item.week_start === options.week);
+    candidates = contextSources(allItems).filter(({ item }) =>
+      options.week === "all" || item.week_start === options.week);
   }
   candidates.sort((left, right) => {
     const leftProgress = progress.items?.[left.item.id];
@@ -184,7 +243,7 @@ export function buildContextSession(allItems, progress, options = {}) {
   const selected = candidates.slice(0, Math.min(size, candidates.length));
   return {
     questions: selected.map(({ item, sentence, target, translation }) =>
-      makeContextChoice(wordPool, item, sentence, target, translation)),
+      makeContextChoice(practicePool, item, sentence, target, translation)),
     sourceCount: candidates.length,
   };
 }
@@ -229,6 +288,18 @@ export function buildSession(allItems, options = {}) {
     && (options.week === "all" || item.week_start === options.week)
     && !excludedIds.has(item.id)
   );
+  if (options.mode === "building") {
+    const candidates = shuffle(eligible.flatMap((item) => (item.examples ?? [])
+      .filter((example) => {
+        const wordCount = example.dutch?.trim().split(/\s+/).length ?? 0;
+        return example.dutch && example.english && wordCount >= 3 && wordCount <= 9;
+      })
+      .map((example) => makeSentenceBuild(item, example))))
+      .filter((question, index, values) =>
+        values.findIndex((candidate) => normalize(candidate.answer) === normalize(question.answer)) === index);
+    const questions = candidates.slice(0, size);
+    return { questions, sourceCount: candidates.length };
+  }
   if (options.mode === "sentences") {
     const eligibleIds = new Set(eligible.map((item) => item.id));
     const eligibleById = new Map(eligible.map((item) => [item.id, item]));
@@ -272,6 +343,86 @@ export function buildSession(allItems, options = {}) {
     return makeChoice(eligible, item, index % 2 === 0 ? "nl-en" : "en-nl");
   });
   return { questions, sourceCount: eligible.length };
+}
+
+function firstBuildableExample(item) {
+  return (item.examples ?? []).find((example) => {
+    const wordCount = example.dutch?.trim().split(/\s+/).length ?? 0;
+    return example.dutch && example.english && wordCount >= 3 && wordCount <= 9;
+  });
+}
+
+function practicePriority(item, progress) {
+  const itemProgress = progress.items?.[item.id];
+  const correct = itemProgress?.correct ?? 0;
+  const wrong = itemProgress?.wrong ?? 0;
+  const attempts = correct + wrong;
+  const mistakeDebt = itemProgress?.mistakeDebt ?? Math.max(0, wrong - correct);
+  return {
+    item,
+    attempts,
+    weakness: mistakeDebt + Math.max(0, wrong - correct),
+    lastPracticed: itemProgress?.lastPracticed ?? "",
+    seed: Math.random(),
+  };
+}
+
+function selectGuidedTargets(eligible, targetCount) {
+  const selected = [];
+  const selectedIds = new Set();
+  GUIDED_TYPE_ORDER.forEach((type) => {
+    if (selected.length >= targetCount) return;
+    const item = eligible.find((candidate) => candidate.type === type && !selectedIds.has(candidate.id));
+    if (!item) return;
+    selected.push(item);
+    selectedIds.add(item.id);
+  });
+  eligible.forEach((item) => {
+    if (selected.length >= targetCount || selectedIds.has(item.id)) return;
+    selected.push(item);
+    selectedIds.add(item.id);
+  });
+  return selected;
+}
+
+export function buildGuidedSession(allItems, progress, options = {}) {
+  const size = options.size ?? 36;
+  const week = options.week ?? "all";
+  const practicePool = allItems.filter((item) => PRACTICE_TYPES.has(item.type) && item.dutch && item.english);
+  const eligible = practicePool
+    .filter((item) => week === "all" || item.week_start === week)
+    .map((item) => practicePriority(item, progress))
+    .sort((left, right) =>
+      right.weakness - left.weakness
+      || left.attempts - right.attempts
+      || left.lastPracticed.localeCompare(right.lastPracticed)
+      || left.seed - right.seed
+      || left.item.dutch.localeCompare(right.item.dutch, "nl"))
+    .map((entry) => entry.item);
+  const targetCount = Math.min(options.targetCount ?? 8, eligible.length);
+  const targets = selectGuidedTargets(eligible, targetCount);
+  const targetIds = new Set(targets.map((item) => item.id));
+  const contextsById = new Map(contextSources(allItems)
+    .filter(({ item }) => targetIds.has(item.id))
+    .map((source) => [source.item.id, source]));
+  const layers = [[], [], [], [], [], []];
+  targets.forEach((item) => {
+    const context = contextsById.get(item.id);
+    if (context) layers[0].push(makeContextChoice(practicePool, item, context.sentence, context.target, context.translation));
+    layers[1].push(makeChoice(practicePool, item, "nl-en"));
+    layers[2].push(makeChoice(practicePool, item, "en-nl"));
+    layers[3].push(makeTyped(item));
+    const cloze = makeCloze(item);
+    if (cloze) layers[4].push({ ...cloze, hint: null });
+    const buildable = firstBuildableExample(item);
+    if (buildable) layers[5].push(makeSentenceBuild(item, buildable));
+  });
+  const questions = layers.flat().slice(0, size);
+  return {
+    questions,
+    sourceCount: eligible.length,
+    targetCount: targets.length,
+  };
 }
 
 function reviewIntervalDays(itemProgress) {
@@ -444,15 +595,16 @@ function defaultProgress() {
   };
 }
 
-export function saveSessionProgress(results, profile = "catalin") {
+export function saveSessionProgress(results, profile = "catalin", options = {}) {
   const progress = loadProgress(profile);
   const today = new Date().toLocaleDateString("en-CA");
   const yesterday = new Date(Date.now() - 86400000).toLocaleDateString("en-CA");
+  const countSession = options.countSession !== false;
   if (progress.lastPracticeDate !== today) {
     progress.streak = progress.lastPracticeDate === yesterday ? progress.streak + 1 : 1;
   }
   progress.lastPracticeDate = today;
-  progress.sessions += 1;
+  if (countSession) progress.sessions += 1;
   progress.answered += results.length;
   progress.correct += results.filter((result) => result.correct).length;
   const earnedXp = results.reduce((total, result) => total + (result.correct ? 10 : 2), 0);
@@ -460,7 +612,7 @@ export function saveSessionProgress(results, profile = "catalin") {
   progress.xp += earnedXp;
   const week = mondayOf(today);
   const weekly = progress.byWeek[week] ?? { sessions: 0, answered: 0, correct: 0, xp: 0, items: {} };
-  weekly.sessions += 1;
+  if (countSession) weekly.sessions += 1;
   weekly.answered += results.length;
   weekly.correct += correctAnswers;
   weekly.xp += earnedXp;
