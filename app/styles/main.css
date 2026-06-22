@@ -198,7 +198,7 @@ a { color: inherit; }
 
 main { overflow: hidden; }
 .mobile-tab-bar { display: none; }
-.hero, .home-coverage, .leaderboard-section, .stats-section, .practice-section, .simulator-section {
+.hero, .home-coverage, .leaderboard-section, .stats-section, .practice-section, .simulator-section, .dictionary-section {
   width: min(1180px, calc(100% - 32px));
   margin-inline: auto;
 }
@@ -291,6 +291,7 @@ main { overflow: hidden; }
 .leaderboard-xp span { color: var(--orange); font-size: 10px; font-weight: 850; letter-spacing: .1em; }
 .practice-section { margin-top: 92px; padding: clamp(28px, 5vw, 58px); border-radius: 32px; background: var(--green-soft); }
 .simulator-section { margin-top: 34px; margin-bottom: 110px; padding: clamp(28px, 5vw, 58px); border: 1px solid color-mix(in srgb, var(--orange) 24%, var(--line)); border-radius: 32px; background: color-mix(in srgb, var(--orange-soft) 55%, var(--paper)); }
+.dictionary-section { margin-top: -76px; margin-bottom: 110px; }
 .stats-section .section-heading { margin-bottom: 18px; }
 .stats-section .section-heading h2 { font-size: clamp(28px, 4vw, 38px); }
 .practice-section > .academy-header .eyebrow { color: var(--green); }
@@ -661,6 +662,7 @@ blockquote small { margin-top: 12px; color: var(--orange); font-weight: 750; }
 
 @media (max-width: 620px) {
   body { padding-bottom: calc(76px + env(safe-area-inset-bottom)); }
+  .dictionary-section,
   body[data-mobile-view="home"] .practice-section,
   body[data-mobile-view="home"] .simulator-section,
   body[data-mobile-view="home"] .stats-section,
@@ -696,7 +698,8 @@ blockquote small { margin-top: 12px; color: var(--orange); font-weight: 750; }
     min-width: 0;
     min-height: 52px;
     display: grid;
-    place-items: center;
+    grid-template-rows: 22px 13px;
+    justify-items: center;
     align-content: center;
     gap: 3px;
     padding: 4px 2px;
@@ -707,8 +710,29 @@ blockquote small { margin-top: 12px; color: var(--orange); font-weight: 750; }
     cursor: pointer;
   }
   .mobile-tab-bar button[aria-current="page"] { background: var(--green-soft); color: var(--green); }
-  .mobile-tab-bar button span { font: 800 18px/1 var(--font-main); }
-  .mobile-tab-bar button strong { font-size: 10px; }
+  .mobile-tab-bar .dock-icon {
+    width: 24px;
+    height: 22px;
+    display: grid;
+    place-items: center;
+  }
+  .mobile-tab-bar .dock-icon svg {
+    width: 19px;
+    height: 19px;
+    display: block;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .mobile-tab-bar button strong {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font: 800 10px/1.1 var(--font-main);
+    letter-spacing: 0;
+  }
   .site-header, .hero, .home-coverage, .leaderboard-section, .stats-section, .practice-section, .simulator-section { width: min(100% - 20px, 1180px); }
   .site-header { min-height: 68px; gap: 10px; }
   .brand { min-width: 0; }
