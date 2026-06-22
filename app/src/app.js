@@ -120,6 +120,7 @@ const elements = {
   dictionaryClose: document.querySelector("#dictionary-close"),
   dictionaryScopeLabel: document.querySelector("#dictionary-scope-label"),
   dictionaryWeekControl: document.querySelector("#dictionary-week-control"),
+  dictionaryOpenButtons: document.querySelectorAll("[data-open-dictionary]"),
   simulatorStarts: document.querySelectorAll(".simulator-start"),
   simulatorDialog: document.querySelector("#simulator-dialog"),
   simulatorClose: document.querySelector("#simulator-close"),
@@ -1087,6 +1088,10 @@ function bindEvents() {
   elements.startMistakeReview.addEventListener("click", () => startLesson("mistakes", elements.startMistakeReview));
   elements.academyScopes.forEach((button) => button.addEventListener("click", () => setAcademyScope(button.dataset.scope)));
   elements.leaderboardScopes.forEach((button) => button.addEventListener("click", () => setLeaderboardScope(button.dataset.leaderboardScope)));
+  elements.dictionaryOpenButtons.forEach((button) => button.addEventListener("click", () => {
+    if (button.dataset.openDictionary === "all") setAcademyScope("all");
+    openDictionary();
+  }));
   elements.dictionaryClose.addEventListener("click", closeDictionary);
   elements.dictionaryDialog.addEventListener("close", () => {
     if (isMobileLayout() && document.body.dataset.mobileView === "dictionary") {

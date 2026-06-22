@@ -6,8 +6,8 @@
     <meta name="theme-color" content="#f4f0e6">
     <meta name="description" content="Polilingua, a personal Dutch learning academy and memory.">
     <title>Polilingua</title>
-    <link rel="stylesheet" href="./styles/main.css?v=20260618-21">
-    <script type="module" src="./src/app.js?v=20260618-20"></script>
+    <link rel="stylesheet" href="./styles/main.css?v=20260619-2">
+    <script type="module" src="./src/app.js?v=20260622-1"></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -175,23 +175,57 @@
           </article>
         </div>
       </section>
+
+      <section class="dictionary-section" aria-labelledby="dictionary-entry-title">
+        <article class="dictionary-stage">
+          <div>
+            <p class="stage-kicker">Dictionary</p>
+            <h3 id="dictionary-entry-title">Find words fast.</h3>
+            <p>Search every learned word, expression, particle, grammar pattern, dialogue, and mistake.</p>
+          </div>
+          <button class="secondary-button" data-open-dictionary="all" type="button">Open dictionary</button>
+        </article>
+      </section>
     </main>
 
     <nav class="mobile-tab-bar" aria-label="App navigation">
       <button type="button" data-mobile-view="home" aria-current="page">
-        <span aria-hidden="true">⌂</span>
+        <span class="dock-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" focusable="false">
+            <path d="M4.5 10.5 12 4l7.5 6.5" />
+            <path d="M6.5 9.5v9h11v-9" />
+            <path d="M10 18.5v-5h4v5" />
+          </svg>
+        </span>
         <strong>Home</strong>
       </button>
       <button type="button" data-mobile-view="academy">
-        <span aria-hidden="true">Aa</span>
+        <span class="dock-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" focusable="false">
+            <path d="M6 17.5 10.5 6h3L18 17.5" />
+            <path d="M8 13.5h8" />
+            <path d="M19 17.5h-3" />
+          </svg>
+        </span>
         <strong>Academy</strong>
       </button>
       <button type="button" data-mobile-view="simulator">
-        <span aria-hidden="true">◷</span>
+        <span class="dock-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" focusable="false">
+            <circle cx="12" cy="12" r="7.5" />
+            <path d="M12 7.5V12l3.5 2" />
+          </svg>
+        </span>
         <strong>Simulator</strong>
       </button>
       <button type="button" data-mobile-view="dictionary">
-        <span aria-hidden="true">⌕</span>
+        <span class="dock-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" focusable="false">
+            <path d="M6.5 6.5h8a3 3 0 0 1 3 3v8h-8a3 3 0 0 1-3-3z" />
+            <path d="M10 10h4" />
+            <path d="M10 13h3" />
+          </svg>
+        </span>
         <strong>Dictionary</strong>
       </button>
     </nav>
