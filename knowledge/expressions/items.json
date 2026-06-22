@@ -547,15 +547,17 @@
       }
     ],
     "source_images": [
-      "sources/archive/2026/week_01/images/lesson-08-page-04.jpg"
+      "sources/archive/2026/week_01/images/lesson-08-page-04.jpg",
+      "sources/archive/2026/2026-06-22/images/note-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
       "separable_verb",
-      "2026-06-08"
+      "2026-06-08",
+      "2026-06-22"
     ],
-    "notes": "",
+    "notes": "Additional evidence from 2026-06-22 notes.",
     "register": "neutral",
     "week_start": "2026-06-08"
   },
@@ -652,15 +654,18 @@
       }
     ],
     "source_images": [
-      "sources/archive/2026/week_01/images/lesson-08-page-04.jpg"
+      "sources/archive/2026/week_01/images/lesson-08-page-04.jpg",
+      "sources/archive/2026/2026-06-22/images/note-page-01.jpg",
+      "sources/archive/2026/2026-06-22/images/note-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
       "fixed_expression",
-      "2026-06-08"
+      "2026-06-08",
+      "2026-06-22"
     ],
-    "notes": "",
+    "notes": "Additional evidence from 2026-06-22 notes.",
     "register": "neutral",
     "week_start": "2026-06-08"
   },
@@ -678,15 +683,17 @@
       }
     ],
     "source_images": [
-      "sources/archive/2026/week_01/images/lesson-08-page-04.jpg"
+      "sources/archive/2026/week_01/images/lesson-08-page-04.jpg",
+      "sources/archive/2026/2026-06-22/images/note-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
       "imperative",
-      "2026-06-08"
+      "2026-06-08",
+      "2026-06-22"
     ],
-    "notes": "informal",
+    "notes": "informal Additional evidence from 2026-06-22 notes.",
     "register": "informal",
     "week_start": "2026-06-08"
   },
@@ -704,16 +711,18 @@
       }
     ],
     "source_images": [
-      "sources/archive/2026/week_01/images/lesson-08-page-04.jpg"
+      "sources/archive/2026/week_01/images/lesson-08-page-04.jpg",
+      "sources/archive/2026/2026-06-22/images/note-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
       "imperative",
       "particle",
-      "2026-06-08"
+      "2026-06-08",
+      "2026-06-22"
     ],
-    "notes": "Merged with the existing seed entry. 'Maar' makes the imperative sound welcoming rather than abrupt.",
+    "notes": "Merged with the existing seed entry. 'Maar' makes the imperative sound welcoming rather than abrupt. Additional evidence from 2026-06-22 notes.",
     "register": "informal",
     "week_start": "2026-06-08"
   },
@@ -743,5 +752,315 @@
     "notes": "Merged with the existing seed entry. The handwriting is compact, but the phrase is supported by the supplied seed example.",
     "register": "neutral",
     "week_start": "2026-06-08"
+  },
+  {
+    "id": "expression-hoe-gaat-het",
+    "type": "expression",
+    "dutch": "Hoe gaat het?",
+    "english": "How are you?",
+    "category": "conversation",
+    "examples": [
+      {
+        "dutch": "Hoe gaat het? Het gaat goed.",
+        "english": "How are you? It is going well.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "question",
+      "2026-06-22"
+    ],
+    "notes": "",
+    "register": "neutral",
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "expression-hoe-gaat-het-met-jou",
+    "type": "expression",
+    "dutch": "Hoe gaat het met jou?",
+    "english": "How are you?",
+    "category": "conversation",
+    "examples": [
+      {
+        "dutch": "Hoe gaat het met jou?",
+        "english": "How are you?",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "question",
+      "2026-06-22"
+    ],
+    "notes": "Met jou is the informal object form after met.",
+    "register": "neutral",
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "expression-het-gaat-goed",
+    "type": "expression",
+    "dutch": "Het gaat goed.",
+    "english": "It is going well.",
+    "category": "conversation",
+    "examples": [
+      {
+        "dutch": "Hoe gaat het? Het gaat goed.",
+        "english": "How are you? It is going well.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "2026-06-22"
+    ],
+    "notes": "",
+    "register": "neutral",
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "expression-tot-gauw",
+    "type": "expression",
+    "dutch": "Tot gauw.",
+    "english": "See you soon.",
+    "category": "farewell",
+    "examples": [
+      {
+        "dutch": "Tot gauw!",
+        "english": "See you soon!",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "conversation",
+      "2026-06-22"
+    ],
+    "notes": "",
+    "register": "informal",
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "expression-wees-voorzichtig",
+    "type": "expression",
+    "dutch": "Wees voorzichtig.",
+    "english": "Be careful.",
+    "category": "warning",
+    "examples": [
+      {
+        "dutch": "Wees voorzichtig.",
+        "english": "Be careful.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-03.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "imperative",
+      "2026-06-22"
+    ],
+    "notes": "",
+    "register": "neutral",
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "expression-ik-ben-bij-mijn-vriend",
+    "type": "expression",
+    "dutch": "Ik ben bij mijn vriend.",
+    "english": "I am at my friend's place.",
+    "category": "location",
+    "examples": [
+      {
+        "dutch": "Ik ben bij mijn vriend.",
+        "english": "I am at my friend's place.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-03.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "preposition",
+      "2026-06-22"
+    ],
+    "notes": "",
+    "register": "neutral",
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "expression-bij-slecht-weer-blijven-we-binnen",
+    "type": "expression",
+    "dutch": "Bij slecht weer blijven we binnen.",
+    "english": "In bad weather, we stay inside.",
+    "category": "weather",
+    "examples": [
+      {
+        "dutch": "Bij slecht weer blijven we binnen.",
+        "english": "In bad weather, we stay inside.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-03.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "preposition",
+      "word_order",
+      "2026-06-22"
+    ],
+    "notes": "",
+    "register": "neutral",
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "expression-hoe-is-het-met-jullie-allemaal",
+    "type": "expression",
+    "dutch": "Hoe is het met jullie allemaal?",
+    "english": "How are all of you?",
+    "category": "conversation",
+    "examples": [
+      {
+        "dutch": "Hoe is het met jullie allemaal?",
+        "english": "How are all of you?",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "question",
+      "2026-06-22"
+    ],
+    "notes": "",
+    "register": "neutral",
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "expression-ik-ben-jarig",
+    "type": "expression",
+    "dutch": "Ik ben jarig.",
+    "english": "It is my birthday.",
+    "category": "social",
+    "examples": [
+      {
+        "dutch": "Ik ben jarig.",
+        "english": "It is my birthday.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-04.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "2026-06-22"
+    ],
+    "notes": "",
+    "register": "neutral",
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "expression-ik-krijg-visite",
+    "type": "expression",
+    "dutch": "Ik krijg visite.",
+    "english": "I am having visitors.",
+    "category": "social",
+    "examples": [
+      {
+        "dutch": "Ik krijg visite.",
+        "english": "I am having visitors.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-04.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "2026-06-22"
+    ],
+    "notes": "",
+    "register": "neutral",
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "expression-ik-heb-zin-om-voetbal-te-kijken",
+    "type": "expression",
+    "dutch": "Ik heb zin om voetbal te kijken.",
+    "english": "I feel like watching football.",
+    "category": "preference",
+    "examples": [
+      {
+        "dutch": "Ik heb zin om voetbal te kijken.",
+        "english": "I feel like watching football.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-04.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "fixed_expression",
+      "2026-06-22"
+    ],
+    "notes": "",
+    "register": "neutral",
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "expression-ik-ben-aan-het-trainen",
+    "type": "expression",
+    "dutch": "Ik ben aan het trainen.",
+    "english": "I am training.",
+    "category": "activities",
+    "examples": [
+      {
+        "dutch": "Ik ben aan het trainen.",
+        "english": "I am training.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-03.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "progressive",
+      "2026-06-22"
+    ],
+    "notes": "",
+    "register": "neutral",
+    "week_start": "2026-06-22"
   }
 ]

@@ -432,19 +432,201 @@
       }
     ],
     "source_images": [
-      "sources/archive/2026/week_01/images/lesson-08-page-04.jpg"
+      "sources/archive/2026/week_01/images/lesson-08-page-04.jpg",
+      "sources/archive/2026/2026-06-22/images/note-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
       "separable_verbs",
       "word_order",
-      "2026-06-08"
+      "2026-06-08",
+      "2026-06-22"
     ],
-    "notes": "",
+    "notes": "Additional evidence from 2026-06-22 notes.",
     "pattern": "subject + ziet/zien + er + complement + uit",
     "explanation": "In a main clause, 'eruitzien' separates around the complement.",
     "constraints": [],
     "week_start": "2026-06-08"
+  },
+  {
+    "id": "grammar_pattern-persoonlijke-en-bezittelijke-voornaamwoorden",
+    "type": "grammar_pattern",
+    "dutch": "Persoonlijke en bezittelijke voornaamwoorden",
+    "english": "Personal and possessive pronouns",
+    "category": "grammar",
+    "examples": [
+      {
+        "dutch": "Ons huis is dichtbij.",
+        "english": "Our house is nearby.",
+        "source_type": "ai_generated"
+      },
+      {
+        "dutch": "Onze vriendin komt.",
+        "english": "Our friend is coming.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "pronouns",
+      "2026-06-22"
+    ],
+    "notes": "",
+    "pattern": "subject/object pronoun; possessive pronoun + noun",
+    "explanation": "Dutch distinguishes subject forms such as ik, jij, hij, wij and possessive forms such as mijn, jouw, zijn, haar, ons/onze, jullie, hun. Use ons before singular het-words and onze before de-words and plurals.",
+    "constraints": [
+      "Use jou after a preposition: met jou.",
+      "Use ons with singular het-nouns; use onze with de-nouns and plurals."
+    ],
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "grammar_pattern-bij-voor-plaats-persoon-en-omstandigheid",
+    "type": "grammar_pattern",
+    "dutch": "Bij voor plaats, persoon en omstandigheid",
+    "english": "Using bij for place, person, and circumstance",
+    "category": "grammar",
+    "examples": [
+      {
+        "dutch": "Ik ben bij mijn vriend.",
+        "english": "I am at my friend's place.",
+        "source_type": "ai_generated"
+      },
+      {
+        "dutch": "Hij woont bij het station.",
+        "english": "He lives near the station.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-03.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "prepositions",
+      "location",
+      "2026-06-22"
+    ],
+    "notes": "",
+    "pattern": "bij + person/place/noun phrase",
+    "explanation": "Bij can mean at someone's place, with someone, near a location, or in a circumstance such as bij slecht weer.",
+    "constraints": [
+      "Translate by context: at, with, near, by, or in."
+    ],
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "grammar_pattern-aan-het-infinitief",
+    "type": "grammar_pattern",
+    "dutch": "Aan het + infinitief",
+    "english": "Present progressive with aan het",
+    "category": "grammar",
+    "examples": [
+      {
+        "dutch": "Ik ben aan het trainen.",
+        "english": "I am training.",
+        "source_type": "ai_generated"
+      },
+      {
+        "dutch": "Zij is aan het bewegen.",
+        "english": "She is moving.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-03.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "progressive",
+      "word_order",
+      "2026-06-22"
+    ],
+    "notes": "",
+    "pattern": "zijn + aan het + infinitive",
+    "explanation": "Use zijn plus aan het plus an infinitive to say that an action is happening right now.",
+    "constraints": [
+      "Conjugate zijn for the subject.",
+      "The main action stays as an infinitive after aan het."
+    ],
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "grammar_pattern-om-te-infinitief",
+    "type": "grammar_pattern",
+    "dutch": "Om te + infinitief",
+    "english": "Om te with an infinitive",
+    "category": "grammar",
+    "examples": [
+      {
+        "dutch": "Ik heb zin om voetbal te kijken.",
+        "english": "I feel like watching football.",
+        "source_type": "ai_generated"
+      },
+      {
+        "dutch": "Ik kom om koffie te drinken.",
+        "english": "I come to drink coffee.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-04.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "infinitive",
+      "word_order",
+      "2026-06-22"
+    ],
+    "notes": "",
+    "pattern": "om + object/rest + te + infinitive",
+    "explanation": "Use om te before an infinitive phrase for a purpose or after zin hebben to say what you feel like doing.",
+    "constraints": [
+      "Do not use om before a simple noun after zin hebben; use zin in + noun."
+    ],
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "grammar_pattern-op-om-aan-voor-positie-en-doel",
+    "type": "grammar_pattern",
+    "dutch": "Op, om, aan voor positie en doel",
+    "english": "Using op, om, and aan in simple position phrases",
+    "category": "grammar",
+    "examples": [
+      {
+        "dutch": "Ik kniel op de grond.",
+        "english": "I kneel on the ground.",
+        "source_type": "ai_generated"
+      },
+      {
+        "dutch": "Ik ben aan het trainen.",
+        "english": "I am training.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-04.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "prepositions",
+      "2026-06-22"
+    ],
+    "notes": "",
+    "pattern": "preposition + noun phrase OR om + te + infinitive",
+    "explanation": "The notes contrast common position and purpose words: op can mean on top of, om can mean around or introduce om te, and aan appears in aan het for an ongoing action.",
+    "constraints": [
+      "Choose the preposition by the Dutch phrase, not by one English word."
+    ],
+    "week_start": "2026-06-22"
   }
 ]
