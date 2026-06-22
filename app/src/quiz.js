@@ -45,6 +45,15 @@ function shuffle(values) {
   return result;
 }
 
+function uniqueItemsById(items) {
+  const seen = new Set();
+  return items.filter((item) => {
+    if (!item?.id || seen.has(item.id)) return false;
+    seen.add(item.id);
+    return true;
+  });
+}
+
 function normalize(value) {
   return value
     .toLocaleLowerCase("nl-NL")
@@ -490,7 +499,7 @@ function unresolvedMistakes(itemProgress) {
 export function buildMistakeQueue(allItems, progress, options = {}) {
   const week = options.week ?? "all";
   const size = options.size ?? 20;
-  const ranked = allItems
+  const ranked = uniqueItemsById(allItems)
     .filter((item) => PRACTICE_TYPES.has(item.type)
       && item.dutch
       && item.english
@@ -513,7 +522,7 @@ export function buildMistakeQueue(allItems, progress, options = {}) {
 
 export function buildMistakeSession(allItems, progress, options = {}) {
   const queue = buildMistakeQueue(allItems, progress, options);
-  const questions = queue.items.map((item, index) => {
+  const questions = uniqueItemsById(queue.items).map((item, index) => {
     const cloze = makeCloze(item);
     return index % 2 === 1 && cloze ? cloze : makeTyped(item);
   });

@@ -99,6 +99,15 @@ When meaning and usage match:
 
 Keep separate items when pragmatic function or meaning differs. For example, a normal lexical use and a discourse-particle use may require separate records.
 
+For every weekly ingestion, include an explicit duplicate audit in the work:
+
+- search existing canonical files before adding each candidate;
+- merge exact or near-duplicate forms into the existing stable ID;
+- preserve the older item's examples, source references, and notes;
+- add the new week tag and source evidence when the item reappears;
+- do not create a second app-facing item just because the same word appears in a new lesson;
+- after rebuilding metadata, verify `metadata/catalog.json` has one row per canonical ID and every row has the correct `source_path`.
+
 ## Uncertainty
 
 Accuracy is more important than extraction volume.
@@ -136,6 +145,16 @@ Classify by learning function, not surface form alone.
 - Generated improvements may reuse words and expressions from the current lesson or previously learned canonical data, but must not introduce untaught vocabulary as new learning material.
 - Never create a new canonical word or expression unless it is supported by the uploaded lesson evidence. If an explanation genuinely requires an unfamiliar helper word, prefer simple English explanation instead.
 - Preserve the source transcription unchanged and clearly distinguish teacher-provided content from Codex corrections or generated enrichment.
+
+## App Practice Contract
+
+When changing canonical data or app code, keep these app guarantees true on both mobile and desktop:
+
+- Every new practice-ready word, expression, particle, and verb construction needs at least one short example unless there is a clear reason it should not be practiced in context.
+- This-week and full-content Academy scopes must both work after ingestion.
+- Learn in context, Recognize meaning, Produce the Dutch, Find the missing word, Build the sentence, Review due items, and Repair weak answers must all have usable data when the week's material supports them.
+- Mistake repair must deduplicate by canonical item ID. Repeated wrong attempts may increase priority or debt, but the same word, expression, or phrase must not appear multiple times in a single Fix wrong answers queue or session.
+- If a simulator or practice screen relies on visual meaning, verify it at mobile and desktop widths. The visual should make the target distinction clear without requiring the user to infer from tiny or ambiguous positioning.
 
 ## GitHub Pages App
 
@@ -194,7 +213,7 @@ When the user asks to process notes:
 13. Ensure new material has enough app-ready practice data: Dutch text, English meaning, examples with English translations, week tags, and source references for Learn in context, recognition, recall, cloze, sentence-building, review queue, mistake review, dictionary, and filters.
 14. Rebuild affected catalogs, tags, statistics, and ingestion logs.
 15. Run validation and fix every failure.
-16. Verify the updated week and material in the app, including this week/full content filters and all current Academy modes.
+16. Verify the updated week and material in the app, including this week/full content filters and all current Academy modes. At minimum, check the dashboard count, dictionary search for a new item, this-week Academy start, review queue, mistake repair state, and any simulator or app area touched by the change. Use a local static server and the in-app browser when possible.
 17. Report additions, merges, corrections, generated enrichment, uncertainty, assumptions, app verification, and validation results.
 
 Do not claim an ingestion is complete until every uploaded source has been inspected and archived.

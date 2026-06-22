@@ -1,5 +1,5 @@
 import { loadCanonicalItem, loadDashboardData, loadPracticeItems } from "../data-loader/repository.js";
-import { buildContextSession, buildGuidedSession, buildMistakeQueue, buildMistakeSession, buildRetryQuestion, buildReviewQueue, buildReviewSession, buildSession, checkAnswer, describeGrammar, loadProgress, saveSessionProgress } from "./quiz.js?v=20260618-1";
+import { buildContextSession, buildGuidedSession, buildMistakeQueue, buildMistakeSession, buildRetryQuestion, buildReviewQueue, buildReviewSession, buildSession, checkAnswer, describeGrammar, loadProgress, saveSessionProgress } from "./quiz.js?v=20260622-1";
 
 const TYPE_LABELS = {
   word: "Word",
@@ -528,7 +528,12 @@ function finishLesson() {
 function queueRetryQuestion(question) {
   const lesson = state.lesson;
   if (!lesson || !state.practiceItems) return;
+  if (lesson.mode === "mistakes") return;
   if ((lesson.insertedRetries ?? 0) >= 8) return;
+  const hasPendingSameItem = lesson.questions
+    .slice(lesson.index + 1)
+    .some((candidate) => candidate.itemId === question.itemId);
+  if (hasPendingSameItem) return;
   const retryCounts = lesson.retryCounts ?? {};
   const currentCount = retryCounts[question.itemId] ?? 0;
   if (currentCount >= 2) return;
@@ -918,27 +923,51 @@ function timeSimulatorQuestions() {
 }
 
 const LOCATION_SCENES = [
-  ["in", "in", "inside / in", "The ball is inside the box"],
-  ["op", "on", "on top of", "The ball is on the box"],
-  ["onder", "under", "under", "The ball is under the box"],
-  ["naast", "next", "next to", "The ball is next to the box"],
-  ["voor", "front", "in front of", "The ball is in front of the box"],
-  ["achter", "behind", "behind", "The ball is behind the box"],
-  ["tussen", "between", "between", "The ball is between the boxes"],
-  ["tegen", "against", "against", "The ball is against the wall"],
-  ["aan", "attached", "on / attached to", "The picture is on the wall"],
-  ["links van", "left", "to the left of", "The ball is left of the box"],
-  ["rechts van", "right", "to the right of", "The ball is right of the box"],
-  ["boven", "above", "above", "The ball is above the box"],
+  { answer: "in", scene: "in", translation: "inside / in", description: "The ball is inside the box", subject: "de bal", reference: "de doos" },
+  { answer: "op", scene: "on", translation: "on top of", description: "The ball is on the box", subject: "de bal", reference: "de doos" },
+  { answer: "onder", scene: "under", translation: "under", description: "The ball is under the table", subject: "de bal", reference: "de tafel" },
+  { answer: "naast", scene: "next", translation: "next to", description: "The ball is next to the box", subject: "de bal", reference: "de doos" },
+  { answer: "voor", scene: "front", translation: "in front of", description: "The ball is in front of the box", subject: "de bal", reference: "de doos" },
+  { answer: "achter", scene: "behind", translation: "behind", description: "The ball is behind the box", subject: "de bal", reference: "de doos" },
+  { answer: "tussen", scene: "between", translation: "between", description: "The ball is between the boxes", subject: "de bal", reference: "de dozen" },
+  { answer: "tegen", scene: "against", translation: "against", description: "The ball is against the wall", subject: "de bal", reference: "de muur" },
+  { answer: "aan", scene: "attached", translation: "on / attached to", description: "The picture is attached to the wall", subject: "het schilderij", reference: "de muur" },
+  { answer: "links van", scene: "left", translation: "to the left of", description: "The ball is left of the box", subject: "de bal", reference: "de doos" },
+  { answer: "rechts van", scene: "right", translation: "to the right of", description: "The ball is right of the box", subject: "de bal", reference: "de doos" },
+  { answer: "boven", scene: "above", translation: "above", description: "The ball is above the box", subject: "de bal", reference: "de doos" },
 ];
 
+function locationSceneVisual(scene) {
+  const secondBox = scene.scene === "between"
+    ? '<span class="scene-box scene-box--second"><span>doos</span></span>'
+    : "";
+  const wall = ["against", "attached"].includes(scene.scene)
+    ? '<span class="scene-wall"><span>muur</span></span>'
+    : "";
+  const target = scene.scene === "attached"
+    ? '<span class="scene-picture"><span>schilderij</span></span>'
+    : '<span class="scene-ball"><span>bal</span></span>';
+  const reference = ["against", "attached"].includes(scene.scene)
+    ? ""
+    : `<span class="scene-box${scene.scene === "under" ? " scene-box--table" : ""}"><span>${scene.scene === "under" ? "tafel" : "doos"}</span></span>`;
+  return `
+    <div class="place-scene place-scene--${scene.scene}" role="img" aria-label="${escapeHtml(scene.description)}">
+      <span class="scene-floor" aria-hidden="true"></span>
+      ${wall}
+      ${reference}
+      ${secondBox}
+      ${target}
+      <span class="scene-caption"><strong>${escapeHtml(scene.subject)}</strong><span>${escapeHtml(scene.reference)}</span></span>
+    </div>`;
+}
+
 function locationSimulatorQuestions() {
-  return shuffled(LOCATION_SCENES).slice(0, 10).map(([answer, scene, translation, description]) => ({
+  return shuffled(LOCATION_SCENES).slice(0, 10).map((scene) => ({
     question: "Welk plaatswoord past?",
-    answer,
-    translation,
-    options: shuffled([answer, ...shuffled(LOCATION_SCENES.map(([word]) => word).filter((word) => word !== answer)).slice(0, 3)]),
-    visual: `<div class="place-scene place-scene--${scene}" aria-label="${description}"><span class="scene-ball"></span><span class="scene-box"></span>${scene === "between" ? '<span class="scene-box scene-box--second"></span>' : ""}${["against", "attached"].includes(scene) ? '<span class="scene-wall"></span>' : ""}</div>`,
+    answer: scene.answer,
+    translation: scene.translation,
+    options: shuffled([scene.answer, ...shuffled(LOCATION_SCENES.map(({ answer }) => answer).filter((word) => word !== scene.answer)).slice(0, 3)]),
+    visual: locationSceneVisual(scene),
   }));
 }
 
@@ -970,7 +999,7 @@ function simulatorRulesHtml(mode) {
   return `
     <p>Use a location word before the noun phrase: <strong>De bal ligt onder de tafel.</strong></p>
     <dl class="rules-list rules-list--words">
-      ${LOCATION_SCENES.map(([word, , translation]) => `<div><dt>${escapeHtml(word)}</dt><dd>${escapeHtml(translation)}</dd></div>`).join("")}
+      ${LOCATION_SCENES.map(({ answer, translation }) => `<div><dt>${escapeHtml(answer)}</dt><dd>${escapeHtml(translation)}</dd></div>`).join("")}
     </dl>
     <p class="rule-note"><strong>Useful pattern:</strong> subject + <em>staat/ligt/zit</em> + location word + noun.</p>`;
 }

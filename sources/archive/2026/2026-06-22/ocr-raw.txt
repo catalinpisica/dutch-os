@@ -1,0 +1,79 @@
+Manual OCR / direct visual reading from attached images.
+
+Reading order:
+1. note-page-01.jpg / IMG_2966.JPG
+2. note-page-02.jpg / IMG_2967.JPG
+3. note-page-03.jpg / IMG_2968.JPG
+4. note-page-04.jpg / IMG_2969.JPG
+
+Page 1 rough transcription:
+- Het maakt me niet uit = I don't mind / it doesn't matter to me.
+- binnen = inside.
+- toch = really / indeed.
+- Je ziet er goed uit = you look good.
+- doe maar = just go ahead / fine / okay.
+- doe maar niet = better not / no thanks.
+- dat is lang geleden = long time no see / that was a long time ago.
+- lang = long.
+- geleden = ago.
+- Ik ben goed bezig = I am doing a good job; I am making good progress.
+- bezig = busy / occupied.
+- Zij ziet er nog goed uit = she still looks good.
+- ze = she.
+- ziet ... uit = looks.
+- nog = still.
+- er = used with uitzien.
+- Kom binnen = come in.
+- Geef je jas maar hier = just give me your coat.
+- geef = give, imperative/command form of geven.
+- je = your.
+- jas = coat.
+- maar = in this case not "but"; it softens the command.
+
+Page 2 rough transcription:
+- Het persoonlijk pronomen.
+- ik, je, u, hij, ze, we, jullie, ze.
+- mijn, je/jij/jouw, uw, zijn, haar, onze, jullie, hun.
+- For de singular words and all plural words we use onze. For het we use ons.
+- Hoe gaat het? / Hoe gaat het met jou?
+- Ik ben goed bezig.
+- Het gaat goed.
+- je = no pression.
+- jouw = emphasis on possession.
+- Heeft u huiswerk gemaakt? Did you do your homework?
+- jarig = [birthday-related note].
+- Ik ben jong > it is my birthday [note corrected in curated transcription].
+
+Page 3 rough transcription:
+- spelletje = little game.
+- voorzichtig = careful.
+- bij = at, with, near, by.
+- Ik ben bij mijn vriend = I am at my friend's place.
+- Hij woont bij het station.
+- He works near the station.
+- Bij slecht weer blijven we binnen.
+- In bad weather we stay inside.
+- bij voorbeeld = for example.
+- bij elkaar = together.
+- bijna = almost.
+- Hoe is het met jou? / Hoe gaat het met jou?
+- Ik ben aan het trainen = I am training.
+- Homework: test for thema 2 + 3.2 + 1-6 + grammatica 1.16.
+
+Page 4 rough transcription:
+- op = deze (phrase unclear in raw note), close / of the flower.
+- Het woordje ... dit/het/ime/of dat (these).
+- krijgen = to get.
+- krijgen bezoek = receive visitors.
+- lief = sweet / kind / dear.
+- voorzichtig = good [note corrected in curated transcription].
+- Doe het raam dicht = close the window.
+- Ik loop in de handen = clap your hands [raw note unclear].
+- Sta op = stand up.
+- waar = true.
+- abriende wijs = commanding form [normalized as gebiedende wijs].
+- bewegen = to move.
+- beweeg je met = door of move [raw note unclear].
+- Ik heb zin om voetbal te kijken.
+- Ik heb zin om op verjaardag te gaan [corrected in curated transcription].
+- Ik heb zin in cappu.

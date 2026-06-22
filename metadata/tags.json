@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-14",
+  "generated_at": "2026-06-22",
   "tags": [
     {
       "tag": "2026-05-25",
@@ -14,8 +14,12 @@
       "count": 100
     },
     {
+      "tag": "2026-06-22",
+      "count": 86
+    },
+    {
       "tag": "A1",
-      "count": 256
+      "count": 315
     },
     {
       "tag": "articles",
@@ -23,7 +27,7 @@
     },
     {
       "tag": "conversation",
-      "count": 3
+      "count": 5
     },
     {
       "tag": "demonstratives",
@@ -35,7 +39,7 @@
     },
     {
       "tag": "fixed_expression",
-      "count": 4
+      "count": 7
     },
     {
       "tag": "fixed_preposition",
@@ -59,7 +63,11 @@
     },
     {
       "tag": "imperative",
-      "count": 2
+      "count": 3
+    },
+    {
+      "tag": "infinitive",
+      "count": 1
     },
     {
       "tag": "informal",
@@ -79,7 +87,7 @@
     },
     {
       "tag": "location",
-      "count": 1
+      "count": 2
     },
     {
       "tag": "modal",
@@ -122,16 +130,28 @@
       "count": 1
     },
     {
+      "tag": "preposition",
+      "count": 2
+    },
+    {
       "tag": "prepositions",
-      "count": 1
+      "count": 4
     },
     {
       "tag": "present_tense",
       "count": 1
     },
     {
-      "tag": "question",
+      "tag": "progressive",
+      "count": 3
+    },
+    {
+      "tag": "pronouns",
       "count": 1
+    },
+    {
+      "tag": "question",
+      "count": 4
     },
     {
       "tag": "question_words",
@@ -147,7 +167,7 @@
     },
     {
       "tag": "separable",
-      "count": 4
+      "count": 6
     },
     {
       "tag": "separable_verb",
@@ -186,8 +206,12 @@
       "count": 1
     },
     {
+      "tag": "vocabulary",
+      "count": 2
+    },
+    {
       "tag": "word_order",
-      "count": 3
+      "count": 6
     }
   ]
 }

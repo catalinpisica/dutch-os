@@ -278,20 +278,118 @@
     ],
     "source_images": [
       "sources/archive/2026/week_01/images/lesson-08-page-03.jpg",
-      "sources/archive/2026/week_01/images/lesson-08-page-04.jpg"
+      "sources/archive/2026/week_01/images/lesson-08-page-04.jpg",
+      "sources/archive/2026/2026-06-22/images/note-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
       "separable",
-      "2026-06-08"
+      "2026-06-08",
+      "2026-06-22"
     ],
-    "notes": "",
+    "notes": "Additional evidence from 2026-06-22 notes.",
     "infinitive": "eruitzien",
     "construction": "er + complement + uitzien",
     "word_order_notes": "In a main clause the verb separates: 'Je ziet er goed uit.'",
     "fixed_preposition": null,
     "separable": true,
     "week_start": "2026-06-08"
+  },
+  {
+    "id": "verb_construction-bezig-zijn-met",
+    "type": "verb_construction",
+    "dutch": "bezig zijn met",
+    "english": "to be busy with; to be working on",
+    "category": "verb_construction",
+    "examples": [
+      {
+        "dutch": "Ik ben goed bezig.",
+        "english": "I am doing well.",
+        "source_type": "ai_generated"
+      },
+      {
+        "dutch": "Ik ben bezig met mijn huiswerk.",
+        "english": "I am busy with my homework.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-01.jpg",
+      "sources/archive/2026/2026-06-22/images/note-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "fixed_expression",
+      "2026-06-22"
+    ],
+    "notes": "",
+    "infinitive": "zijn",
+    "construction": "bezig zijn met + noun/activity",
+    "word_order_notes": "Conjugate zijn; met introduces the activity or thing.",
+    "fixed_preposition": null,
+    "separable": false,
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "verb_construction-aan-het-infinitief",
+    "type": "verb_construction",
+    "dutch": "aan het + infinitief",
+    "english": "to be doing something right now",
+    "category": "verb_construction",
+    "examples": [
+      {
+        "dutch": "Ik ben aan het trainen.",
+        "english": "I am training.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-03.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "progressive",
+      "2026-06-22"
+    ],
+    "notes": "",
+    "infinitive": "zijn",
+    "construction": "conjugated zijn + aan het + infinitive",
+    "word_order_notes": "The infinitive follows aan het; the form of zijn changes with the subject.",
+    "fixed_preposition": null,
+    "separable": false,
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "verb_construction-opstaan",
+    "type": "verb_construction",
+    "dutch": "opstaan",
+    "english": "to stand up; to get up",
+    "category": "verb_construction",
+    "examples": [
+      {
+        "dutch": "Ik sta op.",
+        "english": "I stand up.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-04.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "separable",
+      "2026-06-22"
+    ],
+    "notes": "",
+    "infinitive": "opstaan",
+    "construction": "subject + sta/staat/staan + ... + op",
+    "word_order_notes": "In a main clause, op separates and usually moves to the end.",
+    "fixed_preposition": null,
+    "separable": true,
+    "week_start": "2026-06-22"
   }
 ]

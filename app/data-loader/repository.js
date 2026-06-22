@@ -37,5 +37,10 @@ export async function loadCanonicalItem(catalogItem) {
 export async function loadPracticeItems(catalog) {
   const paths = [...new Set(catalog.items.map((item) => item.source_path))];
   const groups = await Promise.all(paths.map((path) => fetchJson(`../${path}`)));
-  return groups.flat();
+  const unique = new Map();
+  groups.flat().forEach((item) => {
+    if (!item?.id || unique.has(item.id)) return;
+    unique.set(item.id, item);
+  });
+  return [...unique.values()];
 }

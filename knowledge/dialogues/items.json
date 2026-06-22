@@ -239,5 +239,44 @@
     ],
     "notes": "Normalized from handwritten class dialogue; obvious spelling noise was corrected without changing meaning.",
     "week_start": "2026-06-08"
+  },
+  {
+    "id": "dialogue-hoe-gaat-het-met-jou",
+    "type": "dialogue",
+    "title": "Hoe gaat het met jou?",
+    "setting": "Informal check-in conversation",
+    "week_start": "2026-06-22",
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "conversation",
+      "2026-06-22"
+    ],
+    "target_ids": [
+      "expression-hoe-gaat-het-met-jou",
+      "expression-het-gaat-goed",
+      "word-jou"
+    ],
+    "turns": [
+      {
+        "speaker": "A",
+        "dutch": "Hoe gaat het met jou?",
+        "english": "How are you?"
+      },
+      {
+        "speaker": "B",
+        "dutch": "Het gaat goed.",
+        "english": "It is going well."
+      },
+      {
+        "speaker": "B",
+        "dutch": "En met jou?",
+        "english": "And with you?"
+      }
+    ],
+    "notes": "Normalized from the check-in phrases in the notes."
   }
 ]

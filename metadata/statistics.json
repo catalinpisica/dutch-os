@@ -1,18 +1,19 @@
 {
-  "generated_at": "2026-06-14",
+  "generated_at": "2026-06-22",
   "totals": {
-    "knowledge_items": 256,
-    "words": 190,
-    "expressions": 28,
+    "knowledge_items": 315,
+    "words": 224,
+    "expressions": 40,
     "particles": 10,
-    "grammar-patterns": 13,
-    "verb-constructions": 9,
-    "dialogues": 4,
-    "mistakes": 2
+    "grammar-patterns": 18,
+    "verb-constructions": 12,
+    "dialogues": 5,
+    "mistakes": 6
   },
   "by_week_start": {
     "2026-05-25": 67,
     "2026-06-01": 89,
-    "2026-06-08": 100
+    "2026-06-08": 100,
+    "2026-06-22": 59
   }
 }

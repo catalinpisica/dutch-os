@@ -222,5 +222,164 @@
     "mistake_ids": [],
     "needs_review": [],
     "notes": "Historical material was grouped by archived lesson order during the week-start migration on 2026-06-14."
+  },
+  {
+    "id": "review-2026-06-22",
+    "type": "review",
+    "week_start": "2026-06-22",
+    "tags": [
+      "2026-06-22"
+    ],
+    "ingestion_date": "2026-06-22",
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-01.jpg",
+      "sources/archive/2026/2026-06-22/images/note-page-02.jpg",
+      "sources/archive/2026/2026-06-22/images/note-page-03.jpg",
+      "sources/archive/2026/2026-06-22/images/note-page-04.jpg"
+    ],
+    "focus_ids": [
+      "grammar_pattern-persoonlijke-en-bezittelijke-voornaamwoorden",
+      "grammar_pattern-bij-voor-plaats-persoon-en-omstandigheid",
+      "grammar_pattern-aan-het-infinitief",
+      "grammar_pattern-om-te-infinitief",
+      "expression-hoe-gaat-het-met-jou",
+      "expression-ik-ben-aan-het-trainen",
+      "word-voorzichtig",
+      "word-jarig"
+    ],
+    "recall": [
+      {
+        "prompt": "When do you use ons versus onze?",
+        "answer": "Use ons with singular het-words; use onze with de-words and plurals.",
+        "target_ids": [
+          "grammar_pattern-persoonlijke-en-bezittelijke-voornaamwoorden",
+          "word-ons",
+          "word-onze"
+        ]
+      },
+      {
+        "prompt": "What does bij mean in Ik ben bij mijn vriend?",
+        "answer": "It means at my friend's place or with my friend.",
+        "target_ids": [
+          "word-bij",
+          "grammar_pattern-bij-voor-plaats-persoon-en-omstandigheid"
+        ]
+      },
+      {
+        "prompt": "What is the difference between jarig and verjaardag?",
+        "answer": "Jarig means having a birthday; de verjaardag is the birthday.",
+        "target_ids": [
+          "word-jarig",
+          "word-de-verjaardag"
+        ]
+      }
+    ],
+    "translation": [
+      {
+        "prompt": "Translate: How are you?",
+        "answer": "Hoe gaat het met jou?",
+        "target_ids": [
+          "expression-hoe-gaat-het-met-jou"
+        ]
+      },
+      {
+        "prompt": "Translate: I am training.",
+        "answer": "Ik ben aan het trainen.",
+        "target_ids": [
+          "expression-ik-ben-aan-het-trainen",
+          "grammar_pattern-aan-het-infinitief"
+        ]
+      },
+      {
+        "prompt": "Translate: I feel like watching football.",
+        "answer": "Ik heb zin om voetbal te kijken.",
+        "target_ids": [
+          "expression-ik-heb-zin-om-voetbal-te-kijken",
+          "grammar_pattern-om-te-infinitief"
+        ]
+      }
+    ],
+    "cloze": [
+      {
+        "prompt": "Hoe gaat het met ___?",
+        "answer": "jou",
+        "target_ids": [
+          "word-jou",
+          "expression-hoe-gaat-het-met-jou"
+        ]
+      },
+      {
+        "prompt": "Ik ben ___ het trainen.",
+        "answer": "aan",
+        "target_ids": [
+          "grammar_pattern-aan-het-infinitief"
+        ]
+      },
+      {
+        "prompt": "Ik ben ___ mijn vriend.",
+        "answer": "bij",
+        "target_ids": [
+          "word-bij",
+          "expression-ik-ben-bij-mijn-vriend"
+        ]
+      },
+      {
+        "prompt": "Ik heb zin ___ voetbal te kijken.",
+        "answer": "om",
+        "target_ids": [
+          "grammar_pattern-om-te-infinitief"
+        ]
+      }
+    ],
+    "grammar": [
+      {
+        "prompt": "Correct the phrase: roept = screams.",
+        "answer": "Roept means calls or shouts; screams is schreeuwt.",
+        "target_ids": [
+          "mistake-roept-screams"
+        ]
+      },
+      {
+        "prompt": "Make a sentence with aan het + infinitive for training.",
+        "answer": "Ik ben aan het trainen.",
+        "target_ids": [
+          "grammar_pattern-aan-het-infinitief",
+          "expression-ik-ben-aan-het-trainen"
+        ]
+      },
+      {
+        "prompt": "Choose ons/onze: ___ huis; ___ vriendin.",
+        "answer": "Ons huis; onze vriendin.",
+        "target_ids": [
+          "word-ons",
+          "word-onze"
+        ]
+      }
+    ],
+    "roleplay": [
+      {
+        "prompt": "Greet a friend and ask how they are. They answer that it is going well.",
+        "answer": "Hoe gaat het met jou? Het gaat goed.",
+        "target_ids": [
+          "dialogue-hoe-gaat-het-met-jou"
+        ]
+      },
+      {
+        "prompt": "Say you are at your friend's place and you are training.",
+        "answer": "Ik ben bij mijn vriend. Ik ben aan het trainen.",
+        "target_ids": [
+          "expression-ik-ben-bij-mijn-vriend",
+          "expression-ik-ben-aan-het-trainen"
+        ]
+      }
+    ],
+    "mistake_ids": [
+      "mistake-roept-screams",
+      "mistake-jarige-young",
+      "mistake-op-verjaardag-gaan",
+      "mistake-het-maand"
+    ],
+    "needs_review": [],
+    "notes": "Covers pronouns, bij, aan het + infinitive, om te + infinitive, birthday vocabulary, and corrected note meanings from the 2026-06-22 lesson."
   }
 ]

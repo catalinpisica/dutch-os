@@ -40,5 +40,85 @@
     "status": "active",
     "notes": "Visible in the question-formation notes and included as a likely learner correction.",
     "week_start": "2026-05-25"
+  },
+  {
+    "id": "mistake-roept-screams",
+    "type": "mistake",
+    "incorrect": "roept = screams",
+    "correct": "roept = calls; shouts",
+    "english": "Roept is from roepen and normally means calls or shouts. Use schreeuwt for screams.",
+    "category": "translation_precision",
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-04.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "vocabulary",
+      "2026-06-22"
+    ],
+    "status": "active",
+    "notes": "The note glossed roept too strongly as screams; corrected for practical usage.",
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "mistake-jarige-young",
+    "type": "mistake",
+    "incorrect": "jarige = young",
+    "correct": "jarige = birthday person; jarig = having one's birthday",
+    "english": "Young is jong. Jarig relates to birthdays, and de jarige is the person whose birthday it is.",
+    "category": "false_friend",
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-04.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "vocabulary",
+      "2026-06-22"
+    ],
+    "status": "active",
+    "notes": "The handwriting near jarig/jarige could mislead the app, so the normalized correction is explicit.",
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "mistake-op-verjaardag-gaan",
+    "type": "mistake",
+    "incorrect": "op verjaardag gaan",
+    "correct": "naar je verjaardag gaan",
+    "english": "For going to an event such as a birthday party, use naar. Op appears in other fixed time/event phrases, but naar je verjaardag is the natural beginner phrase here.",
+    "category": "preposition_choice",
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-04.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "prepositions",
+      "2026-06-22"
+    ],
+    "status": "active",
+    "notes": "Recorded as a supported note improvement, not as a new canonical expression because naar was not the focus of the lesson.",
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "mistake-het-maand",
+    "type": "mistake",
+    "incorrect": "Het maand me niet uit.",
+    "correct": "Het maakt me niet uit.",
+    "english": "The fixed expression is Het maakt me niet uit, meaning I don't mind or it doesn't matter to me.",
+    "category": "fixed_expression",
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-01.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "fixed_expression",
+      "2026-06-22"
+    ],
+    "status": "active",
+    "notes": "The first line appears to preserve an earlier misspelling of the known expression.",
+    "week_start": "2026-06-22"
   }
 ]

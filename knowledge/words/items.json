@@ -13,15 +13,17 @@
       }
     ],
     "source_images": [
-      "sources/archive/2026/week_01/images/lesson-01-page-01.jpg"
+      "sources/archive/2026/week_01/images/lesson-01-page-01.jpg",
+      "sources/archive/2026/2026-06-22/images/note-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
       "irregular",
-      "2026-05-25"
+      "2026-05-25",
+      "2026-06-22"
     ],
-    "notes": "Present tense: ik ben; jij/je/u bent; hij/zij is; wij/jullie/zij zijn.",
+    "notes": "Present tense: ik ben; jij/je/u bent; hij/zij is; wij/jullie/zij zijn. Additional evidence from 2026-06-22 notes.",
     "part_of_speech": "verb",
     "article": null,
     "plural": null,
@@ -41,15 +43,17 @@
       }
     ],
     "source_images": [
-      "sources/archive/2026/week_01/images/lesson-01-page-01.jpg"
+      "sources/archive/2026/week_01/images/lesson-01-page-01.jpg",
+      "sources/archive/2026/2026-06-22/images/note-page-04.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
       "irregular",
-      "2026-05-25"
+      "2026-05-25",
+      "2026-06-22"
     ],
-    "notes": "Present tense: ik heb; jij/je hebt; u heeft/hebt; hij/zij heeft; wij/jullie/zij hebben.",
+    "notes": "Present tense: ik heb; jij/je hebt; u heeft/hebt; hij/zij heeft; wij/jullie/zij hebben. Additional evidence from 2026-06-22 notes.",
     "part_of_speech": "verb",
     "article": null,
     "plural": null,
@@ -336,14 +340,16 @@
     "category": "time",
     "examples": [],
     "source_images": [
-      "sources/archive/2026/week_01/images/lesson-01-page-02.jpg"
+      "sources/archive/2026/week_01/images/lesson-01-page-02.jpg",
+      "sources/archive/2026/2026-06-22/images/note-page-04.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "2026-05-25"
+      "2026-05-25",
+      "2026-06-22"
     ],
-    "notes": "",
+    "notes": "Additional evidence from 2026-06-22 notes.",
     "part_of_speech": "noun",
     "article": "het",
     "plural": "de jaren",
@@ -546,14 +552,17 @@
     "category": "pronouns",
     "examples": [],
     "source_images": [
-      "sources/archive/2026/week_01/images/lesson-02-page-02.jpg"
+      "sources/archive/2026/week_01/images/lesson-02-page-02.jpg",
+      "sources/archive/2026/2026-06-22/images/note-page-02.jpg",
+      "sources/archive/2026/2026-06-22/images/note-page-03.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "2026-05-25"
+      "2026-05-25",
+      "2026-06-22"
     ],
-    "notes": "",
+    "notes": "Additional evidence from 2026-06-22 notes.",
     "part_of_speech": "possessive_pronoun",
     "article": null,
     "plural": null,
@@ -1180,15 +1189,17 @@
     "category": "home_and_family",
     "examples": [],
     "source_images": [
-      "sources/archive/2026/week_01/images/lesson-04-page-01.jpg"
+      "sources/archive/2026/week_01/images/lesson-04-page-01.jpg",
+      "sources/archive/2026/2026-06-22/images/note-page-04.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
       "irregular_plural",
-      "2026-06-01"
+      "2026-06-01",
+      "2026-06-22"
     ],
-    "notes": "",
+    "notes": "Additional evidence from 2026-06-22 notes.",
     "part_of_speech": "noun",
     "article": "het",
     "plural": "de kinderen",
@@ -2238,14 +2249,16 @@
     "category": "opening_hours",
     "examples": [],
     "source_images": [
-      "sources/archive/2026/week_01/images/lesson-06-page-03.jpg"
+      "sources/archive/2026/week_01/images/lesson-06-page-03.jpg",
+      "sources/archive/2026/2026-06-22/images/note-page-04.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "2026-06-01"
+      "2026-06-01",
+      "2026-06-22"
     ],
-    "notes": "",
+    "notes": "Additional evidence from 2026-06-22 notes.",
     "part_of_speech": "adjective",
     "article": null,
     "plural": null,
@@ -2986,14 +2999,17 @@
     "category": "daily_life",
     "examples": [],
     "source_images": [
-      "sources/archive/2026/week_01/images/lesson-08-page-01.jpg"
+      "sources/archive/2026/week_01/images/lesson-08-page-01.jpg",
+      "sources/archive/2026/2026-06-22/images/note-page-01.jpg",
+      "sources/archive/2026/2026-06-22/images/note-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "2026-06-08"
+      "2026-06-08",
+      "2026-06-22"
     ],
-    "notes": "",
+    "notes": "Additional evidence from 2026-06-22 notes.",
     "part_of_speech": "adjective",
     "article": null,
     "plural": null,
@@ -3133,14 +3149,16 @@
     "category": "movement",
     "examples": [],
     "source_images": [
-      "sources/archive/2026/week_01/images/lesson-08-page-01.jpg"
+      "sources/archive/2026/week_01/images/lesson-08-page-01.jpg",
+      "sources/archive/2026/2026-06-22/images/note-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "2026-06-08"
+      "2026-06-08",
+      "2026-06-22"
     ],
-    "notes": "",
+    "notes": "Additional evidence from 2026-06-22 notes.",
     "part_of_speech": "verb",
     "article": null,
     "plural": null,
@@ -3259,14 +3277,16 @@
     "category": "relationships",
     "examples": [],
     "source_images": [
-      "sources/archive/2026/week_01/images/lesson-08-page-01.jpg"
+      "sources/archive/2026/week_01/images/lesson-08-page-01.jpg",
+      "sources/archive/2026/2026-06-22/images/note-page-03.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "2026-06-08"
+      "2026-06-08",
+      "2026-06-22"
     ],
-    "notes": "",
+    "notes": "Additional evidence from 2026-06-22 notes.",
     "part_of_speech": "noun",
     "article": "de",
     "plural": "de vriendinnen",
@@ -3343,15 +3363,17 @@
     "category": "core_verbs",
     "examples": [],
     "source_images": [
-      "sources/archive/2026/week_01/images/lesson-08-page-01.jpg"
+      "sources/archive/2026/week_01/images/lesson-08-page-01.jpg",
+      "sources/archive/2026/2026-06-22/images/note-page-03.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
       "irregular",
-      "2026-06-08"
+      "2026-06-08",
+      "2026-06-22"
     ],
-    "notes": "",
+    "notes": "Additional evidence from 2026-06-22 notes.",
     "part_of_speech": "verb",
     "article": null,
     "plural": null,
@@ -3428,14 +3450,16 @@
     "category": "social",
     "examples": [],
     "source_images": [
-      "sources/archive/2026/week_01/images/lesson-08-page-03.jpg"
+      "sources/archive/2026/week_01/images/lesson-08-page-03.jpg",
+      "sources/archive/2026/2026-06-22/images/note-page-04.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "2026-06-08"
+      "2026-06-08",
+      "2026-06-22"
     ],
-    "notes": "",
+    "notes": "Additional evidence from 2026-06-22 notes.",
     "part_of_speech": "noun",
     "article": "het",
     "plural": "de bezoeken",
@@ -3449,15 +3473,18 @@
     "category": "movement",
     "examples": [],
     "source_images": [
-      "sources/archive/2026/week_01/images/lesson-08-page-03.jpg"
+      "sources/archive/2026/week_01/images/lesson-08-page-03.jpg",
+      "sources/archive/2026/2026-06-22/images/note-page-01.jpg",
+      "sources/archive/2026/2026-06-22/images/note-page-03.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
       "separable",
-      "2026-06-08"
+      "2026-06-08",
+      "2026-06-22"
     ],
-    "notes": "",
+    "notes": "Additional evidence from 2026-06-22 notes.",
     "part_of_speech": "verb",
     "article": null,
     "plural": null,
@@ -3471,14 +3498,16 @@
     "category": "food",
     "examples": [],
     "source_images": [
-      "sources/archive/2026/week_01/images/lesson-08-page-03.jpg"
+      "sources/archive/2026/week_01/images/lesson-08-page-03.jpg",
+      "sources/archive/2026/2026-06-22/images/note-page-04.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "2026-06-08"
+      "2026-06-08",
+      "2026-06-22"
     ],
-    "notes": "",
+    "notes": "Additional evidence from 2026-06-22 notes.",
     "part_of_speech": "verb",
     "article": null,
     "plural": null,
@@ -3492,15 +3521,17 @@
     "category": "descriptions",
     "examples": [],
     "source_images": [
-      "sources/archive/2026/week_01/images/lesson-08-page-03.jpg"
+      "sources/archive/2026/week_01/images/lesson-08-page-03.jpg",
+      "sources/archive/2026/2026-06-22/images/note-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
       "separable",
-      "2026-06-08"
+      "2026-06-08",
+      "2026-06-22"
     ],
-    "notes": "",
+    "notes": "Additional evidence from 2026-06-22 notes.",
     "part_of_speech": "verb",
     "article": null,
     "plural": null,
@@ -3514,15 +3545,17 @@
     "category": "core_verbs",
     "examples": [],
     "source_images": [
-      "sources/archive/2026/week_01/images/lesson-08-page-03.jpg"
+      "sources/archive/2026/week_01/images/lesson-08-page-03.jpg",
+      "sources/archive/2026/2026-06-22/images/note-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
       "irregular",
-      "2026-06-08"
+      "2026-06-08",
+      "2026-06-22"
     ],
-    "notes": "",
+    "notes": "Additional evidence from 2026-06-22 notes.",
     "part_of_speech": "verb",
     "article": null,
     "plural": null,
@@ -3557,14 +3590,16 @@
     "category": "feelings",
     "examples": [],
     "source_images": [
-      "sources/archive/2026/week_01/images/lesson-08-page-03.jpg"
+      "sources/archive/2026/week_01/images/lesson-08-page-03.jpg",
+      "sources/archive/2026/2026-06-22/images/note-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "2026-06-08"
+      "2026-06-08",
+      "2026-06-22"
     ],
-    "notes": "",
+    "notes": "Additional evidence from 2026-06-22 notes.",
     "part_of_speech": "verb",
     "article": null,
     "plural": null,
@@ -3578,14 +3613,16 @@
     "category": "clothing",
     "examples": [],
     "source_images": [
-      "sources/archive/2026/week_01/images/lesson-08-page-03.jpg"
+      "sources/archive/2026/week_01/images/lesson-08-page-03.jpg",
+      "sources/archive/2026/2026-06-22/images/note-page-01.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "2026-06-08"
+      "2026-06-08",
+      "2026-06-22"
     ],
-    "notes": "",
+    "notes": "Additional evidence from 2026-06-22 notes.",
     "part_of_speech": "noun",
     "article": "de",
     "plural": "de jassen",
@@ -3641,14 +3678,16 @@
     "category": "drinks",
     "examples": [],
     "source_images": [
-      "sources/archive/2026/week_01/images/lesson-08-page-03.jpg"
+      "sources/archive/2026/week_01/images/lesson-08-page-03.jpg",
+      "sources/archive/2026/2026-06-22/images/note-page-04.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "2026-06-08"
+      "2026-06-08",
+      "2026-06-22"
     ],
-    "notes": "",
+    "notes": "Additional evidence from 2026-06-22 notes.",
     "part_of_speech": "noun",
     "article": "de",
     "plural": null,
@@ -3767,14 +3806,16 @@
     "category": "drinks",
     "examples": [],
     "source_images": [
-      "sources/archive/2026/week_01/images/lesson-08-page-03.jpg"
+      "sources/archive/2026/week_01/images/lesson-08-page-03.jpg",
+      "sources/archive/2026/2026-06-22/images/note-page-04.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
-      "2026-06-08"
+      "2026-06-08",
+      "2026-06-22"
     ],
-    "notes": "",
+    "notes": "Additional evidence from 2026-06-22 notes.",
     "part_of_speech": "noun",
     "article": "de",
     "plural": null,
@@ -3906,15 +3947,17 @@
       }
     ],
     "source_images": [
-      "sources/archive/2026/week_01/images/lesson-03-page-01.jpg"
+      "sources/archive/2026/week_01/images/lesson-03-page-01.jpg",
+      "sources/archive/2026/2026-06-22/images/note-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
       "formal",
-      "2026-05-25"
+      "2026-05-25",
+      "2026-06-22"
     ],
-    "notes": "",
+    "notes": "Additional evidence from 2026-06-22 notes.",
     "part_of_speech": "pronoun",
     "article": null,
     "plural": null,
@@ -3934,15 +3977,17 @@
       }
     ],
     "source_images": [
-      "sources/archive/2026/week_01/images/lesson-03-page-01.jpg"
+      "sources/archive/2026/week_01/images/lesson-03-page-01.jpg",
+      "sources/archive/2026/2026-06-22/images/note-page-02.jpg"
     ],
     "ingestion_date": "2026-06-12",
     "tags": [
       "A1",
       "formal",
-      "2026-05-25"
+      "2026-05-25",
+      "2026-06-22"
     ],
-    "notes": "",
+    "notes": "Additional evidence from 2026-06-22 notes.",
     "part_of_speech": "possessive_pronoun",
     "article": null,
     "plural": null,
@@ -4084,5 +4129,929 @@
     "article": null,
     "plural": null,
     "week_start": "2026-06-08"
+  },
+  {
+    "id": "word-ik",
+    "type": "word",
+    "dutch": "ik",
+    "english": "I",
+    "category": "pronouns",
+    "examples": [
+      {
+        "dutch": "Ik ben goed bezig.",
+        "english": "I am doing well.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "2026-06-22"
+    ],
+    "notes": "Subject pronoun used for the speaker.",
+    "part_of_speech": "pronoun",
+    "article": null,
+    "plural": null,
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "word-je",
+    "type": "word",
+    "dutch": "je",
+    "english": "you; your (informal, unstressed)",
+    "category": "pronouns",
+    "examples": [
+      {
+        "dutch": "Je jas is hier.",
+        "english": "Your coat is here.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-01.jpg",
+      "sources/archive/2026/2026-06-22/images/note-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "2026-06-22"
+    ],
+    "notes": "Can be an unstressed subject/object pronoun or informal possessive.",
+    "part_of_speech": "pronoun",
+    "article": null,
+    "plural": null,
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "word-jij",
+    "type": "word",
+    "dutch": "jij",
+    "english": "you (informal, stressed)",
+    "category": "pronouns",
+    "examples": [
+      {
+        "dutch": "Hoe gaat het met jou?",
+        "english": "How are you?",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "2026-06-22"
+    ],
+    "notes": "Use jij when you emphasize the informal subject.",
+    "part_of_speech": "pronoun",
+    "article": null,
+    "plural": null,
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "word-jou",
+    "type": "word",
+    "dutch": "jou",
+    "english": "you (informal object)",
+    "category": "pronouns",
+    "examples": [
+      {
+        "dutch": "Hoe gaat het met jou?",
+        "english": "How are you?",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "2026-06-22"
+    ],
+    "notes": "Object form used after prepositions such as met.",
+    "part_of_speech": "pronoun",
+    "article": null,
+    "plural": null,
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "word-jouw",
+    "type": "word",
+    "dutch": "jouw",
+    "english": "your (informal, stressed)",
+    "category": "pronouns",
+    "examples": [
+      {
+        "dutch": "Jouw jas is hier.",
+        "english": "Your coat is here.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "2026-06-22"
+    ],
+    "notes": "Possessive form; more emphatic than je.",
+    "part_of_speech": "pronoun",
+    "article": null,
+    "plural": null,
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "word-hij",
+    "type": "word",
+    "dutch": "hij",
+    "english": "he",
+    "category": "pronouns",
+    "examples": [
+      {
+        "dutch": "Hij woont bij het station.",
+        "english": "He lives near the station.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-02.jpg",
+      "sources/archive/2026/2026-06-22/images/note-page-03.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "2026-06-22"
+    ],
+    "notes": "",
+    "part_of_speech": "pronoun",
+    "article": null,
+    "plural": null,
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "word-zij-ze",
+    "type": "word",
+    "dutch": "zij / ze",
+    "english": "she; they",
+    "category": "pronouns",
+    "examples": [
+      {
+        "dutch": "Ze is jarig.",
+        "english": "She has her birthday.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "2026-06-22"
+    ],
+    "notes": "Zij is stressed; ze is unstressed. The same pair can refer to she or they depending on context.",
+    "part_of_speech": "pronoun",
+    "article": null,
+    "plural": null,
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "word-wij-we",
+    "type": "word",
+    "dutch": "wij / we",
+    "english": "we",
+    "category": "pronouns",
+    "examples": [
+      {
+        "dutch": "Wij blijven binnen.",
+        "english": "We stay inside.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-02.jpg",
+      "sources/archive/2026/2026-06-22/images/note-page-03.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "2026-06-22"
+    ],
+    "notes": "Wij is stressed; we is unstressed.",
+    "part_of_speech": "pronoun",
+    "article": null,
+    "plural": null,
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "word-ons",
+    "type": "word",
+    "dutch": "ons",
+    "english": "our (with het-words)",
+    "category": "pronouns",
+    "examples": [
+      {
+        "dutch": "Ons huis is dichtbij.",
+        "english": "Our house is nearby.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "2026-06-22"
+    ],
+    "notes": "Use ons with singular het-words: ons huis, ons kind.",
+    "part_of_speech": "pronoun",
+    "article": null,
+    "plural": null,
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "word-onze",
+    "type": "word",
+    "dutch": "onze",
+    "english": "our (with de-words and plurals)",
+    "category": "pronouns",
+    "examples": [
+      {
+        "dutch": "Onze vriendin komt.",
+        "english": "Our friend is coming.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "2026-06-22"
+    ],
+    "notes": "Use onze with de-words and all plural nouns.",
+    "part_of_speech": "pronoun",
+    "article": null,
+    "plural": null,
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "word-jullie",
+    "type": "word",
+    "dutch": "jullie",
+    "english": "you plural; your plural",
+    "category": "pronouns",
+    "examples": [
+      {
+        "dutch": "Jullie zijn goed bezig.",
+        "english": "You all are doing well.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "2026-06-22"
+    ],
+    "notes": "",
+    "part_of_speech": "pronoun",
+    "article": null,
+    "plural": null,
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "word-hun",
+    "type": "word",
+    "dutch": "hun",
+    "english": "their",
+    "category": "pronouns",
+    "examples": [
+      {
+        "dutch": "Hun huis is dichtbij.",
+        "english": "Their house is nearby.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "2026-06-22"
+    ],
+    "notes": "Possessive pronoun for their.",
+    "part_of_speech": "pronoun",
+    "article": null,
+    "plural": null,
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "word-goed",
+    "type": "word",
+    "dutch": "goed",
+    "english": "good; well",
+    "category": "descriptions",
+    "examples": [
+      {
+        "dutch": "Het gaat goed.",
+        "english": "It is going well.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-01.jpg",
+      "sources/archive/2026/2026-06-22/images/note-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "2026-06-22"
+    ],
+    "notes": "",
+    "part_of_speech": "adjective",
+    "article": null,
+    "plural": null,
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "word-lang",
+    "type": "word",
+    "dutch": "lang",
+    "english": "long; tall",
+    "category": "descriptions",
+    "examples": [
+      {
+        "dutch": "Dat is lang geleden.",
+        "english": "That was a long time ago.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-01.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "2026-06-22"
+    ],
+    "notes": "",
+    "part_of_speech": "adjective",
+    "article": null,
+    "plural": null,
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "word-allemaal",
+    "type": "word",
+    "dutch": "allemaal",
+    "english": "all; everyone; altogether",
+    "category": "quantity",
+    "examples": [
+      {
+        "dutch": "Hoe is het met jullie allemaal?",
+        "english": "How are you all?",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "2026-06-22"
+    ],
+    "notes": "",
+    "part_of_speech": "adverb",
+    "article": null,
+    "plural": null,
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "word-stil",
+    "type": "word",
+    "dutch": "stil",
+    "english": "quiet; still",
+    "category": "descriptions",
+    "examples": [
+      {
+        "dutch": "Zij is stil.",
+        "english": "She is quiet.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-01.jpg",
+      "sources/archive/2026/2026-06-22/images/note-page-03.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "2026-06-22"
+    ],
+    "notes": "",
+    "part_of_speech": "adjective",
+    "article": null,
+    "plural": null,
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "word-voorzichtig",
+    "type": "word",
+    "dutch": "voorzichtig",
+    "english": "careful; carefully",
+    "category": "descriptions",
+    "examples": [
+      {
+        "dutch": "Wees voorzichtig.",
+        "english": "Be careful.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-03.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "2026-06-22"
+    ],
+    "notes": "",
+    "part_of_speech": "adjective",
+    "article": null,
+    "plural": null,
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "word-bij",
+    "type": "word",
+    "dutch": "bij",
+    "english": "at; with; near; by",
+    "category": "prepositions",
+    "examples": [
+      {
+        "dutch": "Ik ben bij mijn vriend.",
+        "english": "I am at my friend's place.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-03.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "2026-06-22"
+    ],
+    "notes": "",
+    "part_of_speech": "preposition",
+    "article": null,
+    "plural": null,
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "word-dichtbij",
+    "type": "word",
+    "dutch": "dichtbij",
+    "english": "nearby; close by",
+    "category": "location",
+    "examples": [
+      {
+        "dutch": "Hij woont dichtbij.",
+        "english": "He lives nearby.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-04.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "2026-06-22"
+    ],
+    "notes": "The notes also show dicht bij as two words; dichtbij is common as an adverb.",
+    "part_of_speech": "adverb",
+    "article": null,
+    "plural": null,
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "word-gauw",
+    "type": "word",
+    "dutch": "gauw",
+    "english": "soon; quickly",
+    "category": "time",
+    "examples": [
+      {
+        "dutch": "Tot gauw.",
+        "english": "See you soon.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-02.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "2026-06-22"
+    ],
+    "notes": "",
+    "part_of_speech": "adverb",
+    "article": null,
+    "plural": null,
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "word-de-visite",
+    "type": "word",
+    "dutch": "de visite",
+    "english": "visit; visitors",
+    "category": "social",
+    "examples": [
+      {
+        "dutch": "Ik krijg visite.",
+        "english": "I am having visitors.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-04.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "2026-06-22"
+    ],
+    "notes": "Often used without an article in the expression visite krijgen.",
+    "part_of_speech": "noun",
+    "article": "de",
+    "plural": null,
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "word-de-verjaardag",
+    "type": "word",
+    "dutch": "de verjaardag",
+    "english": "birthday",
+    "category": "social",
+    "examples": [
+      {
+        "dutch": "Ik ga naar je verjaardag.",
+        "english": "I am going to your birthday party.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-04.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "2026-06-22"
+    ],
+    "notes": "",
+    "part_of_speech": "noun",
+    "article": "de",
+    "plural": "verjaardagen",
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "word-jarig",
+    "type": "word",
+    "dutch": "jarig",
+    "english": "having one's birthday",
+    "category": "social",
+    "examples": [
+      {
+        "dutch": "Ik ben jarig.",
+        "english": "It is my birthday.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-04.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "2026-06-22"
+    ],
+    "notes": "Jarig is not the noun birthday; de verjaardag is the birthday.",
+    "part_of_speech": "adjective",
+    "article": null,
+    "plural": null,
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "word-de-jarige",
+    "type": "word",
+    "dutch": "de jarige",
+    "english": "the birthday person",
+    "category": "social",
+    "examples": [
+      {
+        "dutch": "De jarige krijgt een cadeau.",
+        "english": "The birthday person gets a present.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-04.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "2026-06-22"
+    ],
+    "notes": "",
+    "part_of_speech": "noun",
+    "article": "de",
+    "plural": "jarigen",
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "word-het-cadeau",
+    "type": "word",
+    "dutch": "het cadeau",
+    "english": "present; gift",
+    "category": "social",
+    "examples": [
+      {
+        "dutch": "De jarige krijgt een cadeau.",
+        "english": "The birthday person gets a present.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-04.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "2026-06-22"
+    ],
+    "notes": "",
+    "part_of_speech": "noun",
+    "article": "het",
+    "plural": "cadeaus",
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "word-het-spelletje",
+    "type": "word",
+    "dutch": "het spelletje",
+    "english": "little game; casual game",
+    "category": "activities",
+    "examples": [
+      {
+        "dutch": "We doen een spelletje.",
+        "english": "We play a little game.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-03.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "2026-06-22"
+    ],
+    "notes": "",
+    "part_of_speech": "noun",
+    "article": "het",
+    "plural": "spelletjes",
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "word-het-raam",
+    "type": "word",
+    "dutch": "het raam",
+    "english": "window",
+    "category": "home_and_family",
+    "examples": [
+      {
+        "dutch": "Doe het raam dicht.",
+        "english": "Close the window.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-04.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "2026-06-22"
+    ],
+    "notes": "",
+    "part_of_speech": "noun",
+    "article": "het",
+    "plural": "ramen",
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "word-de-tuin",
+    "type": "word",
+    "dutch": "de tuin",
+    "english": "garden; yard",
+    "category": "home_and_family",
+    "examples": [
+      {
+        "dutch": "Ik sta in de tuin.",
+        "english": "I am standing in the garden.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-04.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "2026-06-22"
+    ],
+    "notes": "",
+    "part_of_speech": "noun",
+    "article": "de",
+    "plural": "tuinen",
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "word-bewegen",
+    "type": "word",
+    "dutch": "bewegen",
+    "english": "to move",
+    "category": "movement",
+    "examples": [
+      {
+        "dutch": "Ik beweeg mijn hand.",
+        "english": "I move my hand.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-04.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "2026-06-22"
+    ],
+    "notes": "",
+    "part_of_speech": "verb",
+    "article": null,
+    "plural": null,
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "word-opstaan",
+    "type": "word",
+    "dutch": "opstaan",
+    "english": "to stand up; to get up",
+    "category": "movement",
+    "examples": [
+      {
+        "dutch": "Ik sta op.",
+        "english": "I stand up.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-04.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "separable",
+      "2026-06-22"
+    ],
+    "notes": "Separable verb: ik sta op.",
+    "part_of_speech": "verb",
+    "article": null,
+    "plural": null,
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "word-knielen",
+    "type": "word",
+    "dutch": "knielen",
+    "english": "to kneel",
+    "category": "movement",
+    "examples": [
+      {
+        "dutch": "Ik kniel op de grond.",
+        "english": "I kneel on the ground.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-04.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "2026-06-22"
+    ],
+    "notes": "",
+    "part_of_speech": "verb",
+    "article": null,
+    "plural": null,
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "word-roepen",
+    "type": "word",
+    "dutch": "roepen",
+    "english": "to call; to shout",
+    "category": "communication",
+    "examples": [
+      {
+        "dutch": "Hij roept mijn naam.",
+        "english": "He calls my name.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-04.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "2026-06-22"
+    ],
+    "notes": "Roept means calls or shouts; screaming is stronger and is usually schreeuwen.",
+    "part_of_speech": "verb",
+    "article": null,
+    "plural": null,
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "word-het-voetbal",
+    "type": "word",
+    "dutch": "het voetbal",
+    "english": "football; soccer",
+    "category": "activities",
+    "examples": [
+      {
+        "dutch": "Ik kijk voetbal.",
+        "english": "I watch football.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-04.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "2026-06-22"
+    ],
+    "notes": "",
+    "part_of_speech": "noun",
+    "article": "het",
+    "plural": null,
+    "week_start": "2026-06-22"
+  },
+  {
+    "id": "word-waar",
+    "type": "word",
+    "dutch": "waar",
+    "english": "true",
+    "category": "descriptions",
+    "examples": [
+      {
+        "dutch": "Dat is waar.",
+        "english": "That is true.",
+        "source_type": "ai_generated"
+      }
+    ],
+    "source_images": [
+      "sources/archive/2026/2026-06-22/images/note-page-04.jpg"
+    ],
+    "ingestion_date": "2026-06-22",
+    "tags": [
+      "A1",
+      "2026-06-22"
+    ],
+    "notes": "This is waar meaning true, not waar meaning where.",
+    "part_of_speech": "adjective",
+    "article": null,
+    "plural": null,
+    "week_start": "2026-06-22"
   }
 ]
