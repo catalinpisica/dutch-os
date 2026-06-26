@@ -54,6 +54,15 @@ function uniqueItemsById(items) {
   });
 }
 
+function uniqueQuestionsByItemId(questions) {
+  const seen = new Set();
+  return questions.filter((question) => {
+    if (!question?.itemId || seen.has(question.itemId)) return false;
+    seen.add(question.itemId);
+    return true;
+  });
+}
+
 function normalize(value) {
   return value
     .toLocaleLowerCase("nl-NL")
@@ -210,7 +219,8 @@ function wholeTargetInSentence(sentence, target) {
 }
 
 function contextSources(allItems) {
-  const practicePool = allItems.filter((item) => PRACTICE_TYPES.has(item.type) && item.dutch && item.english);
+  const practicePool = uniqueItemsById(allItems)
+    .filter((item) => PRACTICE_TYPES.has(item.type) && item.dutch && item.english);
   const itemsById = new Map(practicePool.map((item) => [item.id, item]));
   const authored = AUTHORED_SENTENCES
     .filter(([itemId, , , , translation]) => itemsById.has(itemId) && translation)
@@ -233,7 +243,8 @@ function contextSources(allItems) {
 export function buildContextSession(allItems, progress, options = {}) {
   const size = options.size ?? 20;
   const excludedIds = new Set(options.excludeIds ?? []);
-  const practicePool = allItems.filter((item) => PRACTICE_TYPES.has(item.type) && item.dutch && item.english);
+  const practicePool = uniqueItemsById(allItems)
+    .filter((item) => PRACTICE_TYPES.has(item.type) && item.dutch && item.english);
   let candidates = contextSources(allItems).filter(({ item }) =>
     (options.week === "all" || item.week_start === options.week) && !excludedIds.has(item.id));
   if (!candidates.length && excludedIds.size) {
@@ -285,12 +296,13 @@ function makeCloze(item, suppliedExample = null) {
 export function buildSession(allItems, options = {}) {
   const size = options.size ?? 10;
   const excludedIds = new Set(options.excludeIds ?? []);
-  const recognitionPool = allItems.filter((item) =>
+  const uniqueItems = uniqueItemsById(allItems);
+  const recognitionPool = uniqueItems.filter((item) =>
     PRACTICE_TYPES.has(item.type)
     && item.dutch
     && item.english
   );
-  let eligible = allItems.filter((item) =>
+  let eligible = uniqueItems.filter((item) =>
     PRACTICE_TYPES.has(item.type)
     && item.dutch
     && item.english
@@ -306,8 +318,9 @@ export function buildSession(allItems, options = {}) {
       .map((example) => makeSentenceBuild(item, example))))
       .filter((question, index, values) =>
         values.findIndex((candidate) => normalize(candidate.answer) === normalize(question.answer)) === index);
-    const questions = candidates.slice(0, size);
-    return { questions, sourceCount: candidates.length };
+    const uniqueCandidates = uniqueQuestionsByItemId(candidates);
+    const questions = uniqueCandidates.slice(0, size);
+    return { questions, sourceCount: uniqueCandidates.length };
   }
   if (options.mode === "sentences") {
     const eligibleIds = new Set(eligible.map((item) => item.id));
@@ -333,10 +346,10 @@ export function buildSession(allItems, options = {}) {
           direction: "cloze",
         };
       });
-    const questions = shuffle([...authoredQuestions, ...sourceQuestions])
+    const candidates = shuffle([...authoredQuestions, ...sourceQuestions])
       .filter((question, index, values) => values.findIndex((candidate) => candidate.prompt === question.prompt) === index)
-      .slice(0, size)
       .map((question) => ({ ...question, hint: null }));
+    const questions = uniqueQuestionsByItemId(candidates).slice(0, size);
     return { questions, sourceCount: questions.length };
   }
   const weakIds = new Set(options.weakIds ?? []);
@@ -359,6 +372,20 @@ function firstBuildableExample(item) {
     const wordCount = example.dutch?.trim().split(/\s+/).length ?? 0;
     return example.dutch && example.english && wordCount >= 3 && wordCount <= 9;
   });
+}
+
+function guidedQuestionForTarget(item, index, practicePool, context) {
+  const cloze = makeCloze(item);
+  const buildable = firstBuildableExample(item);
+  const variants = [
+    context ? makeContextChoice(practicePool, item, context.sentence, context.target, context.translation) : null,
+    makeChoice(practicePool, item, "nl-en"),
+    makeChoice(practicePool, item, "en-nl"),
+    makeTyped(item),
+    cloze ? { ...cloze, hint: null } : null,
+    buildable ? makeSentenceBuild(item, buildable) : null,
+  ].filter(Boolean);
+  return variants[index % variants.length];
 }
 
 function practicePriority(item, progress) {
@@ -397,7 +424,8 @@ function selectGuidedTargets(eligible, targetCount) {
 export function buildGuidedSession(allItems, progress, options = {}) {
   const size = options.size ?? 36;
   const week = options.week ?? "all";
-  const practicePool = allItems.filter((item) => PRACTICE_TYPES.has(item.type) && item.dutch && item.english);
+  const practicePool = uniqueItemsById(allItems)
+    .filter((item) => PRACTICE_TYPES.has(item.type) && item.dutch && item.english);
   const eligible = practicePool
     .filter((item) => week === "all" || item.week_start === week)
     .map((item) => practicePriority(item, progress))
@@ -408,25 +436,15 @@ export function buildGuidedSession(allItems, progress, options = {}) {
       || left.seed - right.seed
       || left.item.dutch.localeCompare(right.item.dutch, "nl"))
     .map((entry) => entry.item);
-  const targetCount = Math.min(options.targetCount ?? 8, eligible.length);
+  const targetCount = Math.min(options.targetCount ?? size, eligible.length);
   const targets = selectGuidedTargets(eligible, targetCount);
   const targetIds = new Set(targets.map((item) => item.id));
   const contextsById = new Map(contextSources(allItems)
     .filter(({ item }) => targetIds.has(item.id))
     .map((source) => [source.item.id, source]));
-  const layers = [[], [], [], [], [], []];
-  targets.forEach((item) => {
-    const context = contextsById.get(item.id);
-    if (context) layers[0].push(makeContextChoice(practicePool, item, context.sentence, context.target, context.translation));
-    layers[1].push(makeChoice(practicePool, item, "nl-en"));
-    layers[2].push(makeChoice(practicePool, item, "en-nl"));
-    layers[3].push(makeTyped(item));
-    const cloze = makeCloze(item);
-    if (cloze) layers[4].push({ ...cloze, hint: null });
-    const buildable = firstBuildableExample(item);
-    if (buildable) layers[5].push(makeSentenceBuild(item, buildable));
-  });
-  const questions = layers.flat().slice(0, size);
+  const questions = targets
+    .map((item, index) => guidedQuestionForTarget(item, index, practicePool, contextsById.get(item.id)))
+    .slice(0, size);
   return {
     questions,
     sourceCount: eligible.length,
@@ -450,7 +468,7 @@ export function buildReviewQueue(allItems, progress, options = {}) {
   const now = options.now ?? new Date();
   const week = options.week ?? "all";
   const size = options.size ?? 20;
-  const ranked = allItems
+  const ranked = uniqueItemsById(allItems)
     .filter((item) => PRACTICE_TYPES.has(item.type)
       && item.dutch
       && item.english
@@ -481,7 +499,8 @@ export function buildReviewQueue(allItems, progress, options = {}) {
 
 export function buildReviewSession(allItems, progress, options = {}) {
   const queue = buildReviewQueue(allItems, progress, options);
-  const recognitionPool = allItems.filter((item) => PRACTICE_TYPES.has(item.type) && item.dutch && item.english);
+  const recognitionPool = uniqueItemsById(allItems)
+    .filter((item) => PRACTICE_TYPES.has(item.type) && item.dutch && item.english);
   const questions = queue.items.map((item, index) => {
     const cloze = makeCloze(item);
     if (index % 3 === 0) return makeChoice(recognitionPool, item, index % 2 === 0 ? "nl-en" : "en-nl");

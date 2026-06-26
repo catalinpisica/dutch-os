@@ -608,7 +608,6 @@ async function startLesson(mode = "recall", trigger = null) {
       ? buildGuidedSession(state.practiceItems, progress, {
         week,
         size: sizes.daily,
-        targetCount: 8,
       })
       : mode === "context"
       ? buildContextSession(state.practiceItems, progress, {
