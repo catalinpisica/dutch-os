@@ -144,6 +144,11 @@ function isMobileLayout() {
   return window.matchMedia("(max-width: 620px)").matches;
 }
 
+function syncVisualViewportHeight() {
+  const height = window.visualViewport?.height ?? window.innerHeight;
+  document.documentElement.style.setProperty("--visual-viewport-height", `${height}px`);
+}
+
 function showMobileView(view, options = {}) {
   if (view === "dictionary") {
     state.previousMobileView = state.mobileView === "dictionary" ? state.previousMobileView : state.mobileView;
@@ -1064,6 +1069,10 @@ function nextSimulatorQuestion() {
 }
 
 function bindEvents() {
+  syncVisualViewportHeight();
+  window.addEventListener("resize", syncVisualViewportHeight);
+  window.visualViewport?.addEventListener("resize", syncVisualViewportHeight);
+  window.visualViewport?.addEventListener("scroll", syncVisualViewportHeight);
   elements.searchForm.addEventListener("submit", (event) => event.preventDefault());
   elements.searchInput.addEventListener("input", updateFilters);
   elements.typeFilter.addEventListener("change", updateFilters);
