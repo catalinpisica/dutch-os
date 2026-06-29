@@ -836,6 +836,7 @@ function openDictionary() {
   } else if (!elements.dictionaryDialog.open) {
     elements.dictionaryDialog.showModal();
   }
+  elements.dictionaryDialog.focus({ preventScroll: true });
 }
 
 const HOUR_WORDS = ["twaalf", "een", "twee", "drie", "vier", "vijf", "zes", "zeven", "acht", "negen", "tien", "elf"];
@@ -1072,7 +1073,8 @@ function bindEvents() {
     elements.typeFilter.value = "all";
     elements.weekFilter.value = state.academyScope === "week" ? mondayOf(new Date()) : "all";
     updateFilters();
-    elements.searchInput.focus();
+    if (isMobileLayout()) elements.searchInput.blur();
+    else elements.searchInput.focus();
   });
   elements.loadMore.addEventListener("click", () => {
     state.visible += 24;

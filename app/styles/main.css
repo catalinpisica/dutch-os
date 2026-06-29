@@ -506,6 +506,7 @@ blockquote small { margin-top: 12px; color: var(--orange); font-weight: 750; }
 .dialogue-turns p { margin: 5px 0; font-weight: 700; }
 .dialogue-turns span { color: var(--muted); }
 .dictionary-dialog { width: 100%; max-width: none; height: 100%; max-height: none; margin: 0; padding: 0; border: 0; background: var(--paper); color: var(--ink); }
+.dictionary-dialog:focus { outline: 0; }
 .dictionary-dialog::backdrop { background: var(--paper); }
 .dictionary-shell { min-height: 100dvh; }
 .dictionary-header { position: sticky; top: 0; z-index: 5; width: min(1180px, calc(100% - 32px)); min-height: 104px; margin: 0 auto; display: grid; grid-template-columns: 48px 1fr auto; align-items: center; gap: 20px; border-bottom: 1px solid var(--line); background: var(--paper); }
@@ -985,11 +986,11 @@ blockquote small { margin-top: 12px; color: var(--orange); font-weight: 750; }
   .search-panel { gap: 10px; padding: 12px; border-radius: 18px; }
   .search-field { min-height: 38px; }
   .search-icon { font-size: 20px; }
-  .search-field input { padding: 5px 0; font-size: 15px; }
+  .search-field input { padding: 5px 0; font-size: 16px; }
   .filters { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
   .filters label { min-width: 0; display: grid; grid-template-columns: 1fr; gap: 5px; align-items: stretch; }
   .filters label > span { font-size: 9px; letter-spacing: .12em; }
-  .filters select { min-height: 38px; width: 100%; padding: 0 34px 0 10px; border-radius: 12px; background-position: right 13px center; font-size: 13px; }
+  .filters select { min-height: 38px; width: 100%; padding: 0 34px 0 10px; border-radius: 12px; background-position: right 13px center; font-size: 16px; }
   .active-filter { margin-top: 0; padding: 0 2px; align-items: center; font-size: 12px; }
   .dictionary-results { min-height: 0; overflow: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; padding: 8px 2px 74px; border-radius: 18px; background: var(--green-soft); }
   .item-grid { grid-template-columns: 1fr; gap: 8px; margin-top: 0; }
